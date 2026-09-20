@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<!DOCTYPE exch:exchange-documents SYSTEM "docdb-entities.dtd">
+<exch:exchange-documents xmlns:exch="http://www.epo.org/exchange" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epo.org/exchange exchange-documents-v2.5.7.xsd" date-of-exchange="20170615" dtd-version="2.5.7" file="DOCDB-201724-Amend-PubDate20170609AndBefore-EP-0001" no-of-documents="0004959" originating-office="EP">
+	<exch:exchange-document country="EP" doc-number="0003543" kind="A1" doc-id="311488806" date-publ="19790822" family-id="6030991" is-representative="YES" date-of-last-exchange="20170615" date-of-previous-exchange="20170302" date-added-docdb="20000418" originating-office="EP" status="A">
+		<exch:bibliographic-data>
+			<exch:publication-reference data-format="docdb">
+				<document-id lang="de">
+					<country>EP</country>
+					<doc-number>0003543</doc-number>
+					<kind>A1</kind>
+					<date>19790822</date>
+				</document-id>
+			</exch:publication-reference>
+			<exch:publication-reference data-format="epodoc">
+				<document-id lang="de">
+					<doc-number>EP0003543</doc-number>
+				</document-id>
+			</exch:publication-reference>
+			<exch:classification-ipc>
+				<main-classification>  H 04B   7/185  A</main-classification>
+			</exch:classification-ipc>
+			<exch:classifications-ipcr>
+				<classification-ipcr sequence="1">
+					<text>H04B   7/15        20060101AFI20051220RMJP        </text>
+				</classification-ipcr>
+				<classification-ipcr sequence="2">
+					<text>H04B   7/185       20060101A I20051008RMEP        </text>
+				</classification-ipcr>
+			</exch:classifications-ipcr>
+			<exch:patent-classifications>
+				<patent-classification sequence="1">
+					<classification-scheme office="EP" scheme="CPC">
+						<date>20130101</date>
+					</classification-scheme>
+					<classification-symbol>H04B   7/18515     </classification-symbol>
+					<symbol-position>F</symbol-position>
+					<classification-value>I</classification-value>
+					<classification-status>B</classification-status>
+					<classification-data-source>H</classification-data-source>
+					<action-date>
+						<date>20170220</date>
+					</action-date>
+				</patent-classification>
+			</exch:patent-classifications>
+			<exch:application-reference is-representative="YES" doc-id="16430989" data-format="docdb">
+				<document-id>
+					<country>EP</country>
+					<doc-number>79100245</doc-number>
+					<kind>A</kind>
+					<date>19790129</date>
+				</document-id>
+			</exch:application-reference>
+			<exch:application-reference data-format="epodoc">
+				<document-id>
+					<doc-number>EP19790100245</doc-number>
+				</document-id>
+			</exch:application-reference>
+			<exch:application-reference data-format="original">
+				<document-id>
+					<doc-number>79100245</doc-number>
+				</document-id>
+			</exch:application-reference>
+			<exch:language-of-publication>de</exch:language-of-publication>
+			<exch:priority-claims>
+				<exch:priority-claim sequence="1" data-format="docdb">
+					<document-id doc-id="10336288">
+						<country>DE</country>
+						<doc-number>2804439</doc-number>
+						<kind>A</kind>
+						<date>19780202</date>
+					</document-id>
+					<exch:priority-active-indicator>Y</exch:priority-active-indicator>
+				</exch:priority-claim>
+				<exch:priority-claim sequence="1" data-format="epodoc">
+					<document-id>
+						<doc-number>DE19782804439</doc-number>
+					</document-id>
+				</exch:priority-claim>
+				<exch:priority-claim sequence="1" data-format="original">
+					<document-id>
+						<doc-number>2804439</doc-number>
+					</document-id>
+				</exch:priority-claim>
+			</exch:priority-claims>
+			<exch:parties>
+				<exch:applicants>
+					<exch:applicant sequence="1" data-format="docdb">
+						<exch:applicant-name>
+							<name>LICENTIA GMBH</name>
+						</exch:applicant-name>
+						<residence>
+							<country>DE</country>
+						</residence>
+					</exch:applicant>
+					<exch:applicant sequence="1" data-format="docdba">
+						<exch:applicant-name>
+							<name>LICENTIA PATENT-VERWALTUNGS-GMBH</name>
+						</exch:applicant-name>
+					</exch:applicant>
+				</exch:applicants>
+				<exch:inventors>
+					<exch:inventor sequence="1" data-format="docdb">
+						<exch:inventor-name>
+							<name>SEIDENSTICKER KLAUS</name>
+						</exch:inventor-name>
+						<residence>
+							<country>DE</country>
+						</residence>
+					</exch:inventor>
+					<exch:inventor sequence="2" data-format="docdb">
+						<exch:inventor-name>
+							<name>DIENER FRANCO</name>
+						</exch:inventor-name>
+						<residence>
+							<country>DE</country>
+						</residence>
+					</exch:inventor>
+					<exch:inventor sequence="1" data-format="docdba">
+						<exch:inventor-name>
+							<name>SEIDENSTICKER, KLAUS</name>
+						</exch:inventor-name>
+					</exch:inventor>
+					<exch:inventor sequence="2" data-format="docdba">
+						<exch:inventor-name>
+							<name>DIENER, FRANCO</name>
+						</exch:inventor-name>
+					</exch:inventor>
+				</exch:inventors>
+			</exch:parties>
+			<exch:designation-of-states>
+				<exch:designation-epc>
+					<exch:contracting-states>
+						<country>FR</country>
+						<country>GB</country>
+						<country>IT</country>
+					</exch:contracting-states>
+				</exch:designation-epc>
+			</exch:designation-of-states>
+			<exch:invention-title lang="de" data-format="docdba">Übertragungsanordnung in Ein- und Mehrkanalsystemen.</exch:invention-title>
+			<exch:invention-title lang="en" data-format="docdba">Transmission device for mono- or multichannel systems.</exch:invention-title>
+			<exch:invention-title lang="fr" data-format="docdba">Dispositif de transmission pour systèmes monocanaux ou à plusieurs canaux.</exch:invention-title>
+			<exch:dates-of-public-availability>
+				<exch:examined-printed-without-grant>
+					<document-id>
+						<date>19790822</date>
+					</document-id>
+				</exch:examined-printed-without-grant>
+			</exch:dates-of-public-availability>
+			<exch:references-cited>
+				<exch:citation cited-phase="SEA" sequence="1">
+					<patcit num="1" dnum="US3048794A" dnum-type="publication number">
+						<document-id doc-id="327310613">
+							<country>US</country>
+							<doc-number>3048794</doc-number>
+							<kind>A</kind>
+							<name>MANUEL ARES</name>
+							<date>19620807</date>
+						</document-id>
+					</patcit>
+				</exch:citation>
+				<exch:citation cited-phase="SEA" sequence="2">
+					<patcit num="2" dnum="FR2057218A5" dnum-type="publication number">
+						<document-id doc-id="317211701">
+							<country>FR</country>
+							<doc-number>2057218</doc-number>
+							<kind>A5</kind>
+							<name>THOMSON CSF</name>
+							<date>19710521</date>
+						</document-id>
+					</patcit>
+				</exch:citation>
+				<exch:citation cited-phase="SEA" sequence="3">
+					<patcit num="3" dnum="FR1402311A" dnum-type="publication number">
+						<document-id doc-id="316912938">
+							<country>FR</country>
+							<doc-number>1402311</doc-number>
+							<kind>A</kind>
+							<name>SECR AVIATION</name>
+							<date>19650611</date>
+						</document-id>
+					</patcit>
+				</exch:citation>
+				<exch:citation cited-phase="SEA" sequence="4">
+					<patcit num="4" dnum="US2770722A" dnum-type="publication number">
+						<document-id doc-id="327029824">
+							<country>US</country>
+							<doc-number>2770722</doc-number>
+							<kind>A</kind>
+							<name>ARAMS FRANK R</name>
+							<date>19561113</date>
+						</document-id>
+					</patcit>
+				</exch:citation>
+				<exch:citation cited-phase="SEA" sequence="5">
+					<nplcit num="1" npl-type="a">
+						<text>COLLOQUE INTERNATIONAL L&apos;ESPACE ET LA COMMUNICATION, Band 2, Paris 2. Marz - 2. April 1971, Chiron, Paris V. BIGGI et al. &quot;Emploi d&apos;un tube a ondes progressives en montage reflex dans les communications spatiales&quot;, Seiten 972-980 * Figuren 1,5 *</text>
+					</nplcit>
+				</exch:citation>
+				<exch:citation cited-phase="SEA" sequence="6">
+					<nplcit num="2" npl-type="a">
+						<text>PROCEEDINGS OF THE 1965 NATIONAL TELEMETERING CONFERENCE&quot;, April 1965, Winner New York, U.S.A. P.E. TUCKER. &quot;The Reflex Repeater: A Direct RF-to RF Repeater&quot;, Seiten 164-170 * Figuren 1A und 2A *</text>
+					</nplcit>
+				</exch:citation>
+				<exch:citation cited-phase="SEA" sequence="7">
+					<nplcit num="3" npl-type="a">
+						<text>IEEE INTERNATIONAL CONFERENCE ON COMMUNICATIONS, 11-13 Juni 1973 Seattle, IEEE New York, U.S.A. M.V. O&apos;DONOVAN et al. &quot;A Lightweight Transponder Design for the U.S. Domestic Communications&quot;, Seiten 49.1 - 49.9 * Figur 1 *</text>
+					</nplcit>
+				</exch:citation>
+			</exch:references-cited>
+		</exch:bibliographic-data>
+		<exch:abstract lang="de" data-format="docdba" abstract-source="EPO">
+			<exch:p>Bei der Erfindung handelt es sich um einen vornehmlich im Mikrowellenbereich arbeitenden, beispielsweise im Satellitenfunk eingesetzten Transponder, der die auf einer Frequenz empfangenen Signale verstärkt, auf eine andere Frequenz umsetzt und verstärkt wieder aussendet. Üblicherweise werden für jede Kanalfrequenz bzw. für jeden Frequenzbereich ein oder mehrere Verstärker verwendet, da eine hohe Verstärkung erforderlich ist. Bei der Erfindung wird nun vorgeschlagen, die teuren Verstärker durch gleichzeitige Verstärkung von Sende- und Empfangssignalen mehrfach auszunutzen, wobei vorteilhafterweise die zur Entkopplung vorgesehenen Weichen (10, 11) in Kanalmultiplexer bzw. -demultiplexer oder bei Einkanalsystemen in Empfangs- (2) bzw. Sendefilter integriert werden. Mittels Transferschalter (14) lassen sich dann ein beliebiger Empfangskanal und ein beliebiger Sendekanal auf einen Verstärker (8) auf- bzw. im Fehlerfall umschalten, was zur Erhöhung der Verfügbarkeit und der Zuverlässigkeit führt. Durch Mehrfachausnutzung der Verstärker kann die Zahl der erforderlichen aktiven Elemente verringert werden, dadurch ergaben sich eine weitere Erhöhung der Zuverlässigkeit, eine Einsparung an Energie und damit eine kleinere Dimensionierung der Stromversorgung.</exch:p>
+		</exch:abstract>
+		<exch:abstract lang="en" data-format="docdba" abstract-source="EPO">
+			<exch:p>The invention deals with a transponder which mainly operates in the microwave range, is used, for example, in satellite radio, and amplifies the signals received at one frequency, converts to another frequency and retransmits them amplified. Usually, one or several amplifiers are used for each channel frequency or for each frequency band since a high gain is required. The invention proposes to utilise the expensive amplifiers several times by simultaneously amplifying transmitted and received signals, the diplexers (10, 11) provided for isolation advantageously being integrated in channel multiplexer and demultiplexer or, in the case of single-channel systems, in receiving (2) and transmitting filters. Using transfer switches (14), any receiving channel and any transmitting channel can then be connected, or switched over in the case of a fault, to an amplifier (8) which leads to an increase in availability and reliability (Figure 4c). By utilising the amplifiers several times, the number of required active elements can be reduced which resulted in a further increase in reliability, a saving in energy and thus in smaller dimensions of the power supply. &lt;IMAGE&gt;</exch:p>
+		</exch:abstract>
+		<exch:patent-family>
+			<exch:family-member>
+				<exch:application-reference data-format="docdb" is-representative="NO">
+					<document-id>
+						<country>DE</country>
+						<doc-number>2804439</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:application-reference>
+				<exch:application-reference data-format="epodoc">
+					<document-id>
+						<doc-number>DE19782804439</doc-number>
+					</document-id>
+				</exch:application-reference>
+				<exch:publication-reference data-format="docdb" sequence="1">
+					<document-id>
+						<country>DE</country>
+						<doc-number>2804439</doc-number>
+						<kind>A1</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="1">
+					<document-id>
+						<doc-number>DE2804439</doc-number>
+					</document-id>
+				</exch:publication-reference>
+			</exch:family-member>
+			<exch:family-member>
+				<exch:application-reference data-format="docdb" is-representative="YES">
+					<document-id>
+						<country>EP</country>
+						<doc-number>79100245</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:application-reference>
+				<exch:application-reference data-format="epodoc">
+					<document-id>
+						<doc-number>EP19790100245</doc-number>
+					</document-id>
+				</exch:application-reference>
+				<exch:publication-reference data-format="docdb" sequence="1">
+					<document-id>
+						<country>EP</country>
+						<doc-number>0003543</doc-number>
+						<kind>A1</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="1">
+					<document-id>
+						<doc-number>EP0003543</doc-number>
+					</document-id>
+				</exch:publication-reference>
+			</exch:family-member>
+			<exch:family-member>
+				<exch:application-reference data-format="docdb" is-representative="NO">
+					<document-id>
+						<country>JP</country>
+						<doc-number>973779</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:application-reference>
+				<exch:application-reference data-format="epodoc">
+					<document-id>
+						<doc-number>JP19790009737</doc-number>
+					</document-id>
+				</exch:application-reference>
+				<exch:publication-reference data-format="docdb" sequence="1">
+					<document-id>
+						<country>JP</country>
+						<doc-number>S54111711</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="1">
+					<document-id>
+						<doc-number>JPS54111711</doc-number>
+					</document-id>
+				</exch:publication-reference>
+			</exch:family-member>
+		</exch:patent-family>
+	</exch:exchange-document>
+	<exch:exchange-document country="EP" doc-number="0004055" kind="A2" doc-id="335678959" date-publ="19790919" family-id="6034510" is-representative="YES" date-of-last-exchange="20170615" date-of-previous-exchange="20170518" date-added-docdb="20000418" originating-office="EP" status="A">
+		<exch:bibliographic-data>
+			<exch:publication-reference data-format="docdb">
+				<document-id lang="de">
+					<country>EP</country>
+					<doc-number>0004055</doc-number>
+					<kind>A2</kind>
+					<date>19790919</date>
+				</document-id>
+			</exch:publication-reference>
+			<exch:publication-reference data-format="epodoc">
+				<document-id lang="de">
+					<doc-number>EP0004055</doc-number>
+				</document-id>
+			</exch:publication-reference>
+			<exch:classification-ipc>
+				<main-classification>  F 02M  27/02   A</main-classification>
+				<further-classification>  F 23D  13/18   B</further-classification>
+			</exch:classification-ipc>
+			<exch:classifications-ipcr>
+				<classification-ipcr sequence="1">
+					<text>F02M  27/02        20060101A I20051008RMEP        </text>
+				</classification-ipcr>
+				<classification-ipcr sequence="2">
+					<text>F23D  11/44        20060101A I20051008RMEP        </text>
+				</classification-ipcr>
+				<classification-ipcr sequence="3">
+					<text>F23D  14/18        20060101A I20051008RMEP        </text>
+				</classification-ipcr>
+			</exch:classifications-ipcr>
+			<exch:patent-classifications>
+				<patent-classification sequence="1">
+					<classification-scheme office="EP" scheme="CPC">
+						<date>20130101</date>
+					</classification-scheme>
+					<classification-symbol>F23D  11/448       </classification-symbol>
+					<symbol-position>F</symbol-position>
+					<classification-value>I</classification-value>
+					<classification-status>B</classification-status>
+					<classification-data-source>H</classification-data-source>
+					<action-date>
+						<date>20161130</date>
+					</action-date>
+				</patent-classification>
+				<patent-classification sequence="2">
+					<classification-scheme office="EP" scheme="CPC">
+						<date>20130101</date>
+					</classification-scheme>
+					<classification-symbol>F02M  27/02        </classification-symbol>
+					<symbol-position>L</symbol-position>
+					<classification-value>I</classification-value>
+					<classification-status>B</classification-status>
+					<classification-data-source>H</classification-data-source>
+					<action-date>
+						<date>20161130</date>
+					</action-date>
+				</patent-classification>
+				<patent-classification sequence="3">
+					<classification-scheme office="EP" scheme="CPC">
+						<date>20130101</date>
+					</classification-scheme>
+					<classification-symbol>F23D  14/18        </classification-symbol>
+					<symbol-position>L</symbol-position>
+					<classification-value>I</classification-value>
+					<classification-status>B</classification-status>
+					<classification-data-source>H</classification-data-source>
+					<action-date>
+						<date>20161130</date>
+					</action-date>
+				</patent-classification>
+			</exch:patent-classifications>
+			<exch:application-reference is-representative="NO" doc-id="16431376" data-format="docdb">
+				<document-id>
+					<country>EP</country>
+					<doc-number>79100654</doc-number>
+					<kind>A</kind>
+					<date>19790305</date>
+				</document-id>
+			</exch:application-reference>
+			<exch:application-reference data-format="epodoc">
+				<document-id>
+					<doc-number>EP19790100654</doc-number>
+				</document-id>
+			</exch:application-reference>
+			<exch:application-reference data-format="original">
+				<document-id>
+					<doc-number>79100654</doc-number>
+				</document-id>
+			</exch:application-reference>
+			<exch:language-of-publication>de</exch:language-of-publication>
+			<exch:priority-claims>
+				<exch:priority-claim sequence="1" data-format="docdb">
+					<document-id doc-id="10343348">
+						<country>DE</country>
+						<doc-number>2811273</doc-number>
+						<kind>A</kind>
+						<date>19780315</date>
+					</document-id>
+					<exch:priority-active-indicator>Y</exch:priority-active-indicator>
+				</exch:priority-claim>
+				<exch:priority-claim sequence="1" data-format="epodoc">
+					<document-id>
+						<doc-number>DE19782811273</doc-number>
+					</document-id>
+				</exch:priority-claim>
+				<exch:priority-claim sequence="1" data-format="original">
+					<document-id>
+						<doc-number>2811273</doc-number>
+					</document-id>
+				</exch:priority-claim>
+			</exch:priority-claims>
+			<exch:parties>
+				<exch:applicants>
+					<exch:applicant sequence="1" data-format="docdb">
+						<exch:applicant-name>
+							<name>SIEMENS AG</name>
+						</exch:applicant-name>
+						<residence>
+							<country>DE</country>
+						</residence>
+					</exch:applicant>
+					<exch:applicant sequence="1" data-format="docdba">
+						<exch:applicant-name>
+							<name>SIEMENS AKTIENGESELLSCHAFT BERLIN UND MUNCHEN</name>
+						</exch:applicant-name>
+					</exch:applicant>
+				</exch:applicants>
+				<exch:inventors>
+					<exch:inventor sequence="1" data-format="docdb">
+						<exch:inventor-name>
+							<name>BERG HERMANN OTTO</name>
+						</exch:inventor-name>
+					</exch:inventor>
+					<exch:inventor sequence="2" data-format="docdb">
+						<exch:inventor-name>
+							<name>GULDEN PETER</name>
+						</exch:inventor-name>
+					</exch:inventor>
+					<exch:inventor sequence="3" data-format="docdb">
+						<exch:inventor-name>
+							<name>KOSTKA HANA DIPL-ING</name>
+						</exch:inventor-name>
+					</exch:inventor>
+					<exch:inventor sequence="4" data-format="docdb">
+						<exch:inventor-name>
+							<name>MICHEL ALFRED DR</name>
+						</exch:inventor-name>
+					</exch:inventor>
+					<exch:inventor sequence="1" data-format="docdba">
+						<exch:inventor-name>
+							<name>BERG, HERMANN OTTO</name>
+						</exch:inventor-name>
+					</exch:inventor>
+					<exch:inventor sequence="2" data-format="docdba">
+						<exch:inventor-name>
+							<name>GULDEN, PETER</name>
+						</exch:inventor-name>
+					</exch:inventor>
+					<exch:inventor sequence="3" data-format="docdba">
+						<exch:inventor-name>
+							<name>KOSTKA, HANA, DIPL.-ING.</name>
+						</exch:inventor-name>
+					</exch:inventor>
+					<exch:inventor sequence="4" data-format="docdba">
+						<exch:inventor-name>
+							<name>MICHEL, ALFRED, DR.</name>
+						</exch:inventor-name>
+					</exch:inventor>
+				</exch:inventors>
+			</exch:parties>
+			<exch:designation-of-states>
+				<exch:designation-epc>
+					<exch:contracting-states>
+						<country>BE</country>
+						<country>CH</country>
+						<country>FR</country>
+						<country>GB</country>
+						<country>IT</country>
+						<country>SE</country>
+					</exch:contracting-states>
+				</exch:designation-epc>
+			</exch:designation-of-states>
+			<exch:invention-title lang="de" data-format="docdba">Vergasungsbrenner.</exch:invention-title>
+			<exch:invention-title lang="en" data-format="docdba">Gasification burner.</exch:invention-title>
+			<exch:invention-title lang="fr" data-format="docdba">Brûleur à gazéification.</exch:invention-title>
+			<exch:dates-of-public-availability>
+				<exch:unexamined-printed-without-grant>
+					<document-id>
+						<date>19790919</date>
+					</document-id>
+				</exch:unexamined-printed-without-grant>
+			</exch:dates-of-public-availability>
+		</exch:bibliographic-data>
+		<exch:abstract lang="de" data-format="docdba" abstract-source="EPO">
+			<exch:p>Die Erfindung bezieht sich auf einen kontinuierlich regelbaren Vergasungsbrenner. Der Brenner besitzt ein dreiteiliges Gehäuse (18,21,25). Das Gehäuse (18,21,25) enthält einen Ringkanal (11) mit einer Wärmequelle (12). Im Ringkanal (11) wird Brennstoff verdampft, der über einen Frontraum (10) einem Vorraum (1) über eine Drallblende (13) zuströmt. Im Vorraum (1) wird aus einem Ringraum (4) über Radialkanäle (6) zuströmende, an der Wärmequelle (B) vorgewärmte Primärluft zugemischt. Das Dampf-Luftgemisch strömt einer Katalysatoreinrichtung (2) zu und wird dort in Brenngas umgewandelt, das in einem Mischraum (3) mit Hilfe der Drallblende (24) mit Sekundärluft homogen vermischt wird. In einer Zündkammer (7) erfolgt die Zündung des Brenngas-Luftgemisches. Das Gemisch tritt blaubrennend in einen Raum (8) ein. Der Ringraum (4) umgibt konzentrisch den Vorraum (1), die Katalysatoreinrichtung (2), den Mischraum (3), die Zündkammer (7) und wenigstens teilweise den Raum (8). Im Ringraum (4) wird die Primärluft durch die aus dem Brenner nach außen strebende Wärme vorgewärmt. Durch die Gesamtanordnung wird eine weitgehende Regelbarkeit erzielt und der Schadstoffgehalt der Abgase verringert.</exch:p>
+		</exch:abstract>
+		<exch:patent-family>
+			<exch:family-member>
+				<exch:application-reference data-format="docdb" is-representative="NO">
+					<document-id>
+						<country>AT</country>
+						<doc-number>187779</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:application-reference>
+				<exch:application-reference data-format="epodoc">
+					<document-id>
+						<doc-number>AT19790001877</doc-number>
+					</document-id>
+				</exch:application-reference>
+				<exch:publication-reference data-format="docdb" sequence="1">
+					<document-id>
+						<country>AT</country>
+						<doc-number>376027</doc-number>
+						<kind>B</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="1">
+					<document-id>
+						<doc-number>AT376027B</doc-number>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="docdb" sequence="2">
+					<document-id>
+						<country>AT</country>
+						<doc-number>A187779</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="2">
+					<document-id>
+						<doc-number>ATA187779</doc-number>
+					</document-id>
+				</exch:publication-reference>
+			</exch:family-member>
+			<exch:family-member>
+				<exch:application-reference data-format="docdb" is-representative="NO">
+					<document-id>
+						<country>CA</country>
+						<doc-number>323528</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:application-reference>
+				<exch:application-reference data-format="epodoc">
+					<document-id>
+						<doc-number>CA19790323528</doc-number>
+					</document-id>
+				</exch:application-reference>
+				<exch:publication-reference data-format="docdb" sequence="1">
+					<document-id>
+						<country>CA</country>
+						<doc-number>1104053</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="1">
+					<document-id>
+						<doc-number>CA1104053</doc-number>
+					</document-id>
+				</exch:publication-reference>
+			</exch:family-member>
+			<exch:family-member>
+				<exch:application-reference data-format="docdb" is-representative="YES">
+					<document-id>
+						<country>DE</country>
+						<doc-number>2811273</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:application-reference>
+				<exch:application-reference data-format="epodoc">
+					<document-id>
+						<doc-number>DE19782811273</doc-number>
+					</document-id>
+				</exch:application-reference>
+				<exch:publication-reference data-format="docdb" sequence="1">
+					<document-id>
+						<country>DE</country>
+						<doc-number>2811273</doc-number>
+						<kind>B1</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="1">
+					<document-id>
+						<doc-number>DE2811273</doc-number>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="docdb" sequence="2">
+					<document-id>
+						<country>DE</country>
+						<doc-number>2811273</doc-number>
+						<kind>C2</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="2">
+					<document-id>
+						<doc-number>DE2811273</doc-number>
+					</document-id>
+				</exch:publication-reference>
+			</exch:family-member>
+			<exch:family-member>
+				<exch:application-reference data-format="docdb" is-representative="NO">
+					<document-id>
+						<country>DK</country>
+						<doc-number>101179</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:application-reference>
+				<exch:application-reference data-format="epodoc">
+					<document-id>
+						<doc-number>DK19790001011</doc-number>
+					</document-id>
+				</exch:application-reference>
+				<exch:publication-reference data-format="docdb" sequence="1">
+					<document-id>
+						<country>DK</country>
+						<doc-number>101179</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="1">
+					<document-id>
+						<doc-number>DK101179</doc-number>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="docdb" sequence="2">
+					<document-id>
+						<country>DK</country>
+						<doc-number>145997</doc-number>
+						<kind>B</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="2">
+					<document-id>
+						<doc-number>DK145997B</doc-number>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="docdb" sequence="3">
+					<document-id>
+						<country>DK</country>
+						<doc-number>145997</doc-number>
+						<kind>C</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="3">
+					<document-id>
+						<doc-number>DK145997C</doc-number>
+					</document-id>
+				</exch:publication-reference>
+			</exch:family-member>
+			<exch:family-member>
+				<exch:application-reference data-format="docdb" is-representative="NO">
+					<document-id>
+						<country>EP</country>
+						<doc-number>79100654</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:application-reference>
+				<exch:application-reference data-format="epodoc">
+					<document-id>
+						<doc-number>EP19790100654</doc-number>
+					</document-id>
+				</exch:application-reference>
+				<exch:publication-reference data-format="docdb" sequence="1">
+					<document-id>
+						<country>EP</country>
+						<doc-number>0004055</doc-number>
+						<kind>A2</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="1">
+					<document-id>
+						<doc-number>EP0004055</doc-number>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="docdb" sequence="2">
+					<document-id>
+						<country>EP</country>
+						<doc-number>0004055</doc-number>
+						<kind>A3</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="2">
+					<document-id>
+						<doc-number>EP0004055</doc-number>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="docdb" sequence="3">
+					<document-id>
+						<country>EP</country>
+						<doc-number>0004055</doc-number>
+						<kind>B1</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="3">
+					<document-id>
+						<doc-number>EP0004055</doc-number>
+					</document-id>
+				</exch:publication-reference>
+			</exch:family-member>
+			<exch:family-member>
+				<exch:application-reference data-format="docdb" is-representative="NO">
+					<document-id>
+						<country>NO</country>
+						<doc-number>790840</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:application-reference>
+				<exch:application-reference data-format="epodoc">
+					<document-id>
+						<doc-number>NO19790000840</doc-number>
+					</document-id>
+				</exch:application-reference>
+				<exch:publication-reference data-format="docdb" sequence="1">
+					<document-id>
+						<country>NO</country>
+						<doc-number>146880</doc-number>
+						<kind>B</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="1">
+					<document-id>
+						<doc-number>NO146880B</doc-number>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="docdb" sequence="2">
+					<document-id>
+						<country>NO</country>
+						<doc-number>146880</doc-number>
+						<kind>C</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="2">
+					<document-id>
+						<doc-number>NO146880C</doc-number>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="docdb" sequence="3">
+					<document-id>
+						<country>NO</country>
+						<doc-number>790840</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="3">
+					<document-id>
+						<doc-number>NO790840</doc-number>
+					</document-id>
+				</exch:publication-reference>
+			</exch:family-member>
+			<exch:family-member>
+				<exch:application-reference data-format="docdb" is-representative="NO">
+					<document-id>
+						<country>US</country>
+						<doc-number>1632979</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:application-reference>
+				<exch:application-reference data-format="epodoc">
+					<document-id>
+						<doc-number>US19790016329</doc-number>
+					</document-id>
+				</exch:application-reference>
+				<exch:publication-reference data-format="docdb" sequence="1">
+					<document-id>
+						<country>US</country>
+						<doc-number>4230443</doc-number>
+						<kind>A</kind>
+					</document-id>
+				</exch:publication-reference>
+				<exch:publication-reference data-format="epodoc" sequence="1">
+					<document-id>
+						<doc-number>US4230443</doc-number>
+					</document-id>
+				</exch:publication-reference>
+			</exch:family-member>
+			<exch:abstract lang="en" country="US" doc-number="4230443" kind="A" data-format="docdba" abstract-source="translation">
+				<exch:p>A vaporizing burner which includes a multi-portioned burner housing. The housing encompasses an inlet chamber, ahead of which there is located an antechamber which transitions into an annular passageway wherein heating oil is vaporized. The heating oil is admixed with preheated primary air and converted into a fuel gas in a catalyzer arrangement. Thereafter, the fuel gas is admixed with secondary air in a mixing chamber, ignited in an ignition chamber and conveyed into a further chamber. The last-mentioned chamber is closed off by a burner plate which is heated by the fuel gas and which transmits the usable heat to a suitable heat exchanger.</exch:p>
+			</exch:abstract>
+		</exch:patent-family>
+	</exch:exchange-document>
+</exch:exchange-documents>

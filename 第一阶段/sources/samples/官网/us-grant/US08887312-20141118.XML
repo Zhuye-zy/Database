@@ -1,0 +1,1528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08887312-20141118.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20141103" date-publ="20141118">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08887312</doc-number>
+<kind>B2</kind>
+<date>20141118</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12604381</doc-number>
+<date>20091022</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>1270</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>F</section>
+<class>41</class>
+<subclass>H</subclass>
+<main-group>1</main-group>
+<subgroup>02</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>F</section>
+<class>41</class>
+<subclass>H</subclass>
+<main-group>5</main-group>
+<subgroup>04</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>F</section>
+<class>41</class>
+<subclass>H</subclass>
+<main-group>1</main-group>
+<subgroup>08</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>B</section>
+<class>32</class>
+<subclass>B</subclass>
+<main-group>3</main-group>
+<subgroup>16</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>42</class>
+<subclass>B</subclass>
+<main-group>3</main-group>
+<subgroup>06</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>B</section>
+<class>32</class>
+<subclass>B</subclass>
+<main-group>5</main-group>
+<subgroup>26</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>C</section>
+<class>04</class>
+<subclass>B</subclass>
+<main-group>37</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>F</section>
+<class>41</class>
+<subclass>H</subclass>
+<main-group>13</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>N</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classifications-cpc>
+<main-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>F</section>
+<class>41</class>
+<subclass>H</subclass>
+<main-group>1</main-group>
+<subgroup>08</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</main-cpc>
+<further-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>B</section>
+<class>32</class>
+<subclass>B</subclass>
+<main-group>2262</main-group>
+<subgroup>0253</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>C</section>
+<class>04</class>
+<subclass>B</subclass>
+<main-group>2237</main-group>
+<subgroup>365</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>C</section>
+<class>04</class>
+<subclass>B</subclass>
+<main-group>2237</main-group>
+<subgroup>38</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>C</section>
+<class>04</class>
+<subclass>B</subclass>
+<main-group>2237</main-group>
+<subgroup>76</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>C</section>
+<class>04</class>
+<subclass>B</subclass>
+<main-group>2237</main-group>
+<subgroup>343</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>C</section>
+<class>04</class>
+<subclass>B</subclass>
+<main-group>2237</main-group>
+<subgroup>704</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>B</section>
+<class>32</class>
+<subclass>B</subclass>
+<main-group>3</main-group>
+<subgroup>16</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>42</class>
+<subclass>B</subclass>
+<main-group>3</main-group>
+<subgroup>063</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>B</section>
+<class>32</class>
+<subclass>B</subclass>
+<main-group>5</main-group>
+<subgroup>26</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>C</section>
+<class>04</class>
+<subclass>B</subclass>
+<main-group>2237</main-group>
+<subgroup>368</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>B</section>
+<class>32</class>
+<subclass>B</subclass>
+<main-group>2437</main-group>
+<subgroup>04</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>B</section>
+<class>32</class>
+<subclass>B</subclass>
+<main-group>2262</main-group>
+<subgroup>0269</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>C</section>
+<class>04</class>
+<subclass>B</subclass>
+<main-group>2237</main-group>
+<subgroup>78</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>C</section>
+<class>04</class>
+<subclass>B</subclass>
+<main-group>2237</main-group>
+<subgroup>36</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>C</section>
+<class>04</class>
+<subclass>B</subclass>
+<main-group>37</main-group>
+<subgroup>008</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>Y</section>
+<class>10</class>
+<subclass>S</subclass>
+<main-group>428</main-group>
+<subgroup>911</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</further-cpc>
+</classifications-cpc>
+<classification-national>
+<country>US</country>
+<main-classification>  2  25</main-classification>
+<further-classification>  2410</further-classification>
+<further-classification>  2  66</further-classification>
+<further-classification>  2  68</further-classification>
+<further-classification>  2411</further-classification>
+<further-classification> 89 3605</further-classification>
+<further-classification>428911</further-classification>
+</classification-national>
+<invention-title id="d2e53">Helmets comprising ceramic for protection against high energy fragments and rifle bullets</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>3787109</doc-number>
+<kind>A</kind>
+<name>Vizenor</name>
+<date>19740100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>359631</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>3871026</doc-number>
+<kind>A</kind>
+<name>Dorre</name>
+<date>19750300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>4737402</doc-number>
+<kind>A</kind>
+<name>Harpell et al.</name>
+<date>19880400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>5160776</doc-number>
+<kind>A</kind>
+<name>Li et al.</name>
+<date>19921100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>5254383</doc-number>
+<kind>A</kind>
+<name>Harpell et al.</name>
+<date>19931000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>5330820</doc-number>
+<kind>A</kind>
+<name>Li et al.</name>
+<date>19940700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>428113</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>5362527</doc-number>
+<kind>A</kind>
+<name>Harpell et al.</name>
+<date>19941100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>5376426</doc-number>
+<kind>A</kind>
+<name>Harpell et al.</name>
+<date>19941200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>5552208</doc-number>
+<kind>A</kind>
+<name>Lin et al.</name>
+<date>19960900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>428113</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>5587230</doc-number>
+<kind>A</kind>
+<name>Lin et al.</name>
+<date>19961200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>442135</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>5880042</doc-number>
+<kind>A</kind>
+<name>Schuster et al.</name>
+<date>19990300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>5938878</doc-number>
+<kind>A</kind>
+<name>Hurley et al.</name>
+<date>19990800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>156219</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>5996115</doc-number>
+<kind>A</kind>
+<name>Mazelsky</name>
+<date>19991200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>6363539</doc-number>
+<kind>B2</kind>
+<name>Tachi et al.</name>
+<date>20020400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>6389594</doc-number>
+<kind>B1</kind>
+<name>Yavin</name>
+<date>20020500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>6532857</doc-number>
+<kind>B1</kind>
+<name>Shih et al.</name>
+<date>20030300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification> 89 3602</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>6642159</doc-number>
+<kind>B1</kind>
+<name>Bhatnagar et al.</name>
+<date>20031100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>442134</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>7067031</doc-number>
+<kind>B2</kind>
+<name>deWitt</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>7284470</doc-number>
+<kind>B2</kind>
+<name>Huber et al.</name>
+<date>20071000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>7300893</doc-number>
+<kind>B2</kind>
+<name>Barsoum et al.</name>
+<date>20071100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>442134</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>7363846</doc-number>
+<kind>B1</kind>
+<name>Dean et al.</name>
+<date>20080400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>7617757</doc-number>
+<kind>B2</kind>
+<name>Dickson</name>
+<date>20091100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>7685922</doc-number>
+<kind>B1</kind>
+<name>Martin et al.</name>
+<date>20100300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification> 89 3602</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>7687412</doc-number>
+<kind>B2</kind>
+<name>Bhatnagar et al.</name>
+<date>20100300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>442135</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>7919418</doc-number>
+<kind>B2</kind>
+<name>Bhatnagar et al.</name>
+<date>20110400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>442135</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>8124548</doc-number>
+<kind>B2</kind>
+<name>Ardiff et al.</name>
+<date>20120200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>442135</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>8132494</doc-number>
+<kind>B1</kind>
+<name>Nguyen et al.</name>
+<date>20120300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification> 89 3605</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>2003/0192426</doc-number>
+<kind>A1</kind>
+<name>Peretz</name>
+<date>20031000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>2004/0121105</doc-number>
+<kind>A1</kind>
+<name>Janssen et al.</name>
+<date>20040600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>428 401</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>US</country>
+<doc-number>2004/0255768</doc-number>
+<kind>A1</kind>
+<name>Rettenbacher et al.</name>
+<date>20041200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>US</country>
+<doc-number>2006/0248623</doc-number>
+<kind>A1</kind>
+<name>Miller</name>
+<date>20061100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>US</country>
+<doc-number>2006/0252328</doc-number>
+<kind>A1</kind>
+<name>Bingenheimer</name>
+<date>20061100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>442180</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>US</country>
+<doc-number>2006/0284338</doc-number>
+<kind>A1</kind>
+<name>Brown et al.</name>
+<date>20061200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>264258</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>US</country>
+<doc-number>2006/0286883</doc-number>
+<kind>A1</kind>
+<name>Brown et al.</name>
+<date>20061200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>442135</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>US</country>
+<doc-number>2007/0111621</doc-number>
+<kind>A1</kind>
+<name>Barsoum et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>442135</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>US</country>
+<doc-number>2008/0064280</doc-number>
+<kind>A1</kind>
+<name>Bhatnagar et al.</name>
+<date>20080300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>442135</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00037">
+<document-id>
+<country>US</country>
+<doc-number>2008/0118639</doc-number>
+<kind>A1</kind>
+<name>Arvidson et al.</name>
+<date>20080500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>427175</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00038">
+<document-id>
+<country>US</country>
+<doc-number>2009/0014002</doc-number>
+<kind>A1</kind>
+<name>Krafthefer et al.</name>
+<date>20090100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>12820518</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00039">
+<document-id>
+<country>US</country>
+<doc-number>2009/0025111</doc-number>
+<kind>A1</kind>
+<name>Bhatnagar et al.</name>
+<date>20090100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2  25</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00040">
+<document-id>
+<country>US</country>
+<doc-number>2009/0255037</doc-number>
+<kind>A1</kind>
+<name>Sandusky et al.</name>
+<date>20091000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00041">
+<document-id>
+<country>US</country>
+<doc-number>2010/0247856</doc-number>
+<kind>A1</kind>
+<name>Vito et al.</name>
+<date>20100900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>428138</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00042">
+<document-id>
+<country>US</country>
+<doc-number>2010/0275337</doc-number>
+<kind>A1</kind>
+<name>Bhatnagar et al.</name>
+<date>20101100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2  25</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00043">
+<document-id>
+<country>US</country>
+<doc-number>2012/0103503</doc-number>
+<kind>A1</kind>
+<name>Ardiff et al.</name>
+<date>20120500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>156182</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00044">
+<document-id>
+<country>CN</country>
+<doc-number>2852760</doc-number>
+<date>20070100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00045">
+<document-id>
+<country>DE</country>
+<doc-number>4031550</doc-number>
+<kind>A1</kind>
+<date>19920400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00046">
+<document-id>
+<country>EP</country>
+<doc-number>1288607</doc-number>
+<kind>A1</kind>
+<date>20030300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00047">
+<document-id>
+<country>EP</country>
+<doc-number>1666830</doc-number>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00048">
+<document-id>
+<country>GB</country>
+<doc-number>2221976</doc-number>
+<kind>A1</kind>
+<date>19900200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00049">
+<document-id>
+<country>JP</country>
+<doc-number>09-138097</doc-number>
+<date>19870500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00050">
+<document-id>
+<country>JP</country>
+<doc-number>11-050325</doc-number>
+<date>19990200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00051">
+<document-id>
+<country>RU</country>
+<doc-number>2133433</doc-number>
+<kind>C1</kind>
+<date>19990700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00052">
+<document-id>
+<country>WO</country>
+<doc-number>2006005983</doc-number>
+<kind>A2</kind>
+<date>20060100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00053">
+<document-id>
+<country>WO</country>
+<doc-number>2007144875</doc-number>
+<kind>A1</kind>
+<date>20071200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00054">
+<document-id>
+<country>WO</country>
+<doc-number>2008054843</doc-number>
+<date>20080500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00055">
+<othercit>Li, Quan-Lu et al., &#x201c;Acoustical and vibrational control system combining piezoelectric ceramics and electrorheological fluids,&#x201d; Gongchen/Optics and Precision Engineering, v 16, n 12, p. 2341-2345, Chinese Academy of Sciences, Dec. 2008, ISSN: 1004924X CODEN: GJGOF4 [Abstract].</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00056">
+<othercit>Rosato,D.V., &#x201c;RP and ceramics&#x2014;Hard combination to beat,&#x201d; Plastics World, v 26, n 4, p. 30-35, Apr. 1968. [Best copy].</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>  2  25</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2410</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2  66</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2  68</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2411</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 89 3605</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>428911</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>1</number-of-drawing-sheets>
+<number-of-figures>1</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120186002</doc-number>
+<kind>A1</kind>
+<date>20120726</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Bhatnagar</last-name>
+<first-name>Ashok</first-name>
+<address>
+<city>Richmond</city>
+<state>VA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Wagner</last-name>
+<first-name>Lori</first-name>
+<address>
+<city>Richmond</city>
+<state>VA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Grunden</last-name>
+<first-name>Bradley</first-name>
+<address>
+<city>Midlothian</city>
+<state>VA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Bhatnagar</last-name>
+<first-name>Ashok</first-name>
+<address>
+<city>Richmond</city>
+<state>VA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Wagner</last-name>
+<first-name>Lori</first-name>
+<address>
+<city>Richmond</city>
+<state>VA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Grunden</last-name>
+<first-name>Bradley</first-name>
+<address>
+<city>Midlothian</city>
+<state>VA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Honeywell International, Inc.</orgname>
+<role>02</role>
+<address>
+<city>Morristown</city>
+<state>NJ</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Muromoto, Jr.</last-name>
+<first-name>Bobby</first-name>
+<department>3765</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Helmets for military and other applications that require resistance to high energy fragments and rifle bullets are disclosed. The helmets are fabricated with a combination of ceramic, either as a monolith or as a plurality of discreet pieces, and an inner backing material having a plurality of fibrous layers such as polyolefin and/or aramid fiber layers.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="140.97mm" wi="203.88mm" file="US08887312-20141118-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="205.32mm" wi="141.14mm" orientation="landscape" file="US08887312-20141118-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">FIELD OF THE INVENTION</heading>
+<p id="p-0002" num="0001">The present invention relates to protective helmets which are useful for military, law enforcement and other applications. More particularly, the helmets provide protection against high energy projectiles including fragments, hand-gun bullets, and rifle bullets.</p>
+<heading id="h-0002" level="1">DESCRIPTION OF RELATED ART</heading>
+<p id="p-0003" num="0002">Protective helmets are well known. Such helmets have been used for military and non-military applications. Examples of the latter include law enforcement uses, sporting uses, and other types of uses in which safety is a prime concern. Protective helmets used for military and law enforcement uses, in particular, need to be ballistic resistant.</p>
+<p id="p-0004" num="0003">Typical helmets are constructed to protect against low energy projectiles such as hand-gun bullets. The currently most popular military helmets, for example, are formed from aramid fibers, typically in the form of several layers of aramid fibers together with a resin material, such as a phenolic resin. Representative helmets formed of aramid fibers are disclosed, for example, in U.S. Pat. No. 4,199,388, U.S. Pat. No. 4,778,638 and U.S. Pat. No. 4,908,877. Protection against rifle bullets, however, requires improvement over such helmets in view of the significantly increased energy possessed by rifle bullets. Helmets which protect against rifle bullets should be relatively comfortable to wear. Examples of rifle bullets against which protection is desired include the NATO M80 ball, the AK 47, the AK 74, the Russian LPS, the European SS 109, and the like.</p>
+<p id="p-0005" num="0004">While currently used military and police ballistic helmets are suitable for low velocity fragments and low energy bullets such as hand-gun bullets, they do not provide enhanced protection against high energy fragments and rifle bullets. Examples of the former include fragments from hand grenades and projectile fragments from other explosive devices. Helmets designed to protect against projectile fragments (rather than rifle bullets) are described, for example, in copending U.S. patent application Ser. No. 11/706,719, filed Feb. 15, 2007.</p>
+<p id="p-0006" num="0005">There is a need in the art for helmets that can provide effective protection to military personnel and other users against high energy fragments and rifle bullets, thereby considerably enhancing their safety when confronted with dangerous and potentially life-threatening situations such as enemy fire.</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0007" num="0006">The present invention is associated with the discovery of helmets that are resistant to high energy fragments and rifle bullets. More particularly, it has been found that the use of ceramic, for example disposed in a layer of the helmet shell and optionally in combination with other layers such as a fabric layer, can help provide this needed protection. Advantageously, helmets having the desired degree of resistance can be fabricated at commercially desirable overall thicknesses and weights.</p>
+<p id="p-0008" num="0007">Embodiments of the invention are therefore directed to helmets that effectively resist, or prevent the penetration of, high energy fragments and bullets. Representative helmets include a shell comprising from the outside to the inside (a) an outer layer comprising a ceramic and (b) an inner backing material comprising a plurality of fibrous layers. According to more particular embodiments, the ceramic and backing material are present in amounts, respectively, from about 30% to about 85%, and from about 10% to about 50%, by weight of the shell.</p>
+<p id="p-0009" num="0008">In other particular embodiments, the ceramic is in the form of a monolith, or single continuous piece, which conforms to a curved shape of the shell. In an alternative embodiment, the ceramic is in the form of a plurality of ceramic plates that conform to a curved shape of the shell, for example the plates may be non-planar and matched to the shapes of particular sectors or regions over which the helmet shell surface is divided. In the case of ceramic plates, these may be mechanically fitted with one another or otherwise chemically bonded (e.g., using a bonding agent such as glue or cement).</p>
+<p id="p-0010" num="0009">Generally, the fibrous layers of the inner backing material comprise high tenacity fibers in a resin matrix. According to particular embodiments, from about 2 to about 250 fibrous layers, and often from about 5 to about 150 fibrous layers, may be incorporated in the backing material. Representative high tenacity fibers of the fibrous layers comprise polyolefin fibers and aramid fibers. Combinations of different types of fibers and fabrics may be used. Any type of high tenacity fiber may be in a network which is in the form of a woven, knitted, or non-woven fabric. Representative resin matrices comprise both thermosetting and thermoplastics resins. Themosetting resins include epoxy resins, urethane resins, polyester resins, vinyl ester resins, and phenolic resins. Thermoplastic resins include isoprene-styrene-isoprene block copolymers, and thermoplastic polyurethanes. Hybrid resins comprising at least one thermosetting resin and at least one thermoplastic resin may also be employed.</p>
+<p id="p-0011" num="0010">According to other particular embodiments, the helmet shell may comprise additional layers, including a shock absorbing and/or moisture resistant material layer, which may be disposed outside the outer layer, for example as an exterior layer that is closer to the exterior surface of the helmet shell, relative to the outer layer comprising ceramic. This additional material layer may be, for example, a closed cell foam such as a vinyl nitrile (e.g., PVC nitrile), a polyethylene, or an ethylene vinyl acetate foam. One or more adhesive layers, for example first and second adhesive layers, may be disposed, respectively, between (i) the shock absorbing material layer and the outer layer comprising ceramic and (ii) this outer layer and the inner backing material.</p>
+<p id="p-0012" num="0011">In other particular embodiments, the shell has an areal density from about 0.5 lb/ft<sup>2 </sup>(2.45 kg/m<sup>2</sup>) to about 10 lb/ft<sup>2 </sup>(48.9 kg/m<sup>2</sup>), typically from about 3 lb/ft<sup>2 </sup>(14.7 kg/m<sup>2</sup>) to about 8 lb/ft<sup>2 </sup>(39.2 kg/m<sup>2</sup>), and often from about 3 lb/ft<sup>2 </sup>(14.7 kg/m<sup>2</sup>) to about 5 lb/ft<sup>2 </sup>(24.5 kg/m<sup>2</sup>) and is resistant to a rifle bullet having an energy of at least about 1600 J (1180 ft-lb), for example from about 1600 J (1180 ft-lb) to about 4000 J (2950 ft-lb).</p>
+<p id="p-0013" num="0012">Further embodiments of the invention are directed to methods for forming a shell for a helmet as discussed above. The methods comprise supplying, to a mold, (for example between opposing matched, male and female die sections of the mold) an outer layer comprising a ceramic and an inner backing material comprising a plurality of fibrous layers. Generally, the outer layer is disposed in a matched die mold such that it is closer to the surface of the female die section, relative to the inner backing material. This results in a helmet shell being formed with the outer layer comprising ceramic being closer, relative to an inner backing material, to the exterior surface of the helmet shell. Additionally, an adhesive layer may also be supplied to the mold between the outer layer and inner backing material. The methods further comprise applying heat and pressure to the outer layer, inner backing material, and adhesive layer (if used) to bond the ceramic to the inner backing material and form the shell. Therefore,</p>
+<p id="p-0014" num="0013">The shell may therefore be formed by stacking the fibrous layers of the inner backing material onto the interior surface of the outer layer comprising a ceramic (e.g., as a ceramic monolith) and applying heat and/or pressure to consolidate or cure the backing material and adhere it to the outer layer. Appropriate conditions for consolidation or curing may be achieved in matched die molding or autoclave molding processes. A particular autoclave consolidation or curing technique employs vacuum bagging of the lay-up of the outer layer and inner backing material, optionally with adhesive and other layers, as described in greater detail herein. Vacuum bagging in an oven (i.e., without the application of above-atmospheric external pressure) may also be performed for consolidation or curing. Any type of process may be assisted using an adhesive layer such as cement between the inner backing material and outer layer, in order to bond these components. The use of adhesive such as contact cement in the absence of pressure, vacuum, and/or heating may also be sufficient in some cases.</p>
+<p id="p-0015" num="0014">In alternative embodiments, combinations of molding techniques are used. For example, the inner backing material may be molded separately in a matched die mold and then adhered to the outer layer comprising ceramic (e.g., as a shaped ceramic monolith or single piece) using an adhesive layer (e.g., contact cement) with or without the application of heat and/or pressure.</p>
+<p id="p-0016" num="0015">Further embodiments are directed to molded helmet shells prepared according to these methods.</p>
+<p id="p-0017" num="0016">These and other embodiments and aspects of the invention, and their associated advantages, are apparent from the following Detailed Description.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWING</heading>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 1</figref> depicts a representative, cut-out view of a helmet shell according to an exemplary embodiment of the present invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<p id="p-0019" num="0018">The features of the helmet shell referred to in <figref idref="DRAWINGS">FIG. 1</figref> are not necessarily drawn to scale and should be understood to present an illustration of the invention and/or principles involved. Other helmets according to the present invention will have configurations determined in part by the intended application and environment in which they are used.</p>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0020" num="0019">As discussed above, the invention is associated with high energy fragment and bullet resistant helmets comprising ceramic, which may be backed with a layer of fiber-reinforced composite materials. Representative helmets according to the present invention therefore comprise a helmet shell, which refers to the rounded helmet portion defining an interior volume that is to be protected (and occupied by the user's head during use). The shell comprises an outer layer, meaning a layer that is disposed closer, relative to an inner backing material, to the exterior surface of the helmet shell. Conversely, the inner backing material is disposed closer, relative to the outer layer, to the interior, concave surface of the helmet shell facing its interior volume. The outer layer comprises a ceramic. Therefore, in view of the direction of travel of a high energy fragment or rifle bullet toward the helmet (e.g., from an enemy combatant), the outer layer comprising ceramic is impacted first, followed by the backing material.</p>
+<p id="p-0021" num="0020">Without being bound by theory, it is believed that the effectiveness of the inventive helmets results from the ability of the ceramic in the outer layer to defeat the incoming projectile, such as a rifle bullet, by blunting, shattering, deforming, stripping, and/or tumbling (turning) it, or otherwise breaking and/or destabilizing it. The inner backing material then acts as a support for the damaged ceramic (e.g., by maintaining it in place) and also continues to stop the projectile. This material can advantageously serve to catch or collect debris from both the projectile and broken ceramic, thereby preventing their further penetration.</p>
+<p id="p-0022" num="0021">The helmet shell may comprise further layers, for example a shock absorbing, moisture, and/or flame resistant material layer may be disposed outside of or closer to the exterior surface of the helmet shell, relative to the outer layer. Suitable representative materials that provide good shock absorption, moisture, and/or flame resistance include closed cell foams, which may be foamed vinyl nitrile (e.g., PVC nitrile), foamed polyethylene, or foamed EVA. The shock absorbing, moisture, and/or flame resistant material layer may be the outermost or exterior layer of the shell (i.e., the layer that is initially struck by a bullet or other projectile). One or more further layer(s) may be disposed between the shock absorbing, moisture, and/or flame resistant material layer and the outer layer. Alternatively, further layer(s) may be disposed outside of the shock absorbing, moisture, and/or flame resistant material layer. Such further layers may include, for example, materials that protect the ceramic from fractures during normal use or possibly misuse.</p>
+<p id="p-0023" num="0022">Adhesive layers may be included between any of the layers described above to improve compatibility/bonding of adjacent layers. For example, an adhesive layer may be incorporated between the outer layer comprising ceramic and the inner backing material. Otherwise, alone or in combination with this adhesive layer, another adhesive layer may be disposed between the shock absorbing and/or moisture resistant material layer discussed above and the outer layer comprising ceramic. The use of an adhesive layer between any adjacent pair functional layers described above is contemplated, as well as the use of multiple adhesive layers. Suitable adhesives include liquid, spray, or film adhesives comprising epoxies, polyurethanes, silicones, acrylics, or polyamides and also such specialty materials as anaerobics and cyanoacrylates. One and two component systems of each of these adhesive types are available commercially. Adhesives can cure at room temperature or upon exposure to heat.</p>
+<p id="p-0024" num="0023">According to one embodiment, the ceramic of the outer layer may be in the form of a monolith or single piece having the same or generally the same shape as the overall shape of the shell. However, because of the tendency for ceramic cracks to propagate to remote sections when struck by a fragment or bullet, a ceramic monolith may not always be optimal, especially for military personnel or other users who may be at risk of receiving multiple shots.</p>
+<p id="p-0025" num="0024">According to other embodiments, therefore, the damage to the ceramic from a single or multiple shots may be better confined or localized using a plurality of ceramic plates or tiles (e.g., two or more, typically from 2 to about 100, and often from about 5 to about 50) conforming, in combination, to the overall curved shape of the helmet shell. Therefore, the plates or tiles may match or correspond in shape to various sub-regions or sectors of the overall helmet shell, with some, all, or substantially all (e.g., typically at least about 50% and often at least about 80%) of the plates or tiles having a non-planar shape that allows them to better conform to the curvature of the shell.</p>
+<p id="p-0026" num="0025">Some or all of these plates or tiles may physically abut one another, for example such that the plates are mechanically joined or joined by using adhesive (e.g., a liquid adhesive) at a number of butt joints, for example along a straight line, between plate borders. Otherwise, the plates may be mechanically joined or fitted at their adjacent borders with some overlap (e.g., in a manner resembling puzzle pieces or using an overlapping joint such as a finger or dovetail joint). Butt joints or other types of joints may or may not be reinforced mechanically (e.g., with internal reinforcing agents such as metal dowels) or chemically (e.g., with an adhesive bonding agent such as glue or cement).</p>
+<p id="p-0027" num="0026">The fitting of the plates or tiles at their respective borders can therefore provide complete coverage, about the shell, with a ceramic in the same manner as discussed above with respect to the use of a ceramic monolith. According to other embodiments, only partial coverage of the helmet shell may be desired, for example in those areas around the crown of the helmet or lower, generally vertically oriented peripheral surface of the helmet (when worn), that is most likely to be impacted. Coverage of only a particular portion or portions of the helmet shell can, according to some embodiments, reduce the overall helmet weight and/or cost without significantly affecting the desired performance for most applications. Typically, the ceramic provides coverage over at least about 50%, and often at least about 80%, of the surface of the helmet shell.</p>
+<p id="p-0028" num="0027">The ceramic plates or tiles, or otherwise a ceramic monolith, as described herein, refer to pieces of solid material, or otherwise a single solid material, comprising ceramic. Ceramic refers to refractory materials including inorganic carbides, nitrides, oxides, and borides, with aluminum oxide, boron carbide, silicon carbide, silicon nitride, and titanium diboride being representative. Of these, aluminum oxide, boron carbide and silicon carbide are often employed. These materials may be reinforced (e.g., with internal fibers) or unreinforced. Solid non-fibrous materials having the ability to blunt, shatter, deform, strip, and/or tumble (turn), or otherwise break and/or destabilize a bullet or other projectile are also considered ceramic for purposes of this disclosure. Such materials include ceramic filled resins, metal pellet filled resins, glass bead filled resins, and similar composite materials. The ceramic plates or ceramic monolith may comprise all or substantially all ceramic. More generally, however, the ceramic plates or ceramic monolith may comprise at least about 50% by weight, typically at least about 70% by weight, and often at least about 85% by weight, of ceramic. The plates or monolith may therefore be composited with fibrous or non-fibrous materials that are not ceramics. An exemplary ceramic-rich composite, for example, is described in U.S. Pat. No. 7,104,177.</p>
+<p id="p-0029" num="0028">Plates or tiles comprising ceramic may have planar or otherwise non-planar (e.g., curved) surfaces corresponding to the shape of sub-regions or sectors of the overall helmet shell. Generally, all or some, for example at least 50% and often at least 85%, of the ceramic plates or tiles have a non-planar shape, particularly a curved shape conforming to or matching a section of the helmet shell. The two-dimensional shape (i.e., the general shape assumed if the non-planar shape were hypothetically pressed flat into a plane) of the plates or tiles may be rectangular (e.g., square), circular or oval shaped, polygonal, etc. Generally, shapes with straight borders such as polygons (e.g., squares or hexagons) are preferred for simplicity and ease of aligning adjacent borders of neighboring plates or tiles without gaps, thereby maximizing coverage. The widths or thicknesses of the plates, or width or thickness of the ceramic in a monolith form as discussed above, is generally in the range from about 2 mm (0.079 in) to about 12 mm (0.47 in), typically from about 3 mm (0.12 in) to about 10 mm (0.39 in), and often from about 4 mm (0.16 in) to about 6 mm (0.24 in). The ceramic, either as a monolith or as a plurality of plates will generally have a substantially uniform thickness in this range. However, it may be desired in particular embodiments to provide a greater width in more critical areas, such as the vertically oriented peripheral surface of the helmet as discussed above. This may be achieved by increasing the width of a ceramic monolith or plate in these areas, or otherwise by using ceramic plates having greater, but uniform, widths in these areas.</p>
+<p id="p-0030" num="0029">Thus, in accordance with the invention, the helmet shell is formed from layers comprising different ballistic materials, including an outer layer comprising ceramic and an inner backing material (or multiple materials) comprising fibrous layers. The inner backing material is disposed toward the interior of the helmet shell relative to the outer layer. The fibrous layers of the inner backing material may comprise any of a number of types of fibers or combinations materials as described herein. For example, mixtures of woven materials, mixtures of non-woven materials, and combinations of both woven and non-woven materials may be used.</p>
+<p id="p-0031" num="0030">For the purposes of the present invention, a fiber is an elongate body the length dimension of which is much greater that the transverse dimensions of width and thickness. Accordingly, the term fiber includes monofilament, multifilament, ribbon, strip, staple and other forms of chopped, cut or discontinuous fiber and the like having regular or irregular cross-section. The term &#x201c;fiber&#x201d; includes a plurality of any of the foregoing or a combination thereof. A yarn is a continuous strand comprised of many fibers or filaments.</p>
+<p id="p-0032" num="0031">As used herein, the term &#x201c;high tenacity fibers&#x201d; means fibers which have tenacities equal to or greater than about 7 g/d. Preferably, these fibers have initial tensile moduli of at least about 150 g/d and energies-to-break of at least about 8 J/g as measured by ASTM D2256. As used herein, the terms &#x201c;initial tensile modulus&#x201d;, &#x201c;tensile modulus&#x201d; and &#x201c;modulus&#x201d; mean the modulus of elasticity as measured by ASTM 2256 for a yarn and by ASTM D638 for an elastomer or matrix material. Preferably, the high tenacity fibers have tenacities equal to or greater than about 10 g/d, more preferably equal to or greater than about 15 g/d, even more preferably equal to or greater than about 20 g/d, and most preferably equal to or greater than about 30 g/d. For high tenacity polyethylene fibers the preferred tenacities range from about 20 to about 55 g/d. Preferably, at least about 50% by weight, and more preferably at least about 75% by weight, of the fibers in the plurality of fibrous layers are high tenacity fibers. Most preferably all or substantially all of the fibers in the plurality of fibrous layers are high tenacity fibers.</p>
+<p id="p-0033" num="0032">The cross-sections of fibers useful in this invention may vary widely. They may be circular, flat or oblong in cross-section. They also may be of irregular or regular multi-lobal cross-section having one or more regular or irregular lobes projecting from the linear or longitudinal axis of the filament. It is particularly preferred that the fibers be of substantially circular, flat or oblong cross-section, most preferably that the fibers be of substantially circular cross-section.</p>
+<p id="p-0034" num="0033">The yarns of fibers such as high tenacity fibers used herein may be of any suitable denier, such as, for example, about 50 to about 5000 denier, more preferably from about 200 to about 5000 denier, still more preferably from about 650 to about 3000 denier, and most preferably from about 800 to about 1500 denier.</p>
+<p id="p-0035" num="0034">High tenacity fibers such as polyolefin fibers or aramid fibers are representative of those used in the fibrous layers of the inner backing material. Polyolefin fibers are preferably high tenacity polyethylene fibers and/or high tenacity polypropylene fibers. Most preferably, the polyolefin fibers are high tenacity polyethylene fibers, also known as extended chain polyethylene fibers or highly oriented high molecular weight polyethylene fibers. The polyolefin and aramid fibers useful herein are known and possess excellent ballistic resistant properties.</p>
+<p id="p-0036" num="0035">U.S. Pat. No. 4,457,985 generally discusses high molecular weight polyethylene fibers and polypropylene fibers, and the disclosure of this patent is hereby incorporated by reference to the extent that it is not inconsistent herewith. In the case of polyethylene fibers, suitable fibers are those of weight average molecular weight of at least about 150,000, preferably at least about one million and more preferably between about two million and about five million. Such high molecular weight polyethylene fibers may be spun in solution (see U.S. Pat. No. 4,137,394 and U.S. Pat. No. 4,356,138), or a filament spun from a solution to form a gel structure (see U.S. Pat. No. 4,413,110, German Off. No. 3,004, 699 and GB Patent No. 2051667), or the polyethylene fibers may be produced by a rolling and drawing process (see U.S. Pat. No. 5,702,657). As used herein, the term polyethylene means a predominantly linear polyethylene material that may contain minor amounts of chain branching or comonomers not exceeding about 5 modifying units per 100 main chain carbon atoms, and that may also contain admixed therewith not more than about 50 weight percent of one or more polymeric additives such as alkene-1-polymers, in particular low density polyethylene, polypropylene or polybutylene, copolymers containing mono-olefins as primary monomers, oxidized polyolefins, graft polyolefin copolymers and polyoxymethylenes, or low molecular weight additives such as antioxidants, lubricants, ultraviolet screening agents, colorants and the like which are commonly incorporated.</p>
+<p id="p-0037" num="0036">High tenacity polyethylene fibers are commercially available and are sold under the trademark SPECTRA&#xae; fiber by Honeywell International Inc. of Morristown, N.J., U.S.A. Polyethylene fibers from other sources may also be used.</p>
+<p id="p-0038" num="0037">Depending upon the formation technique, the draw ratio and temperatures, and other conditions, a variety of properties can be imparted to these fibers. The tenacity of the polyethylene fibers is at least about 7 g/d, preferably at least about 15 g/d, more preferably at least about 30 g/d, still more preferably at least about 35 g/d and most preferably at least about 45 g/d. Similarly, the initial tensile modulus of the fibers, as measured by an Instron tensile testing machine, is preferably at least about 300 g/d, more preferably at least about 500 g/d, still more preferably at least about 1,000 g/d and most preferably at least about 1,800 g/d. These highest values for initial tensile modulus and tenacity are generally obtainable only by employing solution grown or gel spinning processes. Many of the filaments have melting points higher than the melting point of the polymer from which they were formed. Thus, for example, high molecular weight polyethylene of about 150,000, about one million and about two million molecular weight generally have melting points in the bulk of 138&#xb0; C. (280&#xb0; F.). The highly oriented polyethylene filaments made of these materials have melting points of from about 7&#xb0; C. (13&#xb0; F.) to about 13&#xb0; C. (23&#xb0; F.) higher. Thus, a slight increase in melting point reflects the crystalline perfection and higher crystalline orientation of the filaments as compared to the bulk polymer.</p>
+<p id="p-0039" num="0038">Similarly, highly oriented high molecular weight polypropylene fibers of weight average molecular weight at least about 200,000, preferably at least about one million and more preferably at least about two million may be used. Such extended chain polypropylene may be formed into reasonably well oriented filaments by the techniques prescribed in the various references referred to above, and especially by the technique of U.S. Pat. No. 4,413,110. Since polypropylene is a much less crystalline material than polyethylene and contains pendant methyl groups, tenacity values achievable with polypropylene are generally substantially lower than the corresponding values for polyethylene. Accordingly, a suitable tenacity is preferably at least about 8 g/d, more preferably at least about 11 g/d. The initial tensile modulus for polypropylene is preferably at least about 160 g/d, and more preferably at least about 200 g/d. The melting point of the polypropylene is generally raised several degrees by the orientation process, such that the polypropylene filament preferably has a main melting point of at least 168&#xb0; C. (334&#xb0; F.), more preferably at least 170&#xb0; C. (338&#xb0; F.). The particularly preferred ranges for the above described parameters can advantageously provide improved performance in the final article. Employing fibers having a weight average molecular weight of at least about 200,000 coupled with the preferred ranges for the above-described parameters (modulus and tenacity) can provide advantageously improved performance in the final article.</p>
+<p id="p-0040" num="0039">In the case of aramid fibers, suitable fibers formed from aromatic polyamides are described in U.S. Pat. No. 3,671,542, which is incorporated herein by reference to the extent not inconsistent herewith. Preferred aramid fibers will have a tenacity of at least about 20 g/d, an initial tensile modulus of at least about 400 g/d and an energy-to-break at least about 8 J/g, and particularly preferred aramid fibers will have a tenacity of at least about 20 g/d and an energy-to-break of at least about 20 J/g. Most preferred aramid fibers will have a tenacity of at least about 28 g/d, a modulus of at least about 1000 g/d and an energy-to-break of at least about 30 J/g. For example, poly(p-phenylene terephthalamide) filaments which have moderately high moduli and tenacity values are particularly useful in forming ballistic resistant composites. Examples are DuPont's Kevlar&#xae; 29, Kevlar&#xae; 129, and KM2 and Teijin's Twaron fibers type 1000 and 2000, Korean Kolon-Heracron fibers and a number of Russian fibers such as Rusar, Artec, Armos and SVM which has about 1250 g/d and 32 g/d as values of initial tensile modulus and tenacity, respectively. Other examples are Kevlar&#xae; 129 and KM2 which are available in 400, 640 and 840 deniers from du Pont, and Twaron&#xae; T2000 from Teijin which has a denier of 1000. Aramid fibers from other manufacturers can also be used in this invention. Copolymers of poly(p-phenylene terephthalamide) may also be used, such as co-poly(p-phenylene terephthalamide 3,4&#x2032; oxydiphenylene terephthalamide). Also useful in the practice of this invention are poly(m-phenylene isophthalamide) fibers sold by du Pont under the trade name Nomex&#xae;. Aramid fibers from a variety of suppliers may be used in the present invention.</p>
+<p id="p-0041" num="0040">It is also possible that glass fibers or other types of fibers that are not high tenacity fibers account for the majority of the weight of fibers in the fibrous layers of the inner backing material, or for substantially all or all of the weight of these fibers. Glass fibers include Types E and S fibers. Examples of woven fiberglass fabrics are those designated as styles 1528, 3731, 3733, 7500, 7532, 7533, 7580, 7624, 7628, and 7645, which are available from Hexcel of Anderson, S.C., USA. A benefit of using fiber glass (e.g., by using fiberglass prepregs), is that the cost of the helmet can be decreased because fiberglass costs only a fraction of other types of fabrics such as polyolefin fabrics.</p>
+<p id="p-0042" num="0041">Regardless of the type of fibers used, the network of fibers in the fibrous layers of the inner backing material is preferably in the form of a woven, knitted or a non-woven fabric (such as plies of unidirectionally oriented fibers, or fibers which are felted in a random orientation), with a non-woven fabric being typically employed. Woven fabrics of any weave pattern may be employed, such as plain weave, basket weave, twill, satin, three dimensional woven fabrics, and any of their several variations. Plain weave fabrics are preferred and more preferred are plain weave fabrics having an equal warp and weft count.</p>
+<p id="p-0043" num="0042">In one embodiment, the fabric preferably has between about 5.9 to about 21.6 ends per cm (between about 15 and about 55 ends per inch) in both the warp and fill directions, and more preferably between about 6.7 to about 17.7 ends per cm (between about 17 and about 45 ends per inch). The yarns preferably have a denier of from about 375 to about 1300. The result is a woven fabric weighing preferably between about 150 g/m<sup>2 </sup>and about 700 g/m<sup>2 </sup>(between about 5 oz/yd<sup>2 </sup>and about 19 oz/yd<sup>2</sup>), and more preferably between about 169.5 g/m<sup>2 </sup>to about 373.0 g/m<sup>2 </sup>(between about 5 oz/yd<sup>2 </sup>and about 11 oz/yd<sup>2</sup>). Examples of such fabrics are those designated as SPECTRA&#xae; fabric styles 902, 903, 904, 952, 955 and 960. Other examples included fabrics formed from basket weaves, such as SPECTRA&#xae; fabric style 912. Examples of aramid fabric are those designated as Kevlar&#xae; fabric styles 704, 705, 706, 708, 710, 713, 720, 745, and 755 and Twaron&#xae; fabric styles 5704, 5716, and 5931. The foregoing fabrics are available, for example, from Hexcel of Anderson, S.C., USA. As those skilled in the art will appreciate, the fabric constructions described here are exemplary only and not intended to limit the invention.</p>
+<p id="p-0044" num="0043">As mentioned above, the fabric may be in the form of a knitted fabric. Knit structures are constructions composed of intermeshing loops, with the four major types being tricot, raschel, net and oriented structures. Due to the nature of the loop structure, knits of the first three categories do not necessarily take full advantage of the strength of a fiber. Oriented knitted structures, however, use straight inlaid yarns held in place by fine denier knitted stitches. The yarns are absolutely straight without the crimp effect found in woven fabrics due to the interlacing effect on the yarns. These laid in yarns can be oriented in a monoaxial, biaxial or multiaxial direction depending on the engineered requirements. It is preferred that the specific knit equipment used in laying in the load bearing yarns is such that the yarns are not pierced through.</p>
+<p id="p-0045" num="0044">Alternatively, the fabric of the plurality of fibrous layers (e.g., having high tenacity polyethylene fibers), may be in the form of a non-woven fabric, such as plies of unidirectionally oriented fibers, or fibers which are felted in a random orientation. Where unidirectionally oriented fibers are employed, preferably they are used in a cross-ply arrangement in which one layer of fibers extends in one direction and a second layer of fibers extends in a direction 90&#xb0; from the first fibers. Where the individual plies are unidirectionally oriented fibers, the successive plies are preferably rotated relative to one another, for example at angles of 0&#xb0;/90&#xb0;, 0&#xb0;/90/0&#xb0;/90 or 0&#xb0;/45&#xb0;/90&#xb0;/45&#xb0;/0&#xb0; or at other angles. Where the networks of fibers are in the form of a felt, they may be needle punched felts. A felt is a non-woven network of randomly oriented fibers, preferably at least one of which is a discontinuous fiber, preferably a staple fiber having a length ranging from about 0.64 cm (0.25 in) to about 25 cm (10 in). These felts may be formed by several techniques known in the art, such as by carding or fluid laying, melt blowing and spin laying. The network of fibers is consolidated mechanically such as by needle punching, stitch-bonding, hydro-entanglement, air entanglement, spun bond, spun lace or the like, chemically such as with an adhesive, or thermally with a fiber to point bond or a blended fiber with a lower melting point. The preferred consolidation method is needle punching alone or followed by one of the other methods. The preferred felt is a needle punched felt. A felt that is needle punched into woven fabric may also be used.</p>
+<p id="p-0046" num="0045">The fibrous layers comprise fibers (e.g., high tenacity polyethylene fibers or high tenacity aramid fibers) that are in a resin matrix. The resin matrix for the fiber plies may be formed from a wide variety of elastomeric and other materials having desired characteristics. In one embodiment, elastomeric materials used in such matrix possess initial tensile modulus (modulus of elasticity) equal to or less than about 6,000 psi (41.4 MPa) as measured by ASTM D638. More preferably, the elastomer has initial tensile modulus equal to or less than about 2,400 psi (16.5 MPa). Most preferably, the elastomeric material has initial tensile modulus equal to or less than about 1,200 psi (8.23 MPa). These resinous materials are typically thermoplastic in nature but thermosetting materials are also useful.</p>
+<p id="p-0047" num="0046">The resin matrix may be selected to have a high tensile modulus when cured, such as at least bout 1&#xd7;10<sup>6 </sup>psi (6895 MPa) as measured by ASTM D638. Examples of such materials are disclosed, for example, in U.S. Pat. No. 6,642,159, the disclosure of which is expressly incorporated herein by reference to the extent not inconsistent herewith.</p>
+<p id="p-0048" num="0047">The proportion of the resin matrix material to fiber in the fibrous layers may vary widely depending upon the end use. The resin matrix material preferably comprises about 0 percent (i.e., no resin) to about 98 percent by weight, more preferably from about 5 to about 95 percent by weight, still more preferably from about 10 to about 40 percent by weight, and most preferably from about 15 to about 25 percent by weight, of the total weight of the fibers and resin matrix of the inner backing material. The above percentages are based on the consolidated fabrics.</p>
+<p id="p-0049" num="0048">A wide variety of resins may be utilized in the resin matrix, including thermoplastic resins, thermosetting resins, blended resins, and hybrid resins. For example, any of the following materials may be employed: polybutadiene, polyisoprene, natural rubber, ethylene-propylene copolymers, ethylene-propylene-diene terpolymers, polysulfide polymers, thermoplastic polyurethanes, polyurethane elastomers, chlorosulfonated polyethylene, polychloroprene, plasticized polyvinylchloride using dioctyl phthalate or other plasticizers well known in the art, butadiene acrylonitrile elastomers, poly (isobutylene-co-isoprene), polyacrylates, polyesters, polyethers, fluoroelastomers, silicone elastomers, thermoplastic elastomers, and copolymers of ethylene. Examples of thermosetting resins include those which are soluble in carbon-carbon saturated solvents such as methyl ethyl ketone, acetone, ethanol, methanol, isopropyl alcohol, cyclohexane, ethyl acetone, and combinations thereof. Among the thermosetting resins are vinyl esters, styrene-butadiene block copolymers, diallyl phthalate, phenolic resins such as phenol formaldehyde, polyvinyl butyral, epoxy resins, polyester resins, polyurethane resins, and mixtures thereof, and the like. Included are those resins that are disclosed in the aforementioned U.S. Pat. No. 6,642,159. Preferred thermosetting resins include epoxy resins, phenolic resins, vinyl ester resins, urethane resins and polyester resins, and mixtures thereof. Preferred thermosetting resins for polyethylene fiber fabrics include at least one vinyl ester, diallyl phthalate, and optionally a catalyst for curing the vinyl ester resin.</p>
+<p id="p-0050" num="0049">One preferred group of resins are thermoplastic polyurethane resins. A preferred group of elastomeric materials for the resin matrix includes block copolymers of conjugated dienes and vinyl aromatic copolymers. Butadiene and isoprene are preferred conjugated diene elastomers. Styrene, vinyl toluene and t-butyl styrene are preferred conjugated aromatic monomers. Block copolymers incorporating polyisoprene may be hydrogenated to produce thermoplastic elastomers having saturated hydrocarbon elastomer segments. The polymers may be simple tri-block copolymers of the type R-(BA)<sub>x </sub>(x=3-150); wherein A is a block from a polyvinyl aromatic monomer and B is a block from a conjugated diene elastomer. A preferred resin matrix is an isoprene-styrene-isoprene block copolymer, such as Kraton&#xae; D1107 isoprene-styrene-isoprene block copolymer available from Kraton Polymer LLC. Another resin matrix useful herein is a thermoplastic polyurethane, such as a copolymer mix of polyurethane resins in water.</p>
+<p id="p-0051" num="0050">The resin material may be compounded with fillers such as carbon black, silica, etc. and may be extended with oils and vulcanized by sulfur, peroxide, metal oxide or radiation cure systems using methods well known to rubber technologists. Blends of different resins may also be used.</p>
+<p id="p-0052" num="0051">Preferably, each of the plurality of fibrous layers is coated or impregnated with the resin matrix prior to molding, so as to form prepreg fabrics. In general, the fibrous layers of the invention are preferably formed by constructing a fiber network initially (e.g., starting with a woven fabric layer) and then coating the network with the matrix composition. As used herein, the term &#x201c;coating&#x201d; is used in a broad sense to describe a fiber network wherein the individual fibers either have a continuous layer of the matrix composition surrounding the fibers or a discontinuous layer of the matrix composition on the surfaced of the fibers. In the former case, it can be said that the fibers are fully embedded in the matrix composition. The terms coating and impregnating are interchangeably used herein. Although it is possible to apply the resin matrix to resin-free fibrous layers while in the mold, this is less desirable since the uniformity of the resin coating may be difficult to control.</p>
+<p id="p-0053" num="0052">The matrix resin composition may be applied in any suitable manner, such as a solution, dispersion or emulsion, onto the fibrous layers. The matrix-coated fiber network is then dried. The solution, dispersion or emulsion of the matrix resin may be sprayed onto the filaments. Alternatively, the fibrous layer structure may be coated with the aqueous solution, dispersion or emulsion by dipping or by means of a roll coater or the like. After coating, the coated fibrous layer may then be passed through an oven for drying in which the coated fiber network layer or layers are subjected to sufficient heat to evaporate the water or other liquid in the matrix composition. The coated fibrous network may then be placed on a carrier web, which can be a paper or a film substrate, or the fabrics may initially be placed on a carrier web before coating with the matrix resin. The substrate and the resin matrix containing fabric layer or layers can then be wound up into a continuous roll in a known manner.</p>
+<p id="p-0054" num="0053">The fiber networks can be constructed via a variety of methods. In the case of unidirectionally aligned fiber networks, yarn bundles of the high tenacity filaments may be supplied from a creel and led through guides and one or more spreader bars into a collimating comb prior to coating with the matrix material. The collimating comb aligns the filaments coplanarly and in a substantially unidirectional fashion.</p>
+<p id="p-0055" num="0054">Following coating of the fabric layers with the resin matrix, the layers are preferably consolidated in a known manner to form a prepreg. By &#x201c;consolidating&#x201d; is meant that the matrix material and the fiber network layer are combined into a single unitary layer. Consolidation can occur via drying, cooling, heating, pressure or a combination thereof.</p>
+<p id="p-0056" num="0055">The number of fibrous layers of the inner backing material may vary widely, depending on the type of helmet desired, the desired performance, and the desired weight. For example, the number of layers may range from about 2 to about 250 layers, more preferably from about 5 to about 150 layers, and most preferably from about 10 to about 100 layers. The layers may be of any suitable thickness. For example, each layer of the plurality of fibrous layers may have a thickness of from about 25 &#x3bc;m to about 1016 &#x3bc;m (about 1 mil to about 40 mils), more preferably from about 76 &#x3bc;m to 762 &#x3bc;m (about 3 to about 30 mils), and most preferably from about 127 &#x3bc;m to 508 &#x3bc;m (about 5 to about 20 mils). The thickness of each layer of the plurality of fibrous layers may be the same or may vary.</p>
+<p id="p-0057" num="0056">Likewise, the weights of each layer of the plurality of fibrous layers of the inner backing material may vary widely but these are usually chosen so that the overall weight of the helmet is within an acceptable range for both the comfort and protection of the wearer. For example, the weight of each layer may range from about 5 to about 200 grams, more preferably from about 10 to about 100 grams, and most preferably from about 20 to about 75 grams. Similarly, the areal density of each layer in the plurality of fibrous layers may vary widely but is usually also chosen to obtain a desirable mix of weight, comfort, and protection qualities. For example, the areal density of each layer preferably may range from about 33.9 g/m<sup>2 </sup>to about 3051 g/m<sup>2 </sup>(about 1 oz/yd<sup>2 </sup>to about 90 oz/yd<sup>2</sup>) about 169.5 g/m<sup>2 </sup>to about 2203.5 g/m<sup>2 </sup>(about 5 oz/yd<sup>2 </sup>to about 65 oz/yd<sup>2</sup>), and more preferably from about 169.5 g/m<sup>2 </sup>to about 847.5 g/m<sup>2 </sup>(about 5 oz/yd<sup>2 </sup>to about 25 oz/yd<sup>2</sup>). The thicknesses and areal densities of each of the fibrous layers of the inner backing material may be the same or different.</p>
+<p id="p-0058" num="0057">The weight ratio of the outer layer comprising ceramic and the inner backing material may vary as desired. The outer ceramic-containing layer may be present in an amount of from about 20% to about 90% by weight, based on the total weight of the helmet shell, more preferably from about 30% to about 85% by weight, and most preferably from about 45% to about 70% by weight. Correspondingly, the inner backing material may be present in an amount of from about 5% to about 80% by weight, based on the total weight of the helmet shell, more preferably from about 10% to about 50% by weight, and most preferably from about 35% to about 45% by weight.</p>
+<p id="p-0059" num="0058">The total areal density of the shell may likewise vary widely depending on the specific intended application. Typically, however, the shell areal density is less than about 48.9 kg/m<sup>2 </sup>(10 lb/ft<sup>2</sup>) and may be in the range from about 14.7 kg/m<sup>2 </sup>(3 lb/ft<sup>2</sup>) to about 48.9 kg/m<sup>2 </sup>(10 lb/ft<sup>2</sup>). Preferably, the total areal density of the helmet shells ranges from about 14.7 kg/m<sup>2 </sup>(3 lb/ft<sup>2</sup>) to about 24.4 kg/m<sup>2 </sup>(5 lb/ft<sup>2</sup>).</p>
+<p id="p-0060" num="0059">Some of the USA military helmets that have been widely employed in military applications are known by the acronyms PASGT (Personnel Armor System for Ground Troops), MICH (Mission Integrated Combat helmet), ACH (Advanced Combat Helmet), and ECH (Enhanced Combat Helmet). Preferred helmet shapes can vary by country. For example, countries in Europe, Asia, and South America tend to have different, preferred shapes. Desirably, such medium helmets have a weight in the range of from about 750 to about 1500 grams, and more preferably from about 800 to about 1100 grams.</p>
+<p id="p-0061" num="0060">To form the helmet shells of this invention, the ceramic (either as a monolith or as multiple pieces or tiles) of the outer layer, together with prepregs of the two or more types of fibrous layers of the inner backing material, are applied to a mold. For example, after supplying the outer layer comprising ceramic to a suitable mold, the desired number of the individual fibrous layers of the inner backing material (e.g., comprising polyolefin or aramid fibers) in a resin matrix is subsequently placed into the mold in a position to form the inner backing material. The mold may be of any desired type, such as a matched die mold having opposing, male and female matched die sections, whereby the outer layer comprising ceramic is placed initially in contact with the female matched die section, followed by the fibrous layers of the inner backing material. The order of placement may be reversed depending on the desired, relative positions of the helmet shell components. Desirably, the resin of the resin matrix is chosen so that it is non-tacky when placed into the mold. This permits the individual layers to slide over each other in order to completely fill the mold and form the desired helmet shape. No adhesive is required to be used between the individual fibrous layers, as the resin or resins of the individual layers generally provides the needed bonding between the layers. However, a separate adhesive layer or multiple layers may be used if desired.</p>
+<p id="p-0062" num="0061">Care should be taken to completely and uniformly fill the mold and place all of the helmet shell components in the proper orientation. This ensures uniform performance throughout the helmet shell. If the combined volume of the components is more than the helmet mold can handle, the mold will not close and hence the helmet will not be molded. If the combined volume is less than the volume of the mold, although the mold will close the material will not be molded due to lack of molding pressure.</p>
+<p id="p-0063" num="0062">Once the mold is properly loaded with the desired amount of ceramic, desired number and type of fibrous layers and resin matrix of the inner material layer, and optional other components, the helmet shell can be molded under the desired molding conditions. A representative molding temperature may range from about 65&#xb0; C. (149&#xb0; F.) to about 250&#xb0; C. (482&#xb0; F.), more preferably from about 90&#xb0; C. (194&#xb0; F.) to about 330&#xb0; C. (626&#xb0; F.), and most preferably from about 120&#xb0; C. (248&#xb0; F.) to about 320&#xb0; C. (608&#xb0; F.). The clamp molding pressure may range, for example, from about 10.2 metric tons to about 1020 metric tons (from about 10 tons to about 1000 tons), preferably from about 50.8 metric tons to about 356 metric tons (from about 50 tons to about 350 tons), and most preferably from about 102 metric tons to about 306 metric tons (from about 100 tons to about 300 tons). The molding times may range from about 5 to about 60 minutes, more preferably from about 10 to about 35 minutes, and most preferably from about 15 to about 25 minutes.</p>
+<p id="p-0064" num="0063">Under the desired conditions of molding, the resin or resins present in the fibrous networks are consolidated for thermoplastic resins and cured in the case of thermosetting resins. This results in strong bonding of the individual layers and groups of layers into the desired helmet shape as an integral, monolithic molding. It is believed that the thermosetting resins of each set of fabrics are bonded at their interfaces by cross-linking of the resins. For thermoplastic resins the helmet is cooled down below the softening temperature of the resin and then pulled out from the mold. Under heat and pressure, the thermoplastic resins flow between the fabric layers, also resulting in an integral, monolithic molding. During cooling the molding pressure is maintained. The molded product is thereafter taken from the mold and the part is trimmed, if necessary.</p>
+<p id="p-0065" num="0064">In an alternative molding process, the lay-up of the outer layer comprising ceramic and the fibrous layers of the backing material, optionally with adhesive and/or other material layers as described herein, may be placed in an autoclave. Heat and/or pressure may accompany autoclave molding, with representative temperatures in the ranges as discussed above with respect to die molding and representative absolute pressures typically in the range from about 5 bar (73 psi) to about 30 bar (435 psi). Pressurization, for example using one or more inert gases such as helium or nitrogen, generally promotes higher densities. Additional external pressurization of up to one atmosphere can be supplied by vacuum bagging of the layers. Using this technique, a bleedoff assembly to adjust vacuum pressure within the bag and a release cloth or coating to prevent bonding of the lay-up to the tool surface are usually employed. The use of external pressure, optionally combined with vacuum bagging, can provide a number of beneficial functions including inducing pliability to alleviate surface imperfections, removing volatile materials, eliminating trapped air between layers, compacting fiber layers for efficient force transmission among fiber bundles, preventing shifting of fiber orientation during cure or consolidation, and/or reducing humidity.</p>
+<p id="p-0066" num="0065">In a representative autoclave molding process, therefore, fibrous layers of the backing material are first positioned within an outer layer comprising ceramic, which may be in the form of a monolith having the shape of the helmet shell. Careful assembly of the fibrous layers can help minimize overlap between layers. The ceramic and backing material is placed in a vacuum bag and the environment surrounding the lay-up is partially or nearly completely evacuated. When sufficient vacuum is created and maintained within the bag, it is disconnected from the vacuum pump and transferred to the autoclave for consolidation or curing as discussed above. The same techniques may be used when the ceramic is in the form of a plurality of plates or tiles, as described herein, that are bonded mechanically and/or chemically (e.g., with an adhesive).</p>
+<p id="p-0067" num="0066">According to other methods of making helmet shells described herein, elevated temperature alone (e.g., in an oven) may be used to bond the outer layer comprising ceramic with the inner backing material. Oven heating may be used with vacuum bagging to provide heat, together with up to one atmosphere of external pressure. Otherwise, an adhesive such as contact cement, with or without external heating, may provide sufficient bonding for forming the helmet shell. Combinations of methods may also be used. For example, according to a representative method, the fibrous layers of backing material may be consolidated or cured initially in a matched die mold as discussed above. This backing material, now having the shape of the helmet shell, can then be coated with an adhesive layer on its exterior surface, followed by assembly of the inner backing material with the outer layer comprising ceramic. The lay-up may be transferred to a vacuum bag, as described above, prior to the application of heat in an oven or the application and heat and additional pressure in an autoclave, thereby effecting the consolidation or curing (e.g., of a thermosetting resin matrix).</p>
+<p id="p-0068" num="0067">The fabrics used in the individual fibrous layers of the inner backing material are generally relatively thin yet very strong. The preferred thicknesses of the individual layers are from about 25 &#x3bc;m to about 911 &#x3bc;m (about 1 to about 36 mils), more preferably from about 127 &#x3bc;m to about 711 &#x3bc;m (about 5 to about 28 mils), and most preferably from about 254 &#x3bc;m to 584 &#x3bc;m (about 10 to about 23 mils).</p>
+<p id="p-0069" num="0068">As mentioned above, the shells of helmets as described herein are resistant to, or capable of preventing penetration of, high energy fragments and bullets such as rifle bullets. Such fragments and bullets have very high energy levels. The helmets of this invention are capable of preventing penetration by fragments and bullets that have energy levels of at least about 1600 joules (1180 ft-lb), more preferably from about 1600 (1180 ft-lb) to about 4000 joules (2950 ft-lb), and most preferably from about 1700 joules (1250 ft-lb) to about 3000 joules (2200 ft-lb). Accordingly, aspects of the invention are associated with the discovery that ceramic can be employed in helmets to provide this level of penetration resistance using commercially feasible overall helmet thicknesses and weights. For example, effective protection may be provided for helmets with ceramic having a thickness, whether employed in monolith form or in the form of multiple pieces, in the range from about 4 mm (0.16 in) to about 6 mm (0.24 in), as discussed above. The total helmet shell thickness is advantageously less than about 18 mm (0.71 in) (e.g., in the range from about 6 mm (0.24 in) to about 18 mm (0.71 in)), normally less than about 14 mm (0.55 in) (e.g., in the range from about 8 mm (0.31 in) to about 14 mm (0.55 in)), and often less than about 12 mm (e.g., in the range from about 10 mm (0.39 in) to about 12 mm (0.47 in)). The total areal density of the helmet shell is advantageously less than about 8 lb/ft<sup>2 </sup>(39.2 kg/m<sup>2</sup>) (e.g., in the range from about 3 lb/ft<sup>2 </sup>(14.7 kg/m<sup>2</sup>) to about 8 lb/ft<sup>2 </sup>(39.2 kg/m<sup>2</sup>), as discussed above), and often less than about 5 lb/ft<sup>2 </sup>(24.5 kg/m<sup>2</sup>) (e.g., in the range from about 3 lb/ft<sup>2 </sup>(14.7 kg/m<sup>2</sup>) to about 5 lb/ft<sup>2 </sup>(24.5 kg/m<sup>2</sup>), as discussed above).</p>
+<p id="p-0070" num="0069">The following is a list of various bullets and their energy levels, with the velocities and energy measured at the muzzle. It can be seen that the rifle bullets have much higher energy levels than handgun bullets, and are thus more difficult to stop from penetrating helmets.</p>
+<p id="p-0071" num="0070">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" rowsep="1">TABLE 1</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>Kinetic Energy of Bullets</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="5">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="56pt" align="left"/>
+<colspec colname="2" colwidth="56pt" align="left"/>
+<colspec colname="3" colwidth="49pt" align="center"/>
+<colspec colname="4" colwidth="42pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>Energy,</entry>
+</row>
+<row>
+<entry/>
+<entry>Bullet</entry>
+<entry>Mass, grain (g)</entry>
+<entry>Velocity, mps</entry>
+<entry>Joules</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="4" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="5">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="56pt" align="left"/>
+<colspec colname="2" colwidth="56pt" align="left"/>
+<colspec colname="3" colwidth="49pt" align="center"/>
+<colspec colname="4" colwidth="42pt" align="char" char="."/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>9 MM FMJ</entry>
+<entry>124 (g)</entry>
+<entry>373 &#xb1; 10</entry>
+<entry>537</entry>
+</row>
+<row>
+<entry/>
+<entry>357</entry>
+<entry>158 (9.5 g)</entry>
+<entry>440 &#xb1; 10</entry>
+<entry>958</entry>
+</row>
+<row>
+<entry/>
+<entry>44 Mag</entry>
+<entry>240 (15 g)</entry>
+<entry>441 &#xb1; 10</entry>
+<entry>1510</entry>
+</row>
+<row>
+<entry/>
+<entry>AK 47</entry>
+<entry>128 (8 g)</entry>
+<entry>900 &#xb1; 10</entry>
+<entry>1960</entry>
+</row>
+<row>
+<entry/>
+<entry>NATO (M80)</entry>
+<entry>(9.5 g)</entry>
+<entry>810 &#xb1; 10</entry>
+<entry>3000</entry>
+</row>
+<row>
+<entry/>
+<entry>AK74</entry>
+<entry>(3.4 g)</entry>
+<entry>750 &#xb1; 10</entry>
+<entry>1700</entry>
+</row>
+<row>
+<entry/>
+<entry>LPS</entry>
+<entry>179 (11.6 g)</entry>
+<entry>804 &#xb1; 10</entry>
+<entry>3814</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="4" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0072" num="0071">The helmet structure, comprising a helmet shell as described herein, can be adapted to receive a variety of attachments as desired. For example, the helmet may be formed with grooves or built in channels to facilitate attachment of desired gear.</p>
+<p id="p-0073" num="0072">A representative helmet shell is depicted in <figref idref="DRAWINGS">FIG. 1</figref>. As shown in this embodiment, helmet shell <b>100</b> comprises six materials. Interior and exterior layers <b>2</b>, <b>12</b> may be shock absorbing material layers (e.g., comprising a closed cell foam) or material layers that provide other protective functions such as moisture and/or flame resistance, alone or in combination with shock resistance. The outer layer <b>8</b> comprising ceramic (e.g., as a monolith or in the form of a number of discreet plates) is disposed closer to the helmet shell exterior than inner backing material <b>4</b>, comprising a plurality of fibrous layers. Adhesive layers <b>6</b>, <b>10</b> are shown between inner backing material <b>4</b> and outer layer <b>8</b> and also between this outer layer <b>8</b> and exterior layer <b>12</b>.</p>
+<p id="p-0074" num="0073">Overall aspects of the present invention are associated with high energy fragment and bullet resistant helmets comprising an outer layer containing ceramic and an inner backing material comprising fibrous layers. Those having skill in the art, with the knowledge gained from the present disclosure, will recognize that various changes can be made in these helmets and methods of their manufacture without departing from the scope of the present disclosure. The subject matter described herein is therefore representative of the present invention and its associated advantages and is not to be construed as limiting the scope of the invention as set forth in the appended claims.</p>
+<p id="p-0075" num="0074">The following examples are set forth as representative of the present invention. These examples are not to be construed as limiting the scope of the invention as these and other equivalent embodiments will be apparent in view of the present disclosure and appended claims.</p>
+<heading id="h-0006" level="1">EXAMPLE 1</heading>
+<p id="p-0076" num="0075">A helmet shell was molded using a matched metal die mold, designed to mold medium-sized ACH helmet shaped parts at 7.87 mm (0.310 in) wall thickness. Layers of Spectra Shield&#xae; II SR-3124 materials were cut from a 1.6 meter (63 in) wide rolls. A pin-wheel pattern was utilized. Each pin-wheel pattern was designed in such a manner that it completely covered the male mold. A total of 28 layers of pin-wheel were pre-formed in a bottomless bucket, and, at the same time, mold heating was started. Once the mold reached a temperature of 125&#xb1;5&#xb0; C. (257&#xb1;9&#xb0; F.) a coat of mold release was applied on the male and female parts of the mold. The pre-formed layers of Spectra Shield&#xae; II SR-3124 were then transferred to the mold. Care was taken that there were no folds or creases generated on the pre-form during transferring to the mold. A 190 Ton gauge pressure was applied for 20 minutes. After 20 minutes, the cooling cycle was started. During cooling cycle molding pressure was not removed. Once the mold cooled to about 35&#xb0; C. (77&#xb0; F.), the mold was opened and molded shell was removed.</p>
+<p id="p-0077" num="0076">At 24 hours after molding, the molded helmet was covered with an adhesive film and dropped inside a monolithic ACH shaped ceramic helmet shell matching the outer shape of the molded helmet shell. The ceramic with adhesive layer and pre-molded helmet shell were transferred into an autoclave bag having an opening on one side only. Finally, the open side was sealed and a vacuum was generated inside the bag using a portable vacuum pump. Once the vacuum pump stopped, confirming that full vacuum was achieved, the bag was transferred to an autoclave. The door of autoclave was closed and a molding pressure of 10 bar (145 psi) was applied on the bag. Immediately after applying pressure, autoclave heat was switched on to reach a temperature of 125&#xb1;5&#xb0; C. (257&#xb1;9&#xb0; F.). This temperature was maintained for 45 minutes so that adhesive was fully cured. After 45 minutes, a cooling cycle was started. Once autoclave temperature indicated 35&#xb0; C. (77&#xb0; F.), pressure was released and door of autoclave was opened. The bag containing ceramic helmet with backing material was pulled out. The helmet was removed and moved to a ballistic lab for at least 24 hours conditioning before testing.</p>
+<p id="h-0007" num="0000">Testing Protocol:</p>
+<p id="p-0078" num="0077">After clamping the helmet, having a total thickness of about 12 mm (0.47 in) in a fixture holding the helmet from two ear sections, testing was conducted according to MIL-STD-662F, using M-855 NATO bullet weighing 62 grains. Four bullets were fired at four equal quadrants of the ceramic faced helmets (front, back and two sides). The velocity of bullets was varied to achieved a 2&#xd7;2 (two bullets penetrated and two bullets stopped on the helmet), A V50 of 905 meters per second (2968 feet per second) was achieved on an ACH ceramic faced helmet weighing 5.05 lbs.</p>
+<heading id="h-0008" level="1">EXAMPLE 2</heading>
+<p id="p-0079" num="0078">Another ceramic helmet was fabricated in the manner similar to that described in Example 1 and tested against an AK 47 bullet. A V50 of 614 meters per second (2013 feet per second) was achieved on a medium ACH ceramic faced helmet weighing 5.36 lbs.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>The invention claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A helmet that is resistant to high energy fragments and bullets, the helmet including a rounded shell, said shell comprising a crown and a peripheral surface which define an interior volume, and said rounded shell comprising from the outside to the inside:
+<claim-text>(a) an outer layer comprising a ceramic, wherein the ceramic is in the form of a continuous monolith that conforms to a curved shape of the rounded shell; and</claim-text>
+<claim-text>(b) an inner backing material comprising a plurality of fibrous layers;</claim-text>
+<claim-text>wherein the fibrous layers comprise high tenacity fibers in a resin matrix, and</claim-text>
+<claim-text>wherein the inner backing material comprises a fabric having both warp and fill directions, said fabric having about 5.9 to about 21.6 fiber ends per cm in both said warp and fill directions.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The helmet of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the outer layer consists of an unreinforced, all ceramic component, where said ceramic consists of a compound selected from the group consisting of unreinforced aluminum oxide, boron carbide, silicon carbide, silicon nitride, and titanium diboride.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The helmet of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the outer layer comprises a reinforced ceramic composited with a non-ceramic fibrous material, wherein said outer layer comprises at least about 70% ceramic by weight.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The helmet of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the high tenacity fibers comprise polyethylene fibers having a tenacity equal to or greater than about 35 g/d.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The helmet of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the shell further comprises a shock absorbing material layer, disposed outside the outer layer, and comprising a closed cell foam.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The helmet of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the ceramic and the inner backing material are present in amounts, respectively, from about 30% to about 85% by weight of the shell and from about 10% to about 50% by weight of the shell.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The helmet of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the outer layer and inner backing material each have the shape of a rounded helmet shell defining an interior volume, wherein said continuous monolith consists essentially of a ceramic, single, continuous solid piece that completely covers the inner backing material, wherein said ceramic monolith has a thickness of from about 4 mm (0.16 in) to about 6 mm (0.24 in).</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The helmet of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the shell has an areal density from about 14.7 kg/m<sup>2 </sup>(3 lb/ft<sup>2</sup>) to about 24.5 kg/m<sup>2 </sup>(5 lb/ft<sup>2</sup>).</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The helmet of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the outer layer comprises a reinforced ceramic composited with a non-ceramic, non-fibrous material, wherein said outer layer comprises at least about 70% ceramic by weight.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. A method for forming a rounded shell for a helmet that is resistant to high energy fragments and bullets, said rounded shell comprising a crown and a peripheral surface which define an interior volume, the method comprising:
+<claim-text>(a) supplying, to a mold, an outer layer comprising a ceramic, an inner backing material comprising a plurality of fibrous layers, and an adhesive layer to a mold, wherein the adhesive layer is disposed between the outer layer and the inner backing material, wherein the ceramic is in the form of a continuous monolith that conforms to a curved shape of the rounded shell, or wherein the ceramic is in the form of a plurality of ceramic plates that conform to a curved shape of the rounded shell, wherein some or all of the ceramic plates have a non-planar shape; and</claim-text>
+<claim-text>(b) applying heat and pressure to the outer layer, inner backing material, and adhesive to bond the ceramic to the inner backing material and form the rounded shell.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. A molded, rounded helmet shell prepared according to the method of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein said ceramic covers only a portion of said inner backing material such that only the crown of the shell or only the peripheral surface of the shell is covered by said ceramic.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. A helmet that is resistant to high energy fragments and bullets, the helmet including a rounded shell, said shell comprising a crown and a peripheral surface which define an interior volume, and said rounded shell comprising from the outside to the inside:
+<claim-text>(a) an outer layer comprising a ceramic, wherein the ceramic is in the form of a plurality of ceramic plates that conform to a curved shape of the rounded shell, wherein some or all of the ceramic plates have a non-planar shape; and</claim-text>
+<claim-text>(b) an inner backing material comprising a plurality of fibrous layers, wherein the fibrous layers comprise high tenacity fibers, wherein said high tenacity fibers are optionally in a resin matrix, and wherein said high tenacity fibers comprise polyethylene fibers having a tenacity equal to or greater than about 35 g/d.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The helmet of <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein adjacent ceramic plates are mechanically fitted or chemically bonded with one another at their adjacent borders, whereby the adjacent plates physically abut each other at their adjacent borders, and wherein said mechanically fitted or chemically bonded ceramic plates cover only a portion of said inner backing material.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The helmet of <claim-ref idref="CLM-00012">claim 12</claim-ref> wherein all of the ceramic plates have a non-planar shape, and wherein said ceramic plates have a substantially uniform thickness, and wherein said ceramic plates have a thickness of from about 4 mm (0.16 in) to about 6 mm (0.24 in).</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The helmet of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein the outer layer and inner backing material each have the shape of a rounded helmet shell defining an interior volume, wherein the outer layer covers the inner backing material, and wherein all adjacent ceramic plates are joined with overlapping joints, thereby providing complete ceramic coverage of the inner backing material, and wherein said helmet shell has a thickness of less than about 12 mm.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The helmet of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the outer layer and inner backing material each have the shape of a rounded helmet shell defining an interior volume, wherein said continuous monolith consists of an all ceramic, single, continuous solid piece that covers the inner backing material, thereby providing complete ceramic coverage of the inner backing material, and wherein said helmet shell has a thickness of less than about 14 mm.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. A molded, rounded helmet shell prepared according to the method of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the outer layer comprises a reinforced ceramic composited with a non-ceramic fibrous material, wherein said outer layer comprises at least about 70% ceramic by weight.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. A molded, rounded helmet shell prepared according to the method of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the fibrous layers comprise high tenacity fibers, wherein said high tenacity fibers are optionally in a resin matrix, and wherein said high tenacity fibers comprise polyethylene fibers having a tenacity equal to or greater than about 35 g/d.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The helmet of <claim-ref idref="CLM-00012">claim 12</claim-ref> wherein the fibrous layers comprise high tenacity fibers in a resin matrix, and wherein the inner backing material comprises a fabric having both warp and fill directions, said fabric having about 5.9 to about 21.6 fiber ends per cm in both said warp and fill directions.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The helmet of <claim-ref idref="CLM-00012">claim 12</claim-ref> wherein the outer layer comprises a reinforced ceramic composited with a non-ceramic fibrous material, wherein said outer layer comprises at least about 70% ceramic by weight. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

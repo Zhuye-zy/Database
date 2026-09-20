@@ -1,0 +1,15 @@
+flowchart LR
+    n_scheme["分类体系<br/>classification_scheme<br/>PK: scheme_code"]
+    n_classification["分类号<br/>classification<br/>PK: (scheme,symbol)"]
+    n_patent["申请案<br/>patent"]
+    n_PC{"申请-分类号"}
+    n_link["patent_classification<br/>属性: position,value,source"]
+    n_ipc["IPC-技术领域<br/>ipc_techn_field（增强）"]
+    n_R12{"体系-分类号"}
+    n_R12 -->|"1"| n_scheme
+    n_R12 -->|"N"| n_classification
+    n_patent -->|"M"| n_PC
+    n_PC --> n_link
+    n_link -->|"N"| n_classification
+    n_ipc -.->|"参考"| n_classification
+    classDef weak stroke-width:3px

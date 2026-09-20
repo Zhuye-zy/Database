@@ -1,0 +1,85 @@
+flowchart LR
+    o_dataset(["数据集<br/>dataset"])
+    o_country_office(["国家/受理局<br/>country_office"])
+    o_language(["语言<br/>language"])
+    o_kind_code(["文献种类<br/>kind_code"])
+    o_application_type(["申请类型<br/>application_type"])
+    o_classification_scheme(["分类体系<br/>classification_scheme"])
+    o_legal_event_code(["法律事件码<br/>legal_event_code"])
+    o_citation_category(["引用类别<br/>citation_category"])
+    o_keyword(["关键词<br/>keyword"])
+    o_ipc_techn_field(["IPC-技术领域<br/>ipc_techn_field"])
+    o_classification(["分类号<br/>classification"])
+    o_patent(["申请案<br/>patent"])
+    o_publication(["公布文献<br/>publication"])
+    o_title(["标题<br/>title"])
+    o_abstract(["摘要<br/>abstract"])
+    o_claim(["权利要求<br/>claim"])
+    o_drawing(["附图<br/>drawing"])
+    o_description_section(["说明书章节<br/>description_section"])
+    o_claim_dependency(["权利要求依赖<br/>claim_dependency"])
+    o_person(["当事人<br/>person"])
+    o_natural_person(["自然人<br/>natural_person"])
+    o_organization(["机构<br/>organization"])
+    o_patent_applicant(["申请人联系<br/>patent_applicant"])
+    o_patent_inventor(["发明人联系<br/>patent_inventor"])
+    o_patent_assignee(["权利人联系<br/>patent_assignee"])
+    o_patent_agent(["代理人联系<br/>patent_agent"])
+    o_patent_examiner(["审查员联系<br/>patent_examiner"])
+    o_patent_classification(["分类联系<br/>patent_classification"])
+    o_patent_citation(["专利引用<br/>patent_citation"])
+    o_patent_citation_category(["引用类别联系<br/>patent_citation_category"])
+    o_non_patent_citation(["非专利文献<br/>non_patent_citation"])
+    o_patent_family(["专利族<br/>patent_family"])
+    o_patent_family_member(["族成员<br/>patent_family_member"])
+    o_family_citation(["族级引用<br/>family_citation"])
+    o_priority_claim(["优先权<br/>priority_claim"])
+    o_related_application(["程序关联<br/>related_application"])
+    o_international_application(["国际申请<br/>international_application"])
+    o_designated_state(["指定国<br/>designated_state"])
+    o_legal_status_event(["法律状态事件<br/>legal_status_event"])
+    o_patent_keyword(["关键词联系<br/>patent_keyword"])
+    o_dataset -->|"1:N"| o_patent
+    o_dataset -->|"1:N"| o_publication
+    o_country_office -->|"1:N"| o_patent
+    o_country_office -->|"1:N"| o_publication
+    o_language -->|"1:N"| o_title
+    o_language -->|"1:N"| o_abstract
+    o_kind_code -->|"1:N"| o_publication
+    o_application_type -->|"1:N"| o_patent
+    o_classification_scheme -->|"1:N"| o_classification
+    o_classification -->|"1:N"| o_patent_classification
+    o_patent -->|"1:N"| o_publication
+    o_patent -->|"1:N"| o_patent_applicant
+    o_patent -->|"1:N"| o_patent_inventor
+    o_patent -->|"1:N"| o_patent_assignee
+    o_patent -->|"1:N"| o_patent_agent
+    o_patent -->|"1:N"| o_patent_examiner
+    o_patent -->|"1:N"| o_patent_classification
+    o_patent -->|"1:N"| o_patent_citation
+    o_patent -->|"1:N"| o_priority_claim
+    o_patent -->|"1:N"| o_related_application
+    o_patent -->|"1:1"| o_international_application
+    o_patent -->|"1:N"| o_designated_state
+    o_patent -->|"1:N"| o_legal_status_event
+    o_patent -->|"1:N"| o_patent_keyword
+    o_patent -->|"1:N"| o_patent_family_member
+    o_patent_family -->|"1:N"| o_patent_family_member
+    o_patent_family -->|"1:N"| o_family_citation
+    o_patent_citation -->|"1:N"| o_patent_citation_category
+    o_citation_category -->|"1:N"| o_patent_citation_category
+    o_patent_citation -->|"1:1"| o_non_patent_citation
+    o_publication -->|"1:N"| o_title
+    o_publication -->|"1:N"| o_abstract
+    o_publication -->|"1:N"| o_claim
+    o_publication -->|"1:N"| o_drawing
+    o_publication -->|"1:N"| o_description_section
+    o_claim -->|"1:N"| o_claim_dependency
+    o_keyword -->|"1:N"| o_patent_keyword
+    o_person -->|"1:N"| o_patent_applicant
+    o_person -->|"1:N"| o_patent_inventor
+    o_person -->|"1:N"| o_patent_assignee
+    o_person -->|"1:N"| o_patent_agent
+    o_person -->|"1:N"| o_patent_examiner
+    o_legal_event_code -->|"1:N"| o_legal_status_event
+    o_ipc_techn_field -->|"1:N"| o_classification

@@ -1,0 +1,19 @@
+flowchart LR
+    n_patent["申请案<br/>patent"]
+    n_event[["法律状态事件<br/>legal_status_event<br/>部分键: event_seq"]]
+    n_code["法律事件码<br/>legal_event_code<br/>PK: (auth,code)"]
+    n_kw["关键词<br/>keyword"]
+    n_pkw["申请-关键词<br/>patent_keyword"]
+    n_LEV{"申请-事件"}
+    n_KWV{"申请-关键词"}
+    n_TECH["IPC-技术领域<br/>ipc_techn_field（增强）"]
+    n_classification["分类号<br/>classification"]
+    n_patent -->|"1"| n_LEV
+    n_LEV -->|"N"| n_event
+    n_event -->|"N:1"| n_code
+    n_patent -->|"1"| n_KWV
+    n_KWV -->|"1"| n_pkw
+    n_pkw -->|"N"| n_kw
+    n_TECH -.->|"参考"| n_classification
+    classDef weak stroke-width:3px
+    class n_event weak

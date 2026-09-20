@@ -1,0 +1,136 @@
+erDiagram
+    PATENT {
+        bigint patent_id PK
+        bigint dataset_id FK
+        char2 appln_auth FK
+        varchar20 appl_type_code FK
+        char2 receiving_office FK
+        char2 appln_lang FK
+    }
+    PUBLICATION {
+        bigint publication_id PK
+        bigint patent_id FK
+        bigint dataset_id FK
+        char2 publn_auth FK
+        varchar2 publn_kind FK
+        char2 publn_lg FK
+    }
+    CLAIM {
+        bigint claim_id PK
+        bigint publication_id FK
+        char2 lang_code FK
+    }
+    CLAIM_DEPENDENCY {
+        bigint dependent_claim_id PK, FK
+        bigint parent_claim_id PK, FK
+    }
+    PERSON {
+        bigint person_id PK
+        char2 ctry_code FK
+        char2 residence_ctry_code FK
+        bigint source_dataset_id FK
+    }
+    PATENT_APPLICANT {
+        bigint patent_id PK, FK
+        bigint person_id FK
+        smallint sequence_nr PK
+    }
+    PATENT_INVENTOR {
+        bigint patent_id PK, FK
+        bigint person_id FK
+        smallint sequence_nr PK
+    }
+    CLASSIFICATION {
+        varchar10 scheme_code PK, FK
+        varchar30 symbol PK
+    }
+    PATENT_CLASSIFICATION {
+        bigint patent_classification_id PK
+        bigint patent_id FK
+        varchar10 scheme_code FK
+        varchar30 symbol FK
+        char2 generating_office FK
+    }
+    PATENT_CITATION {
+        bigint citation_id PK
+        bigint citing_patent_id FK
+        bigint citing_publication_id FK
+        bigint cited_patent_id FK
+        bigint cited_publn_id FK
+        char2 cited_country FK
+        char2 citn_gener_auth FK
+    }
+    NON_PATENT_CITATION {
+        bigint npl_id PK
+        bigint citation_id UK, FK
+    }
+    PATENT_FAMILY {
+        bigint family_id PK
+        bigint dataset_id FK
+        char2 earliest_priority_country FK
+        bigint representative_publication_id FK
+    }
+    PATENT_FAMILY_MEMBER {
+        bigint member_id PK
+        bigint family_id FK
+        bigint member_patent_id FK
+    }
+    FAMILY_MEMBER_APPLICATION_REF {
+        bigint member_appln_ref_id PK
+        bigint member_id FK
+        char2 country_code FK
+    }
+    FAMILY_MEMBER_PUBLICATION_REF {
+        bigint member_publn_ref_id PK
+        bigint member_id FK
+        char2 country_code FK
+    }
+    FAMILY_ABSTRACT {
+        bigint family_abstract_id PK
+        bigint family_id FK
+        char2 lang_code FK
+        char2 source_country FK
+    }
+    PRIORITY_CLAIM {
+        bigint priority_id PK
+        bigint patent_id FK
+        bigint prior_patent_id FK
+        char2 prior_country FK
+        char2 designated_region FK
+    }
+    RELATED_APPLICATION {
+        bigint relation_id PK
+        bigint patent_id FK
+        bigint related_patent_id FK
+        char2 related_country FK
+    }
+    FAMILY_CITATION {
+        bigint citing_family_id PK, FK
+        bigint cited_family_id PK, FK
+    }
+    CLASSIFICATION ||--o{ PATENT_CLASSIFICATION : "symbol"
+    PATENT ||--o{ PUBLICATION : "has_publication"
+    PUBLICATION ||--o{ CLAIM : "has_claim"
+    CLAIM ||--o{ CLAIM_DEPENDENCY : "dependent_side"
+    CLAIM ||--o{ CLAIM_DEPENDENCY : "parent_side"
+    PATENT ||--o{ PATENT_APPLICANT : "has"
+    PERSON ||--o{ PATENT_APPLICANT : "as_applicant"
+    PATENT ||--o{ PATENT_INVENTOR : "has"
+    PERSON ||--o{ PATENT_INVENTOR : "as_inventor"
+    PATENT ||--o{ PATENT_CLASSIFICATION : "has"
+    PATENT ||--o{ PATENT_CITATION : "citing"
+    PUBLICATION ||--o{ PATENT_CITATION : "citation_source"
+    PATENT |o--o{ PATENT_CITATION : "cited"
+    PATENT_CITATION ||--o| NON_PATENT_CITATION : "npl_ext"
+    PATENT |o--o{ PATENT_FAMILY_MEMBER : "member"
+    PATENT_FAMILY ||--o{ PATENT_FAMILY_MEMBER : "has"
+    PATENT_FAMILY_MEMBER ||--o{ FAMILY_MEMBER_APPLICATION_REF : "has_application_ref"
+    PATENT_FAMILY_MEMBER ||--o{ FAMILY_MEMBER_PUBLICATION_REF : "has_publication_ref"
+    PATENT_FAMILY ||--o{ FAMILY_ABSTRACT : "has_abstract"
+    PATENT_FAMILY ||--o{ FAMILY_CITATION : "citing_fam"
+    PATENT_FAMILY ||--o{ FAMILY_CITATION : "cited_fam"
+    PATENT ||--o{ PRIORITY_CLAIM : "later_app"
+    PATENT |o--o{ PRIORITY_CLAIM : "prior_app"
+    PATENT ||--o{ RELATED_APPLICATION : "main_app"
+    PATENT |o--o{ RELATED_APPLICATION : "related_app"
+    PATENT_FAMILY ||--o| PUBLICATION : "representative"
