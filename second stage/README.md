@@ -15,8 +15,6 @@ B角色建表、样例导入、业务键增量、批次追溯及DOCDB软删除�
 | 05-官方来源 | 四类基础样例、新官网下载包及解包XML、五份数据手册；来源README逐类解释 |
 | 06-运行管理 | start.sh启动；init_db.sh首次初始化；update_reviewed.sh备份更新；backup_db.sh备份；package_release.py打包 |
 | 07-验收结果 | 现有数据库 / 临时数据库：表数、逐字段对照、约束和索引清单、字段覆盖、查询计划、集成测试；导入日志及源文献清单 |
-| 08-历史备份 | 原代码、旧报告、最初及最近回退备份；不进入上传包 |
-| 09-GitHub交付 | 当前dump、最终ZIP、上传清单和SHA256 |
 
 ## 现有数据库：启动、检查、查看
 
@@ -85,6 +83,3 @@ sudo bash "06-运行管理/update_reviewed.sh"
 
 使用现有缓存镜像以避免此前的 Docker Hub 超时。数据库内容位于 Docker 持久卷；代码、来源材料、报告和备份均在本阶段目录。
 
-## GitHub交付包
-
-运行 sudo python3 -B "06-运行管理/package_release.py" 可重新打包。最终包、数据库dump和上传清单位于09-GitHub交付；完整步骤见实验手册。
