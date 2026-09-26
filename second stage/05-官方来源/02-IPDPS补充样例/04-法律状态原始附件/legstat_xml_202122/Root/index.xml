@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE legstat-package-index PUBLIC "-//EPO//PACKAGE INDEX 1.0//EN" "legstat-package-v1.0.dtd">
+<legstat-package-index date-produced="20210529" dtd-version="legstat-package-v1.0.dtd" file="index.xml" produced-by="EP" volume-id="EPLSEEP2021052922001001">
+    <legstat-package-file format="ip" size="100729008">
+        <filename>LEGSTAT-202122-EP-AppDateFrom19830610-0001.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>83901820</doc-number>
+                <kind>A</kind>
+                <date>19830610</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>05794659</doc-number>
+                <kind>A</kind>
+                <date>20050929</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100646812">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20050929-0002.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>05804004</doc-number>
+                <kind>A</kind>
+                <date>20050929</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>09706670</doc-number>
+                <kind>A</kind>
+                <date>20090130</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100602388">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20090130-0003.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>18194365</doc-number>
+                <kind>A</kind>
+                <date>20090130</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>10801622</doc-number>
+                <kind>A</kind>
+                <date>20101202</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100625670">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20101202-0004.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>10807455</doc-number>
+                <kind>A</kind>
+                <date>20101202</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>12759952</doc-number>
+                <kind>A</kind>
+                <date>20120322</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100650419">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20120322-0005.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>12761196</doc-number>
+                <kind>A</kind>
+                <date>20120322</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>13791704</doc-number>
+                <kind>A</kind>
+                <date>20130408</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100641306">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20130408-0006.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>13882029</doc-number>
+                <kind>A</kind>
+                <date>20130408</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>14742808</doc-number>
+                <kind>A</kind>
+                <date>20140122</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100658908">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20140122-0007.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>14742819</doc-number>
+                <kind>A</kind>
+                <date>20140122</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>14903665</doc-number>
+                <kind>A</kind>
+                <date>20141008</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100664344">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20141008-0008.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>19157773</doc-number>
+                <kind>A</kind>
+                <date>20141008</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>15168842</doc-number>
+                <kind>A</kind>
+                <date>20150522</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100667130">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20150522-0009.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>15168956</doc-number>
+                <kind>A</kind>
+                <date>20150522</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>15863056</doc-number>
+                <kind>A</kind>
+                <date>20151127</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100745409">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20151127-0010.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>15863232</doc-number>
+                <kind>A</kind>
+                <date>20151127</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>16741775</doc-number>
+                <kind>A</kind>
+                <date>20160713</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100650705">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20160713-0011.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>16742203</doc-number>
+                <kind>A</kind>
+                <date>20160713</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>16784692</doc-number>
+                <kind>A</kind>
+                <date>20161010</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100753659">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20161010-0012.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>16787652</doc-number>
+                <kind>A</kind>
+                <date>20161010</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>17719633</doc-number>
+                <kind>A</kind>
+                <date>20170502</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100790177">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20170502-0013.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>17719636</doc-number>
+                <kind>A</kind>
+                <date>20170502</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>17200556</doc-number>
+                <kind>A</kind>
+                <date>20171108</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100881455">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20171108-0014.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>17200594</doc-number>
+                <kind>A</kind>
+                <date>20171108</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>18178983</doc-number>
+                <kind>A</kind>
+                <date>20180621</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="100979759">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20180621-0015.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>18179009</doc-number>
+                <kind>A</kind>
+                <date>20180621</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>19774990</doc-number>
+                <kind>A</kind>
+                <date>20190314</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+    <legstat-package-file format="ip" size="70790293">
+        <filename>LEGSTAT-202122-EP-AppDateFrom20190314-0016.xml</filename>
+        <file-location relative="true">/shared/appdata/lss_exchange-platform/tmp/frontfile/legstat_xml_202122/Root/DOC</file-location>
+        <legstat-doc-range country="EP">
+            <legstat-first-doc-in-range>
+                <country>EP</country>
+                <doc-number>19778361</doc-number>
+                <kind>A</kind>
+                <date>20190314</date>
+            </legstat-first-doc-in-range>
+            <legstat-last-doc-in-range>
+                <country>EP</country>
+                <doc-number>21165050</doc-number>
+                <kind>A</kind>
+                <date>20210325</date>
+            </legstat-last-doc-in-range>
+        </legstat-doc-range>
+    </legstat-package-file>
+</legstat-package-index>

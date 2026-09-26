@@ -1,0 +1,346 @@
+﻿table_name,column_name,data_type,character_maximum_length,is_nullable
+abstract,abstract_id,bigint,,NO
+abstract,publication_id,bigint,,NO
+abstract,lang_code,character,2,NO
+abstract,abstract_text,text,,NO
+abstract,data_format,character varying,20,YES
+abstract,abstract_source,character varying,50,YES
+application_type,appl_type_code,character varying,20,NO
+application_type,appl_type_name_en,character varying,100,NO
+application_type,appl_type_name_cn,character varying,100,NO
+application_type,ipr_type,character,2,YES
+citation_category,category_code,character varying,10,NO
+citation_category,category_desc_en,character varying,200,NO
+citation_category,category_desc_cn,character varying,200,NO
+citation_category,source_standard,character varying,30,NO
+citation_category,note,character varying,200,YES
+claim,claim_id,bigint,,NO
+claim,publication_id,bigint,,NO
+claim,lang_code,character,2,NO
+claim,claim_number,integer,,NO
+claim,claim_seq,integer,,NO
+claim,claim_type,character,1,NO
+claim,claim_text,text,,NO
+claim,xml_claim_id,character varying,64,YES
+claim_dependency,dependent_claim_id,bigint,,NO
+claim_dependency,parent_claim_id,bigint,,NO
+claim_dependency,dependency_type,character varying,20,YES
+claim_dependency,ref_text,character varying,200,YES
+classification,scheme_code,character varying,10,NO
+classification,symbol,character varying,30,NO
+classification,section,character,1,YES
+classification,class_no,character varying,3,YES
+classification,subclass,character varying,2,YES
+classification,main_group,character varying,6,YES
+classification,subgroup,character varying,8,YES
+classification,version_date,date,,YES
+classification,edition,character varying,10,YES
+classification,symbol_title,character varying,500,YES
+classification_scheme,scheme_code,character varying,10,NO
+classification_scheme,scheme_name_en,character varying,100,NO
+classification_scheme,scheme_name_cn,character varying,100,NO
+classification_scheme,authority,character,2,YES
+classification_scheme,symbol_format,character varying,100,YES
+classification_scheme,is_hierarchical,character,1,NO
+country_office,ctry_code,character,2,NO
+country_office,iso_alpha3,character,3,YES
+country_office,st3_name,character varying,100,NO
+country_office,name_cn,character varying,100,YES
+country_office,organisation_flag,character,1,YES
+country_office,continent,character varying,25,YES
+country_office,is_epo_member,character,1,YES
+country_office,is_eu_member,character,1,YES
+country_office,discontinued,character,1,YES
+dataset,dataset_id,bigint,,NO
+dataset,dataset_code,character varying,20,NO
+dataset,dataset_name_cn,character varying,200,NO
+dataset,dataset_name_en,character varying,200,YES
+dataset,office_code,character,2,NO
+dataset,data_category,character varying,20,NO
+dataset,file_format,character varying,20,NO
+dataset,manual_ref,character varying,500,YES
+dataset,description,text,,YES
+description_section,section_id,bigint,,NO
+description_section,publication_id,bigint,,NO
+description_section,parent_section_id,bigint,,YES
+description_section,section_seq,integer,,NO
+description_section,section_level,smallint,,YES
+description_section,heading,character varying,500,YES
+description_section,section_text,text,,YES
+designated_state,patent_id,bigint,,NO
+designated_state,state_code,character,2,NO
+designated_state,designation_type,character varying,10,NO
+drawing,drawing_id,bigint,,NO
+drawing,publication_id,bigint,,NO
+drawing,figure_seq,integer,,NO
+drawing,figure_id,character varying,64,YES
+drawing,image_file,character varying,255,YES
+drawing,alt_text,character varying,200,YES
+family_abstract,family_abstract_id,bigint,,NO
+family_abstract,family_id,bigint,,NO
+family_abstract,abstract_seq,smallint,,NO
+family_abstract,lang_code,character,2,YES
+family_abstract,abstract_text,text,,NO
+family_abstract,data_format,character varying,20,YES
+family_abstract,abstract_source,character varying,50,YES
+family_abstract,source_country,character,2,YES
+family_abstract,source_doc_number,character varying,50,YES
+family_abstract,source_kind,character varying,2,YES
+family_citation,citing_family_id,bigint,,NO
+family_citation,cited_family_id,bigint,,NO
+family_member_application_ref,member_appln_ref_id,bigint,,NO
+family_member_application_ref,member_id,bigint,,NO
+family_member_application_ref,data_format,character varying,20,NO
+family_member_application_ref,is_representative,character,1,YES
+family_member_application_ref,doc_id,character varying,20,YES
+family_member_application_ref,country_code,character,2,YES
+family_member_application_ref,appln_nr,character varying,50,NO
+family_member_application_ref,appln_kind,character varying,2,YES
+family_member_publication_ref,member_publn_ref_id,bigint,,NO
+family_member_publication_ref,member_id,bigint,,NO
+family_member_publication_ref,data_format,character varying,20,NO
+family_member_publication_ref,sequence_nr,smallint,,NO
+family_member_publication_ref,doc_id,character varying,20,YES
+family_member_publication_ref,country_code,character,2,YES
+family_member_publication_ref,publn_nr,character varying,50,NO
+family_member_publication_ref,publn_kind,character varying,2,YES
+family_member_publication_ref,publn_date_raw,character,8,YES
+international_application,int_appln_id,bigint,,NO
+international_application,patent_id,bigint,,NO
+international_application,int_patent_id,bigint,,YES
+international_application,int_appln_nr,character varying,50,YES
+international_application,int_filing_date,date,,YES
+international_application,receiving_office,character,2,YES
+international_application,int_publn_nr,character varying,30,YES
+international_application,int_publn_date,date,,YES
+international_application,int_lang,character,2,YES
+international_application,regional_office,character,2,YES
+international_application,national_phase_date,date,,YES
+ipc_techn_field,ipc_maingroup_symbol,character varying,30,NO
+ipc_techn_field,techn_field_nr,smallint,,NO
+ipc_techn_field,techn_sector,character varying,50,YES
+ipc_techn_field,techn_field,character varying,50,YES
+keyword,keyword_id,bigint,,NO
+keyword,keyword_text,character varying,200,NO
+keyword,lang_code,character,2,NO
+keyword,source,character varying,50,YES
+kind_code,office_code,character,2,NO
+kind_code,kind_code,character varying,2,NO
+kind_code,kind_description_en,character varying,200,NO
+kind_code,kind_description_cn,character varying,200,NO
+kind_code,publication_level,character,1,YES
+kind_code,is_grant,character,1,NO
+kind_code,note,character varying,200,YES
+language,lang_code,character,2,NO
+language,name_en,character varying,50,NO
+language,name_cn,character varying,50,YES
+legal_event_code,event_auth,character,2,NO
+legal_event_code,event_code,character varying,4,NO
+legal_event_code,event_impact,character,1,YES
+legal_event_code,event_descr,character varying,250,NO
+legal_event_code,event_descr_orig,character varying,250,YES
+legal_event_code,event_category_code,character,1,YES
+legal_event_code,event_category_title,character varying,100,YES
+legal_status_event,event_id,bigint,,NO
+legal_status_event,patent_id,bigint,,NO
+legal_status_event,dataset_id,bigint,,YES
+legal_status_event,event_seq_nr,smallint,,NO
+legal_status_event,event_type,character,3,YES
+legal_status_event,event_auth,character,2,NO
+legal_status_event,event_code,character varying,4,NO
+legal_status_event,event_filing_date,date,,YES
+legal_status_event,event_publn_date,date,,YES
+legal_status_event,event_effective_date,date,,YES
+legal_status_event,event_text,character varying,1000,YES
+legal_status_event,ref_doc_auth,character,2,YES
+legal_status_event,ref_doc_nr,character varying,20,YES
+legal_status_event,ref_doc_kind,character varying,2,YES
+legal_status_event,ref_doc_date,date,,YES
+legal_status_event,lapse_country,character,2,YES
+legal_status_event,lapse_date,date,,YES
+legal_status_event,fee_payment_date,date,,YES
+legal_status_event,fee_renewal_year,smallint,,YES
+legal_status_event,designated_states_raw,character varying,1000,YES
+legal_status_event,class_scheme_code,character varying,10,YES
+legal_status_event,class_symbol,character varying,50,YES
+natural_person,person_id,bigint,,NO
+natural_person,last_name,character varying,200,YES
+natural_person,first_name,character varying,200,YES
+natural_person,middle_name,character varying,200,YES
+non_patent_citation,npl_id,bigint,,NO
+non_patent_citation,citation_id,bigint,,NO
+non_patent_citation,npl_type,character varying,10,YES
+non_patent_citation,npl_biblio,text,,YES
+non_patent_citation,npl_author,character varying,500,YES
+non_patent_citation,npl_title,character varying,1000,YES
+non_patent_citation,npl_editor,character varying,500,YES
+non_patent_citation,npl_publisher,character varying,500,YES
+non_patent_citation,npl_volume,character varying,50,YES
+non_patent_citation,npl_issue,character varying,50,YES
+non_patent_citation,npl_page_first,character varying,50,YES
+non_patent_citation,npl_page_last,character varying,50,YES
+non_patent_citation,npl_publn_date,character varying,20,YES
+non_patent_citation,npl_doi,character varying,500,YES
+non_patent_citation,npl_isbn,character varying,30,YES
+non_patent_citation,npl_issn,character varying,30,YES
+non_patent_citation,online_availability,character varying,500,YES
+organization,person_id,bigint,,NO
+organization,org_name,character varying,500,NO
+organization,psn_sector,character varying,50,YES
+patent,patent_id,bigint,,NO
+patent,dataset_id,bigint,,NO
+patent,appln_auth,character,2,NO
+patent,appln_nr,character varying,30,NO
+patent,appln_kind,character varying,2,NO
+patent,appln_nr_original,character varying,100,YES
+patent,appln_nr_epodoc,character varying,30,YES
+patent,appl_type_code,character varying,20,YES
+patent,appln_filing_date,date,,YES
+patent,appln_filing_date_raw,character,8,YES
+patent,receiving_office,character,2,YES
+patent,appln_lang,character,2,YES
+patent,int_phase,character,1,NO
+patent,reg_phase,character,1,NO
+patent,nat_phase,character,1,NO
+patent,rights_effective_date,date,,YES
+patent,us_application_series_code,character varying,5,YES
+patent,botanic_latin_name,character varying,200,YES
+patent,botanic_variety,character varying,200,YES
+patent_agent,patent_id,bigint,,NO
+patent_agent,person_id,bigint,,NO
+patent_agent,sequence_nr,smallint,,NO
+patent_agent,rep_type,character varying,20,YES
+patent_agent,internal_ref,character varying,100,YES
+patent_applicant,patent_id,bigint,,NO
+patent_applicant,person_id,bigint,,NO
+patent_applicant,sequence_nr,smallint,,NO
+patent_applicant,applicant_type,character varying,20,YES
+patent_applicant,authority_category,character varying,50,YES
+patent_applicant,designation,character varying,50,YES
+patent_applicant,internal_ref,character varying,100,YES
+patent_assignee,patent_id,bigint,,NO
+patent_assignee,person_id,bigint,,NO
+patent_assignee,sequence_nr,smallint,,NO
+patent_assignee,role_code,character varying,5,YES
+patent_assignee,assignee_type,character varying,20,YES
+patent_citation,citation_id,bigint,,NO
+patent_citation,citing_patent_id,bigint,,NO
+patent_citation,citing_publication_id,bigint,,NO
+patent_citation,cited_patent_id,bigint,,YES
+patent_citation,cited_publn_id,bigint,,YES
+patent_citation,citation_type,character,1,NO
+patent_citation,cited_country,character,2,YES
+patent_citation,cited_doc_number,character varying,30,YES
+patent_citation,cited_doc_kind,character varying,2,YES
+patent_citation,cited_doc_date,date,,YES
+patent_citation,cited_doc_date_raw,character varying,8,YES
+patent_citation,cited_doc_name,character varying,200,YES
+patent_citation,cited_appln_nr,character varying,30,YES
+patent_citation,cited_raw_text,character varying,500,YES
+patent_citation,citn_seq,integer,,NO
+patent_citation,citn_origin,character varying,50,YES
+patent_citation,citn_gener_auth,character,2,YES
+patent_citation,relevant_claim,integer,,YES
+patent_citation_category,citation_id,bigint,,NO
+patent_citation_category,category_code,character varying,10,NO
+patent_citation_category,relevant_claim,integer,,NO
+patent_classification,patent_classification_id,bigint,,NO
+patent_classification,patent_id,bigint,,NO
+patent_classification,scheme_code,character varying,10,NO
+patent_classification,symbol,character varying,30,NO
+patent_classification,symbol_raw,character varying,60,YES
+patent_classification,position,character,1,YES
+patent_classification,value,character,1,YES
+patent_classification,classification_level,character,1,YES
+patent_classification,generating_office,character,2,YES
+patent_classification,source_type,character varying,20,NO
+patent_classification,action_date,date,,YES
+patent_classification,sequence_nr,smallint,,YES
+patent_examiner,patent_id,bigint,,NO
+patent_examiner,person_id,bigint,,NO
+patent_examiner,examiner_type,character,1,NO
+patent_examiner,department,character varying,20,YES
+patent_examiner,sequence_nr,smallint,,NO
+patent_family,family_id,bigint,,NO
+patent_family,family_type,character varying,10,NO
+patent_family,source_family_id,integer,,NO
+patent_family,dataset_id,bigint,,YES
+patent_family,earliest_priority_date,date,,YES
+patent_family,earliest_priority_country,character,2,YES
+patent_family,representative_publication_id,bigint,,YES
+patent_family,note,character varying,500,YES
+patent_family_member,member_id,bigint,,NO
+patent_family_member,family_id,bigint,,NO
+patent_family_member,member_patent_id,bigint,,YES
+patent_family_member,member_seq,smallint,,NO
+patent_family_member,is_representative,character,1,YES
+patent_family_member,member_type,character varying,20,YES
+patent_inventor,patent_id,bigint,,NO
+patent_inventor,person_id,bigint,,NO
+patent_inventor,sequence_nr,smallint,,NO
+patent_inventor,designation,character varying,50,YES
+patent_inventor,internal_ref,character varying,100,YES
+patent_keyword,patent_id,bigint,,NO
+patent_keyword,keyword_id,bigint,,NO
+patent_keyword,weight,real,,YES
+patent_keyword,source,character varying,50,YES
+person,person_id,bigint,,NO
+person,person_name,character varying,500,NO
+person,person_name_orig,character varying,500,YES
+person,person_type,character,1,NO
+person,address_text,character varying,1000,YES
+person,city,character varying,200,YES
+person,state_province,character varying,100,YES
+person,postcode,character varying,30,YES
+person,ctry_code,character,2,YES
+person,residence_ctry_code,character,2,YES
+person,doc_std_name,character varying,500,YES
+person,psn_id,integer,,YES
+person,epo_person_id,character varying,20,YES
+person,source_dataset_id,bigint,,YES
+priority_claim,priority_id,bigint,,NO
+priority_claim,patent_id,bigint,,NO
+priority_claim,prior_patent_id,bigint,,YES
+priority_claim,sequence_nr,smallint,,NO
+priority_claim,prior_country,character,2,NO
+priority_claim,prior_appln_nr,character varying,50,NO
+priority_claim,prior_date,date,,YES
+priority_claim,prior_date_raw,character,8,YES
+priority_claim,priority_kind,character varying,20,YES
+priority_claim,priority_active_indicator,character,1,YES
+priority_claim,designated_region,character,2,YES
+publication,publication_id,bigint,,NO
+publication,patent_id,bigint,,NO
+publication,dataset_id,bigint,,NO
+publication,publn_auth,character,2,NO
+publication,publn_nr,character varying,30,NO
+publication,publn_kind,character varying,2,NO
+publication,publn_date,date,,YES
+publication,publn_date_raw,character,8,YES
+publication,publn_lg,character,2,YES
+publication,publn_first_grant,character,1,NO
+publication,term_length_years,smallint,,YES
+publication,term_extension_days,integer,,YES
+publication,number_of_claims,integer,,YES
+publication,number_of_figures,integer,,YES
+publication,number_of_drawing_sheets,integer,,YES
+publication,gazette_number,character varying,20,YES
+publication,docdb_doc_id,character varying,20,YES
+publication,date_added_docdb,date,,YES
+related_application,relation_id,bigint,,NO
+related_application,patent_id,bigint,,NO
+related_application,related_patent_id,bigint,,YES
+related_application,relation_type,character varying,20,NO
+related_application,related_country,character,2,YES
+related_application,related_appln_nr,character varying,50,YES
+related_application,related_filing_date,date,,YES
+related_application,related_publn_nr,character varying,30,YES
+related_application,parent_status,character varying,30,YES
+related_application,sequence_nr,smallint,,NO
+title,title_id,bigint,,NO
+title,publication_id,bigint,,NO
+title,lang_code,character,2,NO
+title,title_text,character varying,2000,NO
+title,title_type,character varying,10,NO
+title,is_original,character,1,YES
+title,data_format,character varying,20,YES

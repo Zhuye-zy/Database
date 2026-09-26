@@ -1,0 +1,717 @@
+[
+  {
+    "tablename": "abstract",
+    "indexname": "ix_abstract_lang_code",
+    "indexdef": "CREATE INDEX ix_abstract_lang_code ON patentdb.abstract USING btree (lang_code)"
+  },
+  {
+    "tablename": "abstract",
+    "indexname": "ix_abstract_publication_id",
+    "indexdef": "CREATE INDEX ix_abstract_publication_id ON patentdb.abstract USING btree (publication_id)"
+  },
+  {
+    "tablename": "abstract",
+    "indexname": "pk_abstract",
+    "indexdef": "CREATE UNIQUE INDEX pk_abstract ON patentdb.abstract USING btree (abstract_id)"
+  },
+  {
+    "tablename": "abstract",
+    "indexname": "uq_abstract_pub_lang",
+    "indexdef": "CREATE UNIQUE INDEX uq_abstract_pub_lang ON patentdb.abstract USING btree (publication_id, lang_code)"
+  },
+  {
+    "tablename": "application_type",
+    "indexname": "pk_application_type",
+    "indexdef": "CREATE UNIQUE INDEX pk_application_type ON patentdb.application_type USING btree (appl_type_code)"
+  },
+  {
+    "tablename": "citation_category",
+    "indexname": "pk_citation_category",
+    "indexdef": "CREATE UNIQUE INDEX pk_citation_category ON patentdb.citation_category USING btree (category_code)"
+  },
+  {
+    "tablename": "claim",
+    "indexname": "ix_claim_lang_code",
+    "indexdef": "CREATE INDEX ix_claim_lang_code ON patentdb.claim USING btree (lang_code)"
+  },
+  {
+    "tablename": "claim",
+    "indexname": "ix_claim_publication_id",
+    "indexdef": "CREATE INDEX ix_claim_publication_id ON patentdb.claim USING btree (publication_id)"
+  },
+  {
+    "tablename": "claim",
+    "indexname": "pk_claim",
+    "indexdef": "CREATE UNIQUE INDEX pk_claim ON patentdb.claim USING btree (claim_id)"
+  },
+  {
+    "tablename": "claim",
+    "indexname": "uq_claim_pub_lang_no",
+    "indexdef": "CREATE UNIQUE INDEX uq_claim_pub_lang_no ON patentdb.claim USING btree (publication_id, lang_code, claim_number)"
+  },
+  {
+    "tablename": "claim_dependency",
+    "indexname": "pk_claim_dependency",
+    "indexdef": "CREATE UNIQUE INDEX pk_claim_dependency ON patentdb.claim_dependency USING btree (dependent_claim_id, parent_claim_id)"
+  },
+  {
+    "tablename": "classification",
+    "indexname": "pk_classification",
+    "indexdef": "CREATE UNIQUE INDEX pk_classification ON patentdb.classification USING btree (scheme_code, symbol)"
+  },
+  {
+    "tablename": "classification_scheme",
+    "indexname": "ix_classification_scheme_authority",
+    "indexdef": "CREATE INDEX ix_classification_scheme_authority ON patentdb.classification_scheme USING btree (authority)"
+  },
+  {
+    "tablename": "classification_scheme",
+    "indexname": "pk_classification_scheme",
+    "indexdef": "CREATE UNIQUE INDEX pk_classification_scheme ON patentdb.classification_scheme USING btree (scheme_code)"
+  },
+  {
+    "tablename": "country_office",
+    "indexname": "pk_country_office",
+    "indexdef": "CREATE UNIQUE INDEX pk_country_office ON patentdb.country_office USING btree (ctry_code)"
+  },
+  {
+    "tablename": "country_office",
+    "indexname": "uq_country_office_iso_alpha3",
+    "indexdef": "CREATE UNIQUE INDEX uq_country_office_iso_alpha3 ON patentdb.country_office USING btree (iso_alpha3)"
+  },
+  {
+    "tablename": "dataset",
+    "indexname": "ix_dataset_office_code",
+    "indexdef": "CREATE INDEX ix_dataset_office_code ON patentdb.dataset USING btree (office_code)"
+  },
+  {
+    "tablename": "dataset",
+    "indexname": "pk_dataset",
+    "indexdef": "CREATE UNIQUE INDEX pk_dataset ON patentdb.dataset USING btree (dataset_id)"
+  },
+  {
+    "tablename": "dataset",
+    "indexname": "uq_dataset_dataset_code",
+    "indexdef": "CREATE UNIQUE INDEX uq_dataset_dataset_code ON patentdb.dataset USING btree (dataset_code)"
+  },
+  {
+    "tablename": "description_section",
+    "indexname": "ix_description_section_parent_section_id",
+    "indexdef": "CREATE INDEX ix_description_section_parent_section_id ON patentdb.description_section USING btree (parent_section_id)"
+  },
+  {
+    "tablename": "description_section",
+    "indexname": "ix_description_section_publication_id",
+    "indexdef": "CREATE INDEX ix_description_section_publication_id ON patentdb.description_section USING btree (publication_id)"
+  },
+  {
+    "tablename": "description_section",
+    "indexname": "pk_description_section",
+    "indexdef": "CREATE UNIQUE INDEX pk_description_section ON patentdb.description_section USING btree (section_id)"
+  },
+  {
+    "tablename": "description_section",
+    "indexname": "uq_description_pub_seq",
+    "indexdef": "CREATE UNIQUE INDEX uq_description_pub_seq ON patentdb.description_section USING btree (publication_id, section_seq)"
+  },
+  {
+    "tablename": "designated_state",
+    "indexname": "pk_designated_state",
+    "indexdef": "CREATE UNIQUE INDEX pk_designated_state ON patentdb.designated_state USING btree (patent_id, state_code, designation_type)"
+  },
+  {
+    "tablename": "drawing",
+    "indexname": "ix_drawing_publication_id",
+    "indexdef": "CREATE INDEX ix_drawing_publication_id ON patentdb.drawing USING btree (publication_id)"
+  },
+  {
+    "tablename": "drawing",
+    "indexname": "pk_drawing",
+    "indexdef": "CREATE UNIQUE INDEX pk_drawing ON patentdb.drawing USING btree (drawing_id)"
+  },
+  {
+    "tablename": "drawing",
+    "indexname": "uq_drawing_pub_seq",
+    "indexdef": "CREATE UNIQUE INDEX uq_drawing_pub_seq ON patentdb.drawing USING btree (publication_id, figure_seq)"
+  },
+  {
+    "tablename": "family_abstract",
+    "indexname": "ix_family_abstract_family_id",
+    "indexdef": "CREATE INDEX ix_family_abstract_family_id ON patentdb.family_abstract USING btree (family_id)"
+  },
+  {
+    "tablename": "family_abstract",
+    "indexname": "ix_family_abstract_lang_code",
+    "indexdef": "CREATE INDEX ix_family_abstract_lang_code ON patentdb.family_abstract USING btree (lang_code)"
+  },
+  {
+    "tablename": "family_abstract",
+    "indexname": "ix_family_abstract_source_country",
+    "indexdef": "CREATE INDEX ix_family_abstract_source_country ON patentdb.family_abstract USING btree (source_country)"
+  },
+  {
+    "tablename": "family_abstract",
+    "indexname": "pk_family_abstract",
+    "indexdef": "CREATE UNIQUE INDEX pk_family_abstract ON patentdb.family_abstract USING btree (family_abstract_id)"
+  },
+  {
+    "tablename": "family_abstract",
+    "indexname": "uq_family_abstract_seq",
+    "indexdef": "CREATE UNIQUE INDEX uq_family_abstract_seq ON patentdb.family_abstract USING btree (family_id, abstract_seq)"
+  },
+  {
+    "tablename": "family_citation",
+    "indexname": "pk_family_citation",
+    "indexdef": "CREATE UNIQUE INDEX pk_family_citation ON patentdb.family_citation USING btree (citing_family_id, cited_family_id)"
+  },
+  {
+    "tablename": "family_member_application_ref",
+    "indexname": "ix_family_member_application_ref_country_code",
+    "indexdef": "CREATE INDEX ix_family_member_application_ref_country_code ON patentdb.family_member_application_ref USING btree (country_code)"
+  },
+  {
+    "tablename": "family_member_application_ref",
+    "indexname": "ix_family_member_application_ref_member_id",
+    "indexdef": "CREATE INDEX ix_family_member_application_ref_member_id ON patentdb.family_member_application_ref USING btree (member_id)"
+  },
+  {
+    "tablename": "family_member_application_ref",
+    "indexname": "pk_family_member_application_ref",
+    "indexdef": "CREATE UNIQUE INDEX pk_family_member_application_ref ON patentdb.family_member_application_ref USING btree (member_appln_ref_id)"
+  },
+  {
+    "tablename": "family_member_application_ref",
+    "indexname": "uq_family_app_ref_source",
+    "indexdef": "CREATE UNIQUE INDEX uq_family_app_ref_source ON patentdb.family_member_application_ref USING btree (member_id, data_format, appln_nr)"
+  },
+  {
+    "tablename": "family_member_publication_ref",
+    "indexname": "ix_family_member_publication_ref_country_code",
+    "indexdef": "CREATE INDEX ix_family_member_publication_ref_country_code ON patentdb.family_member_publication_ref USING btree (country_code)"
+  },
+  {
+    "tablename": "family_member_publication_ref",
+    "indexname": "ix_family_member_publication_ref_member_id",
+    "indexdef": "CREATE INDEX ix_family_member_publication_ref_member_id ON patentdb.family_member_publication_ref USING btree (member_id)"
+  },
+  {
+    "tablename": "family_member_publication_ref",
+    "indexname": "pk_family_member_publication_ref",
+    "indexdef": "CREATE UNIQUE INDEX pk_family_member_publication_ref ON patentdb.family_member_publication_ref USING btree (member_publn_ref_id)"
+  },
+  {
+    "tablename": "family_member_publication_ref",
+    "indexname": "uq_family_pub_ref_source",
+    "indexdef": "CREATE UNIQUE INDEX uq_family_pub_ref_source ON patentdb.family_member_publication_ref USING btree (member_id, data_format, sequence_nr, publn_nr)"
+  },
+  {
+    "tablename": "international_application",
+    "indexname": "ix_international_application_int_lang",
+    "indexdef": "CREATE INDEX ix_international_application_int_lang ON patentdb.international_application USING btree (int_lang)"
+  },
+  {
+    "tablename": "international_application",
+    "indexname": "ix_international_application_int_patent_id",
+    "indexdef": "CREATE INDEX ix_international_application_int_patent_id ON patentdb.international_application USING btree (int_patent_id)"
+  },
+  {
+    "tablename": "international_application",
+    "indexname": "ix_international_application_patent_id",
+    "indexdef": "CREATE INDEX ix_international_application_patent_id ON patentdb.international_application USING btree (patent_id)"
+  },
+  {
+    "tablename": "international_application",
+    "indexname": "ix_international_application_receiving_office",
+    "indexdef": "CREATE INDEX ix_international_application_receiving_office ON patentdb.international_application USING btree (receiving_office)"
+  },
+  {
+    "tablename": "international_application",
+    "indexname": "ix_international_application_regional_office",
+    "indexdef": "CREATE INDEX ix_international_application_regional_office ON patentdb.international_application USING btree (regional_office)"
+  },
+  {
+    "tablename": "international_application",
+    "indexname": "pk_international_application",
+    "indexdef": "CREATE UNIQUE INDEX pk_international_application ON patentdb.international_application USING btree (int_appln_id)"
+  },
+  {
+    "tablename": "international_application",
+    "indexname": "uq_international_application_patent_id",
+    "indexdef": "CREATE UNIQUE INDEX uq_international_application_patent_id ON patentdb.international_application USING btree (patent_id)"
+  },
+  {
+    "tablename": "ipc_techn_field",
+    "indexname": "pk_ipc_techn_field",
+    "indexdef": "CREATE UNIQUE INDEX pk_ipc_techn_field ON patentdb.ipc_techn_field USING btree (ipc_maingroup_symbol)"
+  },
+  {
+    "tablename": "keyword",
+    "indexname": "ix_keyword_lang_code",
+    "indexdef": "CREATE INDEX ix_keyword_lang_code ON patentdb.keyword USING btree (lang_code)"
+  },
+  {
+    "tablename": "keyword",
+    "indexname": "pk_keyword",
+    "indexdef": "CREATE UNIQUE INDEX pk_keyword ON patentdb.keyword USING btree (keyword_id)"
+  },
+  {
+    "tablename": "keyword",
+    "indexname": "uq_keyword_keyword_text_lang_code",
+    "indexdef": "CREATE UNIQUE INDEX uq_keyword_keyword_text_lang_code ON patentdb.keyword USING btree (keyword_text, lang_code)"
+  },
+  {
+    "tablename": "kind_code",
+    "indexname": "pk_kind_code",
+    "indexdef": "CREATE UNIQUE INDEX pk_kind_code ON patentdb.kind_code USING btree (office_code, kind_code)"
+  },
+  {
+    "tablename": "language",
+    "indexname": "pk_language",
+    "indexdef": "CREATE UNIQUE INDEX pk_language ON patentdb.language USING btree (lang_code)"
+  },
+  {
+    "tablename": "legal_event_code",
+    "indexname": "pk_legal_event_code",
+    "indexdef": "CREATE UNIQUE INDEX pk_legal_event_code ON patentdb.legal_event_code USING btree (event_auth, event_code)"
+  },
+  {
+    "tablename": "legal_status_event",
+    "indexname": "ix_legal_status_event_class_scheme_code",
+    "indexdef": "CREATE INDEX ix_legal_status_event_class_scheme_code ON patentdb.legal_status_event USING btree (class_scheme_code)"
+  },
+  {
+    "tablename": "legal_status_event",
+    "indexname": "ix_legal_status_event_dataset_id",
+    "indexdef": "CREATE INDEX ix_legal_status_event_dataset_id ON patentdb.legal_status_event USING btree (dataset_id)"
+  },
+  {
+    "tablename": "legal_status_event",
+    "indexname": "ix_legal_status_event_event_auth",
+    "indexdef": "CREATE INDEX ix_legal_status_event_event_auth ON patentdb.legal_status_event USING btree (event_auth)"
+  },
+  {
+    "tablename": "legal_status_event",
+    "indexname": "ix_legal_status_event_event_code",
+    "indexdef": "CREATE INDEX ix_legal_status_event_event_code ON patentdb.legal_status_event USING btree (event_code)"
+  },
+  {
+    "tablename": "legal_status_event",
+    "indexname": "ix_legal_status_event_event_effective_date",
+    "indexdef": "CREATE INDEX ix_legal_status_event_event_effective_date ON patentdb.legal_status_event USING btree (event_effective_date)"
+  },
+  {
+    "tablename": "legal_status_event",
+    "indexname": "ix_legal_status_event_lapse_country",
+    "indexdef": "CREATE INDEX ix_legal_status_event_lapse_country ON patentdb.legal_status_event USING btree (lapse_country)"
+  },
+  {
+    "tablename": "legal_status_event",
+    "indexname": "ix_legal_status_event_patent_id",
+    "indexdef": "CREATE INDEX ix_legal_status_event_patent_id ON patentdb.legal_status_event USING btree (patent_id)"
+  },
+  {
+    "tablename": "legal_status_event",
+    "indexname": "ix_legal_status_event_ref_doc_auth",
+    "indexdef": "CREATE INDEX ix_legal_status_event_ref_doc_auth ON patentdb.legal_status_event USING btree (ref_doc_auth)"
+  },
+  {
+    "tablename": "legal_status_event",
+    "indexname": "pk_legal_status_event",
+    "indexdef": "CREATE UNIQUE INDEX pk_legal_status_event ON patentdb.legal_status_event USING btree (event_id)"
+  },
+  {
+    "tablename": "legal_status_event",
+    "indexname": "uq_legal_event_patent_seq",
+    "indexdef": "CREATE UNIQUE INDEX uq_legal_event_patent_seq ON patentdb.legal_status_event USING btree (patent_id, event_seq_nr)"
+  },
+  {
+    "tablename": "natural_person",
+    "indexname": "pk_natural_person",
+    "indexdef": "CREATE UNIQUE INDEX pk_natural_person ON patentdb.natural_person USING btree (person_id)"
+  },
+  {
+    "tablename": "non_patent_citation",
+    "indexname": "ix_non_patent_citation_citation_id",
+    "indexdef": "CREATE INDEX ix_non_patent_citation_citation_id ON patentdb.non_patent_citation USING btree (citation_id)"
+  },
+  {
+    "tablename": "non_patent_citation",
+    "indexname": "pk_non_patent_citation",
+    "indexdef": "CREATE UNIQUE INDEX pk_non_patent_citation ON patentdb.non_patent_citation USING btree (npl_id)"
+  },
+  {
+    "tablename": "non_patent_citation",
+    "indexname": "uq_non_patent_citation_citation_id",
+    "indexdef": "CREATE UNIQUE INDEX uq_non_patent_citation_citation_id ON patentdb.non_patent_citation USING btree (citation_id)"
+  },
+  {
+    "tablename": "organization",
+    "indexname": "pk_organization",
+    "indexdef": "CREATE UNIQUE INDEX pk_organization ON patentdb.organization USING btree (person_id)"
+  },
+  {
+    "tablename": "patent",
+    "indexname": "ix_patent_appl_type_code",
+    "indexdef": "CREATE INDEX ix_patent_appl_type_code ON patentdb.patent USING btree (appl_type_code)"
+  },
+  {
+    "tablename": "patent",
+    "indexname": "ix_patent_appln_auth",
+    "indexdef": "CREATE INDEX ix_patent_appln_auth ON patentdb.patent USING btree (appln_auth)"
+  },
+  {
+    "tablename": "patent",
+    "indexname": "ix_patent_appln_filing_date",
+    "indexdef": "CREATE INDEX ix_patent_appln_filing_date ON patentdb.patent USING btree (appln_filing_date)"
+  },
+  {
+    "tablename": "patent",
+    "indexname": "ix_patent_appln_lang",
+    "indexdef": "CREATE INDEX ix_patent_appln_lang ON patentdb.patent USING btree (appln_lang)"
+  },
+  {
+    "tablename": "patent",
+    "indexname": "ix_patent_appln_nr_epodoc",
+    "indexdef": "CREATE INDEX ix_patent_appln_nr_epodoc ON patentdb.patent USING btree (appln_nr_epodoc)"
+  },
+  {
+    "tablename": "patent",
+    "indexname": "ix_patent_dataset_id",
+    "indexdef": "CREATE INDEX ix_patent_dataset_id ON patentdb.patent USING btree (dataset_id)"
+  },
+  {
+    "tablename": "patent",
+    "indexname": "ix_patent_receiving_office",
+    "indexdef": "CREATE INDEX ix_patent_receiving_office ON patentdb.patent USING btree (receiving_office)"
+  },
+  {
+    "tablename": "patent",
+    "indexname": "pk_patent",
+    "indexdef": "CREATE UNIQUE INDEX pk_patent ON patentdb.patent USING btree (patent_id)"
+  },
+  {
+    "tablename": "patent",
+    "indexname": "uq_patent_appln_business_key",
+    "indexdef": "CREATE UNIQUE INDEX uq_patent_appln_business_key ON patentdb.patent USING btree (appln_auth, appln_nr, appln_kind)"
+  },
+  {
+    "tablename": "patent_agent",
+    "indexname": "ix_patent_agent_person_id",
+    "indexdef": "CREATE INDEX ix_patent_agent_person_id ON patentdb.patent_agent USING btree (person_id)"
+  },
+  {
+    "tablename": "patent_agent",
+    "indexname": "pk_patent_agent",
+    "indexdef": "CREATE UNIQUE INDEX pk_patent_agent ON patentdb.patent_agent USING btree (patent_id, sequence_nr)"
+  },
+  {
+    "tablename": "patent_applicant",
+    "indexname": "ix_patent_applicant_person_id",
+    "indexdef": "CREATE INDEX ix_patent_applicant_person_id ON patentdb.patent_applicant USING btree (person_id)"
+  },
+  {
+    "tablename": "patent_applicant",
+    "indexname": "pk_patent_applicant",
+    "indexdef": "CREATE UNIQUE INDEX pk_patent_applicant ON patentdb.patent_applicant USING btree (patent_id, sequence_nr)"
+  },
+  {
+    "tablename": "patent_assignee",
+    "indexname": "ix_patent_assignee_person_id",
+    "indexdef": "CREATE INDEX ix_patent_assignee_person_id ON patentdb.patent_assignee USING btree (person_id)"
+  },
+  {
+    "tablename": "patent_assignee",
+    "indexname": "pk_patent_assignee",
+    "indexdef": "CREATE UNIQUE INDEX pk_patent_assignee ON patentdb.patent_assignee USING btree (patent_id, sequence_nr)"
+  },
+  {
+    "tablename": "patent_citation",
+    "indexname": "ix_patent_citation_cited_country",
+    "indexdef": "CREATE INDEX ix_patent_citation_cited_country ON patentdb.patent_citation USING btree (cited_country)"
+  },
+  {
+    "tablename": "patent_citation",
+    "indexname": "ix_patent_citation_cited_doc_number",
+    "indexdef": "CREATE INDEX ix_patent_citation_cited_doc_number ON patentdb.patent_citation USING btree (cited_doc_number)"
+  },
+  {
+    "tablename": "patent_citation",
+    "indexname": "ix_patent_citation_cited_patent_id",
+    "indexdef": "CREATE INDEX ix_patent_citation_cited_patent_id ON patentdb.patent_citation USING btree (cited_patent_id)"
+  },
+  {
+    "tablename": "patent_citation",
+    "indexname": "ix_patent_citation_cited_publn_id",
+    "indexdef": "CREATE INDEX ix_patent_citation_cited_publn_id ON patentdb.patent_citation USING btree (cited_publn_id)"
+  },
+  {
+    "tablename": "patent_citation",
+    "indexname": "ix_patent_citation_citing_patent_id",
+    "indexdef": "CREATE INDEX ix_patent_citation_citing_patent_id ON patentdb.patent_citation USING btree (citing_patent_id)"
+  },
+  {
+    "tablename": "patent_citation",
+    "indexname": "ix_patent_citation_citing_publication_id",
+    "indexdef": "CREATE INDEX ix_patent_citation_citing_publication_id ON patentdb.patent_citation USING btree (citing_publication_id)"
+  },
+  {
+    "tablename": "patent_citation",
+    "indexname": "ix_patent_citation_citn_gener_auth",
+    "indexdef": "CREATE INDEX ix_patent_citation_citn_gener_auth ON patentdb.patent_citation USING btree (citn_gener_auth)"
+  },
+  {
+    "tablename": "patent_citation",
+    "indexname": "pk_patent_citation",
+    "indexdef": "CREATE UNIQUE INDEX pk_patent_citation ON patentdb.patent_citation USING btree (citation_id)"
+  },
+  {
+    "tablename": "patent_citation",
+    "indexname": "uq_patent_citation_source_seq",
+    "indexdef": "CREATE UNIQUE INDEX uq_patent_citation_source_seq ON patentdb.patent_citation USING btree (citing_publication_id, citation_type, citn_seq)"
+  },
+  {
+    "tablename": "patent_citation_category",
+    "indexname": "pk_patent_citation_category",
+    "indexdef": "CREATE UNIQUE INDEX pk_patent_citation_category ON patentdb.patent_citation_category USING btree (citation_id, category_code, relevant_claim)"
+  },
+  {
+    "tablename": "patent_classification",
+    "indexname": "ix_patent_classification_generating_office",
+    "indexdef": "CREATE INDEX ix_patent_classification_generating_office ON patentdb.patent_classification USING btree (generating_office)"
+  },
+  {
+    "tablename": "patent_classification",
+    "indexname": "ix_patent_classification_patent_id",
+    "indexdef": "CREATE INDEX ix_patent_classification_patent_id ON patentdb.patent_classification USING btree (patent_id)"
+  },
+  {
+    "tablename": "patent_classification",
+    "indexname": "ix_patent_classification_scheme_code",
+    "indexdef": "CREATE INDEX ix_patent_classification_scheme_code ON patentdb.patent_classification USING btree (scheme_code)"
+  },
+  {
+    "tablename": "patent_classification",
+    "indexname": "ix_patent_classification_symbol",
+    "indexdef": "CREATE INDEX ix_patent_classification_symbol ON patentdb.patent_classification USING btree (symbol)"
+  },
+  {
+    "tablename": "patent_classification",
+    "indexname": "pk_patent_classification",
+    "indexdef": "CREATE UNIQUE INDEX pk_patent_classification ON patentdb.patent_classification USING btree (patent_classification_id)"
+  },
+  {
+    "tablename": "patent_classification",
+    "indexname": "uq_patent_classification_business",
+    "indexdef": "CREATE UNIQUE INDEX uq_patent_classification_business ON patentdb.patent_classification USING btree (patent_id, scheme_code, symbol, source_type)"
+  },
+  {
+    "tablename": "patent_examiner",
+    "indexname": "ix_patent_examiner_person_id",
+    "indexdef": "CREATE INDEX ix_patent_examiner_person_id ON patentdb.patent_examiner USING btree (person_id)"
+  },
+  {
+    "tablename": "patent_examiner",
+    "indexname": "pk_patent_examiner",
+    "indexdef": "CREATE UNIQUE INDEX pk_patent_examiner ON patentdb.patent_examiner USING btree (patent_id, examiner_type, sequence_nr)"
+  },
+  {
+    "tablename": "patent_family",
+    "indexname": "ix_patent_family_dataset_id",
+    "indexdef": "CREATE INDEX ix_patent_family_dataset_id ON patentdb.patent_family USING btree (dataset_id)"
+  },
+  {
+    "tablename": "patent_family",
+    "indexname": "ix_patent_family_earliest_priority_country",
+    "indexdef": "CREATE INDEX ix_patent_family_earliest_priority_country ON patentdb.patent_family USING btree (earliest_priority_country)"
+  },
+  {
+    "tablename": "patent_family",
+    "indexname": "ix_patent_family_earliest_priority_date",
+    "indexdef": "CREATE INDEX ix_patent_family_earliest_priority_date ON patentdb.patent_family USING btree (earliest_priority_date)"
+  },
+  {
+    "tablename": "patent_family",
+    "indexname": "ix_patent_family_representative_publication_id",
+    "indexdef": "CREATE INDEX ix_patent_family_representative_publication_id ON patentdb.patent_family USING btree (representative_publication_id)"
+  },
+  {
+    "tablename": "patent_family",
+    "indexname": "pk_patent_family",
+    "indexdef": "CREATE UNIQUE INDEX pk_patent_family ON patentdb.patent_family USING btree (family_id)"
+  },
+  {
+    "tablename": "patent_family",
+    "indexname": "uq_patent_family_source",
+    "indexdef": "CREATE UNIQUE INDEX uq_patent_family_source ON patentdb.patent_family USING btree (family_type, source_family_id)"
+  },
+  {
+    "tablename": "patent_family_member",
+    "indexname": "ix_patent_family_member_family_id",
+    "indexdef": "CREATE INDEX ix_patent_family_member_family_id ON patentdb.patent_family_member USING btree (family_id)"
+  },
+  {
+    "tablename": "patent_family_member",
+    "indexname": "ix_patent_family_member_member_patent_id",
+    "indexdef": "CREATE INDEX ix_patent_family_member_member_patent_id ON patentdb.patent_family_member USING btree (member_patent_id)"
+  },
+  {
+    "tablename": "patent_family_member",
+    "indexname": "pk_patent_family_member",
+    "indexdef": "CREATE UNIQUE INDEX pk_patent_family_member ON patentdb.patent_family_member USING btree (member_id)"
+  },
+  {
+    "tablename": "patent_family_member",
+    "indexname": "uq_family_member_seq",
+    "indexdef": "CREATE UNIQUE INDEX uq_family_member_seq ON patentdb.patent_family_member USING btree (family_id, member_seq)"
+  },
+  {
+    "tablename": "patent_inventor",
+    "indexname": "ix_patent_inventor_person_id",
+    "indexdef": "CREATE INDEX ix_patent_inventor_person_id ON patentdb.patent_inventor USING btree (person_id)"
+  },
+  {
+    "tablename": "patent_inventor",
+    "indexname": "pk_patent_inventor",
+    "indexdef": "CREATE UNIQUE INDEX pk_patent_inventor ON patentdb.patent_inventor USING btree (patent_id, sequence_nr)"
+  },
+  {
+    "tablename": "patent_keyword",
+    "indexname": "pk_patent_keyword",
+    "indexdef": "CREATE UNIQUE INDEX pk_patent_keyword ON patentdb.patent_keyword USING btree (patent_id, keyword_id)"
+  },
+  {
+    "tablename": "person",
+    "indexname": "ix_person_ctry_code",
+    "indexdef": "CREATE INDEX ix_person_ctry_code ON patentdb.person USING btree (ctry_code)"
+  },
+  {
+    "tablename": "person",
+    "indexname": "ix_person_residence_ctry_code",
+    "indexdef": "CREATE INDEX ix_person_residence_ctry_code ON patentdb.person USING btree (residence_ctry_code)"
+  },
+  {
+    "tablename": "person",
+    "indexname": "ix_person_source_dataset_id",
+    "indexdef": "CREATE INDEX ix_person_source_dataset_id ON patentdb.person USING btree (source_dataset_id)"
+  },
+  {
+    "tablename": "person",
+    "indexname": "pk_person",
+    "indexdef": "CREATE UNIQUE INDEX pk_person ON patentdb.person USING btree (person_id)"
+  },
+  {
+    "tablename": "priority_claim",
+    "indexname": "ix_priority_claim_designated_region",
+    "indexdef": "CREATE INDEX ix_priority_claim_designated_region ON patentdb.priority_claim USING btree (designated_region)"
+  },
+  {
+    "tablename": "priority_claim",
+    "indexname": "ix_priority_claim_patent_id",
+    "indexdef": "CREATE INDEX ix_priority_claim_patent_id ON patentdb.priority_claim USING btree (patent_id)"
+  },
+  {
+    "tablename": "priority_claim",
+    "indexname": "ix_priority_claim_prior_country",
+    "indexdef": "CREATE INDEX ix_priority_claim_prior_country ON patentdb.priority_claim USING btree (prior_country)"
+  },
+  {
+    "tablename": "priority_claim",
+    "indexname": "ix_priority_claim_prior_patent_id",
+    "indexdef": "CREATE INDEX ix_priority_claim_prior_patent_id ON patentdb.priority_claim USING btree (prior_patent_id)"
+  },
+  {
+    "tablename": "priority_claim",
+    "indexname": "pk_priority_claim",
+    "indexdef": "CREATE UNIQUE INDEX pk_priority_claim ON patentdb.priority_claim USING btree (priority_id)"
+  },
+  {
+    "tablename": "priority_claim",
+    "indexname": "uq_priority_patent_seq",
+    "indexdef": "CREATE UNIQUE INDEX uq_priority_patent_seq ON patentdb.priority_claim USING btree (patent_id, sequence_nr)"
+  },
+  {
+    "tablename": "publication",
+    "indexname": "ix_publication_dataset_id",
+    "indexdef": "CREATE INDEX ix_publication_dataset_id ON patentdb.publication USING btree (dataset_id)"
+  },
+  {
+    "tablename": "publication",
+    "indexname": "ix_publication_patent_id",
+    "indexdef": "CREATE INDEX ix_publication_patent_id ON patentdb.publication USING btree (patent_id)"
+  },
+  {
+    "tablename": "publication",
+    "indexname": "ix_publication_publn_auth",
+    "indexdef": "CREATE INDEX ix_publication_publn_auth ON patentdb.publication USING btree (publn_auth)"
+  },
+  {
+    "tablename": "publication",
+    "indexname": "ix_publication_publn_date",
+    "indexdef": "CREATE INDEX ix_publication_publn_date ON patentdb.publication USING btree (publn_date)"
+  },
+  {
+    "tablename": "publication",
+    "indexname": "ix_publication_publn_kind",
+    "indexdef": "CREATE INDEX ix_publication_publn_kind ON patentdb.publication USING btree (publn_kind)"
+  },
+  {
+    "tablename": "publication",
+    "indexname": "ix_publication_publn_lg",
+    "indexdef": "CREATE INDEX ix_publication_publn_lg ON patentdb.publication USING btree (publn_lg)"
+  },
+  {
+    "tablename": "publication",
+    "indexname": "pk_publication",
+    "indexdef": "CREATE UNIQUE INDEX pk_publication ON patentdb.publication USING btree (publication_id)"
+  },
+  {
+    "tablename": "publication",
+    "indexname": "uq_publication_doc_key",
+    "indexdef": "CREATE UNIQUE INDEX uq_publication_doc_key ON patentdb.publication USING btree (publn_auth, publn_nr, publn_kind)"
+  },
+  {
+    "tablename": "related_application",
+    "indexname": "ix_related_application_patent_id",
+    "indexdef": "CREATE INDEX ix_related_application_patent_id ON patentdb.related_application USING btree (patent_id)"
+  },
+  {
+    "tablename": "related_application",
+    "indexname": "ix_related_application_related_country",
+    "indexdef": "CREATE INDEX ix_related_application_related_country ON patentdb.related_application USING btree (related_country)"
+  },
+  {
+    "tablename": "related_application",
+    "indexname": "ix_related_application_related_patent_id",
+    "indexdef": "CREATE INDEX ix_related_application_related_patent_id ON patentdb.related_application USING btree (related_patent_id)"
+  },
+  {
+    "tablename": "related_application",
+    "indexname": "pk_related_application",
+    "indexdef": "CREATE UNIQUE INDEX pk_related_application ON patentdb.related_application USING btree (relation_id)"
+  },
+  {
+    "tablename": "related_application",
+    "indexname": "uq_related_patent_seq",
+    "indexdef": "CREATE UNIQUE INDEX uq_related_patent_seq ON patentdb.related_application USING btree (patent_id, sequence_nr)"
+  },
+  {
+    "tablename": "title",
+    "indexname": "ix_title_lang_code",
+    "indexdef": "CREATE INDEX ix_title_lang_code ON patentdb.title USING btree (lang_code)"
+  },
+  {
+    "tablename": "title",
+    "indexname": "ix_title_publication_id",
+    "indexdef": "CREATE INDEX ix_title_publication_id ON patentdb.title USING btree (publication_id)"
+  },
+  {
+    "tablename": "title",
+    "indexname": "pk_title",
+    "indexdef": "CREATE UNIQUE INDEX pk_title ON patentdb.title USING btree (title_id)"
+  },
+  {
+    "tablename": "title",
+    "indexname": "uq_title_pub_lang_type",
+    "indexdef": "CREATE UNIQUE INDEX uq_title_pub_lang_type ON patentdb.title USING btree (publication_id, lang_code, title_type)"
+  }
+]

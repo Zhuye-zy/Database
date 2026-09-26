@@ -1,0 +1,137 @@
+[
+  {
+    "table": "dataset",
+    "prepared_rows": 4,
+    "mismatches": 0
+  },
+  {
+    "table": "country_office",
+    "prepared_rows": 48,
+    "mismatches": 0
+  },
+  {
+    "table": "language",
+    "prepared_rows": 3,
+    "mismatches": 0
+  },
+  {
+    "table": "kind_code",
+    "prepared_rows": 9,
+    "mismatches": 0
+  },
+  {
+    "table": "application_type",
+    "prepared_rows": 4,
+    "mismatches": 0
+  },
+  {
+    "table": "classification_scheme",
+    "prepared_rows": 2,
+    "mismatches": 0
+  },
+  {
+    "table": "patent",
+    "prepared_rows": 18,
+    "mismatches": 0
+  },
+  {
+    "table": "publication",
+    "prepared_rows": 18,
+    "mismatches": 0
+  },
+  {
+    "table": "title",
+    "prepared_rows": 30,
+    "mismatches": 0
+  },
+  {
+    "table": "abstract",
+    "prepared_rows": 13,
+    "mismatches": 0
+  },
+  {
+    "table": "description_section",
+    "prepared_rows": 538,
+    "mismatches": 0
+  },
+  {
+    "table": "claim",
+    "prepared_rows": 184,
+    "mismatches": 0
+  },
+  {
+    "table": "drawing",
+    "prepared_rows": 92,
+    "mismatches": 0
+  },
+  {
+    "table": "claim_dependency",
+    "prepared_rows": 84,
+    "mismatches": 0
+  },
+  {
+    "table": "person",
+    "prepared_rows": 71,
+    "mismatches": 0
+  },
+  {
+    "table": "organization",
+    "prepared_rows": 10,
+    "mismatches": 0
+  },
+  {
+    "table": "natural_person",
+    "prepared_rows": 61,
+    "mismatches": 0
+  },
+  {
+    "table": "patent_applicant",
+    "prepared_rows": 18,
+    "mismatches": 0
+  },
+  {
+    "table": "patent_inventor",
+    "prepared_rows": 32,
+    "mismatches": 0
+  },
+  {
+    "table": "patent_assignee",
+    "prepared_rows": 9,
+    "mismatches": 0
+  },
+  {
+    "table": "patent_agent",
+    "prepared_rows": 12,
+    "mismatches": 0
+  },
+  {
+    "table": "patent_examiner",
+    "prepared_rows": 10,
+    "mismatches": 0
+  },
+  {
+    "table": "classification",
+    "prepared_rows": 56,
+    "mismatches": 0
+  },
+  {
+    "table": "patent_classification",
+    "prepared_rows": 71,
+    "mismatches": 0
+  },
+  {
+    "table": "patent_citation",
+    "prepared_rows": 805,
+    "mismatches": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "prepared_rows": 297,
+    "mismatches": 0
+  },
+  {
+    "table": "priority_claim",
+    "prepared_rows": 3,
+    "mismatches": 0
+  }
+]

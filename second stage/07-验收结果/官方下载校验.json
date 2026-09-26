@@ -1,0 +1,40 @@
+{
+  "time_utc": "2026-09-26T12:45:29.872937+00:00",
+  "results": [
+    {
+      "code": "US-PA-TXTO-10-A",
+      "file": "05-官方来源/02-IPDPS补充样例/01-压缩原包/01-US申请公布/US-PA-TXTO-10-A.zip",
+      "sha256": "4521519e02f01ee9ea2d8e51c4b5b33a0635a831053a6854b687a558455b9618",
+      "status": "REMOTE_VERIFIED",
+      "bytes": 3740368
+    },
+    {
+      "code": "US-PA-TXTO-10-B",
+      "file": "05-官方来源/02-IPDPS补充样例/01-压缩原包/02-US授权公告/US-PA-TXTO-10-B.zip",
+      "sha256": "ecbdd209afc163dcc98fed05ee20225074f7793ebcbf1b788524a1530eac8c9c",
+      "status": "REMOTE_VERIFIED",
+      "bytes": 2259614
+    },
+    {
+      "code": "EP-PA-TXTO-10-AB",
+      "file": "05-官方来源/02-IPDPS补充样例/01-压缩原包/03-EP全文/EP-PA-TXTO-10-AB.zip",
+      "sha256": "1de3e153dbb744888c0e297e816328f85c3c7d155ac567e354c398af39bf95ba",
+      "status": "REMOTE_VERIFIED",
+      "bytes": 1288715
+    },
+    {
+      "code": "EP-PA-ABSO-10-AB",
+      "file": "05-官方来源/02-IPDPS补充样例/01-压缩原包/04-EP-DOCDB摘要/EP-PA-ABSO-10-AB.zip",
+      "sha256": "d0d0782d6d0165b4ca6c8b50fc52dfdb46a56bffbc4c6f2683a23e762eb89320",
+      "status": "REMOTE_VERIFIED",
+      "bytes": 209696
+    },
+    {
+      "code": "EP-PA-PRSO-FILE",
+      "file": "05-官方来源/02-IPDPS补充样例/01-压缩原包/05-EP法律状态/EP-PA-PRSO-FILE.zip",
+      "sha256": "103426d07e3ee93d8982205e1f131172abe29ef57ab3332df1062e8ae2b53641",
+      "status": "REMOTE_VERIFIED",
+      "bytes": 59870
+    }
+  ]
+}

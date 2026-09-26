@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "business_tables": 43,
+  "operational_tables": 3,
+  "identical_table_contents": 46,
+  "source": "patentdb",
+  "dump": "09-GitHub交付/数据库备份/patentdb-sample.dump",
+  "dump_sha256": "79924cd0e649cc85c50d85028ecb16f54d3d61576c67ef1078dd0cde428380d9"
+}

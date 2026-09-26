@@ -1,0 +1,42 @@
+[
+  {
+    "code": "US-PA-TXTO-10-A",
+    "rcId": "bedc66a3547b4107a6127cbfa233991a",
+    "fileType": 2,
+    "path": "05-官方来源/02-IPDPS补充样例/01-压缩原包/01-US申请公布/US-PA-TXTO-10-A.zip",
+    "sha256": "4521519e02f01ee9ea2d8e51c4b5b33a0635a831053a6854b687a558455b9618",
+    "bytes": 3740368
+  },
+  {
+    "code": "US-PA-TXTO-10-B",
+    "rcId": "2bba2caea47046cc9663fecc7dc5fccb",
+    "fileType": 2,
+    "path": "05-官方来源/02-IPDPS补充样例/01-压缩原包/02-US授权公告/US-PA-TXTO-10-B.zip",
+    "sha256": "ecbdd209afc163dcc98fed05ee20225074f7793ebcbf1b788524a1530eac8c9c",
+    "bytes": 2259614
+  },
+  {
+    "code": "EP-PA-TXTO-10-AB",
+    "rcId": "c0958116f0014d6e8f59fca00df5defe",
+    "fileType": 2,
+    "path": "05-官方来源/02-IPDPS补充样例/01-压缩原包/03-EP全文/EP-PA-TXTO-10-AB.zip",
+    "sha256": "1de3e153dbb744888c0e297e816328f85c3c7d155ac567e354c398af39bf95ba",
+    "bytes": 1288715
+  },
+  {
+    "code": "EP-PA-ABSO-10-AB",
+    "rcId": "441d845be5a54100910c7687894e5b61",
+    "fileType": 2,
+    "path": "05-官方来源/02-IPDPS补充样例/01-压缩原包/04-EP-DOCDB摘要/EP-PA-ABSO-10-AB.zip",
+    "sha256": "d0d0782d6d0165b4ca6c8b50fc52dfdb46a56bffbc4c6f2683a23e762eb89320",
+    "bytes": 209696
+  },
+  {
+    "code": "EP-PA-PRSO-FILE",
+    "rcId": "856057caa9704cc2a0c71a3e88ec1743",
+    "fileType": 2,
+    "path": "05-官方来源/02-IPDPS补充样例/01-压缩原包/05-EP法律状态/EP-PA-PRSO-FILE.zip",
+    "sha256": "103426d07e3ee93d8982205e1f131172abe29ef57ab3332df1062e8ae2b53641",
+    "bytes": 59870
+  }
+]

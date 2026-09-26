@@ -1,0 +1,1422 @@
+$ docker run -d --name patentdb-stage2-check-31823 -e POSTGRES_PASSWORD=stage2-disposable -e POSTGRES_DB=patentdb docker.m.daocloud.io/library/postgres:16
+c04a3abfcf30272388d06ae0dc1f00da112feb537a6f447eb1fd655509ee205b
+
+$ docker exec patentdb-stage2-check-31823 pg_isready -U postgres
+/var/run/postgresql:5432 - no response
+
+$ docker exec patentdb-stage2-check-31823 pg_isready -U postgres
+/var/run/postgresql:5432 - accepting connections
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+BEGIN
+CREATE SCHEMA
+SET
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+CREATE FUNCTION
+CREATE TRIGGER
+CREATE TRIGGER
+CREATE TRIGGER
+COMMIT
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+BEGIN
+ALTER TABLE
+UPDATE 0
+ALTER TABLE
+ALTER TABLE
+DELETE 0
+CREATE FUNCTION
+DO
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+UPDATE 0
+UPDATE 0
+UPDATE 0
+COMMIT
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+BEGIN
+CREATE SCHEMA
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE VIEW
+COMMENT
+COMMENT
+COMMIT
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_samples.py
+Imported official sample files=17; logical documents=18
+country_office: 48 prepared rows
+language: 3 prepared rows
+dataset: 4 prepared rows
+kind_code: 9 prepared rows
+application_type: 4 prepared rows
+classification_scheme: 2 prepared rows
+patent: 18 prepared rows
+publication: 18 prepared rows
+title: 30 prepared rows
+abstract: 13 prepared rows
+description_section: 538 prepared rows
+drawing: 92 prepared rows
+claim: 184 prepared rows
+claim_dependency: 84 prepared rows
+person: 71 prepared rows
+natural_person: 61 prepared rows
+organization: 10 prepared rows
+patent_applicant: 18 prepared rows
+patent_inventor: 32 prepared rows
+patent_assignee: 9 prepared rows
+patent_agent: 12 prepared rows
+patent_examiner: 10 prepared rows
+classification: 56 prepared rows
+patent_classification: 71 prepared rows
+patent_citation: 805 prepared rows
+non_patent_citation: 297 prepared rows
+priority_claim: 3 prepared rows
+PostgreSQL transaction: committed
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_enrichment.py
+Supplemental official-source transaction committed
+Prepared supplementary source rows: 194
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract
+application_type
+citation_category
+claim
+claim_dependency
+classification
+classification_scheme
+country_office
+dataset
+description_section
+designated_state
+drawing
+family_abstract
+family_citation
+family_member_application_ref
+family_member_publication_ref
+international_application
+ipc_techn_field
+keyword
+kind_code
+language
+legal_event_code
+legal_status_event
+natural_person
+non_patent_citation
+organization
+patent
+patent_agent
+patent_applicant
+patent_assignee
+patent_citation
+patent_citation_category
+patent_classification
+patent_examiner
+patent_family
+patent_family_member
+patent_inventor
+patent_keyword
+person
+priority_claim
+publication
+related_application
+title
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract|e7f34bbdfa4a043a9ce4db8054df5226
+application_type|756b5656d6efe70f3da09539e76ac083
+citation_category|890fba25d05fa1ea171adee85ae407d3
+claim|34f752e7d5338ce51800d1d226c4009d
+claim_dependency|b71e6f19013de86d14747e4a9ca245ac
+classification|ac76d59e1c17e6bfa2d566df145bb979
+classification_scheme|34234a8a8d5a8ab98fb9b779479e43dc
+country_office|ae6868ccb86da7cab91be6239237f035
+dataset|c83c383bb6c114042584820b6af69f3b
+description_section|b7531ceaf4711ffd681248d834bd6c2e
+designated_state|dffd9a3e55972af661e08f2fe884798a
+drawing|5129389742b410dce2a8b0c7b0653ec0
+family_abstract|bc376e02eed8097b2f12e10e80db9ffb
+family_citation|d41d8cd98f00b204e9800998ecf8427e
+family_member_application_ref|3fb56a531b7909c817b61319e34fa5df
+family_member_publication_ref|bd787da7558d9f37ce38791132bbcc71
+international_application|07d46a2d5fb5b4c9266a5cbef39969e8
+ipc_techn_field|d53c7706916f0ef00fc3cc4c37cbdff4
+keyword|e9688a272fd719e7007691e47c09bb70
+kind_code|027fc3b0942d95ee26521a0194cd4dfd
+language|d5d19d459eb5790cf9d9dfd1bead6179
+legal_event_code|1a45211a4c702c567114f25e434d1e44
+legal_status_event|f385b21da0690360e704ca227955b63f
+natural_person|cafab4ee6b409837ad3ae5743d07f868
+non_patent_citation|15fdd33e9f478333922a343f3340cdf1
+organization|eab9c208840d01609aeef9d70bc65868
+patent|4fec797d5e67d68a9fe073163d4280d6
+patent_agent|352ceac57ce8ae2cb3bf52d2467bae83
+patent_applicant|e75fc52b4cddf33cc18eaa4e73a58436
+patent_assignee|2057212ecee49cbb1b0a94d6cf8e2927
+patent_citation|5eefb20ba77bd41ce79f309b432430fc
+patent_citation_category|1ee8025f9753865b45376e851217e68d
+patent_classification|8cf7465c546750481a0111a294ea2b8a
+patent_examiner|bea32f383ea4ccddfdcf1d190dd1d1f9
+patent_family|c8284ed43396c936a3f7f7becf08bdfd
+patent_family_member|18491879cd0a1d11b50cd6e7287a94f8
+patent_inventor|9004e1ce046102c8d9d2ae495e17f916
+patent_keyword|381f62fce5b3fb1d2decd7e606ef8035
+person|3d045bfdb9a008f71887eab6c79b706b
+priority_claim|c2a0caa7a7cccdf6cefbc635c2fb3487
+publication|70da056eb767e62c474be2226e0ed568
+related_application|6cd07a5d8a4f4a0de9dfaa3ec25d3ec7
+title|ee1ac84c7027771355968cffa086c967
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_samples.py
+Imported official sample files=17; logical documents=18
+country_office: 48 prepared rows
+language: 3 prepared rows
+dataset: 4 prepared rows
+kind_code: 9 prepared rows
+application_type: 4 prepared rows
+classification_scheme: 2 prepared rows
+patent: 18 prepared rows
+publication: 18 prepared rows
+title: 30 prepared rows
+abstract: 13 prepared rows
+description_section: 538 prepared rows
+drawing: 92 prepared rows
+claim: 184 prepared rows
+claim_dependency: 84 prepared rows
+person: 71 prepared rows
+natural_person: 61 prepared rows
+organization: 10 prepared rows
+patent_applicant: 18 prepared rows
+patent_inventor: 32 prepared rows
+patent_assignee: 9 prepared rows
+patent_agent: 12 prepared rows
+patent_examiner: 10 prepared rows
+classification: 56 prepared rows
+patent_classification: 71 prepared rows
+patent_citation: 805 prepared rows
+non_patent_citation: 297 prepared rows
+priority_claim: 3 prepared rows
+PostgreSQL transaction: committed
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_enrichment.py
+Supplemental official-source transaction committed
+Prepared supplementary source rows: 194
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract
+application_type
+citation_category
+claim
+claim_dependency
+classification
+classification_scheme
+country_office
+dataset
+description_section
+designated_state
+drawing
+family_abstract
+family_citation
+family_member_application_ref
+family_member_publication_ref
+international_application
+ipc_techn_field
+keyword
+kind_code
+language
+legal_event_code
+legal_status_event
+natural_person
+non_patent_citation
+organization
+patent
+patent_agent
+patent_applicant
+patent_assignee
+patent_citation
+patent_citation_category
+patent_classification
+patent_examiner
+patent_family
+patent_family_member
+patent_inventor
+patent_keyword
+person
+priority_claim
+publication
+related_application
+title
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract|e7f34bbdfa4a043a9ce4db8054df5226
+application_type|756b5656d6efe70f3da09539e76ac083
+citation_category|890fba25d05fa1ea171adee85ae407d3
+claim|34f752e7d5338ce51800d1d226c4009d
+claim_dependency|b71e6f19013de86d14747e4a9ca245ac
+classification|ac76d59e1c17e6bfa2d566df145bb979
+classification_scheme|34234a8a8d5a8ab98fb9b779479e43dc
+country_office|ae6868ccb86da7cab91be6239237f035
+dataset|c83c383bb6c114042584820b6af69f3b
+description_section|b7531ceaf4711ffd681248d834bd6c2e
+designated_state|dffd9a3e55972af661e08f2fe884798a
+drawing|5129389742b410dce2a8b0c7b0653ec0
+family_abstract|bc376e02eed8097b2f12e10e80db9ffb
+family_citation|d41d8cd98f00b204e9800998ecf8427e
+family_member_application_ref|3fb56a531b7909c817b61319e34fa5df
+family_member_publication_ref|bd787da7558d9f37ce38791132bbcc71
+international_application|07d46a2d5fb5b4c9266a5cbef39969e8
+ipc_techn_field|d53c7706916f0ef00fc3cc4c37cbdff4
+keyword|e9688a272fd719e7007691e47c09bb70
+kind_code|027fc3b0942d95ee26521a0194cd4dfd
+language|d5d19d459eb5790cf9d9dfd1bead6179
+legal_event_code|1a45211a4c702c567114f25e434d1e44
+legal_status_event|f385b21da0690360e704ca227955b63f
+natural_person|cafab4ee6b409837ad3ae5743d07f868
+non_patent_citation|15fdd33e9f478333922a343f3340cdf1
+organization|eab9c208840d01609aeef9d70bc65868
+patent|4fec797d5e67d68a9fe073163d4280d6
+patent_agent|352ceac57ce8ae2cb3bf52d2467bae83
+patent_applicant|e75fc52b4cddf33cc18eaa4e73a58436
+patent_assignee|2057212ecee49cbb1b0a94d6cf8e2927
+patent_citation|5eefb20ba77bd41ce79f309b432430fc
+patent_citation_category|1ee8025f9753865b45376e851217e68d
+patent_classification|8cf7465c546750481a0111a294ea2b8a
+patent_examiner|bea32f383ea4ccddfdcf1d190dd1d1f9
+patent_family|c8284ed43396c936a3f7f7becf08bdfd
+patent_family_member|18491879cd0a1d11b50cd6e7287a94f8
+patent_inventor|9004e1ce046102c8d9d2ae495e17f916
+patent_keyword|381f62fce5b3fb1d2decd7e606ef8035
+person|3d045bfdb9a008f71887eab6c79b706b
+priority_claim|c2a0caa7a7cccdf6cefbc635c2fb3487
+publication|70da056eb767e62c474be2226e0ed568
+related_application|6cd07a5d8a4f4a0de9dfaa3ec25d3ec7
+title|ee1ac84c7027771355968cffa086c967
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/03-测试验收/verify_data.py
+{
+  "timestamp_utc": "2026-09-26T12:49:39.145267+00:00",
+  "container": "patentdb-stage2-check-31823",
+  "tables": 43,
+  "columns": 345,
+  "nonempty_tables": 42,
+  "mapped_field_comparisons": 19907,
+  "issues": [],
+  "status": "PASS",
+  "scope": "固定官方样例及映射字段；不等同全量数据/所有XML路径已覆盖"
+}
+abstract                           13
+application_type                   4
+citation_category                  2
+claim                              184
+claim_dependency                   84
+classification                     56
+classification_scheme              2
+country_office                     50
+dataset                            5
+description_section                538
+designated_state                   47
+drawing                            92
+family_abstract                    1
+family_citation                    0
+family_member_application_ref      21
+family_member_publication_ref      37
+international_application          1
+ipc_techn_field                    1
+keyword                            59
+kind_code                          9
+language                           3
+legal_event_code                   5
+legal_status_event                 10
+natural_person                     61
+non_patent_citation                297
+organization                       10
+patent                             19
+patent_agent                       12
+patent_applicant                   18
+patent_assignee                    9
+patent_citation                    805
+patent_citation_category           789
+patent_classification              71
+patent_examiner                    10
+patent_family                      3
+patent_family_member               11
+patent_inventor                    32
+patent_keyword                     71
+person                             71
+priority_claim                     3
+publication                        19
+related_application                11
+title                              30
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+BEGIN
+ERROR:  duplicate key value violates unique constraint "pk_publication"
+DETAIL:  Key (publication_id)=(1) already exists.
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+BEGIN
+ERROR:  insert or update on table "publication" violates foreign key constraint "fk_publication_kind_code"
+DETAIL:  Key (publn_auth, publn_kind)=(EP, ZZ) is not present in table "kind_code".
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+BEGIN
+ERROR:  new row for relation "person" violates check constraint "ck_person_type"
+DETAIL:  Failing row contains (1, David Austin Roses Ltd., David Austin Roses Ltd., X, null, Wolverhampton, null, null, GB, null, null, null, null, 2).
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+BEGIN
+DELETE 1
+ERROR:  person 11 must have exactly one subtype matching person_type N
+CONTEXT:  PL/pgSQL function patentdb.check_person_isa() line 13 at RAISE
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+BEGIN
+INSERT 0 1
+UPDATE 1
+ERROR:  person 11 must have exactly one subtype matching person_type N
+CONTEXT:  PL/pgSQL function patentdb.check_person_isa() line 13 at RAISE
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+BEGIN
+ERROR:  new row for relation "claim" violates check constraint "ck_claim_positive"
+DETAIL:  Failing row contains (1, 3, EN, 0, 1, I, A structured image (SI) editor for editing a structured image, t..., c-en-01-0001).
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+BEGIN
+UPDATE 1
+INSERT 0 1
+ROLLBACK
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+UPDATE 1
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_samples.py
+Imported official sample files=17; logical documents=18
+country_office: 48 prepared rows
+language: 3 prepared rows
+dataset: 4 prepared rows
+kind_code: 9 prepared rows
+application_type: 4 prepared rows
+classification_scheme: 2 prepared rows
+patent: 18 prepared rows
+publication: 18 prepared rows
+title: 30 prepared rows
+abstract: 13 prepared rows
+description_section: 538 prepared rows
+drawing: 92 prepared rows
+claim: 184 prepared rows
+claim_dependency: 84 prepared rows
+person: 71 prepared rows
+natural_person: 61 prepared rows
+organization: 10 prepared rows
+patent_applicant: 18 prepared rows
+patent_inventor: 32 prepared rows
+patent_assignee: 9 prepared rows
+patent_agent: 12 prepared rows
+patent_examiner: 10 prepared rows
+classification: 56 prepared rows
+patent_classification: 71 prepared rows
+patent_citation: 805 prepared rows
+non_patent_citation: 297 prepared rows
+priority_claim: 3 prepared rows
+PostgreSQL transaction: committed
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_enrichment.py
+Supplemental official-source transaction committed
+Prepared supplementary source rows: 194
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract
+application_type
+citation_category
+claim
+claim_dependency
+classification
+classification_scheme
+country_office
+dataset
+description_section
+designated_state
+drawing
+family_abstract
+family_citation
+family_member_application_ref
+family_member_publication_ref
+international_application
+ipc_techn_field
+keyword
+kind_code
+language
+legal_event_code
+legal_status_event
+natural_person
+non_patent_citation
+organization
+patent
+patent_agent
+patent_applicant
+patent_assignee
+patent_citation
+patent_citation_category
+patent_classification
+patent_examiner
+patent_family
+patent_family_member
+patent_inventor
+patent_keyword
+person
+priority_claim
+publication
+related_application
+title
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract|e7f34bbdfa4a043a9ce4db8054df5226
+application_type|756b5656d6efe70f3da09539e76ac083
+citation_category|890fba25d05fa1ea171adee85ae407d3
+claim|34f752e7d5338ce51800d1d226c4009d
+claim_dependency|b71e6f19013de86d14747e4a9ca245ac
+classification|ac76d59e1c17e6bfa2d566df145bb979
+classification_scheme|34234a8a8d5a8ab98fb9b779479e43dc
+country_office|ae6868ccb86da7cab91be6239237f035
+dataset|c83c383bb6c114042584820b6af69f3b
+description_section|b7531ceaf4711ffd681248d834bd6c2e
+designated_state|dffd9a3e55972af661e08f2fe884798a
+drawing|5129389742b410dce2a8b0c7b0653ec0
+family_abstract|bc376e02eed8097b2f12e10e80db9ffb
+family_citation|d41d8cd98f00b204e9800998ecf8427e
+family_member_application_ref|3fb56a531b7909c817b61319e34fa5df
+family_member_publication_ref|bd787da7558d9f37ce38791132bbcc71
+international_application|07d46a2d5fb5b4c9266a5cbef39969e8
+ipc_techn_field|d53c7706916f0ef00fc3cc4c37cbdff4
+keyword|e9688a272fd719e7007691e47c09bb70
+kind_code|027fc3b0942d95ee26521a0194cd4dfd
+language|d5d19d459eb5790cf9d9dfd1bead6179
+legal_event_code|1a45211a4c702c567114f25e434d1e44
+legal_status_event|f385b21da0690360e704ca227955b63f
+natural_person|cafab4ee6b409837ad3ae5743d07f868
+non_patent_citation|15fdd33e9f478333922a343f3340cdf1
+organization|eab9c208840d01609aeef9d70bc65868
+patent|4fec797d5e67d68a9fe073163d4280d6
+patent_agent|352ceac57ce8ae2cb3bf52d2467bae83
+patent_applicant|e75fc52b4cddf33cc18eaa4e73a58436
+patent_assignee|2057212ecee49cbb1b0a94d6cf8e2927
+patent_citation|5eefb20ba77bd41ce79f309b432430fc
+patent_citation_category|1ee8025f9753865b45376e851217e68d
+patent_classification|8cf7465c546750481a0111a294ea2b8a
+patent_examiner|bea32f383ea4ccddfdcf1d190dd1d1f9
+patent_family|c8284ed43396c936a3f7f7becf08bdfd
+patent_family_member|18491879cd0a1d11b50cd6e7287a94f8
+patent_inventor|9004e1ce046102c8d9d2ae495e17f916
+patent_keyword|381f62fce5b3fb1d2decd7e606ef8035
+person|3d045bfdb9a008f71887eab6c79b706b
+priority_claim|c2a0caa7a7cccdf6cefbc635c2fb3487
+publication|70da056eb767e62c474be2226e0ed568
+related_application|6cd07a5d8a4f4a0de9dfaa3ec25d3ec7
+title|ee1ac84c7027771355968cffa086c967
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_batch.py --operations-file /home/zjjtju/database/Database/second stage/05-官方来源/02-IPDPS补充样例/02-DOCDB原文/DOCDB-201724-CreateDelete-PubDate20170609AndBefore-EP-0001.xml
+{
+  "status": "PASS",
+  "batch_id": "c607e493-9cf1-4f2d-9f4c-1654c55caf0e",
+  "documents": 23,
+  "normal_documents": 18,
+  "operations": {
+    "A": 2,
+    "UPSERT": 16,
+    "CV": 5
+  },
+  "prepared_rows": 3383
+}
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract
+application_type
+citation_category
+claim
+claim_dependency
+classification
+classification_scheme
+country_office
+dataset
+description_section
+designated_state
+drawing
+family_abstract
+family_citation
+family_member_application_ref
+family_member_publication_ref
+international_application
+ipc_techn_field
+keyword
+kind_code
+language
+legal_event_code
+legal_status_event
+natural_person
+non_patent_citation
+organization
+patent
+patent_agent
+patent_applicant
+patent_assignee
+patent_citation
+patent_citation_category
+patent_classification
+patent_examiner
+patent_family
+patent_family_member
+patent_inventor
+patent_keyword
+person
+priority_claim
+publication
+related_application
+title
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract|e7f34bbdfa4a043a9ce4db8054df5226
+application_type|756b5656d6efe70f3da09539e76ac083
+citation_category|890fba25d05fa1ea171adee85ae407d3
+claim|34f752e7d5338ce51800d1d226c4009d
+claim_dependency|b71e6f19013de86d14747e4a9ca245ac
+classification|ac76d59e1c17e6bfa2d566df145bb979
+classification_scheme|34234a8a8d5a8ab98fb9b779479e43dc
+country_office|ae6868ccb86da7cab91be6239237f035
+dataset|c83c383bb6c114042584820b6af69f3b
+description_section|b7531ceaf4711ffd681248d834bd6c2e
+designated_state|dffd9a3e55972af661e08f2fe884798a
+drawing|5129389742b410dce2a8b0c7b0653ec0
+family_abstract|bc376e02eed8097b2f12e10e80db9ffb
+family_citation|d41d8cd98f00b204e9800998ecf8427e
+family_member_application_ref|3fb56a531b7909c817b61319e34fa5df
+family_member_publication_ref|bd787da7558d9f37ce38791132bbcc71
+international_application|07d46a2d5fb5b4c9266a5cbef39969e8
+ipc_techn_field|d53c7706916f0ef00fc3cc4c37cbdff4
+keyword|e9688a272fd719e7007691e47c09bb70
+kind_code|027fc3b0942d95ee26521a0194cd4dfd
+language|d5d19d459eb5790cf9d9dfd1bead6179
+legal_event_code|1a45211a4c702c567114f25e434d1e44
+legal_status_event|f385b21da0690360e704ca227955b63f
+natural_person|cafab4ee6b409837ad3ae5743d07f868
+non_patent_citation|15fdd33e9f478333922a343f3340cdf1
+organization|eab9c208840d01609aeef9d70bc65868
+patent|4fec797d5e67d68a9fe073163d4280d6
+patent_agent|352ceac57ce8ae2cb3bf52d2467bae83
+patent_applicant|e75fc52b4cddf33cc18eaa4e73a58436
+patent_assignee|2057212ecee49cbb1b0a94d6cf8e2927
+patent_citation|5eefb20ba77bd41ce79f309b432430fc
+patent_citation_category|1ee8025f9753865b45376e851217e68d
+patent_classification|8cf7465c546750481a0111a294ea2b8a
+patent_examiner|bea32f383ea4ccddfdcf1d190dd1d1f9
+patent_family|c8284ed43396c936a3f7f7becf08bdfd
+patent_family_member|18491879cd0a1d11b50cd6e7287a94f8
+patent_inventor|9004e1ce046102c8d9d2ae495e17f916
+patent_keyword|381f62fce5b3fb1d2decd7e606ef8035
+person|3d045bfdb9a008f71887eab6c79b706b
+priority_claim|c2a0caa7a7cccdf6cefbc635c2fb3487
+publication|70da056eb767e62c474be2226e0ed568
+related_application|6cd07a5d8a4f4a0de9dfaa3ec25d3ec7
+title|ee1ac84c7027771355968cffa086c967
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+5
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_batch.py --source-root /home/zjjtju/database/Database/second stage/07-验收结果/临时数据库/批次测试输入/新增批次
+{
+  "status": "PASS",
+  "batch_id": "1b6741cb-fe6d-448d-a7b9-19d0ac9d51bf",
+  "documents": 1,
+  "normal_documents": 1,
+  "operations": {
+    "C": 1
+  },
+  "prepared_rows": 76
+}
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+1002
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+20
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract
+application_type
+citation_category
+claim
+claim_dependency
+classification
+classification_scheme
+country_office
+dataset
+description_section
+designated_state
+drawing
+family_abstract
+family_citation
+family_member_application_ref
+family_member_publication_ref
+international_application
+ipc_techn_field
+keyword
+kind_code
+language
+legal_event_code
+legal_status_event
+natural_person
+non_patent_citation
+organization
+patent
+patent_agent
+patent_applicant
+patent_assignee
+patent_citation
+patent_citation_category
+patent_classification
+patent_examiner
+patent_family
+patent_family_member
+patent_inventor
+patent_keyword
+person
+priority_claim
+publication
+related_application
+title
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract|b30e03e81334d843ed40d8582c24ebc3
+application_type|756b5656d6efe70f3da09539e76ac083
+citation_category|890fba25d05fa1ea171adee85ae407d3
+claim|34f752e7d5338ce51800d1d226c4009d
+claim_dependency|b71e6f19013de86d14747e4a9ca245ac
+classification|ac76d59e1c17e6bfa2d566df145bb979
+classification_scheme|34234a8a8d5a8ab98fb9b779479e43dc
+country_office|ae6868ccb86da7cab91be6239237f035
+dataset|c83c383bb6c114042584820b6af69f3b
+description_section|b7531ceaf4711ffd681248d834bd6c2e
+designated_state|16f157e24989bd6ced5ec917b21545b4
+drawing|5129389742b410dce2a8b0c7b0653ec0
+family_abstract|bc376e02eed8097b2f12e10e80db9ffb
+family_citation|d41d8cd98f00b204e9800998ecf8427e
+family_member_application_ref|0d8da59d6b9f4147f3cb6dbdd2fe26eb
+family_member_publication_ref|f544ccac246ca3be1f851e1bce765faf
+international_application|07d46a2d5fb5b4c9266a5cbef39969e8
+ipc_techn_field|d53c7706916f0ef00fc3cc4c37cbdff4
+keyword|e9688a272fd719e7007691e47c09bb70
+kind_code|027fc3b0942d95ee26521a0194cd4dfd
+language|d5d19d459eb5790cf9d9dfd1bead6179
+legal_event_code|1a45211a4c702c567114f25e434d1e44
+legal_status_event|f385b21da0690360e704ca227955b63f
+natural_person|cafab4ee6b409837ad3ae5743d07f868
+non_patent_citation|5ffe0db775200c97c19b5d000f79ce81
+organization|eab9c208840d01609aeef9d70bc65868
+patent|0cd63dff780196b5a571e11d816a4554
+patent_agent|352ceac57ce8ae2cb3bf52d2467bae83
+patent_applicant|1267657a03c0bb41c88e7706f47fc8fa
+patent_assignee|2057212ecee49cbb1b0a94d6cf8e2927
+patent_citation|f925fa22711471ef626fcb7d3452d953
+patent_citation_category|1ee8025f9753865b45376e851217e68d
+patent_classification|d9e8a5662ed77aa4caa9490726326c0d
+patent_examiner|bea32f383ea4ccddfdcf1d190dd1d1f9
+patent_family|759da35e7070c6396837947d56478127
+patent_family_member|a816d2cb25722e88fef70b51b7420bea
+patent_inventor|68684d3d0da60a44297a8e21c46e6b83
+patent_keyword|d49a2ef9b9e1f36cb1ac6189e51938f3
+person|3d045bfdb9a008f71887eab6c79b706b
+priority_claim|8059264d499d59e9d86e3074c32ef407
+publication|233441522612695087feb8e7672dd284
+related_application|6cd07a5d8a4f4a0de9dfaa3ec25d3ec7
+title|a1eb62e2438ced546ce15260582a45d8
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_batch.py --source-root /home/zjjtju/database/Database/second stage/07-验收结果/临时数据库/批次测试输入/新增批次
+{
+  "status": "PASS",
+  "batch_id": "27f63bc6-6d62-4621-b8f1-5bacba7d32ef",
+  "documents": 1,
+  "normal_documents": 1,
+  "operations": {
+    "C": 1
+  },
+  "prepared_rows": 76
+}
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract
+application_type
+citation_category
+claim
+claim_dependency
+classification
+classification_scheme
+country_office
+dataset
+description_section
+designated_state
+drawing
+family_abstract
+family_citation
+family_member_application_ref
+family_member_publication_ref
+international_application
+ipc_techn_field
+keyword
+kind_code
+language
+legal_event_code
+legal_status_event
+natural_person
+non_patent_citation
+organization
+patent
+patent_agent
+patent_applicant
+patent_assignee
+patent_citation
+patent_citation_category
+patent_classification
+patent_examiner
+patent_family
+patent_family_member
+patent_inventor
+patent_keyword
+person
+priority_claim
+publication
+related_application
+title
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract|b30e03e81334d843ed40d8582c24ebc3
+application_type|756b5656d6efe70f3da09539e76ac083
+citation_category|890fba25d05fa1ea171adee85ae407d3
+claim|34f752e7d5338ce51800d1d226c4009d
+claim_dependency|b71e6f19013de86d14747e4a9ca245ac
+classification|ac76d59e1c17e6bfa2d566df145bb979
+classification_scheme|34234a8a8d5a8ab98fb9b779479e43dc
+country_office|ae6868ccb86da7cab91be6239237f035
+dataset|c83c383bb6c114042584820b6af69f3b
+description_section|b7531ceaf4711ffd681248d834bd6c2e
+designated_state|16f157e24989bd6ced5ec917b21545b4
+drawing|5129389742b410dce2a8b0c7b0653ec0
+family_abstract|bc376e02eed8097b2f12e10e80db9ffb
+family_citation|d41d8cd98f00b204e9800998ecf8427e
+family_member_application_ref|0d8da59d6b9f4147f3cb6dbdd2fe26eb
+family_member_publication_ref|f544ccac246ca3be1f851e1bce765faf
+international_application|07d46a2d5fb5b4c9266a5cbef39969e8
+ipc_techn_field|d53c7706916f0ef00fc3cc4c37cbdff4
+keyword|e9688a272fd719e7007691e47c09bb70
+kind_code|027fc3b0942d95ee26521a0194cd4dfd
+language|d5d19d459eb5790cf9d9dfd1bead6179
+legal_event_code|1a45211a4c702c567114f25e434d1e44
+legal_status_event|f385b21da0690360e704ca227955b63f
+natural_person|cafab4ee6b409837ad3ae5743d07f868
+non_patent_citation|5ffe0db775200c97c19b5d000f79ce81
+organization|eab9c208840d01609aeef9d70bc65868
+patent|0cd63dff780196b5a571e11d816a4554
+patent_agent|352ceac57ce8ae2cb3bf52d2467bae83
+patent_applicant|1267657a03c0bb41c88e7706f47fc8fa
+patent_assignee|2057212ecee49cbb1b0a94d6cf8e2927
+patent_citation|f925fa22711471ef626fcb7d3452d953
+patent_citation_category|1ee8025f9753865b45376e851217e68d
+patent_classification|d9e8a5662ed77aa4caa9490726326c0d
+patent_examiner|bea32f383ea4ccddfdcf1d190dd1d1f9
+patent_family|759da35e7070c6396837947d56478127
+patent_family_member|a816d2cb25722e88fef70b51b7420bea
+patent_inventor|68684d3d0da60a44297a8e21c46e6b83
+patent_keyword|d49a2ef9b9e1f36cb1ac6189e51938f3
+person|3d045bfdb9a008f71887eab6c79b706b
+priority_claim|8059264d499d59e9d86e3074c32ef407
+publication|233441522612695087feb8e7672dd284
+related_application|6cd07a5d8a4f4a0de9dfaa3ec25d3ec7
+title|a1eb62e2438ced546ce15260582a45d8
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_batch.py --source-root /home/zjjtju/database/Database/second stage/07-验收结果/临时数据库/批次测试输入/新增批次
+{
+  "status": "PASS",
+  "batch_id": "b45e2ff3-d138-44c8-bd27-14e261c8d891",
+  "documents": 1,
+  "normal_documents": 1,
+  "operations": {
+    "A": 1
+  },
+  "prepared_rows": 75
+}
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+2
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+2
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_batch.py --source-root /home/zjjtju/database/Database/second stage/07-验收结果/临时数据库/批次测试输入/空输入 --operations-file /home/zjjtju/database/Database/second stage/07-验收结果/临时数据库/批次测试输入/delete.xml
+{
+  "status": "PASS",
+  "batch_id": "f2234845-56d6-41ae-9826-ef728cb64af5",
+  "documents": 1,
+  "normal_documents": 0,
+  "operations": {
+    "D": 1
+  },
+  "prepared_rows": 11
+}
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+1
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+0
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_batch.py --source-root /home/zjjtju/database/Database/second stage/07-验收结果/临时数据库/批次测试输入/新增批次
+{
+  "status": "PASS",
+  "batch_id": "aa43d6a2-4a7b-4e86-bd14-f8d78afce7b7",
+  "documents": 1,
+  "normal_documents": 1,
+  "operations": {
+    "A": 1
+  },
+  "prepared_rows": 75
+}
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+1
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_batch.py --source-root /home/zjjtju/database/Database/second stage/07-验收结果/临时数据库/批次测试输入/空输入 --operations-file /home/zjjtju/database/Database/second stage/07-验收结果/临时数据库/批次测试输入/delete.xml
+{
+  "status": "PASS",
+  "batch_id": "93b90df9-7852-459d-9d45-a857f3ce8601",
+  "documents": 1,
+  "normal_documents": 0,
+  "operations": {
+    "D": 1
+  },
+  "prepared_rows": 11
+}
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+1
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_batch.py --source-root /home/zjjtju/database/Database/second stage/07-验收结果/临时数据库/批次测试输入/损坏XML
+Batch rejected before business writes: ['unclosed token: line 1, column 0', 'unclosed token: line 1, column 0']
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+1
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract
+application_type
+citation_category
+claim
+claim_dependency
+classification
+classification_scheme
+country_office
+dataset
+description_section
+designated_state
+drawing
+family_abstract
+family_citation
+family_member_application_ref
+family_member_publication_ref
+international_application
+ipc_techn_field
+keyword
+kind_code
+language
+legal_event_code
+legal_status_event
+natural_person
+non_patent_citation
+organization
+patent
+patent_agent
+patent_applicant
+patent_assignee
+patent_citation
+patent_citation_category
+patent_classification
+patent_examiner
+patent_family
+patent_family_member
+patent_inventor
+patent_keyword
+person
+priority_claim
+publication
+related_application
+title
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract|b30e03e81334d843ed40d8582c24ebc3
+application_type|756b5656d6efe70f3da09539e76ac083
+citation_category|890fba25d05fa1ea171adee85ae407d3
+claim|34f752e7d5338ce51800d1d226c4009d
+claim_dependency|b71e6f19013de86d14747e4a9ca245ac
+classification|ac76d59e1c17e6bfa2d566df145bb979
+classification_scheme|34234a8a8d5a8ab98fb9b779479e43dc
+country_office|ae6868ccb86da7cab91be6239237f035
+dataset|c83c383bb6c114042584820b6af69f3b
+description_section|b7531ceaf4711ffd681248d834bd6c2e
+designated_state|16f157e24989bd6ced5ec917b21545b4
+drawing|5129389742b410dce2a8b0c7b0653ec0
+family_abstract|bc376e02eed8097b2f12e10e80db9ffb
+family_citation|d41d8cd98f00b204e9800998ecf8427e
+family_member_application_ref|0d8da59d6b9f4147f3cb6dbdd2fe26eb
+family_member_publication_ref|f544ccac246ca3be1f851e1bce765faf
+international_application|07d46a2d5fb5b4c9266a5cbef39969e8
+ipc_techn_field|d53c7706916f0ef00fc3cc4c37cbdff4
+keyword|c00fa3b0c4c672c17bdd5ee84702d367
+kind_code|027fc3b0942d95ee26521a0194cd4dfd
+language|d5d19d459eb5790cf9d9dfd1bead6179
+legal_event_code|1a45211a4c702c567114f25e434d1e44
+legal_status_event|f385b21da0690360e704ca227955b63f
+natural_person|cafab4ee6b409837ad3ae5743d07f868
+non_patent_citation|5ffe0db775200c97c19b5d000f79ce81
+organization|eab9c208840d01609aeef9d70bc65868
+patent|0cd63dff780196b5a571e11d816a4554
+patent_agent|352ceac57ce8ae2cb3bf52d2467bae83
+patent_applicant|1267657a03c0bb41c88e7706f47fc8fa
+patent_assignee|2057212ecee49cbb1b0a94d6cf8e2927
+patent_citation|f925fa22711471ef626fcb7d3452d953
+patent_citation_category|1ee8025f9753865b45376e851217e68d
+patent_classification|d9e8a5662ed77aa4caa9490726326c0d
+patent_examiner|bea32f383ea4ccddfdcf1d190dd1d1f9
+patent_family|759da35e7070c6396837947d56478127
+patent_family_member|a816d2cb25722e88fef70b51b7420bea
+patent_inventor|68684d3d0da60a44297a8e21c46e6b83
+patent_keyword|1d09b52a0bc9336902fa25e52507cb13
+person|3d045bfdb9a008f71887eab6c79b706b
+priority_claim|8059264d499d59e9d86e3074c32ef407
+publication|233441522612695087feb8e7672dd284
+related_application|6cd07a5d8a4f4a0de9dfaa3ec25d3ec7
+title|4c7e52fb5198d32faf31c4125f27758d
+
+$ /usr/bin/python3 -B /home/zjjtju/database/Database/second stage/02-数据导入/import_batch.py --source-root /home/zjjtju/database/Database/second stage/07-验收结果/临时数据库/批次测试输入/约束错误
+ERROR:  new row for relation "claim" violates check constraint "ck_claim_positive"
+DETAIL:  Failing row contains (185, 9, EN, -1, 1, I, 1. A wetsuit comprising:
+at least one first panel exhibiting hig..., CLM-00001).
+
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract
+application_type
+citation_category
+claim
+claim_dependency
+classification
+classification_scheme
+country_office
+dataset
+description_section
+designated_state
+drawing
+family_abstract
+family_citation
+family_member_application_ref
+family_member_publication_ref
+international_application
+ipc_techn_field
+keyword
+kind_code
+language
+legal_event_code
+legal_status_event
+natural_person
+non_patent_citation
+organization
+patent
+patent_agent
+patent_applicant
+patent_assignee
+patent_citation
+patent_citation_category
+patent_classification
+patent_examiner
+patent_family
+patent_family_member
+patent_inventor
+patent_keyword
+person
+priority_claim
+publication
+related_application
+title
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+abstract|b30e03e81334d843ed40d8582c24ebc3
+application_type|756b5656d6efe70f3da09539e76ac083
+citation_category|890fba25d05fa1ea171adee85ae407d3
+claim|34f752e7d5338ce51800d1d226c4009d
+claim_dependency|b71e6f19013de86d14747e4a9ca245ac
+classification|ac76d59e1c17e6bfa2d566df145bb979
+classification_scheme|34234a8a8d5a8ab98fb9b779479e43dc
+country_office|ae6868ccb86da7cab91be6239237f035
+dataset|c83c383bb6c114042584820b6af69f3b
+description_section|b7531ceaf4711ffd681248d834bd6c2e
+designated_state|16f157e24989bd6ced5ec917b21545b4
+drawing|5129389742b410dce2a8b0c7b0653ec0
+family_abstract|bc376e02eed8097b2f12e10e80db9ffb
+family_citation|d41d8cd98f00b204e9800998ecf8427e
+family_member_application_ref|0d8da59d6b9f4147f3cb6dbdd2fe26eb
+family_member_publication_ref|f544ccac246ca3be1f851e1bce765faf
+international_application|07d46a2d5fb5b4c9266a5cbef39969e8
+ipc_techn_field|d53c7706916f0ef00fc3cc4c37cbdff4
+keyword|c00fa3b0c4c672c17bdd5ee84702d367
+kind_code|027fc3b0942d95ee26521a0194cd4dfd
+language|d5d19d459eb5790cf9d9dfd1bead6179
+legal_event_code|1a45211a4c702c567114f25e434d1e44
+legal_status_event|f385b21da0690360e704ca227955b63f
+natural_person|cafab4ee6b409837ad3ae5743d07f868
+non_patent_citation|5ffe0db775200c97c19b5d000f79ce81
+organization|eab9c208840d01609aeef9d70bc65868
+patent|0cd63dff780196b5a571e11d816a4554
+patent_agent|352ceac57ce8ae2cb3bf52d2467bae83
+patent_applicant|1267657a03c0bb41c88e7706f47fc8fa
+patent_assignee|2057212ecee49cbb1b0a94d6cf8e2927
+patent_citation|f925fa22711471ef626fcb7d3452d953
+patent_citation_category|1ee8025f9753865b45376e851217e68d
+patent_classification|d9e8a5662ed77aa4caa9490726326c0d
+patent_examiner|bea32f383ea4ccddfdcf1d190dd1d1f9
+patent_family|759da35e7070c6396837947d56478127
+patent_family_member|a816d2cb25722e88fef70b51b7420bea
+patent_inventor|68684d3d0da60a44297a8e21c46e6b83
+patent_keyword|1d09b52a0bc9336902fa25e52507cb13
+person|3d045bfdb9a008f71887eab6c79b706b
+priority_claim|8059264d499d59e9d86e3074c32ef407
+publication|233441522612695087feb8e7672dd284
+related_application|6cd07a5d8a4f4a0de9dfaa3ec25d3ec7
+title|4c7e52fb5198d32faf31c4125f27758d
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+1
+
+$ docker exec -i patentdb-stage2-check-31823 psql -X -U postgres -d patentdb -At -v ON_ERROR_STOP=1
+Pager usage is off.
+=== Publications and titles ===
+1|EP|0003543|A1|DE|Übertragungsanordnung in Ein- und Mehrkanalsystemen.
+1|EP|0003543|A1|EN|Transmission device for mono- or multichannel systems.
+1|EP|0003543|A1|FR|Dispositif de transmission pour systèmes monocanaux ou à plusieurs canaux.
+2|EP|0004055|A2|DE|Vergasungsbrenner.
+2|EP|0004055|A2|EN|Gasification burner.
+2|EP|0004055|A2|FR|Brûleur à gazéification.
+3|EP|0712096|B1|DE|Bildaufbereitungsverfahren und Editor für Bilder auf strukturiertem Bildformat
+3|EP|0712096|B1|EN|Editing method and editor for images in structured image format
+3|EP|0712096|B1|FR|Méthode d'édition et éditeur d'images en format d'image structuré
+4|EP|0890251|B1|DE|VERFAHREN ZUM KOMMUNIKATIONSRUFAUFBAU
+4|EP|0890251|B1|EN|A METHOD OF ESTABLISHING A COMMUNICATIONS CALL
+4|EP|0890251|B1|FR|PROCEDE D'ETABLISSEMENT D'APPEL
+5|EP|2797400|A1|DE|EMBRYOEINSETZSYSTEM UND VERFAHREN
+5|EP|2797400|A1|EN|EMBRYO INSERTION SYSTEM AND METHOD
+5|EP|2797400|A1|FR|SYSTÈME ET PROCÉDÉ D'INSERTION D'EMBRYONS
+6|EP|2797401|A1|DE|KONTAKTANORDNUNG EINER LADEVORRICHTUNG EINES ROBOTISCHEN GARTENWERKZEUGS
+6|EP|2797401|A1|EN|CONTACT ASSEMBLY OF A ROBOTIC GARDEN TOOL CHARGING DEVICE
+6|EP|2797401|A1|FR|ENSEMBLE DE CONTACT D'UN DISPOSITIF DE CHARGE D'OUTIL DE JARDIN ROBOTISÉ
+7|US|08887312|B2|EN|Helmets comprising ceramic for protection against high energy fragments and rifle bullets
+8|US|08887313|B2|EN|Wrap for human appendage
+=== Claims in all languages ===
+0712096|DE|10
+0712096|EN|10
+0712096|FR|10
+08887312|EN|20
+08887313|EN|3
+0890251|DE|14
+0890251|EN|14
+0890251|FR|14
+20140338089|EN|15
+20140338090|EN|20
+20140345008|EN|1
+20140345009|EN|1
+D0717516|EN|1
+D0717517|EN|1
+PP025063|EN|1
+PP025064|EN|1
+RE045253|EN|15
+RE045254|EN|33
+=== Raw external citations ===
+806|US|3048794|A|1962-08-07|19620807
+807|FR|2057218|A5|1971-05-21|19710521
+808|FR|1402311|A|1965-06-11|19650611
+809|US|2770722|A|1956-11-13|19561113
+126|US|5650994|A||19970700
+1|US|3048794|A|1962-08-07|19620807
+2|FR|2057218|A5|1971-05-21|19710521
+3|FR|1402311|A|1965-06-11|19650611
+4|US|2770722|A|1956-11-13|19561113
+8|EP|0528631|A||
+=== Applicants ===
+EP|11879028.6|1|Husqvarna AB
+EP|12862380.8|1|Weyerhaeuser Nr Company
+EP|79100245|1|LICENTIA GMBH
+EP|79100654|1|SIEMENS AG
+US|11888302|1|Richard T. Lahn
+US|12604381|1|Ashok Bhatnagar
+US|12604381|2|Lori Wagner
+US|12604381|3|Bradley Grunden
+US|13907761|1|Facebook, Inc.
+US|13986067|1|David Austin Roses Ltd.
+=== Legal events ===
+19778361|STAA|2019-10-05|STATUS: THE INTERNATIONAL PUBLICATION HAS BEEN MADE
+19778361|STAA|2020-11-20|STATUS: REQUEST FOR EXAMINATION WAS MADE
+19778361|17P|2020-12-23|REQUEST FOR EXAMINATION FILED
+19778361|AK|2020-12-23|DESIGNATED CONTRACTING STATES
+19778361|AX|2020-12-23|REQUEST FOR EXTENSION OF THE EUROPEAN PATENT
+19778361|RIC1|2021-05-26|INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT
+19778361|RIC1|2021-05-26|INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT
+19778361|RIC1|2021-05-26|INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT
+19778361|RIC1|2021-05-26|INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT
+19778361|RIC1|2021-05-26|INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT
+=== Query execution plan: small samples may correctly use sequential scans ===
+Nested Loop  (cost=1.59..14.15 rows=50 width=57) (actual time=0.031..0.040 rows=24 loops=1)
+  Join Filter: (p.publication_id = c.publication_id)
+  Buffers: shared hit=18
+  ->  Hash Join  (cost=1.32..3.76 rows=7 width=69) (actual time=0.013..0.017 rows=7 loops=1)
+        Hash Cond: (t.publication_id = p.publication_id)
+        Buffers: shared hit=3
+        ->  Seq Scan on title t  (cost=0.00..2.38 rows=18 width=52) (actual time=0.003..0.006 rows=19 loops=1)
+              Filter: (lang_code = 'EN'::bpchar)
+              Rows Removed by Filter: 13
+              Buffers: shared hit=2
+        ->  Hash  (cost=1.24..1.24 rows=7 width=17) (actual time=0.005..0.006 rows=8 loops=1)
+              Buckets: 1024  Batches: 1  Memory Usage: 9kB
+              Buffers: shared hit=1
+              ->  Seq Scan on publication p  (cost=0.00..1.24 rows=7 width=17) (actual time=0.002..0.003 rows=8 loops=1)
+                    Filter: (publn_auth = 'EP'::bpchar)
+                    Rows Removed by Filter: 12
+                    Buffers: shared hit=1
+  ->  Index Only Scan using uq_claim_pub_lang_no on claim c  (cost=0.27..1.36 rows=10 width=12) (actual time=0.003..0.003 rows=3 loops=7)
+        Index Cond: ((publication_id = t.publication_id) AND (lang_code = 'EN'::bpchar))
+        Heap Fetches: 0
+        Buffers: shared hit=15
+Planning:
+  Buffers: shared hit=29
+Planning Time: 0.201 ms
+Execution Time: 0.057 ms

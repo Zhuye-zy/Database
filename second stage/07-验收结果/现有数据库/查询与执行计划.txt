@@ -1,0 +1,124 @@
+Pager usage is off.
+=== Publications and titles ===
+ publication_id | publn_auth | publn_nr | publn_kind | lang_code |                                        title_text                                         
+----------------+------------+----------+------------+-----------+-------------------------------------------------------------------------------------------
+              1 | EP         | 0003543  | A1         | DE        | Übertragungsanordnung in Ein- und Mehrkanalsystemen.
+              1 | EP         | 0003543  | A1         | EN        | Transmission device for mono- or multichannel systems.
+              1 | EP         | 0003543  | A1         | FR        | Dispositif de transmission pour systèmes monocanaux ou à plusieurs canaux.
+              2 | EP         | 0004055  | A2         | DE        | Vergasungsbrenner.
+              2 | EP         | 0004055  | A2         | EN        | Gasification burner.
+              2 | EP         | 0004055  | A2         | FR        | Brûleur à gazéification.
+              3 | EP         | 0712096  | B1         | DE        | Bildaufbereitungsverfahren und Editor für Bilder auf strukturiertem Bildformat
+              3 | EP         | 0712096  | B1         | EN        | Editing method and editor for images in structured image format
+              3 | EP         | 0712096  | B1         | FR        | Méthode d'édition et éditeur d'images en format d'image structuré
+              4 | EP         | 0890251  | B1         | DE        | VERFAHREN ZUM KOMMUNIKATIONSRUFAUFBAU
+              4 | EP         | 0890251  | B1         | EN        | A METHOD OF ESTABLISHING A COMMUNICATIONS CALL
+              4 | EP         | 0890251  | B1         | FR        | PROCEDE D'ETABLISSEMENT D'APPEL
+              5 | EP         | 2797400  | A1         | DE        | EMBRYOEINSETZSYSTEM UND VERFAHREN
+              5 | EP         | 2797400  | A1         | EN        | EMBRYO INSERTION SYSTEM AND METHOD
+              5 | EP         | 2797400  | A1         | FR        | SYSTÈME ET PROCÉDÉ D'INSERTION D'EMBRYONS
+              6 | EP         | 2797401  | A1         | DE        | KONTAKTANORDNUNG EINER LADEVORRICHTUNG EINES ROBOTISCHEN GARTENWERKZEUGS
+              6 | EP         | 2797401  | A1         | EN        | CONTACT ASSEMBLY OF A ROBOTIC GARDEN TOOL CHARGING DEVICE
+              6 | EP         | 2797401  | A1         | FR        | ENSEMBLE DE CONTACT D'UN DISPOSITIF DE CHARGE D'OUTIL DE JARDIN ROBOTISÉ
+              7 | US         | 08887312 | B2         | EN        | Helmets comprising ceramic for protection against high energy fragments and rifle bullets
+              8 | US         | 08887313 | B2         | EN        | Wrap for human appendage
+(20 rows)
+
+=== Claims in all languages ===
+  publn_nr   | lang_code | claims 
+-------------+-----------+--------
+ 0712096     | DE        |     10
+ 0712096     | EN        |     10
+ 0712096     | FR        |     10
+ 08887312    | EN        |     20
+ 08887313    | EN        |      3
+ 0890251     | DE        |     14
+ 0890251     | EN        |     14
+ 0890251     | FR        |     14
+ 20140338089 | EN        |     15
+ 20140338090 | EN        |     20
+ 20140345008 | EN        |      1
+ 20140345009 | EN        |      1
+ D0717516    | EN        |      1
+ D0717517    | EN        |      1
+ PP025063    | EN        |      1
+ PP025064    | EN        |      1
+ RE045253    | EN        |     15
+ RE045254    | EN        |     33
+(18 rows)
+
+=== Raw external citations ===
+ citation_id | cited_country | cited_doc_number | cited_doc_kind | cited_doc_date | cited_doc_date_raw 
+-------------+---------------+------------------+----------------+----------------+--------------------
+           8 | EP            | 0528631          | A              |                | 
+          18 | US            | 3871026          | A              |                | 19750300
+          19 | US            | 4737402          | A              |                | 19880400
+          20 | US            | 5160776          | A              |                | 19921100
+          21 | US            | 5254383          | A              |                | 19931000
+          22 | US            | 5330820          | A              |                | 19940700
+          23 | US            | 5362527          | A              |                | 19941100
+          24 | US            | 5376426          | A              |                | 19941200
+          25 | US            | 5552208          | A              |                | 19960900
+          26 | US            | 5587230          | A              |                | 19961200
+(10 rows)
+
+=== Applicants ===
+ appln_auth |  appln_nr  | sequence_nr |       person_name       
+------------+------------+-------------+-------------------------
+ EP         | 11879028.6 |           1 | Husqvarna AB
+ EP         | 12862380.8 |           1 | Weyerhaeuser Nr Company
+ EP         | 79100245   |           1 | LICENTIA GMBH
+ EP         | 79100654   |           1 | SIEMENS AG
+ US         | 11888302   |           1 | Richard T. Lahn
+ US         | 12604381   |           1 | Ashok Bhatnagar
+ US         | 12604381   |           2 | Lori Wagner
+ US         | 12604381   |           3 | Bradley Grunden
+ US         | 13907761   |           1 | Facebook, Inc.
+ US         | 13986067   |           1 | David Austin Roses Ltd.
+(10 rows)
+
+=== Legal events ===
+ appln_nr | event_code | event_publn_date |                       event_text                       
+----------+------------+------------------+--------------------------------------------------------
+ 19778361 | STAA       | 2019-10-05       | STATUS: THE INTERNATIONAL PUBLICATION HAS BEEN MADE
+ 19778361 | STAA       | 2020-11-20       | STATUS: REQUEST FOR EXAMINATION WAS MADE
+ 19778361 | 17P        | 2020-12-23       | REQUEST FOR EXAMINATION FILED
+ 19778361 | AK         | 2020-12-23       | DESIGNATED CONTRACTING STATES
+ 19778361 | AX         | 2020-12-23       | REQUEST FOR EXTENSION OF THE EUROPEAN PATENT
+ 19778361 | RIC1       | 2021-05-26       | INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT
+ 19778361 | RIC1       | 2021-05-26       | INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT
+ 19778361 | RIC1       | 2021-05-26       | INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT
+ 19778361 | RIC1       | 2021-05-26       | INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT
+ 19778361 | RIC1       | 2021-05-26       | INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT
+(10 rows)
+
+=== Query execution plan: small samples may correctly use sequential scans ===
+                                                                QUERY PLAN                                                                 
+-------------------------------------------------------------------------------------------------------------------------------------------
+ Nested Loop  (cost=1.45..4.65 rows=6 width=126) (actual time=0.023..0.029 rows=24 loops=1)
+   Join Filter: (p.publication_id = c.publication_id)
+   Buffers: shared hit=10
+   ->  Hash Join  (cost=1.30..3.73 rows=1 width=138) (actual time=0.012..0.016 rows=6 loops=1)
+         Hash Cond: (t.publication_id = p.publication_id)
+         Buffers: shared hit=3
+         ->  Seq Scan on title t  (cost=0.00..2.38 rows=18 width=52) (actual time=0.003..0.004 rows=18 loops=1)
+               Filter: (lang_code = 'EN'::bpchar)
+               Rows Removed by Filter: 12
+               Buffers: shared hit=2
+         ->  Hash  (cost=1.29..1.29 rows=1 width=86) (actual time=0.004..0.004 rows=7 loops=1)
+               Buckets: 1024  Batches: 1  Memory Usage: 9kB
+               Buffers: shared hit=1
+               ->  Seq Scan on publication p  (cost=0.00..1.29 rows=1 width=86) (actual time=0.001..0.002 rows=7 loops=1)
+                     Filter: (publn_auth = 'EP'::bpchar)
+                     Rows Removed by Filter: 12
+                     Buffers: shared hit=1
+   ->  Index Only Scan using uq_claim_pub_lang_no on claim c  (cost=0.14..0.79 rows=10 width=12) (actual time=0.002..0.002 rows=4 loops=6)
+         Index Cond: ((publication_id = t.publication_id) AND (lang_code = 'EN'::bpchar))
+         Heap Fetches: 0
+         Buffers: shared hit=7
+ Planning:
+   Buffers: shared hit=20
+ Planning Time: 0.288 ms
+ Execution Time: 0.051 ms
+(25 rows)
+

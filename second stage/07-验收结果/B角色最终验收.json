@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "A→B正式交接要求",
+  "checks": {
+    "business_data": "PASS",
+    "integration": "PASS",
+    "fresh_deployment": "PASS",
+    "restore": "PASS",
+    "manual_SQL": "PASS"
+  },
+  "business_tables": 43,
+  "business_columns": 345,
+  "operational_tables": 3,
+  "integration_checks": 19
+}

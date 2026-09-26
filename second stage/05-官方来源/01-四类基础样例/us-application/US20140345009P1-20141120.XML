@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-application SYSTEM "us-patent-application-v43-2012-12-04.dtd" [ ]>
+<us-patent-application lang="EN" dtd-version="v4.3 2012-12-04" file="US20140345009P1-20141120.XML" status="PRODUCTION" id="us-patent-application" country="US" date-produced="20141106" date-publ="20141120">
+<us-bibliographic-data-application lang="EN" country="US">
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>20140345009</doc-number>
+<kind>P1</kind>
+<date>20141120</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="plant">
+<document-id>
+<country>US</country>
+<doc-number>13986592</doc-number>
+<date>20130515</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>01</class>
+<subclass>H</subclass>
+<main-group>5</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141120</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>PLT156</main-classification>
+</classification-national>
+<invention-title id="d0e43">Actinidia chinensis Plant Named 'B52'</invention-title>
+<us-botanic>
+<latin-name/>
+<variety/>
+</us-botanic>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="00" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Skelton</last-name>
+<first-name>Donald Alfred</first-name>
+<address>
+<city>Huntly</city>
+<country>NZ</country>
+</address>
+</addressbook>
+<residence>
+<country>NZ</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="00" designation="us-only">
+<addressbook>
+<last-name>Skelton</last-name>
+<first-name>Donald Alfred</first-name>
+<address>
+<city>Huntly</city>
+<country>NZ</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+</us-parties>
+</us-bibliographic-data-application>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A new and distinct <i>Actinidia chinensis </i>cultivar named &#x2018;B52&#x2019; is disclosed, characterized by having distinctive pale yellow flesh fruit, and an early seasonal harvest time. Additionally, the new variety produces oblong fruit with weak skin adherence to flesh and with a distinctive flat, stylar end shape. The new variety is suitable for commercial production of kiwi fruit.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="137.67mm" wi="186.01mm" file="US20140345009P1-20141120-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="175.60mm" wi="157.65mm" orientation="landscape" file="US20140345009P1-20141120-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="198.04mm" wi="163.41mm" orientation="landscape" file="US20140345009P1-20141120-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="185.17mm" wi="154.43mm" orientation="landscape" file="US20140345009P1-20141120-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?summary-of-invention description="Summary of Invention" end="lead"?>
+<heading id="h-0001" level="1">LATIN NAME OF THE GENUS AND SPECIES</heading>
+<p id="p-0002" num="0001"><i>Actinidia chinensis </i></p>
+<heading id="h-0002" level="1">VARIETY DENOMINATION</heading>
+<p id="p-0003" num="0002">&#x2018;B52&#x2019;</p>
+<heading id="h-0003" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0004" num="0003">The new cultivar is a product of a planned breeding program under the direction of the inventor, Donald Alfred Skelton, a citizen of New Zealand. The seed parent is the unpatented, proprietary variety referred to as <i>Actinidia chinensis </i>&#x2018;B361&#x2019;. The pollen parent is the unpatented, proprietary seedling variety referred to as <i>Actinidia chinensis </i>&#x2018;A28&#x2019;.</p>
+<p id="p-0005" num="0004">Fruit of the new variety was first evaluated in 2001 with favorable results. After the first evaluation, semi-hardwood cuttings were made of &#x2018;B52&#x2019; and were grafted onto seedling rootstocks of <i>A. deliciosa. </i>Evaluation, asexual propagation and grafting all first took place at a research nursery in North Waikato, New Zealand. Subsequent evaluations of the variety have shown the characteristics to be true to type.</p>
+<heading id="h-0004" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0006" num="0005">The cultivar &#x2018;B52&#x2019; has not been observed under all possible environmental conditions. The phenotype may vary somewhat with variations in environment such as temperature, day length, and light intensity, without, however, any variance in genotype.</p>
+<p id="p-0007" num="0006">The following traits have been repeatedly observed and are determined to be the unique characteristics of &#x2018;B52&#x2019; These characteristics in combination distinguish &#x2018;B52&#x2019; as a new and distinct <i>Actinidia chinensis </i>cultivar:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0007">1. Oblong shaped fruit form</li>
+    <li id="ul0001-0002" num="0008">2. Heavy fruit weight, similar to the known variety &#x2018;Hayward&#x2019;.</li>
+    <li id="ul0001-0003" num="0009">3. Flat stylar fruit end.</li>
+    <li id="ul0001-0004" num="0010">4. Pale yellow fruit coloration</li>
+    <li id="ul0001-0005" num="0011">5. Early season fruit harvest</li>
+    <li id="ul0001-0006" num="0012">6. Weak adherence of fruit skin to flesh</li>
+    <li id="ul0001-0007" num="0013">7. Weak adherence of hair to fruit skin</li>
+</ul>
+</p>
+<heading id="h-0005" level="1">Commercial Comparison</heading>
+<p id="p-0008" num="0014">The new variety is best compared to the commercial variety, &#x2018;Hort16A,&#x2019; U.S. Plant Pat. No. 11,066. &#x2018;B52&#x2019; is similar to &#x2018;Hort16A&#x2019; in many horticultural characteristics, however, &#x2018;B52&#x2019; produces mature fruit approximately 2 weeks earlier in the season than &#x2018;Hort16A&#x2019;. Additionally, fruit of the new variety &#x2018;B52&#x2019; has a flat stylar end, compared to the strongly protruding stylar end of &#x2018;Hort16A&#x2019;. Fruit differences can also be noted in the weight. Fruit produced by plants of &#x2018;B52&#x2019; are heavier than fruits produced by &#x2018;Hort16A&#x2019;.</p>
+<?summary-of-invention description="Summary of Invention" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0006" level="1">BRIEF DESCRIPTION OF THE PHOTOGRAPH</heading>
+<p id="p-0009" num="0015">The accompanying photograph in <figref idref="DRAWINGS">FIG. 1</figref> illustrates in full color examples of typical flowers of &#x2018;B52&#x2019;. <figref idref="DRAWINGS">FIG. 2</figref> illustrates fruit harvested from &#x2018;B52&#x2019;. <figref idref="DRAWINGS">FIG. 3</figref> illustrates in full color typical foliage, hanging fruit and stems on plants of &#x2018;B52&#x2019;. The photographs were taken using conventional techniques and although colors may appear different from actual colors due to light reflectance it is as accurate as possible by conventional photographic techniques.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?detailed-description description="Detailed Description" end="lead"?>
+<heading id="h-0007" level="1">DETAILED BOTANICAL DESCRIPTION</heading>
+<p id="p-0010" num="0016">In the following description, color references are made to The Royal Horticultural Society Colour Chart 2007 except where general terms of ordinary dictionary significance are used. The following observations and measurements describe &#x2018;B52&#x2019; plants grown outdoors under commercial trial conditions in North Waikato, New Zealand. The growing temperature ranged from 10&#xb0; C. to 30&#xb0; C. during the day and &#x2212;4&#xb0; C. to 18&#xb0; C. at night. Annual rainfall is approximately 125 cm per year. Measurements and numerical values represent an average of 10 typical plant types.
+<ul id="ul0002" list-style="none">
+    <li id="ul0002-0001" num="0017">Botanical classification: <i>Actinidia chinensis </i>&#x2018;B52&#x2019;</li>
+    <li id="ul0002-0002" num="0018">Propagation: &#x2018;B52&#x2019; can be successfully grafted onto rootstocks of <i>Actnidia deliciosa. </i></li>
+    <li id="ul0002-0003" num="0019">Plant:
+    <ul id="ul0003" list-style="none">
+        <li id="ul0003-0001" num="0000">
+        <ul id="ul0004" list-style="none">
+            <li id="ul0004-0001" num="0020"><i>Age of the plant described.&#x2014;</i>Approximately 5 years.</li>
+            <li id="ul0004-0002" num="0021"><i>Sex expression.&#x2014;</i>Female.</li>
+            <li id="ul0004-0003" num="0022"><i>Ploidy.&#x2014;</i>Diploid.</li>
+            <li id="ul0004-0004" num="0023"><i>Vigor.&#x2014;</i>Moderate.</li>
+            <li id="ul0004-0005" num="0024"><i>Young shoot color.&#x2014;</i>Near RHS Yellow-Green N144B.</li>
+        </ul>
+        </li>
+    </ul>
+    </li>
+    <li id="ul0002-0004" num="0025">Stem characteristics:
+    <ul id="ul0005" list-style="none">
+        <li id="ul0005-0001" num="0000">
+        <ul id="ul0006" list-style="none">
+            <li id="ul0006-0001" num="0026"><i>Color.&#x2014;</i>Between RHS Brown 200D and Greyed-Purple 187A on upper (sunny side) surface. Lower surface Grey-Brown 199A.</li>
+            <li id="ul0006-0002" num="0027"><i>Stem diameter.&#x2014;</i>Average 1.5 cm.</li>
+            <li id="ul0006-0003" num="0028"><i>Stem texture.&#x2014;</i>Moderately rough, non-pubescent with a moderate amount of very medium sized lenticels.</li>
+            <li id="ul0006-0004" num="0029"><i>Stem pith.&#x2014;</i>Solid.</li>
+            <li id="ul0006-0005" num="0030"><i>Leaf scar description.&#x2014;</i>Flat.</li>
+        </ul>
+        </li>
+    </ul>
+    </li>
+    <li id="ul0002-0005" num="0031">Foliage:</li>
+    <li id="ul0002-0006" num="0032">Leaf:
+    <ul id="ul0007" list-style="none">
+        <li id="ul0007-0001" num="0000">
+        <ul id="ul0008" list-style="none">
+            <li id="ul0008-0001" num="0033"><i>Average length.&#x2014;</i>16 cm.</li>
+            <li id="ul0008-0002" num="0034"><i>Average width.&#x2014;</i>18 cm.</li>
+            <li id="ul0008-0003" num="0035"><i>Shape of blade.&#x2014;</i>Obovate.</li>
+            <li id="ul0008-0004" num="0036"><i>Apex.&#x2014;</i>Retuse.</li>
+            <li id="ul0008-0005" num="0037"><i>Base.&#x2014;</i>Cordate, basal lobes not touching.</li>
+            <li id="ul0008-0006" num="0038"><i>Attachment.&#x2014;</i>Petioled.</li>
+            <li id="ul0008-0007" num="0039"><i>Margin.&#x2014;</i>Moderately ciliate.</li>
+            <li id="ul0008-0008" num="0040"><i>Texture of top surface.&#x2014;</i>Very slightly puckered. Non-pubescent.</li>
+            <li id="ul0008-0009" num="0041"><i>Texture of under side.&#x2014;</i>Sparsely pubescent.</li>
+            <li id="ul0008-0010" num="0042"><i>Color.&#x2014;</i>Mature foliage upper side: Near RHS Green 137A. Mature foliage under side: Near RHS Green 138C.</li>
+            <li id="ul0008-0011" num="0043"><i>Petiole.&#x2014;</i>Length: Average length 17.5 cm. Pubescence: None. Color: Upper Surface near RHS Yellow-Green N143D. Moderate anthocyanin on upper side only, near Greyed-Purple 187C.</li>
+        </ul>
+        </li>
+    </ul>
+    </li>
+    <li id="ul0002-0007" num="0044">Flower:
+    <ul id="ul0009" list-style="none">
+        <li id="ul0009-0001" num="0000">
+        <ul id="ul0010" list-style="none">
+            <li id="ul0010-0001" num="0045"><i>Flowers per inflorescence.&#x2014;</i>Normally 1, occasionally 3.</li>
+            <li id="ul0010-0002" num="0046"><i>Bud color.&#x2014;</i>Near RHS Yellow-Green 145A.</li>
+            <li id="ul0010-0003" num="0047"><i>Bud break.&#x2014;</i>Early season.</li>
+            <li id="ul0010-0004" num="0048"><i>First flower.&#x2014;</i>Very early Pollinized by proprietary varieties referred to as &#x2018;A55&#x2019;, &#x2018;CMWW85&#x2019; and &#x2018;CMW53&#x2019;.</li>
+            <li id="ul0010-0005" num="0049"><i>Diameter.&#x2014;</i>Average 6 cm.</li>
+            <li id="ul0010-0006" num="0050"><i>Petal quantity.&#x2014;</i>6 to 10 per flower.</li>
+            <li id="ul0010-0007" num="0051"><i>Petals overlapping.&#x2014;</i>Yes.</li>
+            <li id="ul0010-0008" num="0052"><i>Color.&#x2014;</i>Near RHS White 155A.</li>
+            <li id="ul0010-0009" num="0053"><i>Filament color.&#x2014;</i>Near RHS White 157A.</li>
+            <li id="ul0010-0010" num="0054"><i>Anther color.&#x2014;</i>Near RHS Yellow-Orange 16A.</li>
+            <li id="ul0010-0011" num="0055"><i>Attitude of styles.&#x2014;</i>Semi-erect.</li>
+            <li id="ul0010-0012" num="0056"><i>Style color.&#x2014;</i>Near RHS White 155A.</li>
+            <li id="ul0010-0013" num="0057"><i>Style quantity.&#x2014;</i>Average 20.</li>
+            <li id="ul0010-0014" num="0058"><i>Hair on ovary.&#x2014;</i>dense.</li>
+            <li id="ul0010-0015" num="0059"><i>Color of ovary.&#x2014;</i>Near RHS White 155A.</li>
+            <li id="ul0010-0016" num="0060"><i>Number of sepals.&#x2014;</i>6 to 10.</li>
+            <li id="ul0010-0017" num="0061"><i>Color of sepals.&#x2014;</i>Near RHS Green 144B.</li>
+            <li id="ul0010-0018" num="0062"><i>Sepal width.&#x2014;</i>Approximately 1 cm.</li>
+            <li id="ul0010-0019" num="0063"><i>Sepal length.&#x2014;</i>Approximately 1.3 cm.</li>
+            <li id="ul0010-0020" num="0064"><i>Sepal texture.&#x2014;</i>Smooth.</li>
+        </ul>
+        </li>
+    </ul>
+    </li>
+    <li id="ul0002-0008" num="0065">Peduncle:
+    <ul id="ul0011" list-style="none">
+        <li id="ul0011-0001" num="0000">
+        <ul id="ul0012" list-style="none">
+            <li id="ul0012-0001" num="0066"><i>Length.&#x2014;</i>Average 6.6 cm.</li>
+            <li id="ul0012-0002" num="0067"><i>Color.&#x2014;</i>Near RHS Green 144B.</li>
+            <li id="ul0012-0003" num="0068"><i>Texture.&#x2014;</i>Smooth.</li>
+        </ul>
+        </li>
+    </ul>
+    </li>
+    <li id="ul0002-0009" num="0069">Fruit:
+    <ul id="ul0013" list-style="none">
+        <li id="ul0013-0001" num="0000">
+        <ul id="ul0014" list-style="none">
+            <li id="ul0014-0001" num="0070"><i>Color outer pericarp.&#x2014;</i>Near RHS Yellow 2D.</li>
+            <li id="ul0014-0002" num="0071"><i>Color inner pericarp.&#x2014;</i>Near RHS Yellow 2A.</li>
+            <li id="ul0014-0003" num="0072"><i>Core color.&#x2014;</i>Near RHS Yellow 2B.</li>
+            <li id="ul0014-0004" num="0073"><i>General shape.&#x2014;</i>Oblong.</li>
+            <li id="ul0014-0005" num="0074"><i>Median cross section.&#x2014;</i>Circular.</li>
+            <li id="ul0014-0006" num="0075"><i>Stylar end shape.&#x2014;</i>Flat.</li>
+            <li id="ul0014-0007" num="0076"><i>Shoulder shape.&#x2014;</i>Squared, truncate.</li>
+            <li id="ul0014-0008" num="0077"><i>Calyx ring.&#x2014;</i>Present.</li>
+            <li id="ul0014-0009" num="0078"><i>Calyx ring expression.&#x2014;</i>Moderate.</li>
+            <li id="ul0014-0010" num="0079"><i>Skin color at harvest.&#x2014;</i>Near RHS Yellow-Green 152C.</li>
+            <li id="ul0014-0011" num="0080"><i>Hair on fruit skin.&#x2014;</i>downy.</li>
+            <li id="ul0014-0012" num="0081"><i>Hair adherence to skin.&#x2014;</i>Weak.</li>
+            <li id="ul0014-0013" num="0082"><i>Skin adherence to flesh at maturity.&#x2014;</i>Weak.</li>
+            <li id="ul0014-0014" num="0083"><i>Fruit core shape.&#x2014;</i>Transversely elliptic.</li>
+            <li id="ul0014-0015" num="0084"><i>Core</i>-<i>woody spike.&#x2014;</i>Small.</li>
+            <li id="ul0014-0016" num="0085"><i>Lenticels on fruit.&#x2014;</i>Weak expression of lenticels on fruit.</li>
+            <li id="ul0014-0017" num="0086"><i>Mature seed color.&#x2014;</i>black.</li>
+            <li id="ul0014-0018" num="0087"><i>Dried seed.&#x2014;</i>brown.</li>
+            <li id="ul0014-0019" num="0088"><i>Harvest time.&#x2014;</i>Very early season.</li>
+        </ul>
+        </li>
+    </ul>
+    </li>
+    <li id="ul0002-0010" num="0089">Other characteristics:</li>
+    <li id="ul0002-0011" num="0090">Storage life: Storage life is a minimum of 3 months at 2&#xb0; C.</li>
+    <li id="ul0002-0012" num="0091">Disease/pest resistance: Neither resistance nor susceptibility to pathogens and pests common to <i>Actinidia chinensis </i>have been observed.</li>
+    <li id="ul0002-0013" num="0092">Temperature tolerance: Tolerates low temperatures to approximately &#x2212;5&#xb0; C. without negative effects, tolerates high temperatures to approximately 35&#xb0; C. without negative effects.</li>
+</ul>
+</p>
+<?detailed-description description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text><b>1</b>. A new and distinct cultivar of <i>Actinidia chinensis </i>plant named &#x2018;B52&#x2019; as herein illustrated and described.</claim-text>
+</claim>
+</claims>
+</us-patent-application>

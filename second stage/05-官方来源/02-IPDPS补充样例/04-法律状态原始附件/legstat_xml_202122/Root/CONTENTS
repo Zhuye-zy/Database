@@ -1,0 +1,22 @@
+This product is the Legal Status/XML exchange
+
+PACKAGING STRATEGY
+Each package will be split into one or more package-files:
+* on application-date
+* within application-date on application-country
+* within application-country on size 
+* sorted on application-number
+Each package will come with its own packaging-index, a table of contents:
+* enabling to navigate through the exchange and trace information
+* specifying which ranges can be found in what package-file
+
+DELIVERY CONTENTS
+One package file will contain one instance of <legal-status-documents>
+Each instance of <legal-status-documents> will contain one or more occurrences of <legal-status-document>. 
+Instances of <legal-status-document> will be sorted in ascending order by application-country, application-number, application-kind.
+Each instance of <legal-status-document> represents one application and its legal history. 
+Each instance of <legal-status-document> will contain 
+* one occurrence of <application-reference>
+* one or more occurrences of <publication-reference>
+* one or more occurrences of <legal-event>
+

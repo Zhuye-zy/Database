@@ -1,0 +1,346 @@
+﻿table_name,table_cn,tier,column_name,column_cn,data_type,nullable,key_type,fk_reference,source,sample_value,remark,is_multivalue,is_longtext
+dataset,数据集来源,核心,dataset_id,数据集ID,BIGINT,N,PK,,本设计,1,自增主键,N,N
+dataset,数据集来源,核心,dataset_code,数据集代码,VARCHAR(20),N,UK,,本设计/任务书,US_APP_PUB,US_APP_PUB/US_GRANT/EP_FULLTEXT/EP_DOCDB_ABS,N,N
+dataset,数据集来源,核心,dataset_name_cn,数据集中文名,VARCHAR(200),N,,,任务书,美国专利申请公布全文文本数据,,N,N
+dataset,数据集来源,核心,dataset_name_en,数据集英文名,VARCHAR(200),Y,,,任务书,US Patent Application Full-Text,,N,N
+dataset,数据集来源,核心,office_code,所属局代码,CHAR(2),N,FK,country_office.ctry_code,ST.3,US,US/EP,N,N
+dataset,数据集来源,核心,data_category,数据类别,VARCHAR(20),N,,,任务书,fulltext,fulltext/abstract/biblio,N,N
+dataset,数据集来源,核心,file_format,文件格式,VARCHAR(20),N,,,任务书,XML,本课题四类数据均为 XML,N,N
+dataset,数据集来源,核心,manual_ref,数据手册出处,VARCHAR(500),Y,,,官网资料/来源清单,US-PA-TXTO-10-A_数据手册.pdf,官网手册文件名/章节；数据集行填写,N,N
+dataset,数据集来源,核心,description,说明,TEXT,Y,,,本设计,美国申请公布（A1）周更新,,N,Y
+country_office,国家/地区/受理局,核心,ctry_code,ST.3 代码,CHAR(2),N,PK,,ST.3/tls801_country,US,两位大写字母,N,N
+country_office,国家/地区/受理局,核心,iso_alpha3,ISO 3166 alpha-3,CHAR(3),Y,UK,,tls801_country.iso_alpha3,USA,WO/EP 等组织代码可空,N,N
+country_office,国家/地区/受理局,核心,st3_name,标准英文名,VARCHAR(100),N,,,ST.3/tls801_country.st3_name,United States of America,,N,N
+country_office,国家/地区/受理局,核心,name_cn,中文名,VARCHAR(100),Y,,,本设计,美国,便于报告展示,N,N
+country_office,国家/地区/受理局,核心,organisation_flag,是否组织,CHAR(1),N,,,tls801_country,N,EP/WO/EAPO 等为 Y,N,N
+country_office,国家/地区/受理局,核心,continent,所属洲,VARCHAR(25),Y,,,tls801_country.continent,North America,,N,N
+country_office,国家/地区/受理局,核心,is_epo_member,是否EPO成员,CHAR(1),N,,,tls801_country.epo_member,Y,,N,N
+country_office,国家/地区/受理局,核心,is_eu_member,是否欧盟成员,CHAR(1),N,,,tls801_country.eu_member,Y,,N,N
+country_office,国家/地区/受理局,核心,discontinued,是否已废止代码,CHAR(1),N,,,tls801_country.discontinued,N,,N,N
+language,语言,核心,lang_code,语言代码,CHAR(2),N,PK,,ST.9 注(25)(26)/ISO 639,EN,EN/DE/FR/zh 等,N,N
+language,语言,核心,name_en,英文名,VARCHAR(50),N,,,ISO 639,English,,N,N
+language,语言,核心,name_cn,中文名,VARCHAR(50),Y,,,本设计,英语,,N,N
+kind_code,文献种类代码（ST.16）,核心,office_code,局代码,CHAR(2),N,PK/FK,country_office.ctry_code,ST.3,US,联合主键之一,N,N
+kind_code,文献种类代码（ST.16）,核心,kind_code,种类代码,VARCHAR(2),N,PK,,ST.16/XML kind,A1,A1/B1/B2/S1…,N,N
+kind_code,文献种类代码（ST.16）,核心,kind_description_en,英文说明,VARCHAR(200),N,,,ST.16 p.3.16.2-3,First publication level (application),,N,N
+kind_code,文献种类代码（ST.16）,核心,kind_description_cn,中文说明,VARCHAR(200),N,,,ST.16/本设计,申请公布（未审查）,,N,N
+kind_code,文献种类代码（ST.16）,核心,publication_level,公布级别,CHAR(1),Y,,,ST.16,1,1/2/3,N,N
+kind_code,文献种类代码（ST.16）,核心,is_grant,是否授权公告,CHAR(1),N,,,ST.16,N,B*/P* 为 Y,N,N
+kind_code,文献种类代码（ST.16）,核心,note,备注,VARCHAR(200),Y,,,本设计,,美国 A1=申请公布、B1/B2=授权公告、S1=外观设计公告,N,N
+application_type,申请类型,核心,appl_type_code,申请类型代码,VARCHAR(20),N,PK,,XML @appl-type/tls201.ipr_type,utility,utility/design/plant/reissue/pct/regional,N,N
+application_type,申请类型,核心,appl_type_name_en,英文名,VARCHAR(100),N,,,XML,Utility application,,N,N
+application_type,申请类型,核心,appl_type_name_cn,中文名,VARCHAR(100),N,,,本设计,发明专利申请,,N,N
+application_type,申请类型,核心,ipr_type,DOCDB 知识产权类型,CHAR(2),Y,,,tls201_appln.ipr_type,PI,PI/UM/DS/SPC,N,N
+classification_scheme,分类体系,核心,scheme_code,体系代码,VARCHAR(10),N,PK,,ST.9(51)(52)/本设计,IPC,IPC/CPC/USPC/LOCARNO,N,N
+classification_scheme,分类体系,核心,scheme_name_en,英文名,VARCHAR(100),N,,,WIPO,International Patent Classification,,N,N
+classification_scheme,分类体系,核心,scheme_name_cn,中文名,VARCHAR(100),N,,,本设计,国际专利分类,,N,N
+classification_scheme,分类体系,核心,authority,维护机构,CHAR(2),Y,FK,country_office.ctry_code,WIPO/USPTO/EPO,WO,,N,N
+classification_scheme,分类体系,核心,symbol_format,符号格式说明,VARCHAR(100),Y,,,本设计,A01B15/02,用于校验与解析,N,N
+classification_scheme,分类体系,核心,is_hierarchical,是否层级制,CHAR(1),N,,,本设计,Y,IPC/CPC 为 Y；USPC 为 N,N,N
+legal_event_code,法律状态事件码,核心,event_auth,事件局代码,CHAR(2),N,PK/FK,country_office.ctry_code,tls803_legal_event_code,EP,,N,N
+legal_event_code,法律状态事件码,核心,event_code,事件码,VARCHAR(4),N,PK,,tls803_legal_event_code,PG25,如 PG25=失效,N,N
+legal_event_code,法律状态事件码,核心,event_impact,影响标志,CHAR(1),Y,,,tls803_legal_event_code.event_impact,N,,N,N
+legal_event_code,法律状态事件码,核心,event_descr,事件英文描述,VARCHAR(250),N,,,tls803_legal_event_code.event_descr,Lapsed in a contracting state,,N,N
+legal_event_code,法律状态事件码,核心,event_descr_orig,事件原文描述,VARCHAR(250),Y,,,tls803_legal_event_code.event_descr_orig,Lapsed in AT,原文语言,N,N
+legal_event_code,法律状态事件码,核心,event_category_code,事件类别码,CHAR(1),Y,,,tls803_legal_event_code,N,,N,N
+legal_event_code,法律状态事件码,核心,event_category_title,事件类别名,VARCHAR(100),Y,,,tls803_legal_event_code,Lapse,,N,N
+citation_category,引用类别码,核心,category_code,类别代码,VARCHAR(10),N,PK,,ST.14（经 ST.9(56) 注 ii 引入）,X,X=特别相关；Y=组合相关；A=背景技术,N,N
+citation_category,引用类别码,核心,category_desc_en,英文说明,VARCHAR(200),N,,,ST.14,Particularly relevant,,N,N
+citation_category,引用类别码,核心,category_desc_cn,中文说明,VARCHAR(200),N,,,本设计,特别相关,,N,N
+citation_category,引用类别码,核心,source_standard,来源标准,VARCHAR(30),N,,,本设计,WIPO ST.14,USPTO 类别另列为原文,N,N
+citation_category,引用类别码,核心,note,备注,VARCHAR(200),Y,,,本设计,,,N,N
+keyword,关键词词表,增强,keyword_id,关键词ID,BIGINT,N,PK,,本设计,1,,N,N
+keyword,关键词词表,增强,keyword_text,关键词,VARCHAR(200),N,UK,,ST.9(55)/数据源,solar cell,,N,N
+keyword,关键词词表,增强,lang_code,语言,CHAR(2),N,UK/FK,language.lang_code,ISO 639,EN,联合唯一,N,N
+keyword,关键词词表,增强,source,来源,VARCHAR(50),Y,,,本设计,EP_DOCDB_ABS,,N,N
+ipc_techn_field,IPC-技术领域维表,增强,ipc_maingroup_symbol,IPC 大类符号,VARCHAR(8),N,PK,,tls901_techn_field_ipc,A01B,,N,N
+ipc_techn_field,IPC-技术领域维表,增强,techn_field_nr,技术领域号,SMALLINT,N,,,tls901_techn_field_ipc,1,,N,N
+ipc_techn_field,IPC-技术领域维表,增强,techn_sector,技术门类,VARCHAR(50),Y,,,tls901_techn_field_ipc,Electrical engineering,,N,N
+ipc_techn_field,IPC-技术领域维表,增强,techn_field,技术领域,VARCHAR(50),Y,,,tls901_techn_field_ipc,Electrical machinery,,N,N
+patent,专利申请案,核心,patent_id,专利申请ID,BIGINT,N,PK,,本设计,100000001,自增代理键,N,N
+patent,专利申请案,核心,dataset_id,首次来源数据集,BIGINT,N,FK,dataset.dataset_id,本设计,1,多数据集合并导入时的溯源,N,N
+patent,专利申请案,核心,appln_auth,受理局代码,CHAR(2),N,FK,country_office.ctry_code,ST.9(21)/tls201.appln_auth,US,,N,N
+patent,专利申请案,核心,appln_nr,申请号,VARCHAR(30),N,,,ST.9(21)/XML application-reference/doc-number,17364781,不含国别/种类,N,N
+patent,专利申请案,核心,appln_kind,申请号种类,VARCHAR(2),N,,,tls201.appln_kind；ETL 规则,NA,DOCDB 种类码；源 XML 缺失时规范化为 NA，保证业务候选键无 NULL,N,N
+patent,专利申请案,核心,appln_nr_original,原始申请号,VARCHAR(100),Y,,,tls201.appln_nr_original,2019-239059,保留原始书写形式,N,N
+patent,专利申请案,核心,appln_nr_epodoc,EPODOC 规范号,VARCHAR(30),Y,,,tls201.appln_nr_epodoc,US201917364781,跨局统一检索用,N,N
+patent,专利申请案,核心,appl_type_code,申请类型,VARCHAR(20),Y,FK,application_type.appl_type_code,XML @appl-type,utility,design/utility/plant…,N,N
+patent,专利申请案,核心,appln_filing_date,申请日,DATE,N,,,ST.9(22)/XML application-reference/date,2021-06-30,统一 DATE,N,N
+patent,专利申请案,核心,appln_filing_date_raw,申请日原文,CHAR(8),Y,,,本设计,20210630,保留 YYYYMMDD 原始串,N,N
+patent,专利申请案,核心,receiving_office,受理局,CHAR(2),Y,FK,country_office.ctry_code,tls201.receiving_office,US,与 appln_auth 可能不同（PCT 进入国家阶段）,N,N
+patent,专利申请案,核心,appln_lang,申请语言,CHAR(2),Y,FK,language.lang_code,ST.9(25),EN,,N,N
+patent,专利申请案,核心,int_phase,是否国际阶段,CHAR(1),N,,,tls201.int_phase,N,Y/N,N,N
+patent,专利申请案,核心,reg_phase,是否区域阶段,CHAR(1),N,,,tls201.reg_phase,N,Y/N,N,N
+patent,专利申请案,核心,nat_phase,是否国家阶段,CHAR(1),N,,,tls201.nat_phase,Y,Y/N,N,N
+patent,专利申请案,核心,rights_effective_date,权利生效日,DATE,Y,,,ST.9(24)/官网手册（EP全文 PDF p.5–9 B240；DOCDB date-of-coming-into-force）,2014-04-15,B240 可能给出多日期，本表存首个；细分见待确认清单,N,N
+patent,专利申请案,核心,us_application_series_code,美国申请系列码,VARCHAR(5),Y,,,官网手册（US申请 PDF p.4–5）/XML us-application-series-code,14,US 特有；14/15/17/29/35…,N,N
+patent,专利申请案,核心,botanic_latin_name,植物专利拉丁名,VARCHAR(200),Y,,,官网手册（US授权 PDF p.4–6）/XML us-botanic/latin-name,Rosa hybrida,仅植物专利（US-PP）,N,N
+patent,专利申请案,核心,botanic_variety,植物专利品种名,VARCHAR(200),Y,,,官网手册（US授权 PDF p.4–6）/XML us-botanic/variety,AUSnoble,仅植物专利,N,N
+publication,公布/公告文献,核心,publication_id,文献ID,BIGINT,N,PK,,本设计,200000001,,N,N
+publication,公布/公告文献,核心,patent_id,所属申请,BIGINT,N,FK,patent.patent_id,tls211.appln_id,100000001,一个申请多份文献,N,N
+publication,公布/公告文献,核心,dataset_id,来源数据集,BIGINT,N,FK,dataset.dataset_id,本设计,1,,N,N
+publication,公布/公告文献,核心,publn_auth,公布局代码,CHAR(2),N,FK,country_office.ctry_code,ST.9(19)/tls211.publn_auth,US,,N,N
+publication,公布/公告文献,核心,publn_nr,文献号,VARCHAR(30),N,,,ST.9(11)/XML publication-reference/doc-number,20230000001,不含局代码与种类码,N,N
+publication,公布/公告文献,核心,publn_kind,文献种类码,VARCHAR(2),N,FK,"kind_code(office_code,kind_code)",ST.9(13)/ST.16,A1,"复合外键 (publn_auth,publn_kind)→kind_code",N,N
+publication,公布/公告文献,核心,publn_date,公布日,DATE,Y,,,ST.9(43)(45)/XML publication-reference/date,2023-01-05,,N,N
+publication,公布/公告文献,核心,publn_date_raw,公布日原文,CHAR(8),Y,,,本设计,20230105,,N,N
+publication,公布/公告文献,核心,publn_lg,公布语言,CHAR(2),Y,FK,language.lang_code,ST.9(26)/tls211.publn_lg,EN,,N,N
+publication,公布/公告文献,核心,publn_first_grant,是否首次授权,CHAR(1),N,,,tls211.publn_first_grant,N,Y/N,N,N
+publication,公布/公告文献,核心,term_length_years,保护期(年),SMALLINT,Y,,,官网手册（US授权 PDF p.4–6）/XML us-term-of-grant/length-of-grant,14,US 授权文献特有,N,N
+publication,公布/公告文献,核心,term_extension_days,保护期延长(天),INT,Y,,,官网样例/XML us-term-of-grant/us-term-extension,1270,US PTA/PTE 延长天数,N,N
+publication,公布/公告文献,核心,number_of_claims,权利要求项数,INT,Y,,,官网手册（US授权 PDF p.4–6）/XML number-of-claims,20,源数据显式给出，非本地派生,N,N
+publication,公布/公告文献,核心,number_of_figures,附图数量,INT,Y,,,官网手册（US授权 PDF p.4–6）/XML figures/number-of-figures,26,源数据显式给出,N,N
+publication,公布/公告文献,核心,number_of_drawing_sheets,附图纸张数,INT,Y,,,官网样例/XML figures/number-of-drawing-sheets,19,源数据显式给出,N,N
+publication,公布/公告文献,核心,gazette_number,公报号,VARCHAR(20),Y,,,官网手册（EP全文 p.6）/XML B405/bnum,201445,EP 公报期号,N,N
+publication,公布/公告文献,核心,docdb_doc_id,DOCDB文献ID,VARCHAR(20),Y,,,官网样例/XML exchange-document/@doc-id,311488806,DOCDB 内部文献标识,N,N
+publication,公布/公告文献,核心,date_added_docdb,入DOCDB日期,DATE,Y,,,官网样例/XML exchange-document/@date-added-docdb,2000-04-18,DOCDB 收录日期,N,N
+title,发明名称,核心,title_id,标题ID,BIGINT,N,PK,,本设计,300000001,,N,N
+title,发明名称,核心,publication_id,文献ID,BIGINT,N,FK,publication.publication_id,官网样例/XML invention-title,200000001,,N,N
+title,发明名称,核心,lang_code,语言,CHAR(2),N,FK,language.lang_code,ST.9(54)/ISO 639；EP 手册 B541,EN,EP 数据 de/en/fr 多行,N,N
+title,发明名称,核心,title_text,标题文本,VARCHAR(2000),N,,,ST.9(54)/XML invention-title；EP手册 B542,ASSEMBLED GARDEN TOOL,不宜用 TEXT，标题可控长,N,N
+title,发明名称,核心,title_type,标题类型,VARCHAR(10),N,,,本设计,invention,invention/design,N,N
+title,发明名称,核心,is_original,是否原文语言,CHAR(1),Y,,,本设计,Y,,N,N
+title,发明名称,核心,data_format,数据格式,VARCHAR(20),Y,,,官网样例/XML invention-title/@data-format,docdba,DOCDB 特有,N,N
+abstract,摘要,核心,abstract_id,摘要ID,BIGINT,N,PK,,本设计,400000001,,N,N
+abstract,摘要,核心,publication_id,文献ID,BIGINT,N,FK,publication.publication_id,官网样例/XML abstract/p,200000001,,N,N
+abstract,摘要,核心,lang_code,语言,CHAR(2),N,FK,language.lang_code,ST.9(57)/tls203.appln_abstract_lg；DOCDB abstract/@lang,EN,DOCDB 样例含 de/en 两条摘要,N,N
+abstract,摘要,核心,abstract_text,摘要正文,TEXT/LONGTEXT,N,,,ST.9(57)/XML abstract/p,An assembled garden tool…,长文本；PostgreSQL TEXT/MySQL LONGTEXT；样例 200~800 字符，真实可达数千,N,Y
+abstract,摘要,核心,data_format,数据格式,VARCHAR(20),Y,,,官网样例/XML abstract/@data-format,docdba,DOCDB 特有,N,N
+abstract,摘要,核心,abstract_source,摘要来源,VARCHAR(50),Y,,,官网样例/XML abstract/@abstract-source,EPO,DOCDB 特有,N,N
+description_section,说明书章节,核心,section_id,章节ID,BIGINT,N,PK,,本设计,500000001,,N,N
+description_section,说明书章节,核心,publication_id,文献ID,BIGINT,N,FK,publication.publication_id,XML description,200000001,,N,N
+description_section,说明书章节,核心,parent_section_id,父章节ID,BIGINT,Y,FK,description_section.section_id,本设计（自引用）,,顶层为 NULL，形成说明书树,N,N
+description_section,说明书章节,核心,section_seq,章节序号,INT,N,,,XML 顺序,1,文档内全局序号,N,N
+description_section,说明书章节,核心,section_level,层级,SMALLINT,Y,,,XML heading/@level,1,,N,N
+description_section,说明书章节,核心,heading,章节标题,VARCHAR(500),Y,,,XML description/heading,TECHNICAL FIELD,无标题段落为 NULL,N,N
+description_section,说明书章节,核心,section_text,章节正文,TEXT/LONGTEXT,Y,,,XML description/p,The present disclosure relates to…,长文本；PostgreSQL TEXT/MySQL LONGTEXT,N,Y
+drawing,附图,核心,drawing_id,附图ID,BIGINT,N,PK,,本设计,600000001,,N,N
+drawing,附图,核心,publication_id,文献ID,BIGINT,N,FK,publication.publication_id,XML drawings,200000001,,N,N
+drawing,附图,核心,figure_seq,图序号,INT,N,,,XML 顺序/figref,1,,N,N
+drawing,附图,核心,figure_id,XML 图标识,VARCHAR(64),Y,,,XML figure/@id,Fig-EMI-D00000,,N,N
+drawing,附图,核心,image_file,图片文件名,VARCHAR(255),Y,,,XML img/@file,US11540449-20230103-D00000.TIF,真实图件存文件系统，不存 BLOB,N,N
+drawing,附图,核心,alt_text,替换文本,VARCHAR(200),Y,,,XML img/@alt,embedded image,,N,N
+claim,权利要求,核心,claim_id,权利要求ID,BIGINT,N,PK,,本设计,700000001,,N,N
+claim,权利要求,核心,publication_id,文献ID,BIGINT,N,FK,publication.publication_id,官网样例/XML claims/claim,200000001,,N,N
+claim,权利要求,核心,lang_code,权利要求语言,CHAR(2),N,FK,language.lang_code,官网样例/XML claims/@lang（EP）,EN,US 数据无 lang 属性，按文档根 lang 填,N,N
+claim,权利要求,核心,claim_number,权利要求编号,INT,N,,,官网样例/XML claim/@num,1,按公布文本编号（EP 为 0001 等定长）,N,N
+claim,权利要求,核心,claim_seq,文档内序号,INT,N,,,XML 顺序,1,,N,N
+claim,权利要求,核心,claim_type,独立/从属,CHAR(1),N,,,XML claim-ref 是否存在,I,I=独立，D=dependent,N,N
+claim,权利要求,核心,claim_text,权利要求正文,TEXT/LONGTEXT,N,,,XML claim-text,1. A gardening shears comprising:…,长文本；嵌套 claim-text 展平后拼接,N,Y
+claim,权利要求,核心,xml_claim_id,XML 权利要求ID,VARCHAR(64),Y,,,官网样例/XML claim/@id,c-en-01-0001,US 为 CLM-00001；解析 claim-ref@idref 用,N,N
+claim_dependency,从属权利要求依赖,核心,dependent_claim_id,从属权利要求ID,BIGINT,N,PK/FK,claim.claim_id,XML claim-ref（依赖方）,700000002,,N,N
+claim_dependency,从属权利要求依赖,核心,parent_claim_id,被依赖权利要求ID,BIGINT,N,PK/FK,claim.claim_id,XML claim-ref@idref（被依赖方）,700000001,必须属于同一 publication（应用层校验）,N,N
+claim_dependency,从属权利要求依赖,核心,dependency_type,依赖类型,VARCHAR(20),Y,,,本设计,single,single/multiple,N,N
+claim_dependency,从属权利要求依赖,核心,ref_text,引用原文,VARCHAR(200),Y,,,XML claim-ref 文本,claim 1,,N,N
+person,人员/机构（ISA 超类）,核心,person_id,人员ID,BIGINT,N,PK,,本设计,800000001,,N,N
+person,人员/机构（ISA 超类）,核心,person_name,规范名称,VARCHAR(500),N,,,tls206.person_name,KUBOTA CORPORATION,标准化/消歧后的名称,N,N
+person,人员/机构（ISA 超类）,核心,person_name_orig,原始名称,VARCHAR(500),Y,,,XML addressbook/orgname|name,KUBOTA CORPORATION,保留原文,N,N
+person,人员/机构（ISA 超类）,核心,person_type,类型判别符,CHAR(1),N,,,本设计（ISA 判别）,L,N=自然人（natural_person）；L=法人/机构（organization）,N,N
+person,人员/机构（ISA 超类）,核心,address_text,地址全文,VARCHAR(1000),Y,,,XML address 展开,"No.1 Xinhua Road, Taiyuan",超类公共属性,N,N
+person,人员/机构（ISA 超类）,核心,city,城市,VARCHAR(200),Y,,,XML address/city,Taiyuan,,N,N
+person,人员/机构（ISA 超类）,核心,state_province,州/省,VARCHAR(100),Y,,,XML address/state,CA,US 样例中出现 state,N,N
+person,人员/机构（ISA 超类）,核心,postcode,邮编,VARCHAR(30),Y,,,tls226_person_orig.zip_code,,,N,N
+person,人员/机构（ISA 超类）,核心,ctry_code,所属国家,CHAR(2),Y,FK,country_office.ctry_code,XML address/country,CN,,N,N
+person,人员/机构（ISA 超类）,核心,residence_ctry_code,居住国,CHAR(2),Y,FK,country_office.ctry_code,XML us-applicant/residence/country,JP,申请人特有,N,N
+person,人员/机构（ISA 超类）,核心,doc_std_name,DOCDB 标准名,VARCHAR(500),Y,,,tls206.doc_std_name,,,N,N
+person,人员/机构（ISA 超类）,核心,psn_id,DOCDB 人员ID,INT,Y,,,tls206.psn_id,,多源合并时用于对齐,N,N
+person,人员/机构（ISA 超类）,核心,epo_person_id,EPO人员ID,VARCHAR(20),Y,,,官网样例/XML B711 iid、B721 iid,101142012,EP 数据的持久人员标识,N,N
+person,人员/机构（ISA 超类）,核心,source_dataset_id,来源数据集,BIGINT,Y,FK,dataset.dataset_id,本设计,1,,N,N
+natural_person,自然人（person 的 ISA 子类）,核心,person_id,人员ID,BIGINT,N,PK/FK,person.person_id,教材 4.6.1,800000002,与 person 1:1,N,N
+natural_person,自然人（person 的 ISA 子类）,核心,last_name,姓,VARCHAR(200),Y,,,官网样例/XML addressbook/last-name,WU,,N,N
+natural_person,自然人（person 的 ISA 子类）,核心,first_name,名,VARCHAR(200),Y,,,官网样例/XML addressbook/first-name,Weinan,,N,N
+natural_person,自然人（person 的 ISA 子类）,核心,middle_name,中间名,VARCHAR(200),Y,,,tls226_person_orig.middle_name,,,N,N
+organization,法人/机构（person 的 ISA 子类）,核心,person_id,人员ID,BIGINT,N,PK/FK,person.person_id,教材 4.6.1,800000001,与 person 1:1,N,N
+organization,法人/机构（person 的 ISA 子类）,核心,org_name,机构名称,VARCHAR(500),N,,,官网样例/XML addressbook/orgname,KUBOTA CORPORATION,,N,N
+organization,法人/机构（person 的 ISA 子类）,核心,psn_sector,机构性质,VARCHAR(50),Y,,,tls206.psn_sector,COMPANY,COMPANY/GOV/UNIVERSITY/NONPROFIT,N,N
+patent_applicant,专利-申请人,核心,patent_id,专利申请ID,BIGINT,N,PK/FK,patent.patent_id,本设计,100000001,,N,N
+patent_applicant,专利-申请人,核心,person_id,人员ID,BIGINT,N,FK,person.person_id,XML us-applicant,800000001,,N,N
+patent_applicant,专利-申请人,核心,sequence_nr,顺序号,SMALLINT,N,PK,,XML @sequence,1,申请人次序,N,N
+patent_applicant,专利-申请人,核心,applicant_type,申请人类型,VARCHAR(20),Y,,,XML @appl-type,applicant,,N,N
+patent_applicant,专利-申请人,核心,authority_category,权限类别,VARCHAR(50),Y,,,XML @applicant-authority-category,,,N,N
+patent_applicant,专利-申请人,核心,designation,指定类型,VARCHAR(50),Y,,,XML @designation,us-only,,N,N
+patent_applicant,专利-申请人,核心,internal_ref,内部参考号,VARCHAR(100),Y,,,官网样例/XML B711/irf,JAS/P132178EP00,EP 申请人案卷号,N,N
+patent_inventor,专利-发明人,核心,patent_id,专利申请ID,BIGINT,N,PK/FK,patent.patent_id,本设计,100000001,,N,N
+patent_inventor,专利-发明人,核心,person_id,人员ID,BIGINT,N,FK,person.person_id,XML inventor,800000002,,N,N
+patent_inventor,专利-发明人,核心,sequence_nr,顺序号,SMALLINT,N,PK,,XML @sequence,1,发明人次序,N,N
+patent_inventor,专利-发明人,核心,designation,指定类型,VARCHAR(50),Y,,,XML @designation,us-only,,N,N
+patent_inventor,专利-发明人,核心,internal_ref,内部参考号,VARCHAR(100),Y,,,官网样例/XML B721/irf,P2787EP00,EP 代理人/发明人案卷号,N,N
+patent_assignee,专利-权利人/受让人,核心,patent_id,专利申请ID,BIGINT,N,PK/FK,patent.patent_id,本设计,100000001,,N,N
+patent_assignee,专利-权利人/受让人,核心,person_id,人员ID,BIGINT,N,FK,person.person_id,XML assignee,800000003,,N,N
+patent_assignee,专利-权利人/受让人,核心,sequence_nr,顺序号,SMALLINT,N,PK,,XML 顺序,1,,N,N
+patent_assignee,专利-权利人/受让人,核心,role_code,角色代码,VARCHAR(5),Y,,,XML addressbook/role,02,USPTO 角色码,N,N
+patent_assignee,专利-权利人/受让人,核心,assignee_type,权利人类型,VARCHAR(20),Y,,,本设计,company,,N,N
+patent_agent,专利-代理人/机构,核心,patent_id,专利申请ID,BIGINT,N,PK/FK,patent.patent_id,本设计,100000001,,N,N
+patent_agent,专利-代理人/机构,核心,person_id,人员ID,BIGINT,N,FK,person.person_id,XML agent,800000004,,N,N
+patent_agent,专利-代理人/机构,核心,sequence_nr,顺序号,SMALLINT,N,PK,,XML @sequence,1,,N,N
+patent_agent,专利-代理人/机构,核心,rep_type,代理类型,VARCHAR(20),Y,,,官网样例/XML @rep-type,attorney,attorney/agent,N,N
+patent_agent,专利-代理人/机构,核心,internal_ref,内部参考号,VARCHAR(100),Y,,,官网样例/XML B741/irf,PJF01778EP,EP 代理机构案卷号,N,N
+patent_examiner,专利-审查员,核心,patent_id,专利申请ID,BIGINT,N,PK/FK,patent.patent_id,本设计,100000001,,N,N
+patent_examiner,专利-审查员,核心,person_id,人员ID,BIGINT,N,FK,person.person_id,XML examiner,800000005,,N,N
+patent_examiner,专利-审查员,核心,examiner_type,审查员类型,CHAR(1),N,PK,,XML primary/assistant,P,P=primary，A=assistant,N,N
+patent_examiner,专利-审查员,核心,department,审查部门,VARCHAR(20),Y,,,XML primary-examiner/department,3724,USPTO art unit,N,N
+patent_examiner,专利-审查员,核心,sequence_nr,顺序号,SMALLINT,N,PK,,本设计/ETL,1,源缺失时按文档顺序自 1 稳定编号,N,N
+classification,分类号主表,核心,scheme_code,分类体系,VARCHAR(10),N,PK/FK,classification_scheme.scheme_code,ST.9(51)(52),IPC,联合主键之一,N,N
+classification,分类号主表,核心,symbol,分类号,VARCHAR(30),N,PK,,XML ipc/cpc/national classification,A01B15/02,规范化书写（去空格、补零）,N,N
+classification,分类号主表,核心,section,部,CHAR(1),Y,,,XML section,A,IPC/CPC,N,N
+classification,分类号主表,核心,class_no,大类,VARCHAR(3),Y,,,XML class,01,避免用保留字 class,N,N
+classification,分类号主表,核心,subclass,小类,VARCHAR(2),Y,,,XML subclass,B,,N,N
+classification,分类号主表,核心,main_group,主组,VARCHAR(6),Y,,,XML main-group,15,,N,N
+classification,分类号主表,核心,subgroup,分组,VARCHAR(8),Y,,,XML subgroup,02,,N,N
+classification,分类号主表,核心,version_date,分类版本日,DATE,Y,,,XML ipc-version-indicator/date,2006-01-01,版本化分类体系（IPC/CPC）,N,N
+classification,分类号主表,核心,edition,分类版次,VARCHAR(10),Y,,,官网手册/US授权手册 PDF p.4–6；XML classification-locarno/edition,10,洛迦诺分类版次等非日期型版本,N,N
+classification,分类号主表,核心,symbol_title,分类号标题,VARCHAR(500),Y,,,外部分类表/可选,Gardening tools,从 IPC/CPC 官方分类表补充，便于检索展示,N,N
+patent_classification,专利-分类号,核心,patent_classification_id,分类关联ID,BIGINT,N,PK,,本设计,900000001,,N,N
+patent_classification,专利-分类号,核心,patent_id,专利申请ID,BIGINT,N,FK,patent.patent_id,本设计,100000001,,N,N
+patent_classification,专利-分类号,核心,scheme_code,分类体系,VARCHAR(10),N,FK,classification.scheme_code,ST.9(51)(52),IPC,"复合外键 (scheme_code,symbol)→classification",N,N
+patent_classification,专利-分类号,核心,symbol,分类号,VARCHAR(30),N,FK,classification.symbol,XML ipc/cpc/national classification,A01B15/02,解析后的规范符号,N,N
+patent_classification,专利-分类号,核心,symbol_raw,分类号原文,VARCHAR(60),Y,,,官网样例/XML classification-ipcr/text,A01C 1/06 20060101AFI20130718BHEP,EP/DOCDB 原始 ST.36 串，含版本与局代码,N,N
+patent_classification,专利-分类号,核心,position,位置标志,CHAR(1),Y,,,XML symbol-position,F,F=first/L=later,N,N
+patent_classification,专利-分类号,核心,value,价值标志,CHAR(1),Y,,,XML classification-value,I,I=invention/E=additional,N,N
+patent_classification,专利-分类号,核心,classification_level,分类级别,CHAR(1),Y,,,XML classification-level,A,,N,N
+patent_classification,专利-分类号,核心,generating_office,生成局,CHAR(2),Y,FK,country_office.ctry_code,XML generating-office/country,US,,N,N
+patent_classification,专利-分类号,核心,source_type,来源角色,VARCHAR(20),N,,,本设计/XML,main,main/further/national/search_field,N,N
+patent_classification,专利-分类号,核心,action_date,处理日期,DATE,Y,,,XML action-date/date,2023-01-05,,N,N
+patent_classification,专利-分类号,核心,sequence_nr,顺序号,SMALLINT,Y,,,XML 顺序,1,,N,N
+patent_citation,专利引用（自引用）,核心,citation_id,引用ID,BIGINT,N,PK,,本设计,1100000001,,N,N
+patent_citation,专利引用（自引用）,核心,citing_patent_id,引用方专利申请ID,BIGINT,N,FK,patent.patent_id,XML 所在文档/任务书,100000001,自引用外键 1,N,N
+patent_citation,专利引用（自引用）,核心,citing_publication_id,引用出现的源文献ID,BIGINT,N,FK,publication.publication_id,XML references-cited 所在公布文献；tls212.pat_publn_id,200000001,同一申请的不同公布文献可能有不同引用；须校验其 patent_id=citing_patent_id,N,N
+patent_citation,专利引用（自引用）,核心,cited_patent_id,被引专利申请ID,BIGINT,Y,FK,patent.patent_id,本设计,100000002,自引用外键 2；库外文献为 NULL,N,N
+patent_citation,专利引用（自引用）,核心,cited_publn_id,被引文献ID,BIGINT,Y,FK,publication.publication_id,本设计,,被引文献在库时填入,N,N
+patent_citation,专利引用（自引用）,核心,citation_type,引用类型,CHAR(1),N,,,XML patcit/nplcit,P,P=专利文献；N=非专利文献,N,N
+patent_citation,专利引用（自引用）,核心,cited_country,被引国别,CHAR(2),Y,FK,country_office.ctry_code,XML patcit/document-id/country,US,,N,N
+patent_citation,专利引用（自引用）,核心,cited_doc_number,被引文献号,VARCHAR(30),Y,,,XML patcit/document-id/doc-number,8607677,,N,N
+patent_citation,专利引用（自引用）,核心,cited_doc_kind,被引种类码,VARCHAR(2),Y,,,XML patcit/document-id/kind,B2,,N,N
+patent_citation,专利引用（自引用）,核心,cited_doc_date,被引文献日期,DATE,Y,,,XML patcit/document-id/date,,仅 YYYYMMDD 可确证日精度时填；YYYYMM00 置 NULL,N,N
+patent_citation,专利引用（自引用）,核心,cited_doc_date_raw,被引日期原文,VARCHAR(8),Y,,,XML date,20131200,YYYYMM00 表示月精度,N,N
+patent_citation,专利引用（自引用）,核心,cited_doc_name,被引文献名称,VARCHAR(200),Y,,,XML patcit/document-id/name,Nelson,USPTO 常给发明人姓氏,N,N
+patent_citation,专利引用（自引用）,核心,cited_appln_nr,被引申请号,VARCHAR(30),Y,,,tls212.cited_appln_id 对应,,,N,N
+patent_citation,专利引用（自引用）,核心,cited_raw_text,被引文献原文,VARCHAR(500),Y,,,官网样例/XML B561(text)/nplcit|othercit,EP-A- 0 528 631,EP/DOCDB 引用常为非结构化文本,N,N
+patent_citation,专利引用（自引用）,核心,citn_seq,引用序号,INT,N,,,XML patcit@num/nplcit@num/sequence,1,同一引用方内唯一,N,N
+patent_citation,专利引用（自引用）,核心,citn_origin,引用来源,VARCHAR(50),Y,,,官网样例/XML us-citation/category、citation/@cited-phase,cited by examiner,examiner/applicant/third party；DOCDB 用 SEA 等阶段,N,N
+patent_citation,专利引用（自引用）,核心,citn_gener_auth,引用生成局,CHAR(2),Y,FK,country_office.ctry_code,tls212.citn_gener_auth,US,,N,N
+patent_citation,专利引用（自引用）,核心,relevant_claim,相关权利要求,INT,Y,,,tls215.relevant_claim,,0/空=未指明,N,N
+patent_citation_category,引用-类别,核心,citation_id,引用ID,BIGINT,N,PK/FK,patent_citation.citation_id,本设计,1100000001,,N,N
+patent_citation_category,引用-类别,核心,category_code,类别代码,VARCHAR(10),N,PK/FK,citation_category.category_code,ST.14,X,,N,N
+patent_citation_category,引用-类别,核心,relevant_claim,相关权利要求,INT,N,PK,,tls215.relevant_claim,1,0 表示未指定,N,N
+non_patent_citation,非专利文献引用,核心,npl_id,非专利引用ID,BIGINT,N,PK,,本设计,1200000001,,N,N
+non_patent_citation,非专利文献引用,核心,citation_id,引用ID,BIGINT,N,UK/FK,patent_citation.citation_id,本设计,1100000001,1:1 扩展,N,N
+non_patent_citation,非专利文献引用,核心,npl_type,文献类型,VARCHAR(10),Y,,,XML nplcit/othercit,othercit,,N,N
+non_patent_citation,非专利文献引用,核心,npl_biblio,文献著录全串,TEXT/LONGTEXT,Y,,,tls214.npl_biblio/XML othercit,https://www.kickstarter.com/…,长文本；原始全串,N,Y
+non_patent_citation,非专利文献引用,核心,npl_author,作者,VARCHAR(500),Y,,,tls214.npl_author,,,N,N
+non_patent_citation,非专利文献引用,核心,npl_title,标题,VARCHAR(1000),Y,,,tls214.npl_title1,,,N,N
+non_patent_citation,非专利文献引用,核心,npl_editor,编者,VARCHAR(500),Y,,,tls214.npl_editor,,,N,N
+non_patent_citation,非专利文献引用,核心,npl_publisher,出版者,VARCHAR(500),Y,,,tls214.npl_publisher,,,N,N
+non_patent_citation,非专利文献引用,核心,npl_volume,卷,VARCHAR(50),Y,,,tls214.npl_volume,,,N,N
+non_patent_citation,非专利文献引用,核心,npl_issue,期,VARCHAR(50),Y,,,tls214.npl_issue,,,N,N
+non_patent_citation,非专利文献引用,核心,npl_page_first,起始页,VARCHAR(50),Y,,,tls214.npl_page_first,,,N,N
+non_patent_citation,非专利文献引用,核心,npl_page_last,结束页,VARCHAR(50),Y,,,tls214.npl_page_last,,,N,N
+non_patent_citation,非专利文献引用,核心,npl_publn_date,出版日期(原文),VARCHAR(20),Y,,,tls214.npl_publn_date,,原文格式不定，不强行转 DATE,N,N
+non_patent_citation,非专利文献引用,核心,npl_doi,DOI,VARCHAR(500),Y,,,tls214.npl_doi,,,N,N
+non_patent_citation,非专利文献引用,核心,npl_isbn,ISBN,VARCHAR(30),Y,,,tls214.npl_isbn,,,N,N
+non_patent_citation,非专利文献引用,核心,npl_issn,ISSN,VARCHAR(30),Y,,,tls214.npl_issn,,,N,N
+non_patent_citation,非专利文献引用,核心,online_availability,在线获取地址,VARCHAR(500),Y,,,tls214.online_availability,,,N,N
+patent_family,专利族,核心,family_id,专利族ID,BIGINT,N,PK,,本设计,1300000001,本库代理键,N,N
+patent_family,专利族,核心,family_type,族类型,VARCHAR(10),N,,,tls218/tls219,DOCDB,DOCDB/INPADOC,N,N
+patent_family,专利族,核心,source_family_id,源族ID,INT,N,,,tls218/tls219,12345678,原数据库 family_id,N,N
+patent_family,专利族,核心,dataset_id,来源数据集,BIGINT,Y,FK,dataset.dataset_id,本设计,4,,N,N
+patent_family,专利族,核心,earliest_priority_date,最早优先权日,DATE,Y,,,tls218,2019-12-27,,N,N
+patent_family,专利族,核心,earliest_priority_country,最早优先权国,CHAR(2),Y,FK,country_office.ctry_code,tls218,JP,,N,N
+patent_family,专利族,核心,representative_publication_id,代表文献,BIGINT,Y,FK,publication.publication_id,tls218,200000002,族代表成员,N,N
+patent_family,专利族,核心,note,备注,VARCHAR(500),Y,,,本设计,,,N,N
+patent_family_member,专利族成员,核心,member_id,族成员ID,BIGINT,N,PK,,本设计,1300000002,自增代理键（成员可能不在本地库，不能做复合主键）,N,N
+patent_family_member,专利族成员,核心,family_id,专利族ID,BIGINT,N,FK,patent_family.family_id,官网样例/XML exchange-document/@family-id,1300000001,,N,N
+patent_family_member,专利族成员,核心,member_patent_id,成员申请ID（本地）,BIGINT,Y,FK,patent.patent_id,官网样例/XML family-member/application-reference,100000001,库内成员；库外为 NULL,N,N
+patent_family_member,专利族成员,核心,member_seq,族内成员序号,SMALLINT,N,,,XML family-member 文档顺序（ETL 编号）,1,与 family_id 构成业务唯一键,N,N
+patent_family_member,专利族成员,核心,is_representative,是否代表成员,CHAR(1),Y,,,官网样例/XML application-reference/@is-representative；exchange-document/@is-representative,Y,Y/N；引用级明细仍保留在申请号引用表,N,N
+patent_family_member,专利族成员,核心,member_type,成员类型,VARCHAR(20),Y,,,tls218,equivalent,equivalent/technical,N,N
+family_member_application_ref,族成员申请号引用,核心,member_appln_ref_id,族成员申请号引用ID,BIGINT,N,PK,,本设计,1310000001,代理键,N,N
+family_member_application_ref,族成员申请号引用,核心,member_id,族成员ID,BIGINT,N,FK,patent_family_member.member_id,官网样例/XML patent-family/family-member/application-reference,1300000002,,N,N
+family_member_application_ref,族成员申请号引用,核心,data_format,号码格式,VARCHAR(20),N,,,官网样例/XML application-reference/@data-format,docdb,docdb/epodoc/original,N,N
+family_member_application_ref,族成员申请号引用,核心,is_representative,是否代表申请,CHAR(1),Y,,,官网样例/XML application-reference/@is-representative,YES,原样 YES/NO；B 可规范化为 Y/N,N,N
+family_member_application_ref,族成员申请号引用,核心,doc_id,DOCDB申请标识,VARCHAR(20),Y,,,官网样例/XML application-reference/@doc-id,16430989,,N,N
+family_member_application_ref,族成员申请号引用,核心,country_code,申请局代码,CHAR(2),Y,FK,country_office.ctry_code,官网样例/XML application-reference/document-id/country,DE,,N,N
+family_member_application_ref,族成员申请号引用,核心,appln_nr,申请号原文,VARCHAR(50),N,,,官网样例/XML application-reference/document-id/doc-number,DE19782804439,按 data_format 保留原值,N,N
+family_member_application_ref,族成员申请号引用,核心,appln_kind,申请种类码,VARCHAR(2),Y,,,官网样例/XML application-reference/document-id/kind,A,,N,N
+family_member_publication_ref,族成员公布号引用,核心,member_publn_ref_id,族成员公布号引用ID,BIGINT,N,PK,,本设计,1320000001,代理键,N,N
+family_member_publication_ref,族成员公布号引用,核心,member_id,族成员ID,BIGINT,N,FK,patent_family_member.member_id,官网样例/XML patent-family/family-member/publication-reference,1300000002,,N,N
+family_member_publication_ref,族成员公布号引用,核心,data_format,号码格式,VARCHAR(20),N,,,官网样例/XML publication-reference/@data-format,docdb,docdb/epodoc,N,N
+family_member_publication_ref,族成员公布号引用,核心,sequence_nr,成员内公布顺序,SMALLINT,N,,,官网样例/XML publication-reference/@sequence,1,,N,N
+family_member_publication_ref,族成员公布号引用,核心,doc_id,DOCDB文献标识,VARCHAR(20),Y,,,官网样例/XML publication-reference/@doc-id（若给出）,,,N,N
+family_member_publication_ref,族成员公布号引用,核心,country_code,公布局代码,CHAR(2),Y,FK,country_office.ctry_code,官网样例/XML publication-reference/document-id/country,DE,,N,N
+family_member_publication_ref,族成员公布号引用,核心,publn_nr,公布号原文,VARCHAR(50),N,,,官网样例/XML publication-reference/document-id/doc-number,DE2804439,按 data_format 保留原值,N,N
+family_member_publication_ref,族成员公布号引用,核心,publn_kind,文献种类码,VARCHAR(2),Y,,,官网样例/XML publication-reference/document-id/kind,A1,,N,N
+family_member_publication_ref,族成员公布号引用,核心,publn_date_raw,公布日原文,CHAR(8),Y,,,官网样例/XML publication-reference/document-id/date（若给出）,,无/不完整日期保持 NULL 并保留原文,N,N
+family_abstract,专利族摘要,核心,family_abstract_id,族摘要ID,BIGINT,N,PK,,本设计,1330000001,代理键,N,N
+family_abstract,专利族摘要,核心,family_id,专利族ID,BIGINT,N,FK,patent_family.family_id,官网样例/XML exchange-document/@family-id + patent-family/abstract,1300000001,,N,N
+family_abstract,专利族摘要,核心,abstract_seq,族内摘要序号,SMALLINT,N,,,XML patent-family/abstract 文档顺序（ETL 编号）,1,与 family_id 构成业务唯一键,N,N
+family_abstract,专利族摘要,核心,lang_code,摘要语言,CHAR(2),Y,FK,language.lang_code,官网样例/XML patent-family/abstract/@lang（可缺失）,EN,缺失时可由翻译源/文本检测，未经确认不得臆填,N,N
+family_abstract,专利族摘要,核心,abstract_text,族摘要正文,TEXT/LONGTEXT,N,,,官网样例/XML patent-family/abstract/p,A vaporizing burner which includes…,长文本,N,Y
+family_abstract,专利族摘要,核心,data_format,数据格式,VARCHAR(20),Y,,,官网样例/XML patent-family/abstract/@data-format,docdba,,N,N
+family_abstract,专利族摘要,核心,abstract_source,摘要来源,VARCHAR(50),Y,,,官网样例/XML patent-family/abstract/@abstract-source,translation,,N,N
+family_abstract,专利族摘要,核心,source_country,摘要来源局,CHAR(2),Y,FK,country_office.ctry_code,官网样例/XML patent-family/abstract/@country,US,,N,N
+family_abstract,专利族摘要,核心,source_doc_number,摘要来源文献号,VARCHAR(50),Y,,,官网样例/XML patent-family/abstract/@doc-number,4230443,,N,N
+family_abstract,专利族摘要,核心,source_kind,摘要来源种类码,VARCHAR(2),Y,,,官网样例/XML patent-family/abstract/@kind（若给出）,,,N,N
+priority_claim,优先权,核心,priority_id,优先权ID,BIGINT,N,PK,,本设计,1400000001,,N,N
+priority_claim,优先权,核心,patent_id,在后申请ID,BIGINT,N,FK,patent.patent_id,本设计,100000001,自引用外键 1,N,N
+priority_claim,优先权,核心,prior_patent_id,在先申请ID,BIGINT,Y,FK,patent.patent_id,本设计,,自引用外键 2；不在库为 NULL,N,N
+priority_claim,优先权,核心,sequence_nr,优先级顺序,SMALLINT,N,,,XML @sequence,1,,N,N
+priority_claim,优先权,核心,prior_country,优先权局代码,CHAR(2),N,FK,country_office.ctry_code,ST.9(33)/XML country,JP,,N,N
+priority_claim,优先权,核心,prior_appln_nr,优先权申请号,VARCHAR(50),N,,,ST.9(31)/XML doc-number,2019-239059,,N,N
+priority_claim,优先权,核心,prior_date,优先权日,DATE,Y,,,ST.9(32)/XML date,2019-12-27,,N,N
+priority_claim,优先权,核心,prior_date_raw,优先权日原文,CHAR(8),Y,,,本设计,20191227,,N,N
+priority_claim,优先权,核心,priority_kind,优先权类型,VARCHAR(20),Y,,,官网样例/XML @kind,national,national/regional/international,N,N
+priority_claim,优先权,核心,priority_active_indicator,优先权有效标志,CHAR(1),Y,,,官网样例/XML priority-active-indicator,Y,DOCDB 特有,N,N
+priority_claim,优先权,核心,designated_region,区域指定代码,CHAR(2),Y,FK,country_office.ctry_code,ST.9(34),,区域性优先权使用,N,N
+related_application,国内/程序关联申请,核心,relation_id,关联ID,BIGINT,N,PK,,本设计,1500000001,,N,N
+related_application,国内/程序关联申请,核心,patent_id,本申请ID,BIGINT,N,FK,patent.patent_id,本设计,100000001,自引用外键 1,N,N
+related_application,国内/程序关联申请,核心,related_patent_id,关联申请ID,BIGINT,Y,FK,patent.patent_id,DTD us-related-documents,,自引用外键 2,N,N
+related_application,国内/程序关联申请,核心,relation_type,关联类型,VARCHAR(20),N,,,ST.9(61)-(66),continuation,division/continuation/cip/reissue/addition/substitution,N,N
+related_application,国内/程序关联申请,核心,related_country,关联局代码,CHAR(2),Y,FK,country_office.ctry_code,ST.9(62),US,,N,N
+related_application,国内/程序关联申请,核心,related_appln_nr,关联申请号,VARCHAR(50),Y,,,ST.9(62)/DTD,,,N,N
+related_application,国内/程序关联申请,核心,related_filing_date,关联申请日,DATE,Y,,,ST.9(62),,,N,N
+related_application,国内/程序关联申请,核心,related_publn_nr,关联公布号,VARCHAR(30),Y,,,ST.9(64)(65),,,N,N
+related_application,国内/程序关联申请,核心,parent_status,母案状态,VARCHAR(30),Y,,,官网样例/XML parent-doc/parent-status,ABANDONED,如 ABANDONED；US 特有,N,N
+related_application,国内/程序关联申请,核心,sequence_nr,顺序号,SMALLINT,N,,,本设计/ETL,1,源缺失时按文档出现顺序自 1 稳定编号,N,N
+international_application,国际/区域申请,核心,int_appln_id,国际申请ID,BIGINT,N,PK,,本设计,1600000001,,N,N
+international_application,国际/区域申请,核心,patent_id,国家/区域申请ID,BIGINT,N,UK/FK,patent.patent_id,本设计,100000001,与 patent 1:1,N,N
+international_application,国际/区域申请,核心,int_patent_id,PCT申请在库行,BIGINT,Y,FK,patent.patent_id,本设计,,WO 申请在本库时的 patent_id,N,N
+international_application,国际/区域申请,核心,int_appln_nr,国际申请号,VARCHAR(50),Y,,,ST.9(86)/XML doc-number,PCT/JP2020/033620,,N,N
+international_application,国际/区域申请,核心,int_filing_date,国际申请日,DATE,Y,,,ST.9(86)/XML date,2020-09-04,,N,N
+international_application,国际/区域申请,核心,receiving_office,受理局,CHAR(2),Y,FK,country_office.ctry_code,ST.9(86),JP,RO,N,N
+international_application,国际/区域申请,核心,int_publn_nr,国际公布号,VARCHAR(30),Y,,,ST.9(87),,WO2021/…,N,N
+international_application,国际/区域申请,核心,int_publn_date,国际公布日,DATE,Y,,,ST.9(87),,,N,N
+international_application,国际/区域申请,核心,int_lang,国际公布语言,CHAR(2),Y,FK,language.lang_code,ST.9(87),,,N,N
+international_application,国际/区域申请,核心,regional_office,区域受理局,CHAR(2),Y,FK,country_office.ctry_code,ST.9(96),,EP/EA/AP/OA,N,N
+international_application,国际/区域申请,核心,national_phase_date,进入国家阶段日,DATE,Y,,,ST.9(85)/XML us-371c12-date,2022-05-27,,N,N
+designated_state,指定国,增强,patent_id,专利申请ID,BIGINT,N,PK/FK,patent.patent_id,本设计,100000001,,N,N
+designated_state,指定国,增强,state_code,指定国代码,CHAR(2),N,PK/FK,country_office.ctry_code,ST.9(81)(84),DE,,N,N
+designated_state,指定国,增强,designation_type,指定类型,VARCHAR(10),N,PK,,ST.9(81)(84),EP,PCT/EP/EXT,N,N
+legal_status_event,法律状态事件,核心,event_id,事件ID,BIGINT,N,PK,,本设计,1700000001,,N,N
+legal_status_event,法律状态事件,核心,patent_id,专利申请ID,BIGINT,N,FK,patent.patent_id,本设计,100000001,,N,N
+legal_status_event,法律状态事件,核心,dataset_id,来源数据集,BIGINT,Y,FK,dataset.dataset_id,本设计,4,,N,N
+legal_status_event,法律状态事件,核心,event_seq_nr,事件序号,SMALLINT,N,,,tls231.event_seq_nr,1,,N,N
+legal_status_event,法律状态事件,核心,event_type,事件类型,CHAR(3),Y,,,tls231.event_type,,,N,N
+legal_status_event,法律状态事件,核心,event_auth,事件局代码,CHAR(2),N,FK,country_office.ctry_code,tls231.event_auth,EP,联合外键→legal_event_code,N,N
+legal_status_event,法律状态事件,核心,event_code,事件码,VARCHAR(4),N,FK,"legal_event_code(event_auth,event_code)",tls231.event_code,PG25,,N,N
+legal_status_event,法律状态事件,核心,event_filing_date,事件提交日,DATE,Y,,,tls231.event_filing_date,,,N,N
+legal_status_event,法律状态事件,核心,event_publn_date,事件公布日,DATE,Y,,,tls231.event_publn_date,,,N,N
+legal_status_event,法律状态事件,核心,event_effective_date,事件生效日,DATE,Y,,,tls231.event_effective_date,2024-01-01,,N,N
+legal_status_event,法律状态事件,核心,event_text,事件文本,VARCHAR(1000),Y,,,tls231.event_text,,,N,N
+legal_status_event,法律状态事件,核心,ref_doc_auth,相关文献局,CHAR(2),Y,FK,country_office.ctry_code,tls231.ref_doc_auth,,,N,N
+legal_status_event,法律状态事件,核心,ref_doc_nr,相关文献号,VARCHAR(20),Y,,,tls231.ref_doc_nr,,,N,N
+legal_status_event,法律状态事件,核心,ref_doc_kind,相关文献种类,VARCHAR(2),Y,,,tls231.ref_doc_kind,,,N,N
+legal_status_event,法律状态事件,核心,ref_doc_date,相关文献日期,DATE,Y,,,tls231.ref_doc_date,,,N,N
+legal_status_event,法律状态事件,核心,lapse_country,失效国,CHAR(2),Y,FK,country_office.ctry_code,tls231.lapse_country,,,N,N
+legal_status_event,法律状态事件,核心,lapse_date,失效日,DATE,Y,,,tls231.lapse_date,,,N,N
+legal_status_event,法律状态事件,核心,fee_payment_date,缴费日,DATE,Y,,,tls231.fee_payment_date,,,N,N
+legal_status_event,法律状态事件,核心,fee_renewal_year,续费年度,SMALLINT,Y,,,tls231.fee_renewal_year,,,N,N
+legal_status_event,法律状态事件,核心,designated_states_raw,指定国源串,VARCHAR(1000),Y,,,tls231.designated_states,,仅作原始溯源/对账，不参与查询；规范化语义使用 designated_state,N,N
+legal_status_event,法律状态事件,核心,class_scheme_code,分类体系,VARCHAR(10),Y,FK,classification_scheme.scheme_code,tls231.class_scheme,,,N,N
+legal_status_event,法律状态事件,核心,class_symbol,分类号,VARCHAR(50),Y,,,tls231.class_symbol,,,N,N
+patent_keyword,专利-关键词,增强,patent_id,专利申请ID,BIGINT,N,PK/FK,patent.patent_id,本设计,100000001,,N,N
+patent_keyword,专利-关键词,增强,keyword_id,关键词ID,BIGINT,N,PK/FK,keyword.keyword_id,本设计,1,,N,N
+patent_keyword,专利-关键词,增强,weight,权重,REAL,Y,,,本设计,,若源数据给出,N,N
+patent_keyword,专利-关键词,增强,source,来源,VARCHAR(50),Y,,,本设计,DOCDB,,N,N
+family_citation,专利族引用,增强,citing_family_id,引用方族ID,BIGINT,N,PK/FK,patent_family.family_id,tls228,1300000001,,N,N
+family_citation,专利族引用,增强,cited_family_id,被引族ID,BIGINT,N,PK/FK,patent_family.family_id,tls228,1300000002,,N,N

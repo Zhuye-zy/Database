@@ -1,0 +1,30 @@
+[
+  {
+    "check": "ISA",
+    "violations": 0
+  },
+  {
+    "check": "claim_cross_document",
+    "violations": 0
+  },
+  {
+    "check": "citation_owner",
+    "violations": 0
+  },
+  {
+    "check": "citation_missing_raw",
+    "violations": 0
+  },
+  {
+    "check": "NPL_detail_missing",
+    "violations": 0
+  },
+  {
+    "check": "invented_family",
+    "violations": 0
+  },
+  {
+    "check": "partial_date_invented",
+    "violations": 0
+  }
+]

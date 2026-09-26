@@ -1,0 +1,126 @@
+[
+  {
+    "file": "01-数据库结构/01-create-schema.sql",
+    "sha256": "98cf4b937ea36a3bc16f23f412cb2ca45359f4d213dd308f5b264ef89cd1d619"
+  },
+  {
+    "file": "01-数据库结构/02-audit-migration.sql",
+    "sha256": "ff703e3df0cfcf83f00070c11bd00425c959d510f8f4dfa48930cf5545c57e28"
+  },
+  {
+    "file": "01-数据库结构/03-import-audit.sql",
+    "sha256": "619e292e23886181dbb2a07deb7011ca5e264ca93e593f963d493f367eadaac2"
+  },
+  {
+    "file": "02-数据导入/batch_extensions.py",
+    "sha256": "817506cfc056ed006de40537b6c219a459675d05c595955f15f1842d4731b30b"
+  },
+  {
+    "file": "02-数据导入/download_official.py",
+    "sha256": "3ac788852de226ba0d837c16bcc29e63125781ba2111cacf2d8357060a36f82b"
+  },
+  {
+    "file": "02-数据导入/import_batch.py",
+    "sha256": "21cc4b22faed35a1c02029d93c9f7fe59a4c6d68bafc5ce99475015a2cf00de6"
+  },
+  {
+    "file": "02-数据导入/import_enrichment.py",
+    "sha256": "6c593ff11ea92cd3a1d371e98634c2fa9b829607ce8cde2a9af342723163ea1d"
+  },
+  {
+    "file": "02-数据导入/import_samples.py",
+    "sha256": "4030a0ccf70b2116fbf54a13d01605fbe869056dbc4c61784c68887eac6fa901"
+  },
+  {
+    "file": "02-数据导入/import_support.py",
+    "sha256": "90073f939e669ccc55327499fdad6ba211aedb62653670b6059c1be20562f685"
+  },
+  {
+    "file": "02-数据导入/sample_mapping.py",
+    "sha256": "8e5f0722b753c96e1ba678166662b2f1ef69964bd499a46f5bc501f120ea3fd1"
+  },
+  {
+    "file": "02-数据导入/source_snapshot.json",
+    "sha256": "ab68649abbb073a608db562224edf28eb8d80d64fb3faa38175e93397716542a"
+  },
+  {
+    "file": "03-测试验收/audit_source_status.py",
+    "sha256": "211ab58d1d34b55b8a7da2529d93f6f600bfbd64b999d10f1cdd568a0c2e371c"
+  },
+  {
+    "file": "03-测试验收/integration_test.py",
+    "sha256": "acbbd09ff536814314a9895b2df618d655a626b495602dd9feca09200fce7f62"
+  },
+  {
+    "file": "03-测试验收/queries.sql",
+    "sha256": "1e20b98845c66d5bca908e2b7c043571ea9f978ed81386d5524c704907e746d9"
+  },
+  {
+    "file": "03-测试验收/verify_data.py",
+    "sha256": "d515552ef31f7da9e34774124a80122dae89e68f09662fed952afa4d773b8ceb"
+  },
+  {
+    "file": "03-测试验收/verify_deploy.py",
+    "sha256": "2d60140f73ad79bd3aaca423702c1ff9e14fb11c64cd698b288e99adaec9fc24"
+  },
+  {
+    "file": "03-测试验收/verify_restore.py",
+    "sha256": "98626d4dd4abdaed3a041ca006c0d00d4eec8af2beaab21ecc891864af9787e8"
+  },
+  {
+    "file": "03-测试验收/verify_schema.sh",
+    "sha256": "d684200de70384fa5b6e5b6ddccc5a59f41410b44a31b3cf4727f9f38321e2b4"
+  },
+  {
+    "file": "04-报告与基线/B角色-最终交接报告.md",
+    "sha256": "6bec2fd2e41075c1321a0c1c80575b9e5a41c481882cca657049d20557d15e98"
+  },
+  {
+    "file": "04-报告与基线/B角色-阶段二审核报告.md",
+    "sha256": "6b2a78b6c97bf5acaa9d5379cb355d63c07418c7810cafaa6f007c26a25ae60d"
+  },
+  {
+    "file": "04-报告与基线/实验手册-数据库与GitHub复现.md",
+    "sha256": "9704a9243ea2a1418f2fa5c9e93a40f516ef607156e34981a0e8ac66b079d34d"
+  },
+  {
+    "file": "04-报告与基线/数据库设计变更说明.md",
+    "sha256": "92d4eee44304680d535d7829e931c5c6e480a47d2b9d100bca666ba4b0f5521f"
+  },
+  {
+    "file": "04-报告与基线/设计基线/02-数据字典.csv",
+    "sha256": "a24aa20860a2ff9a335e5cf7e04f90dcd860cb046bd37de717097d8f1a37db50"
+  },
+  {
+    "file": "04-报告与基线/设计基线/03-实体关系分析.md",
+    "sha256": "25ed05b36aa056c319627d3f2f5bef04d42ef596d79fac9866b5221681edcf1d"
+  },
+  {
+    "file": "04-报告与基线/设计基线/91-待全组讨论确认清单.md",
+    "sha256": "6685f9ac94fe1a3e7c77b6cc07b999fc97b002d1f6f81b20e42608f4075f29e6"
+  },
+  {
+    "file": "04-报告与基线/设计基线/93-B角色交接说明.md",
+    "sha256": "da23a4c102743dee7466d7ad0962a00f029baada1671905e8b69827555a8f671"
+  },
+  {
+    "file": "06-运行管理/backup_db.sh",
+    "sha256": "98da0765a23437c68b586ec0aa03a23a0984c7e013bc026dae934c46f25a74f5"
+  },
+  {
+    "file": "06-运行管理/init_db.sh",
+    "sha256": "fde8ada3a3926687599b68ba0383aabd177c5798b2114b13cffe261d65cd7b36"
+  },
+  {
+    "file": "06-运行管理/package_release.py",
+    "sha256": "673d935abbd467a8adcadacb69673db044772f10c902b2f2909983c6f652f485"
+  },
+  {
+    "file": "06-运行管理/start.sh",
+    "sha256": "369e5a8da931d849b327046ddd7b20e0f6e2c48d3466e331dd79cac140cf9ceb"
+  },
+  {
+    "file": "06-运行管理/update_reviewed.sh",
+    "sha256": "b1a39cbd6ab6f6e5be8fae171d094515e53a428c79723cd8e5a43f48cc085b3f"
+  }
+]

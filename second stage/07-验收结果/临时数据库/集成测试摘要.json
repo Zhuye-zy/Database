@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": [
+    "fresh_schema_and_migration",
+    "repeat_import_all_table_contents_stable",
+    "unique_publication",
+    "composite_foreign_key",
+    "invalid_person_type",
+    "missing_ISA_subtype",
+    "ISA_old_owner_update",
+    "invalid_claim_number",
+    "actual_partial_sentinel_leap_dates",
+    "concatenated_USPTO_and_DOCDB_wrapper",
+    "nullable_partial_date_and_long_IPC",
+    "upsert_repairs_changed_mapped_field",
+    "real_CV_notices_recorded_without_fake_patents",
+    "incremental_C_allocates_stable_business_ids",
+    "amend_updates_fields_and_removes_stale_children",
+    "D_soft_delete_preserves_physical_rows",
+    "A_reactivates_and_stale_D_is_ignored",
+    "parse_failure_has_source_and_error_context",
+    "SQL_failure_rolls_back_and_identifies_source_document"
+  ]
+}

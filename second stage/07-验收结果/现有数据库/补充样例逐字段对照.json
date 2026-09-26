@@ -1,0 +1,82 @@
+[
+  {
+    "table_name": "citation_category",
+    "source_rows": 2,
+    "mismatches": 0
+  },
+  {
+    "table_name": "country_office",
+    "source_rows": 41,
+    "mismatches": 0
+  },
+  {
+    "table_name": "dataset",
+    "source_rows": 1,
+    "mismatches": 0
+  },
+  {
+    "table_name": "designated_state",
+    "source_rows": 47,
+    "mismatches": 0
+  },
+  {
+    "table_name": "family_abstract",
+    "source_rows": 1,
+    "mismatches": 0
+  },
+  {
+    "table_name": "family_member_application_ref",
+    "source_rows": 21,
+    "mismatches": 0
+  },
+  {
+    "table_name": "family_member_publication_ref",
+    "source_rows": 37,
+    "mismatches": 0
+  },
+  {
+    "table_name": "international_application",
+    "source_rows": 1,
+    "mismatches": 0
+  },
+  {
+    "table_name": "ipc_techn_field",
+    "source_rows": 1,
+    "mismatches": 0
+  },
+  {
+    "table_name": "legal_event_code",
+    "source_rows": 5,
+    "mismatches": 0
+  },
+  {
+    "table_name": "legal_status_event",
+    "source_rows": 10,
+    "mismatches": 0
+  },
+  {
+    "table_name": "patent",
+    "source_rows": 1,
+    "mismatches": 0
+  },
+  {
+    "table_name": "patent_family",
+    "source_rows": 3,
+    "mismatches": 0
+  },
+  {
+    "table_name": "patent_family_member",
+    "source_rows": 11,
+    "mismatches": 0
+  },
+  {
+    "table_name": "publication",
+    "source_rows": 1,
+    "mismatches": 0
+  },
+  {
+    "table_name": "related_application",
+    "source_rows": 11,
+    "mismatches": 0
+  }
+]
