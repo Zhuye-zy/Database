@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}{{ table }}{% endblock %}
+{% block content %}
+<h1>表：{{ table }} <span class="badge">共 {{ total }} 行</span></h1>
+<p><a href="{{ url_for('index') }}">&larr; 返回首页</a></p>
+
+<table>
+  <thead>
+    <tr>
+      {% for c in cols %}
+        <th>{{ c.column_name }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+    <tr>
+      {% for c in cols %}
+        <td>{{ row[c.column_name] if row[c.column_name] is not none else '' }}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<div class="pager">
+  {% if page > 1 %}
+    <a href="{{ url_for('table_view', name=table, page=page-1,
+                        order_by=order_by, order_dir=order_dir) }}">上一页</a>
+  {% endif %}
+  第 {{ page }} / {{ total_pages }} 页
+  {% if page < total_pages %}
+    <a href="{{ url_for('table_view', name=table, page=page+1,
+                        order_by=order_by, order_dir=order_dir) }}">下一页</a>
+  {% endif %}
+</div>
+{% endblock %}

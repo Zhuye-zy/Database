@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}全部数据表{% endblock %}
+{% block content %}
+<h1>全部业务表（schema：{{ schema }}）</h1>
+<p>共 <strong>{{ total }}</strong> 张表。</p>
+<table>
+  <tr><th>#</th><th>表名</th><th>行数</th><th>操作</th></tr>
+  {% for r in rows %}
+  <tr>
+    <td>{{ loop.index }}</td>
+    <td>{{ r.name }}</td>
+    <td>{{ r.count }}</td>
+    <td><a href="{{ url_for('table_view', name=r.name) }}">查看</a></td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
