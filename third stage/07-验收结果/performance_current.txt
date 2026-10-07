@@ -1,6 +1,6 @@
 Timing is on.
 ===== P1: 申请人 -> 专利 三表 JOIN =====
-                                                             QUERY PLAN                                                             
+                                                             QUERY PLAN
 ------------------------------------------------------------------------------------------------------------------------------------
  Limit  (cost=21.57..33.73 rows=140 width=524) (actual time=0.053..0.061 rows=18 loops=1)
    Buffers: shared hit=4
@@ -30,7 +30,7 @@ Timing is on.
 
 Time: 1.147 ms
 ===== P2: 专利 -> 发出专利引用数量 =====
-                                                             QUERY PLAN                                                             
+                                                             QUERY PLAN
 ------------------------------------------------------------------------------------------------------------------------------------
  Limit  (cost=34.04..34.04 rows=1 width=16) (actual time=0.175..0.176 rows=9 loops=1)
    Buffers: shared hit=35
@@ -57,7 +57,7 @@ Time: 1.147 ms
 
 Time: 0.691 ms
 ===== P3: 分类体系分布（IPC/CPC，非技术领域） =====
-                                                           QUERY PLAN                                                           
+                                                           QUERY PLAN
 --------------------------------------------------------------------------------------------------------------------------------
  Sort  (cost=22.64..23.14 rows=200 width=46) (actual time=0.018..0.018 rows=2 loops=1)
    Sort Key: (count(*)) DESC
@@ -77,7 +77,7 @@ Time: 0.691 ms
 
 Time: 0.320 ms
 ===== P4: 申请时间趋势 =====
-                                                  QUERY PLAN                                                   
+                                                  QUERY PLAN
 ---------------------------------------------------------------------------------------------------------------
  GroupAggregate  (cost=12.16..13.29 rows=50 width=16) (actual time=0.016..0.018 rows=10 loops=1)
    Group Key: (date_trunc('year'::text, (appln_filing_date)::timestamp with time zone))
