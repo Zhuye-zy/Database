@@ -7,7 +7,7 @@
 | 结果文件 | 检查数量（含内容一致性检查） | 状态 |
 |---|---:|---|
 | smoke_result | 48 | PASS |
-| fk_result | 11 | PASS |
+| fk_result | 14 | PASS |
 | complex_boundary_result | 12 | PASS |
 | frontend_result | 71 | PASS |
 | acceptance_failure_result | 6 | PASS |

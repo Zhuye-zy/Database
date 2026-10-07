@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-10-07T04:00:56.120525+00:00",
+  "timestamp_utc": "2026-10-07T04:03:59.297063+00:00",
   "status": "PASS",
   "cases": [
     {
@@ -80,6 +80,33 @@
       "detail": {
         "constraint": "fk_publication_patent_id",
         "sqlstate": "23503"
+      }
+    },
+    {
+      "case": "insert_invalid_family",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_patent_family_member_family_id",
+        "sqlstate": "23503",
+        "operation": "INSERT"
+      }
+    },
+    {
+      "case": "insert_invalid_citing_patent",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_patent_citation_citing_patent_id",
+        "sqlstate": "23503",
+        "operation": "INSERT"
+      }
+    },
+    {
+      "case": "insert_invalid_cited_patent",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_patent_citation_cited_patent_id",
+        "sqlstate": "23503",
+        "operation": "INSERT"
       }
     },
     {
