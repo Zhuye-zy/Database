@@ -1,0 +1,155 @@
+{
+  "timestamp_utc": "2026-10-07T04:00:56.232961+00:00",
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "specific_applicant_patents",
+      "status": "PASS",
+      "detail": {
+        "person_id": 1,
+        "patent_ids": [
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "case": "specific_patent_citations",
+      "status": "PASS",
+      "detail": {
+        "patent_id": 9,
+        "patent_citations": 404,
+        "internal_targets": 0,
+        "external_examples": [
+          [
+            "US",
+            "4837798",
+            "A"
+          ],
+          [
+            "US",
+            "5086394",
+            "A"
+          ],
+          [
+            "US",
+            "5276905",
+            "A"
+          ]
+        ]
+      }
+    },
+    {
+      "case": "all_family_members_and_source_refs",
+      "status": "PASS",
+      "detail": [
+        {
+          "family_id": 6030991,
+          "member_ids": [
+            603099101,
+            603099102,
+            603099103
+          ],
+          "source_refs": {
+            "family_member_application_ref": 6,
+            "family_member_publication_ref": 6
+          }
+        },
+        {
+          "family_id": 6034510,
+          "member_ids": [
+            603451001,
+            603451002,
+            603451003,
+            603451004,
+            603451005,
+            603451006,
+            603451007
+          ],
+          "source_refs": {
+            "family_member_application_ref": 14,
+            "family_member_publication_ref": 30
+          }
+        },
+        {
+          "family_id": 67903597,
+          "member_ids": [
+            6790359701
+          ],
+          "source_refs": {
+            "family_member_application_ref": 1,
+            "family_member_publication_ref": 1
+          }
+        }
+      ]
+    },
+    {
+      "case": "nullable_fields",
+      "status": "PASS",
+      "detail": {
+        "NULL_fields": [
+          "section_text",
+          "heading"
+        ]
+      }
+    },
+    {
+      "case": "required_text_rejects_null",
+      "status": "PASS",
+      "detail": {
+        "sqlstate": "23502",
+        "column": "claim_text"
+      }
+    },
+    {
+      "case": "empty_string_round_trip",
+      "status": "PASS",
+      "detail": "TEXT 空字符串与 NULL 区分；schema 未要求非空字符串"
+    },
+    {
+      "case": "abstract_long_unicode_text",
+      "status": "PASS",
+      "detail": {
+        "characters": 552000,
+        "utf8_bytes": 936000,
+        "sha256": "4dfe1761fbc99331cdef13b8fd730c014278f5d2ebfd11974cc186d363c337c4"
+      }
+    },
+    {
+      "case": "claim_long_unicode_text",
+      "status": "PASS",
+      "detail": {
+        "characters": 552000,
+        "utf8_bytes": 936000,
+        "sha256": "4dfe1761fbc99331cdef13b8fd730c014278f5d2ebfd11974cc186d363c337c4"
+      }
+    },
+    {
+      "case": "description_section_long_unicode_text",
+      "status": "PASS",
+      "detail": {
+        "characters": 552000,
+        "utf8_bytes": 936000,
+        "sha256": "4dfe1761fbc99331cdef13b8fd730c014278f5d2ebfd11974cc186d363c337c4"
+      }
+    },
+    {
+      "case": "varchar_limit_rejection",
+      "status": "PASS",
+      "detail": {
+        "sqlstate": "22001",
+        "limit": 500
+      }
+    },
+    {
+      "case": "internal_patent_citation_positive",
+      "status": "PASS",
+      "detail": "事务内测试正例，回滚；不将测试引用作为官方数据"
+    },
+    {
+      "case": "all_business_content_unchanged",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}

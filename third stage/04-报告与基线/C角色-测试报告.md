@@ -1,96 +1,56 @@
-# C角色测试报告
+# C 角色测试报告（补齐版）
 
-- 测试对象：patentdb（schema `patentdb`，43 张业务表、345 字段）
-- 测试人：C
-- 日期：2026-10-06
-- 测试方法：只读冒烟 + 事务内回滚的反例测试；所有证据可由脚本复现。
+日期：2026-10-07。来源：远程 phase-3 的实现及 phase-2 保留的 XML/SQL/基线。没有使用用户本地 main 数据。真实运行证据在 07-验收结果，所有必需失败均返回非零退出码。
 
-## 1. 测试环境
+## 验收统计
 
-- PostgreSQL 16.15（Docker 镜像 `postgres:16`，容器名 `patentdb`）
-- 库来源：由 B 的 `01-create-schema.sql` + `update_reviewed.sh` 建立并导入官方样例
-- 连接：`127.0.0.1:5432`，数据库 `patentdb`，schema `patentdb`
+| 结果文件 | 检查数量（含内容一致性检查） | 状态 |
+|---|---:|---|
+| smoke_result | 48 | PASS |
+| fk_result | 11 | PASS |
+| complex_boundary_result | 12 | PASS |
+| frontend_result | 71 | PASS |
+| acceptance_failure_result | 6 | PASS |
 
-## 2. 冒烟测试
+完整建库、导入、故障测试、性能、备份恢复链路见 `fresh_acceptance.json`。43 张业务表各行数与 B 基线相同；patent/publication 各 19，family_citation 为唯一空表。所有测试前后 43 业务表与 3 审计表内容指纹保持一致，恢复后的 46 表内容亦一致。
 
-脚本：`03-测试验收/smoke_test.py`
-证据：`07-验收结果/smoke_result.md`
+## 冒烟与关联
 
-结论：
+逐表 SELECT LIMIT 10、全表名集合、B 固定样例行数、申请人/发明人/分类号/权利要求/法律状态 JOIN 预期行数均显式校验。schema 不存在、缺表、计数不符、查询失败即失败；没有 public 回退。扩展数据口径需显式选择 --extended。
 
-- 业务表数量 43，逐表 `LIMIT 10` 全部 PASS
-- 空表 1 张：`family_citation`（来源缺口，B 已注明，不虚构）
-- `patent` 19 行、`publication` 19 行，与 B 报告一致
-- 42 表非空
+## 外键与引用自关联
 
-## 3. 简单多表 JOIN
+测试 10 项违规 UPDATE，验证具体约束名及 SQLSTATE 23503；另有 3 项完整必填字段的违规 INSERT（族外键、引用 citing/cited 双端），避免被 NOT NULL 先拦截。正例在事务中建立两个已有专利之间的引用并验证双端 JOIN，立即回滚，不添加官方来源之外的业务记录。
 
-| 查询 | 结果行数 |
-|---|---|
-| 申请人三表 JOIN（patent→patent_applicant→person） | 18 |
-| 发明人三表 JOIN（patent→patent_inventor→person） | 32 |
-| 分类号 JOIN（patent→patent_classification） | 71 |
-| 引用表总行数（patent_citation） | 805 |
-| 引用专利去重（citing_patent_id） | 9 |
-| 权利要求 JOIN（publication→claim） | 184 |
-| 法律状态 JOIN（patent→legal_status_event） | 10 |
+## 复杂查询
 
-结论：外键关联正确，行数符合预期。
+- 指定申请人：以关联表集合为预期，核对 person→patent_applicant→patent 的完整结果集合。当前选中 person_id=1，对应 patent_id 10、11。
+- 指定专利的专利文献引用：以原引用集合为预期，与 citing 端 JOIN、cited 端 LEFT JOIN 比较。当前 patent_id=9 有 404 条 P 类型引用，库外目标可从原始号码识别；不把非专利文献算作专利引用。
+- 全部专利族：逐族核对完整 member_id 集合、库内成员连接、申请/公布原始引用数量。三个族共 11 成员；原始申请引用 21、公布引用 37，保留格式差异造成的多条原始引用。
 
-## 4. 复杂测试与完整性验证
+## 边界验证
 
-脚本：`03-测试验收/fk_violation_test.py`（UPDATE 方式，事务内 `ROLLBACK TO SAVEPOINT`）
+- 可空的说明书文本/标题 NULL 往返一致。
+- claim_text=NULL 被 NOT NULL 拒绝（23502）。
+- 空字符串准确往返，与 NULL 区分，不虚构 schema 中没有的“非空字符串”限制。
+- 摘要、权利要求、说明书各写入 552000 字符、936000 UTF-8 字节的文本；包含中文、日文、韩文、重音字符、emoji、单双引号、反斜杠、换行及 XML 特殊字符。读取结果、长度、SHA256 全部一致。
+- person_name 的 VARCHAR(500) 写入 501 字符被拒绝（22001）。
+- SAVEPOINT 隔离所有边界修改，最终事务回滚；业务内容指纹与测试前一致。
 
-| 用例 | 操作 | 预期 | 实际 | 结论 |
-|---|---|---|---|---|
-| FK-01 | `patent_applicant.patent_id` 改为不存在值 | 拒绝 | `fk_patent_applicant_patent_id` 触发 | PASS |
-| FK-02 | `patent_applicant.person_id` 改为不存在值 | 拒绝 | `fk_patent_applicant_person_id` 触发 | PASS |
-| FK-03 | `patent_inventor.patent_id` 改为不存在值 | 拒绝 | `fk_patent_inventor_patent_id` 触发 | PASS |
-| FK-04 | `patent_inventor.person_id` 改为不存在值 | 拒绝 | `fk_patent_inventor_person_id` 触发 | PASS |
-| FK-05 | `patent_citation.citing_patent_id` 改为不存在值 | 拒绝 | `fk_patent_citation_citing_patent_id` 触发 | PASS |
-| FK-06 | `patent_citation.cited_patent_id` 改为不存在值 | 拒绝 | `fk_patent_citation_cited_patent_id` 触发 | PASS |
-| FK-07 | `patent_classification.patent_id` 改为不存在值 | 拒绝 | `fk_patent_classification_patent_id` 触发 | PASS |
-| FK-08 | `legal_status_event.patent_id` 改为不存在值 | 拒绝 | `fk_legal_status_event_patent_id` 触发 | PASS |
-| FK-09 | `claim.publication_id` 改为不存在值 | 拒绝 | `fk_claim_publication_id` 触发 | PASS |
-| FK-10 | `publication.patent_id` 改为不存在值 | 拒绝 | `fk_publication_patent_id` 触发 | PASS |
+## 验收脚本的反向验证
 
-**PASS 10 / SKIP 0 / FAIL 0。**
+在一次性库模拟不存在 schema、空 schema、删除 cited_patent_id 外键；smoke/FK 入口全部返回非零，证明错误环境不会被视为成功。故障测试后再重跑正常验收，最终结果文件记录的是正常库的通过结果。
 
-数据库未被污染：所有用例在 `SAVEPOINT` 内执行，报错后 `ROLLBACK TO SAVEPOINT`，跑完 `patent` / `publication` 仍为 19 行。
+## 前端验证
 
-## 5. 性能测试与调优
+覆盖首页、全部 43 表、全部 19 个实际 patent_id 的详情、不存在表/专利 404、非法页码、引用相邻页无重复。模拟软删除，详情中的文献及相应权利要求被过滤，物理表仍保留追溯记录。模拟关联列缺失返回 503 和“数据加载失败”；缺 schema 同样返回 503。
 
-脚本：`03-测试验收/performance_test.sql`
-证据：`07-验收结果/performance_before.txt`
+## 性能与部署
 
-| 查询 | 计划要点 | Execution Time |
-|---|---|---|
-| P1 申请人→专利 三表 JOIN | Seq Scan（patent 19、person 71） | 0.106 ms |
-| P2 专利→引用热度 | Index Only Scan（ix_patent_citation_citing_patent_id，805 行） | 0.145 ms |
-| P3 技术领域分布 | Seq Scan（patent_classification 71 行） | 0.041 ms |
-| P4 申请时间趋势 | Seq Scan（patent 19 行） | 0.038 ms |
+4 项 EXPLAIN ANALYZE 成功，真实计划在 performance_current.txt。P2 是 P 类型“发出引用数量”，P3 是“分类体系占比”，不将它们冒称被引用热度或技术领域分布。样例规模小，无需新增索引；本结果不用于推断全量数据库性能。
 
-**优化结论**：样例数据量小，P1/P3/P4 全表扫描均在 0.2 ms 以下，P2 已由 B 的索引覆盖。当前规模下额外加索引无实际收益，本阶段不引入新索引，仅记录 EXPLAIN 计划与基线耗时。
+Git 将 XML 字节保留为原快照的 CRLF，SHA256 校验保持严格，未改动来源快照或 XML 语义。新建数据库执行 B 的三份 DDL 和三类导入入口；备份恢复后 46 表内容完全一致。Python 驱动更新为可在当前 Python 3.14 安装的 psycopg2-binary 2.9.11。
 
-## 6. 发现的问题与处理
+## 问题修复及交付结论
 
-| # | 问题 | 严重度 | 处理 | 状态 |
-|---|---|---|---|---|
-| 1 | B 快照基于 CRLF，本地 WSL 的 Git 把 XML 转为 LF，导入 SHA256 校验失败 | 中 | 临时把 `05-官方来源/01-四类基础样例/*.xml` 转 CRLF，导入后 `git checkout --` 恢复 | 已解决 |
-| 2 | 脚本假设 `patent_applicant.publication_id`，实际用 `patent_id` | 低 | 对照外键清单修正 | 已解决 |
-| 3 | 脚本假设 `person.name`，实际列名是 `person_name` | 低 | 对照 `\d patentdb.person` 修正 | 已解决 |
-| 4 | 反例测试用 INSERT 时被 NOT NULL 列先拦下，没测到 FK | 低 | 改用 UPDATE 现有行 + `ROLLBACK TO SAVEPOINT` | 已解决 |
-
-## 7. 前端运行证据
-
-- 首页 43 表：`07-验收结果/截图/01-首页-43表.png`
-- 专利表 19 行：`07-验收结果/截图/02-patent表-19行.png`
-- 专利详情页（patent_id=1）：`07-验收结果/截图/03-专利详情-patent1.png`
-
-## 8. 测试结论
-
-- 冒烟：43 表全部可查询，空表口径与 B 一致
-- 完整性：10 项外键反例全部被拒绝，数据库未被污染
-- 性能：4 组典型查询耗时均在毫秒级，无新增索引需求
-- 前端：43 表 LIST 与专利详情页均可正常运行
-- **数据库可交付 D 使用**
+必需测试缺项、失败退出码、查询错误隐藏、软删除展示、来源换行、恢复包缺失及交接口径均已补齐。原阶段的截图仅作历史记录，最新结论由自动结果与恢复验收支持。第三阶段按任务分配要求可交付，官方来源缺口 family_citation 继续如实保留。

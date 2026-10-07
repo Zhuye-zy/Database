@@ -2,6 +2,7 @@
 {% block title %}{{ table }}{% endblock %}
 {% block content %}
 <h1>表：{{ table }} <span class="badge">共 {{ total }} 行</span></h1>
+<p>此页展示物理表原始数据（含供追溯保留的记录）；专利详情仅展示活动公布文献。</p>
 <p><a href="{{ url_for('index') }}">&larr; 返回首页</a></p>
 
 <table>
@@ -16,7 +17,7 @@
     {% for row in rows %}
     <tr>
       {% for c in cols %}
-        <td>{{ row[c.column_name] if row[c.column_name] is not none else '' }}</td>
+        <td>{% if table == 'patent' and c.column_name == 'patent_id' %}<a href="{{ url_for('patent_detail', pid=row[c.column_name]) }}">{{ row[c.column_name] }}</a>{% else %}{{ row[c.column_name] if row[c.column_name] is not none else '' }}{% endif %}</td>
       {% endfor %}
     </tr>
     {% endfor %}

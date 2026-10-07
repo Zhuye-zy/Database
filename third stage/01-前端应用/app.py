@@ -26,7 +26,7 @@ DB_CONFIG = {
     "password": os.environ.get("PGPASSWORD", ""),
 }
 SCHEMA = os.environ.get("DB_SCHEMA", "patentdb")
-PAGE_SIZE = int(os.environ.get("PAGE_SIZE", "50"))
+PAGE_SIZE = max(1, int(os.environ.get("PAGE_SIZE", "50")))
 
 
 def get_conn():
@@ -42,7 +42,7 @@ def resolve_schema(cur):
     )
     if cur.fetchone():
         return SCHEMA
-    return "public"
+    raise RuntimeError(f"指定 schema 不存在：{SCHEMA}")
 
 
 def list_tables(cur, schema):
@@ -167,14 +167,17 @@ def table_view(name):
     )
 
 
-def _safe_query(cur, q, params=()):
-    """某段关联查询的列名若不匹配，不让整个详情页崩，返回空列表。"""
-    try:
-        cur.execute(q, params)
-        return cur.fetchall()
-    except Exception as e:
-        app.logger.warning("safe_query failed: %s", e)
-        return []
+def _query(cur, q, params=()):
+    """SQL failures must remain failures, never masquerade as empty data."""
+    cur.execute(q, params)
+    return cur.fetchall()
+
+
+@app.errorhandler(psycopg2.Error)
+@app.errorhandler(RuntimeError)
+def database_error(error):
+    app.logger.error("数据库加载失败: %s", error)
+    return render_template("error.html"), 503
 
 
 @app.route("/patent/<int:pid>")
@@ -184,7 +187,7 @@ def patent_detail(pid):
         with conn.cursor(cursor_factory=RealDictCursor) as cur:
             schema = resolve_schema(cur)
 
-            pat = _safe_query(
+            pat = _query(
                 cur,
                 sql.SQL("SELECT * FROM {}.patent WHERE patent_id = %s").format(
                     sql.Identifier(schema)
@@ -195,15 +198,15 @@ def patent_detail(pid):
                 abort(404, "未找到该专利")
             patent = pat[0]
 
-            pubs = _safe_query(
+            pubs = _query(
                 cur,
                 sql.SQL(
-                    "SELECT * FROM {}.publication WHERE patent_id = %s"
-                ).format(sql.Identifier(schema)),
+                    "SELECT * FROM stage2_meta.active_publication WHERE patent_id = %s"
+                ),
                 (pid,),
             )
 
-            applicants = _safe_query(
+            applicants = _query(
                 cur,
                 sql.SQL(
                     "SELECT pe.* FROM {s}.patent_applicant pa "
@@ -212,7 +215,7 @@ def patent_detail(pid):
                 ).format(s=sql.Identifier(schema)),
                 (pid,),
             )
-            inventors = _safe_query(
+            inventors = _query(
                 cur,
                 sql.SQL(
                     "SELECT pe.* FROM {s}.patent_inventor pi "
@@ -221,7 +224,7 @@ def patent_detail(pid):
                 ).format(s=sql.Identifier(schema)),
                 (pid,),
             )
-            classifications = _safe_query(
+            classifications = _query(
                 cur,
                 sql.SQL(
                     "SELECT * FROM {}.patent_classification "
@@ -229,7 +232,7 @@ def patent_detail(pid):
                 ).format(sql.Identifier(schema)),
                 (pid,),
             )
-            citations = _safe_query(
+            citations = _query(
                 cur,
                 sql.SQL(
                     "SELECT * FROM {}.patent_citation "
@@ -237,7 +240,7 @@ def patent_detail(pid):
                 ).format(sql.Identifier(schema)),
                 (pid,),
             )
-            legal = _safe_query(
+            legal = _query(
                 cur,
                 sql.SQL(
                     "SELECT * FROM {}.legal_status_event "
@@ -249,7 +252,7 @@ def patent_detail(pid):
             # claim 挂在 publication 上，通过 publication_id 关联
             claims = []
             for pub in pubs:
-                claims.extend(_safe_query(
+                claims.extend(_query(
                     cur,
                     sql.SQL(
                         "SELECT * FROM {}.claim WHERE publication_id = %s"
@@ -275,4 +278,5 @@ def patent_detail(pid):
 
 if __name__ == "__main__":
     
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host=os.environ.get("APP_HOST", "127.0.0.1"),
+            port=int(os.environ.get("APP_PORT", "5000")), debug=False)

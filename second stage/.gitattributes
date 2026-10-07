@@ -8,3 +8,7 @@
 *.rar binary
 *.pdf binary
 *.dump binary
+
+# Preserve reviewed XML bytes: SHA256 snapshot uses original CRLF.
+*.xml -text
+*.XML -text

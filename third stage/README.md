@@ -1,49 +1,46 @@
-# 第三阶段：C 角色数据测试验证与前端展示
+# 第三阶段：数据导入、测试验证与前端展示
 
-先看：04-报告与基线/C角色-最终交接报告.md。B 已交付 43 表库与导入程序（phase-2），本阶段在此基础上完成测试验证与前端展示。
+本阶段在远程 phase-3（442a8b9）基础上补齐，保留 phase-2 的 43 张业务表、345 字段及官方样例口径。先看 [测试报告](04-报告与基线/C角色-测试报告.md)。
 
-- 数据库：沿用 B 的 patentdb Docker 容器，本阶段脚本均为只读或事务内回滚
-- 前端：01-前端应用/app.py（Flask），首页列出全部 43 张业务表，支持任意表分页浏览与专利详情多表关联展示
-- 测试：03-测试验收 冒烟、外键反例、性能测试，证据粘入 04-报告与基线/C角色-测试报告.md
+## 环境与依赖
 
-## 快速开始
+需要 Python 3.10 或更新版本、Docker、PostgreSQL 16。实际验收环境：Python 3.14、Flask 3.0.3、psycopg2-binary 2.9.11、PostgreSQL 16.15。Docker 权限按主机配置处理；以下命令均从仓库根目录运行。
 
-启动数据库（B 的环境）：
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r "third stage/01-前端应用/requirements.txt"
+```
 
-    cd ~/database/Database/"second stage"
-    sudo bash "06-运行管理/start.sh"
+## 一键全新验收（推荐）
 
-跑 C 的测试（导出真实结果后粘入测试报告）：
+```bash
+.venv/bin/python "third stage/06-运行管理/verify_fresh.py"
+```
 
-    cd ~/database/Database/"third stage/03-测试验收"
-    export PGPASSWORD=你的密码
-    python3 smoke_test.py
-    python3 fk_violation_test.py
-    sudo docker exec -i patentdb psql -X -U postgres -d patentdb -v ON_ERROR_STOP=1 < performance_test.sql
+使用唯一名称的一次性容器和随机本机端口，执行原始 XML SHA256 校验、三个建库 SQL、基础/补充/批次导入、故障注入验收、全部 C 测试、查询计划、46 表内容一致性、dump 和独立数据库恢复比较。结束后自动删除自己的容器，不修改已有 patentdb。
 
-启动前端：
+结果写入 `third stage/07-验收结果/`，成功退出码 0、失败非零。数据库交付文件为 `08-数据库交付/patentdb-phase3.dump`。完整验收只使用官方样例；测试临时引用和边界文本均回滚。
 
-    cd ../01-前端应用
-    pip3 install -r requirements.txt
-    python3 app.py
+## 已有数据库验收与前端
 
-## 目录结构
+已部署 B 数据库时先执行 B 的 `06-运行管理/start.sh`。配置真实连接信息（不要提交密码）：
 
-    01-前端应用/        Flask 前端（app.py + templates）
-    03-测试验收/        三个测试脚本
-    04-报告与基线/      C角色-测试报告.md、C角色-最终交接报告.md
-    07-验收结果/        smoke_result.md、performance_before.txt、截图/
-    90-问题记录-C.md
-    92-AI使用记录-C.md
-    93-D角色交接说明.md
+```bash
+export PGHOST=127.0.0.1 PGPORT=5432 PGDATABASE=patentdb PGUSER=postgres DB_SCHEMA=patentdb
+read -rsp '数据库密码: ' PGPASSWORD; echo
+export PGPASSWORD
+.venv/bin/python "third stage/03-测试验收/run_all.py"
+.venv/bin/python "third stage/01-前端应用/app.py"
+```
 
-## 数据口径
+浏览 `http://127.0.0.1:5000/`。43 表列表展示物理追溯记录；点击 patent 表的 patent_id 打开详情，详情只展示 `stage2_meta.active_publication` 中的活动文献及其权利要求。数据库错误返回 HTTP 503 并明确显示“数据加载失败”。默认关闭 debug，远程展示可显式设置 APP_HOST。
 
-- patent/publication 各 19 行；43 表中 42 表非空
-- family_citation 为空表，来源缺口，禁止虚构
-- keyword 系 TITLE_DERIVED
+`run_all.py` 是固定官方样例验收；新增批次库可单独执行 `smoke_test.py --extended`，只校验表集合与可查询性，不强制 19 篇行数。完整基线测试不要直接套用扩大后的数据库。反例及边界测试有事务回滚和内容校验，运行期间应避免其他程序并发改写待验收库。
 
-## 注意
+## 数据与来源规则
 
-- 不上传 __pycache__、不含密码
-- 若重跑 update_reviewed.sh，需先把 05-官方来源/01-四类基础样例 下的 XML 转 CRLF（详见 90-问题记录-C.md）
+- patent/publication 各 19；43 业务表中 42 表非空；另有 3 审计表。
+- family_citation 缺少可靠的双端官方族号，保留空表。
+- keyword 是 TITLE_DERIVED；引用包含专利和非专利文献，库外目标保留原始号码。
+- second stage/.gitattributes 已将 XML 设为 -text，17 个基础 XML 按原始 CRLF 字节保存；原 SHA256 快照未修改。新克隆无需手动转换。
+- 旧截图、performance_before.txt 是原 C 阶段历史证据；最新验收以 *_result.json、performance_current.txt 和 fresh_acceptance.json 为准。

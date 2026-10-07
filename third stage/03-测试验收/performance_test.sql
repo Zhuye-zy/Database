@@ -11,15 +11,16 @@ JOIN patentdb.patent_applicant pa ON pa.patent_id = p.patent_id
 JOIN patentdb.person pe ON pe.person_id = pa.person_id
 LIMIT 1000;
 
-\echo '===== P2: 专利 -> 引用热度 ====='
+\echo '===== P2: 专利 -> 发出专利引用数量 ====='
 EXPLAIN (ANALYZE, BUFFERS)
 SELECT citing_patent_id, count(*) AS n
 FROM patentdb.patent_citation
+WHERE citation_type = 'P'
 GROUP BY citing_patent_id
 ORDER BY n DESC
 LIMIT 20;
 
-\echo '===== P3: 技术领域分布 ====='
+\echo '===== P3: 分类体系分布（IPC/CPC，非技术领域） ====='
 EXPLAIN (ANALYZE, BUFFERS)
 SELECT scheme_code, count(*)
 FROM patentdb.patent_classification

@@ -1,0 +1,91 @@
+{
+  "timestamp_utc": "2026-10-07T04:00:56.120525+00:00",
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "patent_applicant.patent_id",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_patent_applicant_patent_id",
+        "sqlstate": "23503"
+      }
+    },
+    {
+      "case": "patent_applicant.person_id",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_patent_applicant_person_id",
+        "sqlstate": "23503"
+      }
+    },
+    {
+      "case": "patent_inventor.patent_id",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_patent_inventor_patent_id",
+        "sqlstate": "23503"
+      }
+    },
+    {
+      "case": "patent_inventor.person_id",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_patent_inventor_person_id",
+        "sqlstate": "23503"
+      }
+    },
+    {
+      "case": "patent_citation.citing_patent_id",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_patent_citation_citing_patent_id",
+        "sqlstate": "23503"
+      }
+    },
+    {
+      "case": "patent_citation.cited_patent_id",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_patent_citation_cited_patent_id",
+        "sqlstate": "23503"
+      }
+    },
+    {
+      "case": "patent_classification.patent_id",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_patent_classification_patent_id",
+        "sqlstate": "23503"
+      }
+    },
+    {
+      "case": "legal_status_event.patent_id",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_legal_status_event_patent_id",
+        "sqlstate": "23503"
+      }
+    },
+    {
+      "case": "claim.publication_id",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_claim_publication_id",
+        "sqlstate": "23503"
+      }
+    },
+    {
+      "case": "publication.patent_id",
+      "status": "PASS",
+      "detail": {
+        "constraint": "fk_publication_patent_id",
+        "sqlstate": "23503"
+      }
+    },
+    {
+      "case": "all_table_contents_unchanged",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}
