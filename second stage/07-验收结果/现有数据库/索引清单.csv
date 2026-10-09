@@ -1,0 +1,144 @@
+﻿tablename,indexname,indexdef
+abstract,ix_abstract_lang_code,CREATE INDEX ix_abstract_lang_code ON patentdb.abstract USING btree (lang_code)
+abstract,ix_abstract_publication_id,CREATE INDEX ix_abstract_publication_id ON patentdb.abstract USING btree (publication_id)
+abstract,pk_abstract,CREATE UNIQUE INDEX pk_abstract ON patentdb.abstract USING btree (abstract_id)
+abstract,uq_abstract_pub_lang,"CREATE UNIQUE INDEX uq_abstract_pub_lang ON patentdb.abstract USING btree (publication_id, lang_code)"
+application_type,pk_application_type,CREATE UNIQUE INDEX pk_application_type ON patentdb.application_type USING btree (appl_type_code)
+citation_category,pk_citation_category,CREATE UNIQUE INDEX pk_citation_category ON patentdb.citation_category USING btree (category_code)
+claim,ix_claim_lang_code,CREATE INDEX ix_claim_lang_code ON patentdb.claim USING btree (lang_code)
+claim,ix_claim_publication_id,CREATE INDEX ix_claim_publication_id ON patentdb.claim USING btree (publication_id)
+claim,pk_claim,CREATE UNIQUE INDEX pk_claim ON patentdb.claim USING btree (claim_id)
+claim,uq_claim_pub_lang_no,"CREATE UNIQUE INDEX uq_claim_pub_lang_no ON patentdb.claim USING btree (publication_id, lang_code, claim_number)"
+claim_dependency,pk_claim_dependency,"CREATE UNIQUE INDEX pk_claim_dependency ON patentdb.claim_dependency USING btree (dependent_claim_id, parent_claim_id)"
+classification,pk_classification,"CREATE UNIQUE INDEX pk_classification ON patentdb.classification USING btree (scheme_code, symbol)"
+classification_scheme,ix_classification_scheme_authority,CREATE INDEX ix_classification_scheme_authority ON patentdb.classification_scheme USING btree (authority)
+classification_scheme,pk_classification_scheme,CREATE UNIQUE INDEX pk_classification_scheme ON patentdb.classification_scheme USING btree (scheme_code)
+country_office,pk_country_office,CREATE UNIQUE INDEX pk_country_office ON patentdb.country_office USING btree (ctry_code)
+country_office,uq_country_office_iso_alpha3,CREATE UNIQUE INDEX uq_country_office_iso_alpha3 ON patentdb.country_office USING btree (iso_alpha3)
+dataset,ix_dataset_office_code,CREATE INDEX ix_dataset_office_code ON patentdb.dataset USING btree (office_code)
+dataset,pk_dataset,CREATE UNIQUE INDEX pk_dataset ON patentdb.dataset USING btree (dataset_id)
+dataset,uq_dataset_dataset_code,CREATE UNIQUE INDEX uq_dataset_dataset_code ON patentdb.dataset USING btree (dataset_code)
+description_section,ix_description_section_parent_section_id,CREATE INDEX ix_description_section_parent_section_id ON patentdb.description_section USING btree (parent_section_id)
+description_section,ix_description_section_publication_id,CREATE INDEX ix_description_section_publication_id ON patentdb.description_section USING btree (publication_id)
+description_section,pk_description_section,CREATE UNIQUE INDEX pk_description_section ON patentdb.description_section USING btree (section_id)
+description_section,uq_description_pub_seq,"CREATE UNIQUE INDEX uq_description_pub_seq ON patentdb.description_section USING btree (publication_id, section_seq)"
+designated_state,pk_designated_state,"CREATE UNIQUE INDEX pk_designated_state ON patentdb.designated_state USING btree (patent_id, state_code, designation_type)"
+drawing,ix_drawing_publication_id,CREATE INDEX ix_drawing_publication_id ON patentdb.drawing USING btree (publication_id)
+drawing,pk_drawing,CREATE UNIQUE INDEX pk_drawing ON patentdb.drawing USING btree (drawing_id)
+drawing,uq_drawing_pub_seq,"CREATE UNIQUE INDEX uq_drawing_pub_seq ON patentdb.drawing USING btree (publication_id, figure_seq)"
+family_abstract,ix_family_abstract_family_id,CREATE INDEX ix_family_abstract_family_id ON patentdb.family_abstract USING btree (family_id)
+family_abstract,ix_family_abstract_lang_code,CREATE INDEX ix_family_abstract_lang_code ON patentdb.family_abstract USING btree (lang_code)
+family_abstract,ix_family_abstract_source_country,CREATE INDEX ix_family_abstract_source_country ON patentdb.family_abstract USING btree (source_country)
+family_abstract,pk_family_abstract,CREATE UNIQUE INDEX pk_family_abstract ON patentdb.family_abstract USING btree (family_abstract_id)
+family_abstract,uq_family_abstract_seq,"CREATE UNIQUE INDEX uq_family_abstract_seq ON patentdb.family_abstract USING btree (family_id, abstract_seq)"
+family_citation,pk_family_citation,"CREATE UNIQUE INDEX pk_family_citation ON patentdb.family_citation USING btree (citing_family_id, cited_family_id)"
+family_member_application_ref,ix_family_member_application_ref_country_code,CREATE INDEX ix_family_member_application_ref_country_code ON patentdb.family_member_application_ref USING btree (country_code)
+family_member_application_ref,ix_family_member_application_ref_member_id,CREATE INDEX ix_family_member_application_ref_member_id ON patentdb.family_member_application_ref USING btree (member_id)
+family_member_application_ref,pk_family_member_application_ref,CREATE UNIQUE INDEX pk_family_member_application_ref ON patentdb.family_member_application_ref USING btree (member_appln_ref_id)
+family_member_application_ref,uq_family_app_ref_source,"CREATE UNIQUE INDEX uq_family_app_ref_source ON patentdb.family_member_application_ref USING btree (member_id, data_format, appln_nr)"
+family_member_publication_ref,ix_family_member_publication_ref_country_code,CREATE INDEX ix_family_member_publication_ref_country_code ON patentdb.family_member_publication_ref USING btree (country_code)
+family_member_publication_ref,ix_family_member_publication_ref_member_id,CREATE INDEX ix_family_member_publication_ref_member_id ON patentdb.family_member_publication_ref USING btree (member_id)
+family_member_publication_ref,pk_family_member_publication_ref,CREATE UNIQUE INDEX pk_family_member_publication_ref ON patentdb.family_member_publication_ref USING btree (member_publn_ref_id)
+family_member_publication_ref,uq_family_pub_ref_source,"CREATE UNIQUE INDEX uq_family_pub_ref_source ON patentdb.family_member_publication_ref USING btree (member_id, data_format, sequence_nr, publn_nr)"
+international_application,ix_international_application_int_lang,CREATE INDEX ix_international_application_int_lang ON patentdb.international_application USING btree (int_lang)
+international_application,ix_international_application_int_patent_id,CREATE INDEX ix_international_application_int_patent_id ON patentdb.international_application USING btree (int_patent_id)
+international_application,ix_international_application_patent_id,CREATE INDEX ix_international_application_patent_id ON patentdb.international_application USING btree (patent_id)
+international_application,ix_international_application_receiving_office,CREATE INDEX ix_international_application_receiving_office ON patentdb.international_application USING btree (receiving_office)
+international_application,ix_international_application_regional_office,CREATE INDEX ix_international_application_regional_office ON patentdb.international_application USING btree (regional_office)
+international_application,pk_international_application,CREATE UNIQUE INDEX pk_international_application ON patentdb.international_application USING btree (int_appln_id)
+international_application,uq_international_application_patent_id,CREATE UNIQUE INDEX uq_international_application_patent_id ON patentdb.international_application USING btree (patent_id)
+ipc_techn_field,pk_ipc_techn_field,CREATE UNIQUE INDEX pk_ipc_techn_field ON patentdb.ipc_techn_field USING btree (ipc_maingroup_symbol)
+keyword,ix_keyword_lang_code,CREATE INDEX ix_keyword_lang_code ON patentdb.keyword USING btree (lang_code)
+keyword,pk_keyword,CREATE UNIQUE INDEX pk_keyword ON patentdb.keyword USING btree (keyword_id)
+keyword,uq_keyword_keyword_text_lang_code,"CREATE UNIQUE INDEX uq_keyword_keyword_text_lang_code ON patentdb.keyword USING btree (keyword_text, lang_code)"
+kind_code,pk_kind_code,"CREATE UNIQUE INDEX pk_kind_code ON patentdb.kind_code USING btree (office_code, kind_code)"
+language,pk_language,CREATE UNIQUE INDEX pk_language ON patentdb.language USING btree (lang_code)
+legal_event_code,pk_legal_event_code,"CREATE UNIQUE INDEX pk_legal_event_code ON patentdb.legal_event_code USING btree (event_auth, event_code)"
+legal_status_event,ix_legal_status_event_class_scheme_code,CREATE INDEX ix_legal_status_event_class_scheme_code ON patentdb.legal_status_event USING btree (class_scheme_code)
+legal_status_event,ix_legal_status_event_dataset_id,CREATE INDEX ix_legal_status_event_dataset_id ON patentdb.legal_status_event USING btree (dataset_id)
+legal_status_event,ix_legal_status_event_event_auth,CREATE INDEX ix_legal_status_event_event_auth ON patentdb.legal_status_event USING btree (event_auth)
+legal_status_event,ix_legal_status_event_event_code,CREATE INDEX ix_legal_status_event_event_code ON patentdb.legal_status_event USING btree (event_code)
+legal_status_event,ix_legal_status_event_event_effective_date,CREATE INDEX ix_legal_status_event_event_effective_date ON patentdb.legal_status_event USING btree (event_effective_date)
+legal_status_event,ix_legal_status_event_lapse_country,CREATE INDEX ix_legal_status_event_lapse_country ON patentdb.legal_status_event USING btree (lapse_country)
+legal_status_event,ix_legal_status_event_patent_id,CREATE INDEX ix_legal_status_event_patent_id ON patentdb.legal_status_event USING btree (patent_id)
+legal_status_event,ix_legal_status_event_ref_doc_auth,CREATE INDEX ix_legal_status_event_ref_doc_auth ON patentdb.legal_status_event USING btree (ref_doc_auth)
+legal_status_event,pk_legal_status_event,CREATE UNIQUE INDEX pk_legal_status_event ON patentdb.legal_status_event USING btree (event_id)
+legal_status_event,uq_legal_event_patent_seq,"CREATE UNIQUE INDEX uq_legal_event_patent_seq ON patentdb.legal_status_event USING btree (patent_id, event_seq_nr)"
+natural_person,pk_natural_person,CREATE UNIQUE INDEX pk_natural_person ON patentdb.natural_person USING btree (person_id)
+non_patent_citation,ix_non_patent_citation_citation_id,CREATE INDEX ix_non_patent_citation_citation_id ON patentdb.non_patent_citation USING btree (citation_id)
+non_patent_citation,pk_non_patent_citation,CREATE UNIQUE INDEX pk_non_patent_citation ON patentdb.non_patent_citation USING btree (npl_id)
+non_patent_citation,uq_non_patent_citation_citation_id,CREATE UNIQUE INDEX uq_non_patent_citation_citation_id ON patentdb.non_patent_citation USING btree (citation_id)
+organization,pk_organization,CREATE UNIQUE INDEX pk_organization ON patentdb.organization USING btree (person_id)
+patent,ix_patent_appl_type_code,CREATE INDEX ix_patent_appl_type_code ON patentdb.patent USING btree (appl_type_code)
+patent,ix_patent_appln_auth,CREATE INDEX ix_patent_appln_auth ON patentdb.patent USING btree (appln_auth)
+patent,ix_patent_appln_filing_date,CREATE INDEX ix_patent_appln_filing_date ON patentdb.patent USING btree (appln_filing_date)
+patent,ix_patent_appln_lang,CREATE INDEX ix_patent_appln_lang ON patentdb.patent USING btree (appln_lang)
+patent,ix_patent_appln_nr_epodoc,CREATE INDEX ix_patent_appln_nr_epodoc ON patentdb.patent USING btree (appln_nr_epodoc)
+patent,ix_patent_dataset_id,CREATE INDEX ix_patent_dataset_id ON patentdb.patent USING btree (dataset_id)
+patent,ix_patent_receiving_office,CREATE INDEX ix_patent_receiving_office ON patentdb.patent USING btree (receiving_office)
+patent,pk_patent,CREATE UNIQUE INDEX pk_patent ON patentdb.patent USING btree (patent_id)
+patent,uq_patent_appln_business_key,"CREATE UNIQUE INDEX uq_patent_appln_business_key ON patentdb.patent USING btree (appln_auth, appln_nr, appln_kind)"
+patent_agent,ix_patent_agent_person_id,CREATE INDEX ix_patent_agent_person_id ON patentdb.patent_agent USING btree (person_id)
+patent_agent,pk_patent_agent,"CREATE UNIQUE INDEX pk_patent_agent ON patentdb.patent_agent USING btree (patent_id, sequence_nr)"
+patent_applicant,ix_patent_applicant_person_id,CREATE INDEX ix_patent_applicant_person_id ON patentdb.patent_applicant USING btree (person_id)
+patent_applicant,pk_patent_applicant,"CREATE UNIQUE INDEX pk_patent_applicant ON patentdb.patent_applicant USING btree (patent_id, sequence_nr)"
+patent_assignee,ix_patent_assignee_person_id,CREATE INDEX ix_patent_assignee_person_id ON patentdb.patent_assignee USING btree (person_id)
+patent_assignee,pk_patent_assignee,"CREATE UNIQUE INDEX pk_patent_assignee ON patentdb.patent_assignee USING btree (patent_id, sequence_nr)"
+patent_citation,ix_patent_citation_cited_country,CREATE INDEX ix_patent_citation_cited_country ON patentdb.patent_citation USING btree (cited_country)
+patent_citation,ix_patent_citation_cited_doc_number,CREATE INDEX ix_patent_citation_cited_doc_number ON patentdb.patent_citation USING btree (cited_doc_number)
+patent_citation,ix_patent_citation_cited_patent_id,CREATE INDEX ix_patent_citation_cited_patent_id ON patentdb.patent_citation USING btree (cited_patent_id)
+patent_citation,ix_patent_citation_cited_publn_id,CREATE INDEX ix_patent_citation_cited_publn_id ON patentdb.patent_citation USING btree (cited_publn_id)
+patent_citation,ix_patent_citation_citing_patent_id,CREATE INDEX ix_patent_citation_citing_patent_id ON patentdb.patent_citation USING btree (citing_patent_id)
+patent_citation,ix_patent_citation_citing_publication_id,CREATE INDEX ix_patent_citation_citing_publication_id ON patentdb.patent_citation USING btree (citing_publication_id)
+patent_citation,ix_patent_citation_citn_gener_auth,CREATE INDEX ix_patent_citation_citn_gener_auth ON patentdb.patent_citation USING btree (citn_gener_auth)
+patent_citation,pk_patent_citation,CREATE UNIQUE INDEX pk_patent_citation ON patentdb.patent_citation USING btree (citation_id)
+patent_citation,uq_patent_citation_source_seq,"CREATE UNIQUE INDEX uq_patent_citation_source_seq ON patentdb.patent_citation USING btree (citing_publication_id, citation_type, citn_seq)"
+patent_citation_category,pk_patent_citation_category,"CREATE UNIQUE INDEX pk_patent_citation_category ON patentdb.patent_citation_category USING btree (citation_id, category_code, relevant_claim)"
+patent_classification,ix_patent_classification_generating_office,CREATE INDEX ix_patent_classification_generating_office ON patentdb.patent_classification USING btree (generating_office)
+patent_classification,ix_patent_classification_patent_id,CREATE INDEX ix_patent_classification_patent_id ON patentdb.patent_classification USING btree (patent_id)
+patent_classification,ix_patent_classification_scheme_code,CREATE INDEX ix_patent_classification_scheme_code ON patentdb.patent_classification USING btree (scheme_code)
+patent_classification,ix_patent_classification_symbol,CREATE INDEX ix_patent_classification_symbol ON patentdb.patent_classification USING btree (symbol)
+patent_classification,pk_patent_classification,CREATE UNIQUE INDEX pk_patent_classification ON patentdb.patent_classification USING btree (patent_classification_id)
+patent_classification,uq_patent_classification_business,"CREATE UNIQUE INDEX uq_patent_classification_business ON patentdb.patent_classification USING btree (patent_id, scheme_code, symbol, source_type)"
+patent_examiner,ix_patent_examiner_person_id,CREATE INDEX ix_patent_examiner_person_id ON patentdb.patent_examiner USING btree (person_id)
+patent_examiner,pk_patent_examiner,"CREATE UNIQUE INDEX pk_patent_examiner ON patentdb.patent_examiner USING btree (patent_id, examiner_type, sequence_nr)"
+patent_family,ix_patent_family_dataset_id,CREATE INDEX ix_patent_family_dataset_id ON patentdb.patent_family USING btree (dataset_id)
+patent_family,ix_patent_family_earliest_priority_country,CREATE INDEX ix_patent_family_earliest_priority_country ON patentdb.patent_family USING btree (earliest_priority_country)
+patent_family,ix_patent_family_earliest_priority_date,CREATE INDEX ix_patent_family_earliest_priority_date ON patentdb.patent_family USING btree (earliest_priority_date)
+patent_family,ix_patent_family_representative_publication_id,CREATE INDEX ix_patent_family_representative_publication_id ON patentdb.patent_family USING btree (representative_publication_id)
+patent_family,pk_patent_family,CREATE UNIQUE INDEX pk_patent_family ON patentdb.patent_family USING btree (family_id)
+patent_family,uq_patent_family_source,"CREATE UNIQUE INDEX uq_patent_family_source ON patentdb.patent_family USING btree (family_type, source_family_id)"
+patent_family_member,ix_patent_family_member_family_id,CREATE INDEX ix_patent_family_member_family_id ON patentdb.patent_family_member USING btree (family_id)
+patent_family_member,ix_patent_family_member_member_patent_id,CREATE INDEX ix_patent_family_member_member_patent_id ON patentdb.patent_family_member USING btree (member_patent_id)
+patent_family_member,pk_patent_family_member,CREATE UNIQUE INDEX pk_patent_family_member ON patentdb.patent_family_member USING btree (member_id)
+patent_family_member,uq_family_member_seq,"CREATE UNIQUE INDEX uq_family_member_seq ON patentdb.patent_family_member USING btree (family_id, member_seq)"
+patent_inventor,ix_patent_inventor_person_id,CREATE INDEX ix_patent_inventor_person_id ON patentdb.patent_inventor USING btree (person_id)
+patent_inventor,pk_patent_inventor,"CREATE UNIQUE INDEX pk_patent_inventor ON patentdb.patent_inventor USING btree (patent_id, sequence_nr)"
+patent_keyword,pk_patent_keyword,"CREATE UNIQUE INDEX pk_patent_keyword ON patentdb.patent_keyword USING btree (patent_id, keyword_id)"
+person,ix_person_ctry_code,CREATE INDEX ix_person_ctry_code ON patentdb.person USING btree (ctry_code)
+person,ix_person_residence_ctry_code,CREATE INDEX ix_person_residence_ctry_code ON patentdb.person USING btree (residence_ctry_code)
+person,ix_person_source_dataset_id,CREATE INDEX ix_person_source_dataset_id ON patentdb.person USING btree (source_dataset_id)
+person,pk_person,CREATE UNIQUE INDEX pk_person ON patentdb.person USING btree (person_id)
+priority_claim,ix_priority_claim_designated_region,CREATE INDEX ix_priority_claim_designated_region ON patentdb.priority_claim USING btree (designated_region)
+priority_claim,ix_priority_claim_patent_id,CREATE INDEX ix_priority_claim_patent_id ON patentdb.priority_claim USING btree (patent_id)
+priority_claim,ix_priority_claim_prior_country,CREATE INDEX ix_priority_claim_prior_country ON patentdb.priority_claim USING btree (prior_country)
+priority_claim,ix_priority_claim_prior_patent_id,CREATE INDEX ix_priority_claim_prior_patent_id ON patentdb.priority_claim USING btree (prior_patent_id)
+priority_claim,pk_priority_claim,CREATE UNIQUE INDEX pk_priority_claim ON patentdb.priority_claim USING btree (priority_id)
+priority_claim,uq_priority_patent_seq,"CREATE UNIQUE INDEX uq_priority_patent_seq ON patentdb.priority_claim USING btree (patent_id, sequence_nr)"
+publication,ix_publication_dataset_id,CREATE INDEX ix_publication_dataset_id ON patentdb.publication USING btree (dataset_id)
+publication,ix_publication_patent_id,CREATE INDEX ix_publication_patent_id ON patentdb.publication USING btree (patent_id)
+publication,ix_publication_publn_auth,CREATE INDEX ix_publication_publn_auth ON patentdb.publication USING btree (publn_auth)
+publication,ix_publication_publn_date,CREATE INDEX ix_publication_publn_date ON patentdb.publication USING btree (publn_date)
+publication,ix_publication_publn_kind,CREATE INDEX ix_publication_publn_kind ON patentdb.publication USING btree (publn_kind)
+publication,ix_publication_publn_lg,CREATE INDEX ix_publication_publn_lg ON patentdb.publication USING btree (publn_lg)
+publication,pk_publication,CREATE UNIQUE INDEX pk_publication ON patentdb.publication USING btree (publication_id)
+publication,uq_publication_doc_key,"CREATE UNIQUE INDEX uq_publication_doc_key ON patentdb.publication USING btree (publn_auth, publn_nr, publn_kind)"
+related_application,ix_related_application_patent_id,CREATE INDEX ix_related_application_patent_id ON patentdb.related_application USING btree (patent_id)
+related_application,ix_related_application_related_country,CREATE INDEX ix_related_application_related_country ON patentdb.related_application USING btree (related_country)
+related_application,ix_related_application_related_patent_id,CREATE INDEX ix_related_application_related_patent_id ON patentdb.related_application USING btree (related_patent_id)
+related_application,pk_related_application,CREATE UNIQUE INDEX pk_related_application ON patentdb.related_application USING btree (relation_id)
+related_application,uq_related_patent_seq,"CREATE UNIQUE INDEX uq_related_patent_seq ON patentdb.related_application USING btree (patent_id, sequence_nr)"
+title,ix_title_lang_code,CREATE INDEX ix_title_lang_code ON patentdb.title USING btree (lang_code)
+title,ix_title_publication_id,CREATE INDEX ix_title_publication_id ON patentdb.title USING btree (publication_id)
+title,pk_title,CREATE UNIQUE INDEX pk_title ON patentdb.title USING btree (title_id)
+title,uq_title_pub_lang_type,"CREATE UNIQUE INDEX uq_title_pub_lang_type ON patentdb.title USING btree (publication_id, lang_code, title_type)"

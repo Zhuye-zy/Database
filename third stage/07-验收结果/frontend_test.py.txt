@@ -1,0 +1,372 @@
+{
+  "timestamp_utc": "2026-10-08T14:44:03.045805+00:00",
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "home_43_tables",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_abstract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_application_type",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_citation_category",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_claim",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_claim_dependency",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_classification",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_classification_scheme",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_country_office",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_dataset",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_description_section",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_designated_state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_drawing",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_family_abstract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_family_citation",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_family_member_application_ref",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_family_member_publication_ref",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_international_application",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_ipc_techn_field",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_keyword",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_kind_code",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_language",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_legal_event_code",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_legal_status_event",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_natural_person",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_non_patent_citation",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_organization",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_patent",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_patent_agent",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_patent_applicant",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_patent_assignee",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_patent_citation",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_patent_citation_category",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_patent_classification",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_patent_examiner",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_patent_family",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_patent_family_member",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_patent_inventor",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_patent_keyword",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_person",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_priority_claim",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_publication",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_related_application",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "table_title",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_2",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_3",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_5",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_6",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_7",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_8",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_9",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_10",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_11",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_12",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_13",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_14",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_15",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_16",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_17",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_18",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "patent_1001",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "unknown_table_404",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "case": "unknown_patent_404",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "case": "invalid_page",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "case": "pagination_distinct_rows",
+      "status": "PASS",
+      "detail": {
+        "first_page": 50,
+        "second_page": 50
+      }
+    },
+    {
+      "case": "soft_deleted_publication_and_claims",
+      "status": "PASS",
+      "detail": {
+        "deleted_publication_id": 1,
+        "detail_filtered": true,
+        "physical_table_preserved": true
+      }
+    },
+    {
+      "case": "query_error_is_not_empty_data",
+      "status": "PASS",
+      "detail": {
+        "http_status": 503
+      }
+    },
+    {
+      "case": "missing_schema_503",
+      "status": "PASS",
+      "detail": {
+        "http_status": 503
+      }
+    },
+    {
+      "case": "all_business_content_unchanged",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}

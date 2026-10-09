@@ -1,0 +1,17 @@
+flowchart LR
+    n_patent["申请案<br/>patent"]
+    n_patent2["被引申请案<br/>patent（角色：被引）"]
+    n_pub["公布文献<br/>publication"]
+    n_CIT{"引用"}
+    n_citation["专利引用<br/>patent_citation<br/>属性: seq,origin"]
+    n_CC{"引用-类别"}
+    n_cat["引用类别<br/>citation_category<br/>PK: category_code"]
+    n_npl["非专利文献<br/>non_patent_citation<br/>1:1 扩展"]
+    n_patent -->|"1"| n_CIT
+    n_CIT --> n_citation
+    n_citation -->|"N"| n_patent2
+    n_citation -.->|"可选"| n_pub
+    n_citation -->|"1"| n_CC
+    n_CC -->|"N"| n_cat
+    n_citation -->|"1"| n_npl
+    classDef weak stroke-width:3px

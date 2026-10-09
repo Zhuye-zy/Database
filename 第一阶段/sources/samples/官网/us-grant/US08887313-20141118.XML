@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08887313-20141118.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20141103" date-publ="20141118">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08887313</doc-number>
+<kind>B2</kind>
+<date>20141118</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>14090531</doc-number>
+<date>20131126</date>
+</document-id>
+</application-reference>
+<us-application-series-code>14</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>13</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>13</main-group>
+<subgroup>06</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>13</main-group>
+<subgroup>08</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classifications-cpc>
+<main-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>13</main-group>
+<subgroup>06</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</main-cpc>
+<further-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>13</main-group>
+<subgroup>081</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>13</main-group>
+<subgroup>08</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141118</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</further-cpc>
+</classifications-cpc>
+<classification-national>
+<country>US</country>
+<main-classification>  2 16</main-classification>
+</classification-national>
+<invention-title id="d2e43">Wrap for human appendage</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2954620</doc-number>
+<kind>A</kind>
+<name>Schneider</name>
+<date>19601000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification> 40633</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>3153869</doc-number>
+<kind>A</kind>
+<name>Twentier</name>
+<date>19641000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification> 40633</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6338723</doc-number>
+<kind>B1</kind>
+<name>Carpenter et al.</name>
+<date>20020100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>602 75</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6349493</doc-number>
+<kind>B1</kind>
+<name>Newman et al.</name>
+<date>20020200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification> 40633</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>8099889</doc-number>
+<kind>B2</kind>
+<name>Landsman et al.</name>
+<date>20120100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification> 40633</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>8490307</doc-number>
+<kind>B2</kind>
+<name>Landsman et al.</name>
+<date>20130700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification> 40633</main-classification></classification-national>
+</us-citation>
+</us-references-cited>
+<number-of-claims>3</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>  2 16</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 22</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 24</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2455</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2170</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2242</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2911</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 40633</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 40665</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>283 75</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>283 81</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>602 20</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>602 21</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>602 23</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>128878</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>128879</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>19</number-of-drawing-sheets>
+<number-of-figures>26</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation-in-part>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>13409821</doc-number>
+<date>20120330</date>
+</document-id>
+<parent-status>ABANDONED</parent-status>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>14090531</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation-in-part>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20140075658</doc-number>
+<kind>A1</kind>
+<date>20140320</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>McGuin</last-name>
+<first-name>Aaron</first-name>
+<address>
+<city>Osceola</city>
+<state>IN</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>McGuin</last-name>
+<first-name>Aaron</first-name>
+<address>
+<city>Osceola</city>
+<state>IN</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Crump</last-name>
+<first-name>R. Tracy</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<examiners>
+<primary-examiner>
+<last-name>Patel</last-name>
+<first-name>Tejash</first-name>
+<department>3765</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">An appendage wrap having a sequential set of graphic instruction steps printed across the length of the wrap on one or both sides for explaining and illustrating how a user is to apply the wrap to a specific appendage. Each individual instruction step is readily visible to the user and is easily discernable as the wrap is unrolled and wound around the appendage. Text instructions provide concise directions to the user. Simply illustrations of the appendage (hand graphics) provide a visual reference to the user for the direction and location where the wrap will be wound. Arrows are used to visually guide the user as wrap is unrolled and wound around the wrist.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="161.80mm" wi="243.59mm" file="US08887313-20141118-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="260.43mm" wi="190.08mm" orientation="landscape" file="US08887313-20141118-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="235.97mm" wi="179.58mm" file="US08887313-20141118-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="230.89mm" wi="194.73mm" file="US08887313-20141118-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="234.10mm" wi="176.36mm" file="US08887313-20141118-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="226.40mm" wi="198.46mm" file="US08887313-20141118-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="233.76mm" wi="205.15mm" file="US08887313-20141118-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="224.96mm" wi="192.79mm" file="US08887313-20141118-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="222.42mm" wi="198.29mm" file="US08887313-20141118-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="219.12mm" wi="193.12mm" file="US08887313-20141118-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="244.01mm" wi="201.17mm" file="US08887313-20141118-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="236.64mm" wi="165.44mm" file="US08887313-20141118-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="252.73mm" wi="163.49mm" orientation="landscape" file="US08887313-20141118-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="247.40mm" wi="166.88mm" orientation="landscape" file="US08887313-20141118-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="244.18mm" wi="189.82mm" orientation="landscape" file="US08887313-20141118-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="244.26mm" wi="181.36mm" orientation="landscape" file="US08887313-20141118-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="246.80mm" wi="195.41mm" orientation="landscape" file="US08887313-20141118-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00017" num="00017">
+<img id="EMI-D00017" he="247.40mm" wi="171.28mm" orientation="landscape" file="US08887313-20141118-D00017.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00018" num="00018">
+<img id="EMI-D00018" he="247.99mm" wi="188.47mm" orientation="landscape" file="US08887313-20141118-D00018.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00019" num="00019">
+<img id="EMI-D00019" he="244.86mm" wi="190.92mm" orientation="landscape" file="US08887313-20141118-D00019.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<p id="p-0002" num="0001">This is a continuation-in-part of pending U.S. patent application, Ser. No. 13/409,821 filed on Mar. 30, 2012.</p>
+<p id="p-0003" num="0002">This invention relates fabric wraps for use human appendages, namely hands and feet, and in particular illustrated wraps depicting instructions for donning the wrap around a particular appendage.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND AND SUMMARY OF THE INVENTION</heading>
+<p id="p-0004" num="0003">Cloth and elastic wraps are commonly used to bind and support human appendages, hands and feet for various purposes. Cloth athletic hand wraps are commonly used by boxers and martial artist to support and protect their hands. Elastics wraps are used on both hands and feet for similar purposes. Heretofore, the use and application of a cloth or elastic wrap to an appendage required specific knowledge of how to properly apply the wrap about the appendage. The technique for wrapping a hand or foot can be difficult for the inexperienced, particularly when the wrap is self applied.</p>
+<p id="p-0005" num="0004">The present invention seeks to provide an appendage wrap having a sequential set of graphic instruction steps printed across the length of the wrap on one or both sides for explaining and illustrating how a user is to apply the wrap to a specific appendage. The wraps of this invention allow novice user's to quickly and properly apply a wrap to a particular appendage. One embodiment of this invention is specifically intended as a hand wrap for boxers and martial artists. Another embodiment is specifically intended as a foot and ankle wrap.</p>
+<p id="p-0006" num="0005">Each of the instruction sets printed on the wraps include a set of sequential instruction steps that was spaced along the length of the wrap to guide the application of the wrap to an appendage, whether the user's own appendage or a third person's appendage. Each individual instruction step is readily visible to the user and is easily discernable as the wrap is unrolled and wound around the appendage. Text instructions provide concise directions to the user. Simply illustrations of the appendage (hand graphics) provide a visual reference to the user for the manner, direction and location where the wrap will be wound. Arrows are used to visually guide the user as wrap is unrolled and wound around the appendage.</p>
+<p id="p-0007" num="0006">The above described features and advantages, as well as others, will become more readily apparent to those of ordinary skill in the art by reference to the following detailed description and accompanying drawings.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0002" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0008" num="0007">The present invention may take form in various system and method components and arrangement of system and method components. The drawings are only for purposes of illustrating exemplary embodiments and are not to be construed as limiting the invention. The drawings illustrate the present invention, in which:</p>
+<p id="p-0009" num="0008"><figref idref="DRAWINGS">FIG. 1</figref> is a top view of one embodiment of this invention, showing the hand wrap unrolled;</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIGS. 2 and 3</figref> are top views of the hand wrap of <figref idref="DRAWINGS">FIG. 1</figref> applied to a human hand, showing the first instruction step;</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIGS. 4 and 5</figref> are top views of the hand wrap of <figref idref="DRAWINGS">FIG. 1</figref> applied to a human hand, showing the second instruction step;</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIGS. 6 and 7</figref> are top views of the hand wrap of <figref idref="DRAWINGS">FIG. 1</figref> applied to a human hand, showing the third instruction step;</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 8</figref> is a top view of the hand wrap of <figref idref="DRAWINGS">FIG. 1</figref> applied to a human hand, showing the fourth instruction step;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 9</figref> is a top view of the hand wrap of <figref idref="DRAWINGS">FIG. 1</figref> applied to a human hand, showing the fifth instruction step;</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIGS. 10 and 11</figref> are top views of the hand wrap of <figref idref="DRAWINGS">FIG. 1</figref> applied to a human hand, showing the sixth and final instruction step;</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 12</figref> is a top view of a second embodiment of this invention, showing the foot/ankle wrap unrolled;</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 13</figref> is a perspective view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, showing the first instruction step;</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 14</figref> is a top view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, showing the first instruction step;</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 15</figref> is a perspective view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, showing the second instruction step;</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 16</figref> is a top view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, showing the second instruction step;</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 17</figref> is another perspective view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, further showing the second instruction step;</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 18</figref> is another top view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, further showing the second instruction step;</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 19</figref> is a perspective view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, showing the third instruction step;</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 20</figref> is a top view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, showing the third instruction step;</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 21</figref> is a perspective view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, showing the fourth instruction step;</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 22</figref> is a top view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, showing the fourth instruction step;</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 23</figref> is a perspective view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, showing the fifth instruction step; and</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 24</figref> is a top view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, showing the fifth instruction step;</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 25</figref> is a perspective view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, showing the sixth and final instruction step; and</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 26</figref> is a top view of the wrap of <figref idref="DRAWINGS">FIG. 12</figref> being applied to a human foot, showing the sixth and final instruction step.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0003" level="1">DESCRIPTION OF THE PREFERRED EMBODIMENT</heading>
+<p id="p-0031" num="0030">In the following detailed description of the preferred embodiments, reference is made to the accompanying drawings that form a part hereof, and in which is shown by way of illustration specific preferred embodiments in which the invention may be practiced. These embodiments are described in sufficient detail to enable those skilled in the art to practice the invention, and it is understood that other embodiments may be utilized and that logical, structural, mechanical, electrical, and chemical changes may be made without departing from the spirit or scope of the invention. To avoid detail not necessary to enable those skilled in the art to practice the invention, the description may omit certain information known to those skilled in the art. The following detailed description is, therefore, not to be taken in a limiting sense, and the scope of the present invention is defined only by the appended claims.</p>
+<p id="p-0032" num="0031">The drawings illustrate two different embodiments of this invention. Each wrap embodying this invention generally consists of an elongate strip of fabric having written and graphic instructions (collectively, an &#x201c;instruction sets&#x201d;) printed on one or both sides for explaining and illustrating how the wrap is to be applied to a specific appendage. The printed instruction sets are grouped into sequential instruction blocks that are spaced across the entire length of the wrap. Each instruction block using pictures, letters, numbers, symbols, word text to depict each stage or step of the wrap's application, which allow the user to apply the wrap to a particular appendage, whether the user's own appendage or a third person's appendage. Each sequential instruction block is readily visible to the user and is easily discernable as the wrap is unrolled and wound around the appendage. The word text of each instruction block provides concise direction to the user. The simple illustrations and arrow of each instruction block provide a visual reference to the user the direction and location where the wrap will be wound and visually guide the user as the wrap is unrolled and wound around the appendage.</p>
+<p id="p-0033" num="0032">The wraps themselves may be woven from any variety of natural and synthetic fibers and materials. The fabrics and materials selected for the wraps are selected for various needs specific for the wraps intended purpose. In certain embodiments, such as for ankle wraps, the wraps may require a measure of elasticity to provide compression around the appendage. The wraps are typically prepackage or staged in rolls so that the wrap can be easily wound around the appendage. After use, the wraps can be rewound back into a roll for subsequent applications.</p>
+<p id="p-0034" num="0033">For consistency of explanation and understanding, certain terms and conventions are used herein to describe the various embodiments of the wraps of this invention. The opposed ends of each wraps are generally identified herein as the &#x201c;lead&#x201d; and the &#x201c;tail&#x201d; end. The lead end being the first end to unwind from the rolled wrap and applied to the appendage and the tail end the last to unwind and be applied to the appendage. Each wrap also has opposed &#x201c;inner&#x201d; and &#x201c;outer&#x201d; sides. The inner sides of the wraps face the appendage around which the wrap is applied. The &#x201c;outer&#x201d; side is the side on which the instruction and graphics are printed. It should be noted that incertain embodiments, the instructions and graphics may be printed on both sides of the wrap to accommodate different directions of application, clockwise or counter-clockwise, or application to left or right appendages. While instruction sets may be printed on both sides of a wrap, those instruction sets are typically specific to a particular application of the wrap and both sides will in fact be designated as either the &#x201c;inner&#x201d; side or the &#x201c;outer&#x201d; side for any particular application of the wrap.</p>
+<p id="p-0035" num="0034">Referring now to the drawings, <figref idref="DRAWINGS">FIGS. 1-11</figref> show a first embodiment of the wrap of this invention, designated generally as reference numeral <b>100</b>. As shown, wrap <b>100</b> is a hand wrap <b>100</b> of the type used by boxers and martial artists. Wrap <b>100</b> is fashioned as a conventional &#x201c;boxer's hand wrap&#x201d; and consists of a strip of woven cloth with serialized graphic instruction sets <b>110</b> printed on both sides. The cloth fabric is typically a cotton/linen, but may be constructed of any suitable woven fabric or material. A thumb loop <b>120</b> extends from the lead end <b>102</b> of wrap <b>100</b>. The tail end <b>104</b> of wrap <b>100</b> uses hook and loop fasteners to secure the tail end of the wrap around the user's hand. A tab of hook material <b>122</b> extends longitudinally from the tail end <b>104</b> of wrap <b>100</b>. An elongated section of loop material <b>124</b> is sewn to the tail end of wrap <b>199</b>.</p>
+<p id="p-0036" num="0035">As shown, instruction set <b>200</b> is screen printed or otherwise rendered on outer side <b>106</b> of wrap <b>100</b>. Instruction set <b>200</b> explains and depicts how wrap <b>100</b> is to be applied to a user's left hand. For purposes of simplicity and brevity, the drawings only illustrate the instruction sets <b>200</b> printed on one side of wrap <b>100</b>. It should be understood that another graphic instruction set is printed on the opposite side of wrap <b>100</b>, which explains and depicts the application of the wrap to a user's right hand. Instruction set <b>200</b> is segmented into sequence of instruction blocks (<b>210</b>, <b>220</b>, <b>230</b>, <b>240</b>, <b>250</b>, <b>260</b>) spaced across the length of wrap <b>100</b>, which direct the user for each step of applying wrap <b>100</b>. Instruction block <b>210</b> is printed adjacent the lead end <b>102</b> of wrap <b>100</b> and instruction block <b>260</b> near tail end <b>104</b>. Instruction block <b>220</b>, <b>230</b>, <b>240</b> and <b>250</b> are selectively spaced between the lead end <b>102</b> and tail end <b>104</b>, so that each instruction block is readily visible to the user and is easily discernable as wrap <b>100</b> is unrolled and wound around the hand.</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIGS. 2-11</figref> illustrate the steps for how wrap <b>100</b> is applied to a user's left hand and how instruction sets <b>200</b> provide a visible guide for the application of the wrap. <figref idref="DRAWINGS">FIGS. 2 and 3</figref> shows the initial start for applying wrap <b>100</b> to the user's left hand. First, loop <b>106</b> is hooked over the user's thumb and wrap <b>100</b> is pulled over and across the back of user's hand. With wrap <b>100</b> overlying the back of the user's hand instruction block <b>210</b> is visible, which includes a hand graphic <b>212</b>, the words &#x201c;wrist&#x201d; <b>214</b> and &#x201c;3&#xd7;&#x201d; <b>216</b> and arrows <b>219</b>. The words, &#x201c;wrist&#x201d; <b>214</b> and &#x201c;3&#xd7;&#x201d; <b>216</b> indicate that wrap <b>100</b> will be wound around the wrist three times.</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIGS. 4 and 5</figref> show the second step in applying the wrap to the user's hand. Once the initial step is complete, instruction block <b>220</b> is visible. Instruction block <b>220</b> includes a hand graphic <b>222</b>, the word, &#x201c;done&#x201d; <b>224</b>, a traverse stop line <b>225</b>, instruction text &#x201c;around thumb to wrist&#x201d; <b>226</b>, &#x201c;around wrist&#x201d; <b>228</b> and arrows <b>229</b>. The instruction text &#x201c;around thumb to wrist&#x201d; <b>226</b> and &#x201c;around wrist&#x201d; <b>228</b> indicates that wrap <b>100</b> will be wound around the thumb and back across the wrist.</p>
+<p id="p-0039" num="0038"><figref idref="DRAWINGS">FIGS. 6 and 7</figref> show the third step in applying the wrap to the user's hand. Once the second step is complete, instruction block <b>230</b> is visible. Instruction block <b>230</b> includes a hand graphic <b>232</b>, the word, &#x201c;done&#x201d; <b>234</b>, a stop line <b>235</b>, instruction text &#x201c;around hand&#x201d; <b>236</b> and &#x201c;wrap to knuckles &#xd7;3&#x201d; <b>238</b> and arrows <b>239</b>. The instruction text &#x201c;around hand&#x201d; <b>236</b> and &#x201c;wrap to knuckles &#xd7;3&#x201d; <b>238</b> indicate that wrap <b>100</b> is wound around the hand three times to cover the knuckles.</p>
+<p id="p-0040" num="0039"><figref idref="DRAWINGS">FIG. 8</figref> shows a fourth step in applying the wrap to the user's hand. Once the third step is complete, instruction block <b>240</b> is visible. Instruction block <b>240</b> includes a hand graphic <b>242</b>, the word, &#x201c;done&#x201d; <b>244</b>, a stop line <b>245</b>, instruction text &#x201c;around wrist&#x201d; <b>246</b> and arrows <b>239</b>. The instruction text &#x201c;around wrist&#x201d; <b>246</b> indicate that wrap <b>100</b> is again wound around the wrist.</p>
+<p id="p-0041" num="0040"><figref idref="DRAWINGS">FIG. 9</figref> shows the fifth step in applying the wrap to the user's hand. Once the fourth step is complete, instruction block <b>250</b> is visible. Instruction block <b>140</b> includes a hand graphic <b>252</b>, the word, &#x201c;done&#x201d; <b>254</b>, a stop line <b>255</b>, instruction text &#x201c;around knuckles&#x201d; <b>256</b>, instruction text &#x201c;1&#xd7;&#x201d; <b>258</b> and arrows <b>259</b>. The instruction text &#x201c;around knuckles&#x201d; <b>256</b> and &#x201c;1&#xd7;&#x201d; <b>258</b> indicate that wrap <b>100</b> is wound around the knucles one time.</p>
+<p id="p-0042" num="0041"><figref idref="DRAWINGS">FIGS. 10 and 11</figref> show the sixth and final step in applying the wrap to the user's hand. Once the fifth step is complete, instruction block <b>260</b> is visible. Instruction block <b>260</b> includes the word, &#x201c;done&#x201d; <b>264</b>, a stop line <b>265</b>, instruction text &#x201c;around wrist&#x201d; <b>266</b>, instruction text &#x201c;1&#xd7;&#x201d; <b>268</b> and arrows <b>269</b>. Instruction block <b>260</b> also includes a final occurrence of the word &#x201c;done&#x201d; <b>274</b> and a final stop line <b>275</b>. The instruction text &#x201c;around wrist&#x201d; <b>256</b> and &#x201c;1&#xd7;&#x201d; <b>258</b> indicates that wrap <b>100</b> is wound around the wrist one time. Once the wrap is wound around the wrist, hook tab <b>120</b> is pressed against loop section <b>122</b> to secure tail end <b>104</b> to the rest of wrap <b>100</b>.</p>
+<p id="p-0043" num="0042"><figref idref="DRAWINGS">FIGS. 12-25</figref> show a second embodiment of the wraps of this invention, designated generally as reference numeral <b>300</b>. As shown, wrap <b>300</b> is an elastic ankle wrap of the type used to bind and care for broken feet and ankles. Wrap <b>300</b> consists of a strip of woven elastic cloth with serialized graphic instruction sets <b>400</b> printed on both sides. Again, for purposes of simplicity and brevity, <figref idref="DRAWINGS">FIGS. 11-23</figref> only illustrate the serialized graphic instruction sets <b>400</b> printed on one side of wrap <b>300</b>. Instruction set <b>400</b> shown explains and depicts the application of wrap <b>300</b> counter-clockwise to a user's left foot. It should be understood that another instruction set (not shown) is printed on the opposite side of wrap <b>300</b>, which explains and depicts the application of the wrap clockwise to a user's right foot and is printed on opposite side of wrap <b>300</b>.</p>
+<p id="p-0044" num="0043">Instruction set <b>400</b> is similar to that of wrap <b>100</b> and is segmented into sequential instruction blocks (<b>410</b>, <b>420</b>, <b>430</b>, <b>440</b>, <b>450</b>, <b>460</b>) spaced across the length of wrap <b>300</b>, which direct the user for each step of applying wrap <b>300</b>. Each instruction block <b>410</b>, <b>420</b>, <b>430</b>, <b>440</b>, <b>450</b> and <b>460</b> includes some combination of pictures, symbols, letters, numbers, abbreviations, and word texts that guide the user in the application of wrap <b>300</b> to the foot, whether to the user's own foot or a third person's foot. Again, each instruction step is readily visible to the user and is easily discernable as wrap <b>300</b> is applied. Instruction block <b>410</b>, <b>420</b>, <b>430</b>, <b>440</b>, <b>450</b> and <b>460</b> are selectively spaced along the between the lead end <b>302</b> and tail end <b>304</b>, so that each instruction block is readily visible to the user and is easily discernable as wrap <b>300</b> and is unrolled and wound around the foot. Because of the elasticity of wrap <b>300</b>, each instruction block includes the instruction text to &#x201c;pull wrap to read&#x201d;, which prompts the user to pull the wrap tight so that the next instructions steps are readily visible over the top of the foot. Pulling the wrap tight not only ensure that the wrap is bound tightly around the ankle for support, but also positions the next instruction step on the wrap where it is readily visible.</p>
+<p id="p-0045" num="0044"><figref idref="DRAWINGS">FIGS. 12-23</figref> illustrate how the wrap is applied to a user's left foot and how the serialize graphics instruction sets <b>400</b> provide a visible guide for the application of the wrap. <figref idref="DRAWINGS">FIGS. 13 and 14</figref> shows the initial start for applying wrap <b>300</b> to the user's left foot. First, the lead end <b>302</b> of wrap <b>300</b> is placed overlying the top of the foot so that the first set of instruction block <b>410</b> is visible. Instruction block <b>410</b> includes a foot graphic <b>412</b>, the word &#x201c;start&#x201d; <b>414</b>, instruction text &#x201c;around foot&#x2014;wrap 3&#xd7;&#x201d; <b>416</b> and arrows <b>419</b>.</p>
+<p id="p-0046" num="0045"><figref idref="DRAWINGS">FIGS. 15-18</figref> show the second step in applying the wrap to the user's foot. Once the initial step is complete, instruction block <b>420</b> is visible. Instruction block <b>420</b> includes a foot graphic <b>422</b>, instruction text &#x201c;figure 8 around ankle&#x201d; <b>424</b>, instruction text &#x201c;pull to read&#x201d; <b>426</b> and arrows <b>429</b>.</p>
+<p id="p-0047" num="0046"><figref idref="DRAWINGS">FIGS. 19 and 20</figref> show the third step in applying the wrap to the user's foot. Once the second step is complete, instruction block <b>430</b> is visible. Instruction block <b>230</b> includes a foot graphic <b>432</b>, instruction text &#x201c;figure 8 around foot&#x201d; <b>434</b>, instruction text &#x201c;pull to read&#x201d; <b>436</b> and arrows <b>439</b>.</p>
+<p id="p-0048" num="0047"><figref idref="DRAWINGS">FIGS. 21 and 22</figref> show a fourth step in applying the wrap to the user's foot. Once the third step is complete, instruction block <b>440</b> is visible. Instruction block <b>440</b> includes a foot graphic <b>442</b>, instruction text &#x201c;figure 8 around ankle&#x201d; <b>444</b>, instruction text &#x201c;pull to read&#x201d; <b>446</b> and arrows <b>449</b>.</p>
+<p id="p-0049" num="0048"><figref idref="DRAWINGS">FIGS. 23 and 24</figref> show the fifth step in applying the wrap to the user's foot. Once the fourth step is complete, instruction block <b>450</b> is visible. Instruction block <b>250</b> includes a foot graphic <b>452</b>, instruction text &#x201c;figure 8 around foot&#x201d; <b>454</b>, instruction text &#x201c;pull to read&#x201d; <b>456</b> and arrows <b>459</b>.</p>
+<p id="p-0050" num="0049"><figref idref="DRAWINGS">FIGS. 25 and 26</figref> show the six and final step in applying the wrap to the user's foot. Once the fifth step is complete, instruction block <b>460</b> is visible. Instruction block <b>460</b> includes an arrow graphic <b>462</b>, instruction text &#x201c;around ankle 2&#xd7;&#x201d; <b>464</b>, instruction text &#x201c;pull to read&#x201d; <b>466</b>, the word &#x201c;done <b>467</b> and arrows <b>469</b>. Once wrap <b>300</b> is wound around the ankle, tail end <b>304</b> is secured to the wrap with clips, safety pins or other fasteners (not shown).</p>
+<p id="p-0051" num="0050">It should be apparent from the foregoing that an invention having significant advantages has been provided. While the invention is shown in only a few of its forms, it is not just limited but is susceptible to various changes and modifications without departing from the spirit thereof. The embodiment of the present invention herein described and illustrated is not intended to be exhaustive or to limit the invention to the precise form disclosed. It is presented to explain the invention so that others skilled in the art might utilize its teachings. The embodiment of the present invention may be modified within the scope of the following claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>I claim:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A flexible wrap for an appendage comprising:
+<claim-text>an elongate strip of flexible material adapted to be rolled onto itself and unrolled from itself while being wrapped repeatedly around the appendage, the strip having a first end and an opposite second end, the strip also having an inner side and an opposite outer side;</claim-text>
+<claim-text>an instruction set printed on the outer side across the length of the strip between the first end and the second end set for explaining and illustrating the application of the wrap to an appendage, the instruction set includes a plurality of instruction blocks where each of the plurality of instruction blocks is spaced apart from one another and selectively located along the length of the strip to be visible after the completion of the subsequent step for applying the wrap repeatedly around the appendage and provides sequential visible directions and illustrations of the next step for applying the wrap to the appendage as the wrap is unrolled.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The wrap of <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein each of the plurality of instruction blocks includes written text directions and graphics.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The wrap of <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein the plurality of instruction blocks includes a first instruction block printed to the outer side adjacent the first end and a last instruction block printed on the outer side adjacent the second end.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

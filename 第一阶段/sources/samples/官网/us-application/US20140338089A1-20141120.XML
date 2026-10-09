@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-application SYSTEM "us-patent-application-v43-2012-12-04.dtd" [ ]>
+<us-patent-application lang="EN" dtd-version="v4.3 2012-12-04" file="US20140338089A1-20141120.XML" status="PRODUCTION" id="us-patent-application" country="US" date-produced="20141106" date-publ="20141120">
+<us-bibliographic-data-application lang="EN" country="US">
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>20140338089</doc-number>
+<kind>A1</kind>
+<date>20141120</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>14355146</doc-number>
+<date>20121102</date>
+</document-id>
+</application-reference>
+<us-application-series-code>14</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="regional">
+<country>EP</country>
+<doc-number>11306410.9</doc-number>
+<date>20111102</date>
+</priority-claim>
+</priority-claims>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>B</section>
+<class>63</class>
+<subclass>C</subclass>
+<main-group>11</main-group>
+<subgroup>04</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141120</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classifications-cpc>
+<main-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>B</section>
+<class>63</class>
+<subclass>C</subclass>
+<main-group>11</main-group>
+<subgroup>04</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20141120</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</main-cpc>
+</classifications-cpc>
+<classification-national>
+<country>US</country>
+<main-classification>  2  215</main-classification>
+</classification-national>
+<invention-title id="d0e61">Technical Wetsuit</invention-title>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="00" app-type="applicant" designation="us-only">
+<addressbook>
+<orgname>Quiksilver, Inc.</orgname>
+<address>
+<city>Hungtington Beach</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="00" designation="us-only">
+<addressbook>
+<last-name>Brooks</last-name>
+<first-name>Troy</first-name>
+<address>
+<city>Torquay</city>
+<country>AU</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="01" designation="us-only">
+<addressbook>
+<last-name>Rush</last-name>
+<first-name>Josh</first-name>
+<address>
+<city>Biarrtz</city>
+<country>FR</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="02" designation="us-only">
+<addressbook>
+<last-name>Mas-Bertrand</last-name>
+<first-name>David</first-name>
+<address>
+<city>Capbreton</city>
+<country>FR</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+</us-parties>
+<pct-or-regional-filing-data>
+<document-id>
+<country>WO</country>
+<doc-number>PCT/IB2012/056118</doc-number>
+<kind>00</kind>
+<date>20121102</date>
+</document-id>
+<us-371c124-date><date>20140429</date></us-371c124-date>
+</pct-or-regional-filing-data>
+</us-bibliographic-data-application>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A wetsuit comprising first panels exhibiting a high-stretch and adapted to provide buoyancy to the wearer and second panels exhibiting a low-stretch and adapted to provide further buoyancy to the wearer wherein the first and the second panels are fastened together by seams and wherein the second panels are arranged according to the muscular configuration of the wearer to stimulate the muscular relaxation velocity of the wearer.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="231.65mm" wi="134.96mm" file="US20140338089A1-20141120-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="233.85mm" wi="139.87mm" file="US20140338089A1-20141120-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="213.11mm" wi="139.19mm" file="US20140338089A1-20141120-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="235.37mm" wi="156.80mm" file="US20140338089A1-20141120-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="230.63mm" wi="132.33mm" file="US20140338089A1-20141120-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="219.03mm" wi="143.00mm" file="US20140338089A1-20141120-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="209.89mm" wi="145.54mm" orientation="landscape" file="US20140338089A1-20141120-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="220.90mm" wi="145.80mm" orientation="landscape" file="US20140338089A1-20141120-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="234.44mm" wi="130.13mm" file="US20140338089A1-20141120-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?summary-of-invention description="Summary of Invention" end="lead"?>
+<heading id="h-0001" level="1">FIELD OF THE INVENTION</heading>
+<p id="p-0002" num="0001">The instant invention relates to wetsuits and technical wetsuits for use in water sports such as surfing, sailboarding, sailboard riding, water skiing, diving, swimming or other similar activities. In particular, the instant invention is related to an improved technical wetsuit stimulating the wearer's muscles.</p>
+<heading id="h-0002" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0003" num="0002">Wet suits are tight fitting water-permeable suits worn by surfers, board sailors, swimmers, divers and the like in order to retain body heat and provide buoyancy while their wearer's are immersed in cold water.</p>
+<p id="p-0004" num="0003">To provide buoyancy, modern wetsuits are usually formed in flexible rubber foam like &#x201c;neoprene&#x201d; foam. Rubber foams are made of non-fibrous rubber enclosing gas bubbles that reduce the density of the wetsuit and helps swimmers to stay afloat. These bubbles also reduce the ability of the wetsuit to conduct heat, thereby helping the wearer's body to stay warm.</p>
+<p id="p-0005" num="0004">Thermal insulation is further achieved through a snug fit of the wetsuit on the wearer that keeps a thin layer of water between the fabric of the wetsuit and the skin of the body. It is therefore advantageous that no additional water enters the wetsuit once the initial layer has been established and has been warmed by the body.</p>
+<p id="p-0006" num="0005">Developments in wetsuits in recent times have been made principally in the view of increasing the comfort level of wetsuits, thus coping with the negative aspects of being immersed in water, that are cold and buoyancy issues. One such development is shown in U.S. Pat. No. 5,360,229 to Machado et al. which describes an improved wetsuit providing a zipperless system for permitting entry of the wearer into the wetsuit while reducing the entry of water into the wetsuit when immersed in the water.</p>
+<p id="p-0007" num="0006">While the present applicant recognises that the comfort of wetsuits can provide an increase in performance by reducing the energy spent to keep the wearer's body warm, it is believed that much more can still be done to directly improve performance of wetsuits' wearer when they practice water sports at a high level, in competitions or as a skilled amateur.</p>
+<p id="p-0008" num="0007">The present invention has thus been developed with a greater emphasis on performance rather than comfort and a wetsuit according to the invention should be considered to be a technical wetsuit which aims at improving the performance of a wearer doing water sports such as surfing.</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0009" num="0008">It is provided a wetsuit comprising:</p>
+<p id="p-0010" num="0009">at least one first panel exhibiting high-stretch and adapted to provide buoyancy to the wearer;</p>
+<p id="p-0011" num="0010">at least one second panel exhibiting low-stretch and adapted to provide further buoyancy to the wearer;</p>
+<p id="p-0012" num="0011">wherein the at least one first panel and the at least one second panel are fastened together by at least one seam;</p>
+<p id="p-0013" num="0012">and wherein the at least one second panel is arranged according to the muscular configuration of the wearer to stimulate muscular relaxation velocity of the wearer.</p>
+<p id="p-0014" num="0013">With these features, the wet suit will be designed to help the wearer perform the gestures which are common to the sport to which the wet suit is designed.</p>
+<p id="p-0015" num="0014">In some embodiments, one might also use one or more of the following features:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0000">
+    <ul id="ul0002" list-style="none">
+        <li id="ul0002-0001" num="0015">the at least one second panel are located along specific muscles of the wearer in order to increase the relaxation velocity of said specific muscles,</li>
+        <li id="ul0002-0002" num="0016">a movement of the wearer defines an action direction for a second panel and wherein said second panel apply a load to the wearer in the opposite direction to the action direction,</li>
+        <li id="ul0002-0003" num="0017">the wetsuit further comprises grip members provided on the inside of the panels and at both ends of specific muscles, said grip members being of a material that tends to grip the skin of the wearer,</li>
+        <li id="ul0002-0004" num="0018">at least one second panel is located along back muscles of the wearer chosen in a list comprising latissimus dorsi muscles and trapezius muscles,</li>
+        <li id="ul0002-0005" num="0019">at least one second panel is located along muscles of the wearer chosen in a list comprising gluteal muscles and quadriceps,</li>
+        <li id="ul0002-0006" num="0020">the free extremities of the second panels are located at the openings of the wetsuit,</li>
+        <li id="ul0002-0007" num="0021">first panels and second panels are juxtaposed together to form the wetsuit, the lateral faces of first panels facing lateral faces of second panels,</li>
+        <li id="ul0002-0008" num="0022">second panels are of variable stiffness to vary the stimulation the muscular relaxation,</li>
+        <li id="ul0002-0009" num="0023">second panels form one-dimensional strips having a length being at least 5 times greater than their width.</li>
+        <li id="ul0002-0010" num="0024">first panels are made of a material having a layer of foamed rubber material exhibiting a high stretch,</li>
+        <li id="ul0002-0011" num="0025">second panels are made of a material having a layer of foamed rubber material exhibiting a low stretch,</li>
+        <li id="ul0002-0012" num="0026">at least one seam belongs to a list comprising flatlock stitching, overlocking, glued and blind stitched seam and heat tape sealing,</li>
+        <li id="ul0002-0013" num="0027">at least first panel is coated with woven textiles on the inside of the wetsuit.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0016" num="0028">It is another aspect of the invention to provide a method of manufacturing a wetsuit comprising:</p>
+<p id="p-0017" num="0029">Determining the muscular configuration of a wearer,</p>
+<p id="p-0018" num="0030">Designing at least one second panel arranged according to the muscular configuration of the wearer to stimulate muscular relaxation velocity of the wearer,</p>
+<p id="p-0019" num="0031">Providing at least one first panel exhibiting high-stretch and adapted to provide buoyancy to the wearer;</p>
+<p id="p-0020" num="0032">Providing at least one second panel exhibiting low-stretch and adapted to provide further buoyancy to the wearer;</p>
+<p id="p-0021" num="0033">Fastening the at least one first panel and at least one second panel together by at least one seam.</p>
+<p id="p-0022" num="0034">To gain an improved understanding of the advantages and features of the present invention, however, reference may be made to the following descriptive matter and accompanying drawings that describe and illustrate various embodiments and concepts related to the invention.</p>
+<?summary-of-invention description="Summary of Invention" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0023" num="0035">Other characteristics and advantages of the invention will readily appear from the following description of one of its embodiments, provided as non-limitative examples, and of the accompanying drawings.</p>
+<p id="p-0024" num="0036">On the drawings:</p>
+<p id="p-0025" num="0037"><figref idref="DRAWINGS">FIG. 1</figref> is a front elevational view of an individual wearing a wetsuit according to an embodiment of the invention.</p>
+<p id="p-0026" num="0038"><figref idref="DRAWINGS">FIG. 2</figref> is a front elevational view of a wetsuit according to an embodiment of the invention.</p>
+<p id="p-0027" num="0039"><figref idref="DRAWINGS">FIG. 3</figref> is a back elevational view of a wetsuit according to an embodiment of the invention.</p>
+<p id="p-0028" num="0040"><figref idref="DRAWINGS">FIG. 4</figref> is a left elevational view of a wetsuit according to an embodiment of the invention.</p>
+<p id="p-0029" num="0041"><figref idref="DRAWINGS">FIG. 5</figref> is a back elevational view of a wetsuit showing action and relaxation directions according to an embodiment of the invention.</p>
+<p id="p-0030" num="0042"><figref idref="DRAWINGS">FIGS. 6 and 7</figref> are cross-sectional views of a region of a wetsuit according to an embodiment of the invention.</p>
+<p id="p-0031" num="0043"><figref idref="DRAWINGS">FIG. 8</figref> is a back elevational view of a wetsuit according to an embodiment of the invention, said wetsuit being turned inside out to show the inside surface.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?detailed-description description="Detailed Description" end="lead"?>
+<p id="p-0032" num="0044">On the different Figures, the same reference signs designate like or similar elements.</p>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0033" num="0045">With reference to <figref idref="DRAWINGS">FIG. 1</figref>, a wetsuit <b>10</b> is depicted as being worn by a wearer <b>100</b>. The wetsuit <b>10</b> closely conforms to the shape of the body of the wearer <b>100</b>. As a result, in the following description, the different parts of wetsuit <b>10</b> will often be indicated by the anatomical parts of the wearer <b>100</b> that they are adjacent to. Thus, the &#x201c;elbow&#x201d; or &#x201c;elbow section&#x201d; of the wetsuit <b>10</b> will be the portion of the wetsuit <b>10</b> that would be adjacent to the elbow of a wearer if the wetsuit <b>10</b> was being worn.</p>
+<p id="p-0034" num="0046">In a similar fashion, terms like &#x201c;front&#x201d;, &#x201c;back&#x201d;, &#x201c;top&#x201d;, &#x201c;bottom&#x201d; and the like should be understood as referring to the wearer body <b>100</b> and being extended to the wetsuit <b>10</b> as if it was being worn.</p>
+<p id="p-0035" num="0047">Furthermore, the terms &#x201c;outside&#x201d; and &#x201c;inside&#x201d; should be seen as referring to the surfaces of the wetsuit <b>10</b> that are in contact respectively with the external environment and the body of the wearer <b>100</b> when the wetsuit <b>10</b> is being worn as it is intended.</p>
+<p id="p-0036" num="0048">Referring again to <figref idref="DRAWINGS">FIG. 1</figref>, the wetsuit <b>10</b> comprises a pair of lower leg regions <b>11</b>, a pair of upper leg regions <b>12</b>, a pelvic region <b>13</b>, a torso region <b>14</b>, a pair of upper arm regions <b>15</b> and a pair of forearm regions <b>16</b>. These regions are not intended to demarcate precise regions of the wetsuit <b>10</b> but rather to provide a reference frame for the following specifications. Various views are provided in <figref idref="DRAWINGS">FIGS. 2 to 4</figref> illustrating front, back and left views of the wetsuit <b>10</b> in the absence of the wearer <b>100</b>.</p>
+<p id="p-0037" num="0049">The wetsuit <b>10</b> comprises five openings: two feet openings <b>11</b><i>a </i>allowing the feet <b>110</b> of the wearer to extend outside of the wetsuit <b>10</b>, two hand openings <b>16</b><i>a </i>through which the hands <b>120</b> of the wearer extend, and a neck opening <b>14</b><i>a </i>to allow the wearer <b>100</b> to enter and exit from the wetsuit <b>10</b> and to further allow the head <b>130</b> of the wearer <b>100</b> to extend outside the wetsuit <b>10</b> when it is worn. The neck opening <b>14</b><i>a </i>can comprise a waterproof zipper <b>14</b><i>b, </i>shown on <figref idref="DRAWINGS">FIG. 8</figref>, or more elaborated features in order to improve the ease of entry while reducing the penetration of water through the opening between the wetsuit and the wearer. An example of such a neck opening <b>14</b><i>a </i>is disclosed in U.S. Pat. No. 5,898,934 to Hunter.</p>
+<p id="p-0038" num="0050">To further vacuum water that might have penetrated inside the wetsuit <b>10</b>, small perforated panels <b>80</b> can be provided in proximity of the feet and hands openings <b>11</b><i>a</i>, <b>16</b><i>a. </i></p>
+<p id="p-0039" num="0051">Referring first to <figref idref="DRAWINGS">FIGS. 2 and 3</figref>, front and back illustrations of a wetsuit <b>10</b> in accordance with one embodiment of the invention are shown.</p>
+<p id="p-0040" num="0052">A plurality of first panels <b>20</b> forms the majority of the wetsuit <b>1</b> and includes two lower leg panels <b>21</b>, two upper leg panels <b>22</b>, a front torso panel <b>23</b>, two upper torso panels <b>24</b>, two shoulder panels <b>25</b> and two forearm panels <b>26</b>. The plurality of panels <b>20</b> further includes, on the back of the wetsuit <b>10</b>, five lower back torso panels <b>27</b>, a spinal panel <b>28</b> and two upper back torso panels <b>29</b>.</p>
+<p id="p-0041" num="0053">Panels <b>20</b> preferably comprise rubber foam in order to provide the desired buoyancy and stretch to the wetsuit <b>10</b>. Such rubber foam can be for instance made from a neoprene foam or any type of non-fibrous elastomeric material that can provide buoyancy to the wearer, for instance by trapping gas, in the form of gas bubbles. A material with a density less than 50 Lbs/ft3 can be for instance used by the skilled man. Advantageously, said material can present a high tensile stretch in order to fit tightly about the body of the wearer.</p>
+<p id="p-0042" num="0054">Panels <b>20</b> are 2D panels, in that both dimensions of the panels transverse to the thickness direction are of the same scale order. The level of high tensile elasticity is similar in all directions of the panel. The material can also be selected to prevent the circulation of water between the suit and the body.</p>
+<p id="p-0043" num="0055">The thickness of panels <b>20</b> can vary depending on the desired characteristics and comfort required by the wearer. A light weight wetsuit to be used in warm water can be made with panels <b>20</b> having a thickness ranging between 0.5 and 2 millimetres, a medium weight wetsuit would have panels with a thickness between 2 and 3 millimetres and a cold water wetsuit can have panels of a thickness up to 5 millimetres.</p>
+<p id="p-0044" num="0056">The thicker the wetsuit is, the more buoyancy it provides. However, a thicker wetsuit usually restricts free movements of the wearer and bends have sometimes to be provided at the elbows and knees to increase the flexibility of the wetsuit.</p>
+<p id="p-0045" num="0057">The wetsuit <b>10</b> also comprises a plurality of second panels <b>30</b> that can for instance consists in a plurality of strips <b>30</b> of short transverse dimensions forming a network of one-dimensional strips. Compared to the 2D panels, the 1D strips are characterized by a length being at least 5 times greater than the width. Both dimensions are still greater than the thickness. This network extends from the feet opening <b>11</b><i>a </i>up to the hands openings <b>16</b><i>a </i>and the neck opening <b>14</b><i>a. </i></p>
+<p id="p-0046" num="0058">The plurality of strips <b>30</b> includes lower leg strips <b>31</b>, upper leg strips <b>32</b>, waist strips <b>33</b>, back spinal strips <b>34</b>, upper back strips <b>35</b>, front torso strips <b>36</b>, front arm strips <b>37</b> and forearm strips <b>38</b>. The geometry of the strips network will be further detailed below.</p>
+<p id="p-0047" num="0059">In a preferred embodiment, the strips <b>30</b> are joined together in such a way that all free extremities of the network of strip <b>30</b> are located at the feet, hand and neck openings, <b>11</b><i>a, </i><b>14</b><i>a, </i><b>16</b><i>a. </i>To this aim, some strips <b>30</b> can be joined together in a star pattern with said strips <b>30</b> extending from a single point. With this embodiment, the durability of the wetsuit <b>10</b> and the transmission of the loads, detailed below, are improved.</p>
+<p id="p-0048" num="0060">Strips <b>30</b> are made of rubber foam that can be for instance neoprene foam or any type of non-fibrous elastomeric material.</p>
+<p id="p-0049" num="0061">While they have similar properties to the panels <b>20</b> in terms of buoyancy and thermal insulation, they possess different stretching properties. In particular they are made of materials having a lower stretch than the panel (at least twice lower). This material can be rubber foam that is less elastic than the rubber foam used for the panels (for example at least twice less elastic), for example a limestone-based polychloroprene.</p>
+<p id="p-0050" num="0062">The degree of stretch of rubber foam can be determined by using methods known to the skilled men.</p>
+<p id="p-0051" num="0063">The difference in stretch properties makes the stretching of the strips more difficult for the user.</p>
+<p id="p-0052" num="0064">Strips <b>30</b> are located over specific muscles and in specific direction of the wearer (also named &#x201c;power lines&#x201d;) that are used in water sports and which will be detailed further in the following.</p>
+<p id="p-0053" num="0065">Back spinal strips <b>34</b> and upper back strips <b>35</b> are located above specific upper back muscles for instance latissimus dorsi muscles <b>114</b><i>a </i>or trapezius muscles <b>114</b><i>b </i>that are roughly indicated on <figref idref="DRAWINGS">FIG. 5</figref>. These muscles <b>114</b><i>a</i>, <b>114</b><i>b </i>are heavily involved when the wearer <b>100</b> is swimming the freestyle stroke, the front crawl, pushes up to stand on the board or is performing surfing movements.</p>
+<p id="p-0054" num="0066">With reference to <figref idref="DRAWINGS">FIG. 5</figref>, when the wearer <b>100</b> extends his arm <b>116</b>, for instance when he is crawling, specific upper back muscles extends along a direction A<b>1</b>, hereafter referred to as an action direction A<b>1</b> which is a direction of a power line of the body.</p>
+<p id="p-0055" num="0067">Strips <b>34</b> and <b>35</b> are oriented approximately along said action direction A<b>1</b> and will thus elongate with the extension of the arm <b>116</b>. Since they have a low-stretch, they apply a reactive load to the wearer <b>100</b> in the opposite direction R<b>1</b> to the action direction A<b>1</b>.</p>
+<p id="p-0056" num="0068">When the wearer's arm <b>116</b> comes back along his body, said upper back muscles relax. During said relaxation, the load applied by the strips <b>34</b>, <b>35</b> is in the same direction R<b>1</b> than the relaxation direction R<b>1</b> and thus helps said muscles to relax. This increases the velocity of muscles relaxation thereby increasing the performance of the wearer.</p>
+<p id="p-0057" num="0069">Referring again to the back of the wetsuit shown on <figref idref="DRAWINGS">FIG. 5</figref>, upper leg strips <b>32</b> and waist strips <b>33</b> are located around the waist and the thighs of the wetsuit.</p>
+<p id="p-0058" num="0070">The hip and waist of the wearer <b>100</b> comprises the gluteal muscles <b>113</b><i>a </i>and quadriceps <b>113</b><i>b </i>that are roughly indicated on <figref idref="DRAWINGS">FIG. 5</figref>. These muscles <b>113</b><i>a, </i><b>113</b><i>b </i>are for instance involved when the wearer <b>100</b> is standing on a surfboard and are essential to complete surfing manoeuvres. In a proper position, the wearer <b>100</b> have the hips/pelvis opened and the leg slightly bent.</p>
+<p id="p-0059" num="0071">The action and relaxation directions A<b>2</b>, R<b>2</b>, A<b>3</b>, R<b>3</b> of the wearer <b>100</b> during such movement are sketched on <figref idref="DRAWINGS">FIG. 5</figref>. Again, upper leg strips <b>32</b> and waist strips <b>33</b> are oriented approximately along said action directions A<b>2</b>, A<b>3</b>, in order to apply a reactive load to the wearer <b>100</b> along the relaxation directions R<b>2</b>, R<b>3</b> and to increase the velocity of relaxation of hip and waist muscles.</p>
+<p id="p-0060" num="0072">The above description gives examples of muscles and power lines involved, every strip <b>30</b> is specifically designed to stimulate the velocity of a group of muscles and the suit is thus designed to implicate almost all muscle groups in the body. Lower leg strips <b>31</b>, front torso strips <b>36</b>, front arm strips <b>37</b> and forearm strips <b>38</b> have a similar effect during surfing movements, each being related to a specific muscle or muscle groups. Lower leg strips <b>31</b> and forearm strips <b>38</b> are also used to transmit the load to the extremities of the wearer <b>100</b>, giving more feedback of the wetsuit <b>10</b>. Lower leg strips <b>31</b> and forearm strips <b>38</b> further strengthen the mechanical resistance of the wetsuit <b>100</b> under heavy duty.</p>
+<p id="p-0061" num="0073">The reactive load applied by the strips <b>30</b> is designed to mimic the naturally occurring stretch reflexes within the body of the wearer <b>100</b>. By adding the strips <b>30</b> to the already established reflexes, the wetsuit <b>10</b> amplify the body response of action and reaction. This allows the wearer <b>100</b> to move smoothly through all actions which are required by the sport but in a highly energized way.</p>
+<p id="p-0062" num="0074">The wearer <b>100</b> awareness of its body is both complemented and enhanced by the suit as the wetsuit <b>10</b> is designed to exaggerate the body response for action. The quicker the body acts in a sporting sense the quicker the wetsuit <b>10</b> will react to that change in position.</p>
+<p id="p-0063" num="0075">The placement and the shape of the strips or second panels <b>30</b> can be adapted to movements and muscles evolved in water sports other than surfing, like swimming, sailboarding, sailboard riding, water skiing or diving.</p>
+<p id="p-0064" num="0076">A wetsuit <b>10</b> according to the invention is particularly suitable for customization so that the directions and positions of the simulating panels <b>30</b> can be selected based on individual requirements. A customer could for example, be measured or assessed prior to the creation of the wetsuit <b>10</b> to assess what stimulation characteristics the wetsuit <b>10</b> should have. The strips or second panels <b>30</b> can thus be adapted and have any suitable shape, for instance a rectangular shape, square or oval. They might also be of irregular shapes. The second panels <b>30</b> can also have any suitable length and follow any suitable path in order to be adapted to the sport and/or the wearer <b>100</b>.</p>
+<p id="p-0065" num="0077">The integration of the first panels <b>20</b> and the strips or second panels <b>30</b> will now be described in further details with reference to <figref idref="DRAWINGS">FIGS. 6 and 7</figref> detailing cross sections of the wetsuit <b>10</b> of <figref idref="DRAWINGS">FIGS. 2 to 5</figref>.</p>
+<p id="p-0066" num="0078"><figref idref="DRAWINGS">FIG. 6</figref> shows a cross section of a wetsuit <b>10</b> showing junctions <b>40</b> between two panels <b>20</b> and a strip <b>30</b>. Both panels <b>20</b> are juxtaposed on both sides the strip <b>30</b>.</p>
+<p id="p-0067" num="0079">The panels <b>20</b> have an inner face <b>20</b><i>a, </i>and an opposed outer face <b>20</b><i>b. </i>On each side, they have a lateral face <b>20</b><i>c </i>extending across the thickness from the inner face <b>20</b><i>a </i>to the outer face <b>20</b><i>b. </i>The strips <b>30</b> have an inner face <b>30</b><i>a, </i>and an opposed outer face <b>30</b><i>b. </i>On each side, they have a lateral face <b>30</b><i>c </i>extending across the thickness from the inner face <b>30</b><i>a </i>to the outer face <b>30</b><i>b. </i></p>
+<p id="p-0068" num="0080">A panel <b>20</b> is juxtaposed to a neighbour strip <b>30</b> by placing the lateral face <b>20</b><i>c </i>of the panel facing a lateral face <b>30</b><i>c </i>of the neighbour strip. This is reproduced for all panels and strips.</p>
+<p id="p-0069" num="0081">A junction <b>40</b> between the panels <b>20</b> and the strip <b>30</b> comprises several members in order to be strong and reliable when panels and strips stretch and to prevent the entry of water during the usage.</p>
+<p id="p-0070" num="0082">First, a strip of waterproof glue <b>41</b> is introduced between a panel <b>20</b> and the strip <b>30</b>. Following that, the panel <b>20</b> and the strip <b>30</b> are stitched together with a seam <b>42</b> in order to be fastened in a reliable manner. Advantageously, the stitch <b>42</b> does not penetrate through to the inner side of the panel <b>20</b> and the strip <b>30</b>; it only passes half way through the panel <b>20</b> and the strip <b>30</b> from the outside. Eventually, a rubber layer <b>43</b> is added on top of the junction <b>40</b>, commonly known as a fluid seam or a liquid seam. By using a durable fluid rubber <b>43</b> along the seams <b>42</b> of the wetsuit, this creates another waterproof barrier. The result is a durable waterproof junction <b>40</b> that keeps the wearer <b>100</b> warmer because it is a sealed seam.</p>
+<p id="p-0071" num="0083">In a preferred embodiment, the thickness of the panels <b>20</b> and strips <b>30</b> is identical to provide a good cooperation between lateral faces of strips <b>30</b><i>c </i>and panels <b>20</b><i>c. </i>This arrangement ensures a reliable and waterproof junction <b>40</b> and eases the fabrication process.</p>
+<p id="p-0072" num="0084">In another embodiment, the strips <b>30</b> can be placed on the inside or on the outside of the panels <b>20</b>. The wetsuit could thus be fabricated using fewer panels which reduces the cost of fabrication.</p>
+<p id="p-0073" num="0085">As it can be seen on <figref idref="DRAWINGS">FIG. 6</figref>, the panels <b>20</b> can be coated with two layers of <b>50</b>, <b>51</b>, respectively on the outside and the inside of the wetsuit <b>10</b> that can reinforce the rubber foam <b>52</b>. On the inside, layer <b>51</b> can be a textile layer made of jersey, nylon, spandex or any other material comfortable to wear for the wearer <b>100</b>. On the outside, layer <b>50</b> can also be a layer of nylon, spandex or the like and is usually chosen to improve the resistance of the panels <b>20</b> and the hydrodynamic properties of the wetsuit <b>10</b>.</p>
+<p id="p-0074" num="0086">The strips <b>30</b> can also be coated on the inside with a layer <b>60</b> made of textile that can be a jersey, nylon, spandex or any other material comfortable to wear for the wearer <b>100</b>. On the outside, the rubber foam <b>61</b> can be visible.</p>
+<p id="p-0075" num="0087">With the aim of reducing even more the stretch of the strips <b>30</b>, a pattern can be embossed on the outside surface <b>62</b> of the strips <b>30</b>, for instance a diamond pattern. To produce the pattern, rubber foam <b>61</b> constituting the strips <b>30</b> is pressed while being heated up to the melting point of the rubber. The pattern is thus made of thinner melted rubber which has a lower stretch and therefore increases the above detailed stimulation properties.</p>
+<p id="p-0076" num="0088">Advantageously, the strip <b>30</b> are located above the muscles <b>113</b><i>a, </i><b>113</b><i>b, </i><b>114</b><i>a, </i><b>114</b><i>b </i>of the wearer <b>100</b> to make the stimulation of the muscles <b>113</b><i>a, </i><b>113</b><i>b, </i><b>114</b><i>a, </i><b>114</b><i>b </i>detailed above more efficient. When wearer <b>100</b> moves, however, the wetsuit <b>10</b> can slide on his skin and the strips <b>30</b> can be shifted from their optimal positions.</p>
+<p id="p-0077" num="0089"><figref idref="DRAWINGS">FIG. 7</figref> illustrates another cross-section of the wetsuit, identical to the cross-section of <figref idref="DRAWINGS">FIG. 6</figref> but with the inside of the wetsuit oriented toward the top. In a preferred embodiment, illustrated on this <figref idref="DRAWINGS">FIG. 7</figref>, the strip <b>30</b> further comprises four grip members <b>70</b> on the inside layer <b>61</b>. Grip members <b>70</b> are advantageously located close to the attachment points to the skeleton of the specific muscles or muscle groups <b>113</b><i>a, </i><b>113</b><i>b, </i><b>114</b><i>a, </i><b>114</b><i>b </i>detailed above and can thus be provided for example at both ends of a given muscle or group of muscles. These attachment points correspond to key power load areas that receive and transmit load between the strips <b>30</b> and the wearer <b>100</b>.</p>
+<p id="p-0078" num="0090">Grip members <b>70</b> are advantageously made of an adhesive or a tacky material able to grip on the human skin. This material can be a thermoplastic elastomer or a polymer material like rubber, silicon and the like. The members <b>70</b> can be applied by adhesive, stitching/sewing, heat fusion or any other suitable attachment mechanism.</p>
+<p id="p-0079" num="0091">Alternatively, grip members <b>70</b> can be applied by printing, such as a rubberized or a plasticized polyurethane ink that printed onto the inside of the wetsuit. Other print products can be employed such as silicon print.</p>
+<p id="p-0080" num="0092">In a variant, the rubber foam <b>61</b> constituting the strip <b>30</b> might be directly in contact with the wearer <b>100</b> skin and be able to grip said skin. The inside surface of the rubber foam <b>61</b> can be treated, melted or patterned in order to increase the gripping properties.</p>
+<p id="p-0081" num="0093">In another variant, grips members <b>70</b> can be located at the junction <b>40</b> between the panels <b>20</b> and strips <b>30</b> and can participate in the junctions <b>40</b>.</p>
+<p id="p-0082" num="0094"><figref idref="DRAWINGS">FIG. 8</figref> shows a back view of the wetsuit <b>10</b> when the wetsuit <b>10</b> is turned inside out, thus revealing the inside of the wetsuit <b>10</b> according to an embodiment of the invention. The inside layers of panels and strips <b>51</b>, <b>60</b> can be seen together with several grip members <b>70</b> located in the vicinity of the attachment points to the skeleton, of ends, of specific muscles <b>113</b><i>a, </i><b>113</b><i>b, </i><b>114</b><i>a, </i><b>114</b><i>b </i>as stated above.</p>
+<p id="p-0083" num="0095">It will appreciated that first panels <b>20</b>, second panels <b>30</b> and their arrangement which are shown on <figref idref="DRAWINGS">FIGS. 1 to 8</figref> are examples only of the type of panels, strips and arrangements that can be employed. As indicated above, wetsuits according to the invention can be customized to be adapted to specific water sports or to provide personalized characteristics.</p>
+<p id="p-0084" num="0096">It may be that customization is provided for single individuals, or groups of individuals, say of the same height or weight. In addition, it might be that in a sport, certain levels of sportsman could benefit from a particular arrangement of stimulating panels.</p>
+<p id="p-0085" num="0097">To act on muscles which are not mainly linear, second panels or strips <b>30</b> could be provided by extended 2D panels of the same material.</p>
+<p id="p-0086" num="0098">The invention described herein is thus susceptible of variation, modifications and/or additions other than those specifically described and it is to be understood that the invention includes all such variations, modifications and/or additions which fall within the spirit and scope of the present disclosure.</p>
+<p id="p-0087" num="0099">According to another invention, it is contemplated that the specific manufacture of juxtaposing high stretch panels and low stretch panels stimulating the muscular relaxation velocity of the wearer could be of use for fit-garments other than wet suits. Such fit-garment could be made out of any suitable material and while the material can be inelastic and tight fitting, elastic material are preferred. Suitable elastic materials for the first panels include those known as LYCRA&#xae; or &#x201c;spandex&#x201d; while suitable materials for the second panels can be neoprene, rubber, polyurethane or silicon, or any other suitable material.</p>
+<?detailed-description description="Detailed Description" end="tail"?>
+</description>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text><b>1</b>. A wetsuit comprising:
+<claim-text>at least one first panel exhibiting high-stretch and adapted to provide buoyancy to the wearer;</claim-text>
+<claim-text>at least one second panel exhibiting low-stretch and adapted to provide further buoyancy to the wearer;</claim-text>
+<claim-text>wherein the at least one first panel and the at least one second panel are fastened together by at least one seam;</claim-text>
+<claim-text>and wherein the at least one second panel is arranged according to the muscular configuration of the wearer to stimulate muscular relaxation velocity of the wearer.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text><b>2</b>. The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the at least one second panel being located along specific muscles of the wearer in order to increase the relaxation velocity of said specific muscles.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text><b>3</b>. The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein a movement of the wearer defines an action direction for a second panel and wherein said second panel apply a load to the wearer in the opposite direction to the action direction.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text><b>4</b>. The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the wetsuit further comprises grip members provided on the inside of the panels and at both ends of specific muscles, said grip members being of a material that tends to grip the skin of the wearer.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text><b>5</b>. A The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein at least one second panel being located along back muscles of the wearer chosen in a list comprising latissimus dorsi muscles and trapezius muscles.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text><b>6</b>. The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein at least one second panel being located along muscles of the wearer chosen in a list comprising gluteal muscles and quadriceps.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text><b>7</b>. The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the free extremities of the second panels are located at the openings of the wetsuit.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text><b>8</b>. The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein first panels and second panels are juxtaposed together to form the wetsuit, lateral faces of first panels facing lateral faces of second panels.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text><b>9</b>. The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein second panels being of variable stiffness to vary the stimulation the muscular relaxation.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text><b>10</b>. The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein second panels form one-dimensional strips having a length being at least 5 times greater than their width.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text><b>11</b>. The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein first panels are made of a material having a layer of foamed rubber material exhibiting a high stretch.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text><b>12</b>. The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein second panels are made of a material having a layer of foamed rubber material exhibiting a low stretch.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text><b>13</b>. The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein at least one seam belongs to a list comprising flatlock stitching, overlocking, glued and blind stitched seam and heat tape sealing.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text><b>14</b>. The wetsuit according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein at least one first panel is coated with woven textiles on the inside of the wetsuit.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text><b>15</b>. A method of manufacturing a wetsuit comprising:
+<claim-text>determining the muscular configuration of a wearer,</claim-text>
+<claim-text>designing at least one second panel arranged according to the muscular configuration of the wearer to stimulate muscular relaxation velocity of the wearer,</claim-text>
+<claim-text>providing at least one first panel exhibiting high-stretch and adapted to provide buoyancy to the wearer,</claim-text>
+<claim-text>providing at least one second panel exhibiting low-stretch and adapted to provide further buoyancy to the wearer,</claim-text>
+<claim-text>fastening the at least one first panel and at least one second panel together by at least one seam.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-application>

@@ -1,0 +1,172 @@
+﻿table_name,conname,contype,convalidated,definition
+patentdb.abstract,fk_abstract_lang_code,f,True,FOREIGN KEY (lang_code) REFERENCES patentdb.language(lang_code)
+patentdb.abstract,fk_abstract_publication_id,f,True,FOREIGN KEY (publication_id) REFERENCES patentdb.publication(publication_id) ON DELETE CASCADE
+patentdb.abstract,pk_abstract,p,True,PRIMARY KEY (abstract_id)
+patentdb.abstract,uq_abstract_pub_lang,u,True,"UNIQUE (publication_id, lang_code)"
+patentdb.application_type,pk_application_type,p,True,PRIMARY KEY (appl_type_code)
+patentdb.citation_category,pk_citation_category,p,True,PRIMARY KEY (category_code)
+patentdb.claim,ck_claim_positive,c,True,CHECK (((claim_number > 0) AND (claim_seq > 0)))
+patentdb.claim,fk_claim_lang_code,f,True,FOREIGN KEY (lang_code) REFERENCES patentdb.language(lang_code)
+patentdb.claim,fk_claim_publication_id,f,True,FOREIGN KEY (publication_id) REFERENCES patentdb.publication(publication_id) ON DELETE CASCADE
+patentdb.claim,pk_claim,p,True,PRIMARY KEY (claim_id)
+patentdb.claim,uq_claim_pub_lang_no,u,True,"UNIQUE (publication_id, lang_code, claim_number)"
+patentdb.claim_dependency,ck_claim_not_self,c,True,CHECK ((dependent_claim_id <> parent_claim_id))
+patentdb.claim_dependency,fk_claim_dependency_dependent_claim_id,f,True,FOREIGN KEY (dependent_claim_id) REFERENCES patentdb.claim(claim_id) ON DELETE CASCADE
+patentdb.claim_dependency,fk_claim_dependency_parent_claim_id,f,True,FOREIGN KEY (parent_claim_id) REFERENCES patentdb.claim(claim_id) ON DELETE CASCADE
+patentdb.claim_dependency,pk_claim_dependency,p,True,"PRIMARY KEY (dependent_claim_id, parent_claim_id)"
+patentdb.classification,fk_classification_scheme_code,f,True,FOREIGN KEY (scheme_code) REFERENCES patentdb.classification_scheme(scheme_code)
+patentdb.classification,pk_classification,p,True,"PRIMARY KEY (scheme_code, symbol)"
+patentdb.classification_scheme,fk_classification_scheme_authority,f,True,FOREIGN KEY (authority) REFERENCES patentdb.country_office(ctry_code)
+patentdb.classification_scheme,pk_classification_scheme,p,True,PRIMARY KEY (scheme_code)
+patentdb.country_office,pk_country_office,p,True,PRIMARY KEY (ctry_code)
+patentdb.country_office,uq_country_office_iso_alpha3,u,True,UNIQUE (iso_alpha3)
+patentdb.dataset,fk_dataset_office_code,f,True,FOREIGN KEY (office_code) REFERENCES patentdb.country_office(ctry_code)
+patentdb.dataset,pk_dataset,p,True,PRIMARY KEY (dataset_id)
+patentdb.dataset,uq_dataset_dataset_code,u,True,UNIQUE (dataset_code)
+patentdb.description_section,fk_description_section_parent_section_id,f,True,FOREIGN KEY (parent_section_id) REFERENCES patentdb.description_section(section_id)
+patentdb.description_section,fk_description_section_publication_id,f,True,FOREIGN KEY (publication_id) REFERENCES patentdb.publication(publication_id) ON DELETE CASCADE
+patentdb.description_section,pk_description_section,p,True,PRIMARY KEY (section_id)
+patentdb.description_section,uq_description_pub_seq,u,True,"UNIQUE (publication_id, section_seq)"
+patentdb.designated_state,fk_designated_state_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.designated_state,fk_designated_state_state_code,f,True,FOREIGN KEY (state_code) REFERENCES patentdb.country_office(ctry_code)
+patentdb.designated_state,pk_designated_state,p,True,"PRIMARY KEY (patent_id, state_code, designation_type)"
+patentdb.drawing,fk_drawing_publication_id,f,True,FOREIGN KEY (publication_id) REFERENCES patentdb.publication(publication_id) ON DELETE CASCADE
+patentdb.drawing,pk_drawing,p,True,PRIMARY KEY (drawing_id)
+patentdb.drawing,uq_drawing_pub_seq,u,True,"UNIQUE (publication_id, figure_seq)"
+patentdb.family_abstract,fk_family_abstract_family_id,f,True,FOREIGN KEY (family_id) REFERENCES patentdb.patent_family(family_id) ON DELETE CASCADE
+patentdb.family_abstract,fk_family_abstract_lang_code,f,True,FOREIGN KEY (lang_code) REFERENCES patentdb.language(lang_code)
+patentdb.family_abstract,fk_family_abstract_source_country,f,True,FOREIGN KEY (source_country) REFERENCES patentdb.country_office(ctry_code)
+patentdb.family_abstract,pk_family_abstract,p,True,PRIMARY KEY (family_abstract_id)
+patentdb.family_abstract,uq_family_abstract_seq,u,True,"UNIQUE (family_id, abstract_seq)"
+patentdb.family_citation,fk_family_citation_cited_family_id,f,True,FOREIGN KEY (cited_family_id) REFERENCES patentdb.patent_family(family_id) ON DELETE CASCADE
+patentdb.family_citation,fk_family_citation_citing_family_id,f,True,FOREIGN KEY (citing_family_id) REFERENCES patentdb.patent_family(family_id) ON DELETE CASCADE
+patentdb.family_citation,pk_family_citation,p,True,"PRIMARY KEY (citing_family_id, cited_family_id)"
+patentdb.family_member_application_ref,fk_family_member_application_ref_country_code,f,True,FOREIGN KEY (country_code) REFERENCES patentdb.country_office(ctry_code)
+patentdb.family_member_application_ref,fk_family_member_application_ref_member_id,f,True,FOREIGN KEY (member_id) REFERENCES patentdb.patent_family_member(member_id) ON DELETE CASCADE
+patentdb.family_member_application_ref,pk_family_member_application_ref,p,True,PRIMARY KEY (member_appln_ref_id)
+patentdb.family_member_application_ref,uq_family_app_ref_source,u,True,"UNIQUE (member_id, data_format, appln_nr)"
+patentdb.family_member_publication_ref,fk_family_member_publication_ref_country_code,f,True,FOREIGN KEY (country_code) REFERENCES patentdb.country_office(ctry_code)
+patentdb.family_member_publication_ref,fk_family_member_publication_ref_member_id,f,True,FOREIGN KEY (member_id) REFERENCES patentdb.patent_family_member(member_id) ON DELETE CASCADE
+patentdb.family_member_publication_ref,pk_family_member_publication_ref,p,True,PRIMARY KEY (member_publn_ref_id)
+patentdb.family_member_publication_ref,uq_family_pub_ref_source,u,True,"UNIQUE (member_id, data_format, sequence_nr, publn_nr)"
+patentdb.international_application,fk_international_application_int_lang,f,True,FOREIGN KEY (int_lang) REFERENCES patentdb.language(lang_code)
+patentdb.international_application,fk_international_application_int_patent_id,f,True,FOREIGN KEY (int_patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.international_application,fk_international_application_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.international_application,fk_international_application_receiving_office,f,True,FOREIGN KEY (receiving_office) REFERENCES patentdb.country_office(ctry_code)
+patentdb.international_application,fk_international_application_regional_office,f,True,FOREIGN KEY (regional_office) REFERENCES patentdb.country_office(ctry_code)
+patentdb.international_application,pk_international_application,p,True,PRIMARY KEY (int_appln_id)
+patentdb.international_application,uq_international_application_patent_id,u,True,UNIQUE (patent_id)
+patentdb.ipc_techn_field,pk_ipc_techn_field,p,True,PRIMARY KEY (ipc_maingroup_symbol)
+patentdb.keyword,fk_keyword_lang_code,f,True,FOREIGN KEY (lang_code) REFERENCES patentdb.language(lang_code)
+patentdb.keyword,pk_keyword,p,True,PRIMARY KEY (keyword_id)
+patentdb.keyword,uq_keyword_keyword_text_lang_code,u,True,"UNIQUE (keyword_text, lang_code)"
+patentdb.kind_code,ck_kind_code_publication_level,c,True,"CHECK (((publication_level IS NULL) OR (publication_level = ANY (ARRAY['1'::bpchar, '2'::bpchar, '3'::bpchar]))))"
+patentdb.kind_code,fk_kind_code_office_code,f,True,FOREIGN KEY (office_code) REFERENCES patentdb.country_office(ctry_code)
+patentdb.kind_code,pk_kind_code,p,True,"PRIMARY KEY (office_code, kind_code)"
+patentdb.language,pk_language,p,True,PRIMARY KEY (lang_code)
+patentdb.legal_event_code,fk_legal_event_code_event_auth,f,True,FOREIGN KEY (event_auth) REFERENCES patentdb.country_office(ctry_code)
+patentdb.legal_event_code,pk_legal_event_code,p,True,"PRIMARY KEY (event_auth, event_code)"
+patentdb.legal_status_event,fk_legal_status_event_class_scheme_code,f,True,FOREIGN KEY (class_scheme_code) REFERENCES patentdb.classification_scheme(scheme_code)
+patentdb.legal_status_event,fk_legal_status_event_code,f,True,"FOREIGN KEY (event_auth, event_code) REFERENCES patentdb.legal_event_code(event_auth, event_code)"
+patentdb.legal_status_event,fk_legal_status_event_dataset_id,f,True,FOREIGN KEY (dataset_id) REFERENCES patentdb.dataset(dataset_id)
+patentdb.legal_status_event,fk_legal_status_event_event_auth,f,True,FOREIGN KEY (event_auth) REFERENCES patentdb.country_office(ctry_code)
+patentdb.legal_status_event,fk_legal_status_event_lapse_country,f,True,FOREIGN KEY (lapse_country) REFERENCES patentdb.country_office(ctry_code)
+patentdb.legal_status_event,fk_legal_status_event_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.legal_status_event,fk_legal_status_event_ref_doc_auth,f,True,FOREIGN KEY (ref_doc_auth) REFERENCES patentdb.country_office(ctry_code)
+patentdb.legal_status_event,pk_legal_status_event,p,True,PRIMARY KEY (event_id)
+patentdb.legal_status_event,uq_legal_event_patent_seq,u,True,"UNIQUE (patent_id, event_seq_nr)"
+patentdb.natural_person,ct_natural_person_isa,t,True,TRIGGER DEFERRABLE INITIALLY DEFERRED
+patentdb.natural_person,fk_natural_person_person_id,f,True,FOREIGN KEY (person_id) REFERENCES patentdb.person(person_id) ON DELETE CASCADE
+patentdb.natural_person,pk_natural_person,p,True,PRIMARY KEY (person_id)
+patentdb.non_patent_citation,fk_non_patent_citation_citation_id,f,True,FOREIGN KEY (citation_id) REFERENCES patentdb.patent_citation(citation_id) ON DELETE CASCADE
+patentdb.non_patent_citation,pk_non_patent_citation,p,True,PRIMARY KEY (npl_id)
+patentdb.non_patent_citation,uq_non_patent_citation_citation_id,u,True,UNIQUE (citation_id)
+patentdb.organization,ck_organization_psn_sector,c,True,"CHECK (((psn_sector IS NULL) OR ((psn_sector)::text = ANY ((ARRAY['COMPANY'::character varying, 'GOV'::character varying, 'UNIVERSITY'::character varying, 'NONPROFIT'::character varying])::text[]))))"
+patentdb.organization,ct_organization_isa,t,True,TRIGGER DEFERRABLE INITIALLY DEFERRED
+patentdb.organization,fk_organization_person_id,f,True,FOREIGN KEY (person_id) REFERENCES patentdb.person(person_id) ON DELETE CASCADE
+patentdb.organization,pk_organization,p,True,PRIMARY KEY (person_id)
+patentdb.patent,ck_patent_int_phase,c,True,"CHECK ((int_phase = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))"
+patentdb.patent,ck_patent_nat_phase,c,True,"CHECK ((nat_phase = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))"
+patentdb.patent,ck_patent_reg_phase,c,True,"CHECK ((reg_phase = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))"
+patentdb.patent,fk_patent_appl_type_code,f,True,FOREIGN KEY (appl_type_code) REFERENCES patentdb.application_type(appl_type_code)
+patentdb.patent,fk_patent_appln_auth,f,True,FOREIGN KEY (appln_auth) REFERENCES patentdb.country_office(ctry_code)
+patentdb.patent,fk_patent_appln_lang,f,True,FOREIGN KEY (appln_lang) REFERENCES patentdb.language(lang_code)
+patentdb.patent,fk_patent_dataset_id,f,True,FOREIGN KEY (dataset_id) REFERENCES patentdb.dataset(dataset_id)
+patentdb.patent,fk_patent_receiving_office,f,True,FOREIGN KEY (receiving_office) REFERENCES patentdb.country_office(ctry_code)
+patentdb.patent,pk_patent,p,True,PRIMARY KEY (patent_id)
+patentdb.patent,uq_patent_appln_business_key,u,True,"UNIQUE (appln_auth, appln_nr, appln_kind)"
+patentdb.patent_agent,fk_patent_agent_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.patent_agent,fk_patent_agent_person_id,f,True,FOREIGN KEY (person_id) REFERENCES patentdb.person(person_id)
+patentdb.patent_agent,pk_patent_agent,p,True,"PRIMARY KEY (patent_id, sequence_nr)"
+patentdb.patent_applicant,fk_patent_applicant_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.patent_applicant,fk_patent_applicant_person_id,f,True,FOREIGN KEY (person_id) REFERENCES patentdb.person(person_id)
+patentdb.patent_applicant,pk_patent_applicant,p,True,"PRIMARY KEY (patent_id, sequence_nr)"
+patentdb.patent_assignee,fk_patent_assignee_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.patent_assignee,fk_patent_assignee_person_id,f,True,FOREIGN KEY (person_id) REFERENCES patentdb.person(person_id)
+patentdb.patent_assignee,pk_patent_assignee,p,True,"PRIMARY KEY (patent_id, sequence_nr)"
+patentdb.patent_citation,ck_patent_citation_type,c,True,"CHECK ((citation_type = ANY (ARRAY['P'::bpchar, 'N'::bpchar])))"
+patentdb.patent_citation,fk_patent_citation_cited_country,f,True,FOREIGN KEY (cited_country) REFERENCES patentdb.country_office(ctry_code)
+patentdb.patent_citation,fk_patent_citation_cited_patent_id,f,True,FOREIGN KEY (cited_patent_id) REFERENCES patentdb.patent(patent_id)
+patentdb.patent_citation,fk_patent_citation_cited_publn_id,f,True,FOREIGN KEY (cited_publn_id) REFERENCES patentdb.publication(publication_id)
+patentdb.patent_citation,fk_patent_citation_citing_patent_id,f,True,FOREIGN KEY (citing_patent_id) REFERENCES patentdb.patent(patent_id)
+patentdb.patent_citation,fk_patent_citation_citing_publication_id,f,True,FOREIGN KEY (citing_publication_id) REFERENCES patentdb.publication(publication_id)
+patentdb.patent_citation,fk_patent_citation_citn_gener_auth,f,True,FOREIGN KEY (citn_gener_auth) REFERENCES patentdb.country_office(ctry_code)
+patentdb.patent_citation,pk_patent_citation,p,True,PRIMARY KEY (citation_id)
+patentdb.patent_citation,uq_patent_citation_source_seq,u,True,"UNIQUE (citing_publication_id, citation_type, citn_seq)"
+patentdb.patent_citation_category,fk_patent_citation_category_category_code,f,True,FOREIGN KEY (category_code) REFERENCES patentdb.citation_category(category_code)
+patentdb.patent_citation_category,fk_patent_citation_category_citation_id,f,True,FOREIGN KEY (citation_id) REFERENCES patentdb.patent_citation(citation_id) ON DELETE CASCADE
+patentdb.patent_citation_category,pk_patent_citation_category,p,True,"PRIMARY KEY (citation_id, category_code, relevant_claim)"
+patentdb.patent_classification,fk_patent_classification_class,f,True,"FOREIGN KEY (scheme_code, symbol) REFERENCES patentdb.classification(scheme_code, symbol)"
+patentdb.patent_classification,fk_patent_classification_generating_office,f,True,FOREIGN KEY (generating_office) REFERENCES patentdb.country_office(ctry_code)
+patentdb.patent_classification,fk_patent_classification_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.patent_classification,pk_patent_classification,p,True,PRIMARY KEY (patent_classification_id)
+patentdb.patent_classification,uq_patent_classification_business,u,True,"UNIQUE (patent_id, scheme_code, symbol, source_type)"
+patentdb.patent_examiner,fk_patent_examiner_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.patent_examiner,fk_patent_examiner_person_id,f,True,FOREIGN KEY (person_id) REFERENCES patentdb.person(person_id)
+patentdb.patent_examiner,pk_patent_examiner,p,True,"PRIMARY KEY (patent_id, examiner_type, sequence_nr)"
+patentdb.patent_family,fk_patent_family_dataset_id,f,True,FOREIGN KEY (dataset_id) REFERENCES patentdb.dataset(dataset_id)
+patentdb.patent_family,fk_patent_family_earliest_priority_country,f,True,FOREIGN KEY (earliest_priority_country) REFERENCES patentdb.country_office(ctry_code)
+patentdb.patent_family,fk_patent_family_representative_publication_id,f,True,FOREIGN KEY (representative_publication_id) REFERENCES patentdb.publication(publication_id)
+patentdb.patent_family,pk_patent_family,p,True,PRIMARY KEY (family_id)
+patentdb.patent_family,uq_patent_family_source,u,True,"UNIQUE (family_type, source_family_id)"
+patentdb.patent_family_member,ck_family_member_representative,c,True,"CHECK (((is_representative IS NULL) OR (is_representative = ANY (ARRAY['Y'::bpchar, 'N'::bpchar]))))"
+patentdb.patent_family_member,fk_patent_family_member_family_id,f,True,FOREIGN KEY (family_id) REFERENCES patentdb.patent_family(family_id) ON DELETE CASCADE
+patentdb.patent_family_member,fk_patent_family_member_member_patent_id,f,True,FOREIGN KEY (member_patent_id) REFERENCES patentdb.patent(patent_id)
+patentdb.patent_family_member,pk_patent_family_member,p,True,PRIMARY KEY (member_id)
+patentdb.patent_family_member,uq_family_member_seq,u,True,"UNIQUE (family_id, member_seq)"
+patentdb.patent_inventor,fk_patent_inventor_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.patent_inventor,fk_patent_inventor_person_id,f,True,FOREIGN KEY (person_id) REFERENCES patentdb.person(person_id)
+patentdb.patent_inventor,pk_patent_inventor,p,True,"PRIMARY KEY (patent_id, sequence_nr)"
+patentdb.patent_keyword,fk_patent_keyword_keyword_id,f,True,FOREIGN KEY (keyword_id) REFERENCES patentdb.keyword(keyword_id)
+patentdb.patent_keyword,fk_patent_keyword_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.patent_keyword,pk_patent_keyword,p,True,"PRIMARY KEY (patent_id, keyword_id)"
+patentdb.person,ck_person_type,c,True,"CHECK ((person_type = ANY (ARRAY['N'::bpchar, 'L'::bpchar])))"
+patentdb.person,ct_person_isa,t,True,TRIGGER DEFERRABLE INITIALLY DEFERRED
+patentdb.person,fk_person_ctry_code,f,True,FOREIGN KEY (ctry_code) REFERENCES patentdb.country_office(ctry_code)
+patentdb.person,fk_person_residence_ctry_code,f,True,FOREIGN KEY (residence_ctry_code) REFERENCES patentdb.country_office(ctry_code)
+patentdb.person,fk_person_source_dataset_id,f,True,FOREIGN KEY (source_dataset_id) REFERENCES patentdb.dataset(dataset_id)
+patentdb.person,pk_person,p,True,PRIMARY KEY (person_id)
+patentdb.priority_claim,fk_priority_claim_designated_region,f,True,FOREIGN KEY (designated_region) REFERENCES patentdb.country_office(ctry_code)
+patentdb.priority_claim,fk_priority_claim_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.priority_claim,fk_priority_claim_prior_country,f,True,FOREIGN KEY (prior_country) REFERENCES patentdb.country_office(ctry_code)
+patentdb.priority_claim,fk_priority_claim_prior_patent_id,f,True,FOREIGN KEY (prior_patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.priority_claim,pk_priority_claim,p,True,PRIMARY KEY (priority_id)
+patentdb.priority_claim,uq_priority_patent_seq,u,True,"UNIQUE (patent_id, sequence_nr)"
+patentdb.publication,ck_publication_first_grant,c,True,"CHECK (((publn_first_grant IS NULL) OR (publn_first_grant = ANY (ARRAY['Y'::bpchar, 'N'::bpchar]))))"
+patentdb.publication,ck_publication_nonnegative_counts,c,True,CHECK ((((number_of_claims IS NULL) OR (number_of_claims >= 0)) AND ((number_of_figures IS NULL) OR (number_of_figures >= 0))))
+patentdb.publication,fk_publication_dataset_id,f,True,FOREIGN KEY (dataset_id) REFERENCES patentdb.dataset(dataset_id)
+patentdb.publication,fk_publication_kind_code,f,True,"FOREIGN KEY (publn_auth, publn_kind) REFERENCES patentdb.kind_code(office_code, kind_code)"
+patentdb.publication,fk_publication_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id)
+patentdb.publication,fk_publication_publn_auth,f,True,FOREIGN KEY (publn_auth) REFERENCES patentdb.country_office(ctry_code)
+patentdb.publication,fk_publication_publn_lg,f,True,FOREIGN KEY (publn_lg) REFERENCES patentdb.language(lang_code)
+patentdb.publication,pk_publication,p,True,PRIMARY KEY (publication_id)
+patentdb.publication,uq_publication_doc_key,u,True,"UNIQUE (publn_auth, publn_nr, publn_kind)"
+patentdb.related_application,fk_related_application_patent_id,f,True,FOREIGN KEY (patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.related_application,fk_related_application_related_country,f,True,FOREIGN KEY (related_country) REFERENCES patentdb.country_office(ctry_code)
+patentdb.related_application,fk_related_application_related_patent_id,f,True,FOREIGN KEY (related_patent_id) REFERENCES patentdb.patent(patent_id) ON DELETE CASCADE
+patentdb.related_application,pk_related_application,p,True,PRIMARY KEY (relation_id)
+patentdb.related_application,uq_related_patent_seq,u,True,"UNIQUE (patent_id, sequence_nr)"
+patentdb.title,fk_title_lang_code,f,True,FOREIGN KEY (lang_code) REFERENCES patentdb.language(lang_code)
+patentdb.title,fk_title_publication_id,f,True,FOREIGN KEY (publication_id) REFERENCES patentdb.publication(publication_id) ON DELETE CASCADE
+patentdb.title,pk_title,p,True,PRIMARY KEY (title_id)
+patentdb.title,uq_title_pub_lang_type,u,True,"UNIQUE (publication_id, lang_code, title_type)"

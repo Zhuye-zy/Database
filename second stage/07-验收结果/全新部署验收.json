@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "entrypoint": "06-运行管理/init_db.sh",
+  "container_created": true,
+  "business_tables": 43,
+  "operational_tables": 3,
+  "sample_import_and_verify": "PASS"
+}

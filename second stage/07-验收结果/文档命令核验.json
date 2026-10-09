@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "sql_blocks_executed": 14,
+  "scripts_syntax": "PASS",
+  "CRUD_demo": "transaction rolled back"
+}

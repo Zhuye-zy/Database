@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}专利详情 {{ pid }}{% endblock %}
+{% block content %}
+<h1>专利详情：patent_id = {{ pid }}</h1>
+<p><a href="{{ url_for('index') }}">&larr; 返回首页</a></p>
+
+<h2>专利主表（patent）</h2>
+<table>
+  {% for k, v in patent.items() %}
+    <tr><th>{{ k }}</th><td>{{ v if v is not none else '' }}</td></tr>
+  {% endfor %}
+</table>
+
+<h2>公布文献（publication）</h2>
+{% if pubs %}
+  {% for pub in pubs %}
+    <table>
+      {% for k, v in pub.items() %}
+        <tr><th>{{ k }}</th><td>{{ v if v is not none else '' }}</td></tr>
+      {% endfor %}
+    </table>
+    <hr>
+  {% endfor %}
+{% else %}<p>无</p>{% endif %}
+
+<h2>申请人</h2>
+{% if applicants %}
+  <ul>{% for a in applicants %}<li>{{ a }}</li>{% endfor %}</ul>
+{% else %}<p>无</p>{% endif %}
+
+<h2>发明人</h2>
+{% if inventors %}
+  <ul>{% for i in inventors %}<li>{{ i }}</li>{% endfor %}</ul>
+{% else %}<p>无</p>{% endif %}
+
+<h2>分类号</h2>
+{% if classifications %}
+  <table>
+    <tr>{% for k in classifications[0].keys() %}<th>{{ k }}</th>{% endfor %}</tr>
+    {% for c in classifications %}
+      <tr>{% for k in c.keys() %}<td>{{ c[k] if c[k] is not none else '' }}</td>{% endfor %}</tr>
+    {% endfor %}
+  </table>
+{% else %}<p>无</p>{% endif %}
+
+<h2>引用关系</h2>
+{% if citations %}
+  <table>
+    <tr>{% for k in citations[0].keys() %}<th>{{ k }}</th>{% endfor %}</tr>
+    {% for c in citations %}
+      <tr>{% for k in c.keys() %}<td>{{ c[k] if c[k] is not none else '' }}</td>{% endfor %}</tr>
+    {% endfor %}
+  </table>
+{% else %}<p>无</p>{% endif %}
+
+<h2>权利要求（claim）</h2>
+{% if claims %}
+  {% for c in claims %}<pre>{{ c }}</pre>{% endfor %}
+{% else %}<p>无</p>{% endif %}
+
+<h2>法律状态（legal_status_event）</h2>
+{% if legal %}
+  <table>
+    <tr>{% for k in legal[0].keys() %}<th>{{ k }}</th>{% endfor %}</tr>
+    {% for c in legal %}
+      <tr>{% for k in c.keys() %}<td>{{ c[k] if c[k] is not none else '' }}</td>{% endfor %}</tr>
+    {% endfor %}
+  </table>
+{% else %}<p>无</p>{% endif %}
+{% endblock %}

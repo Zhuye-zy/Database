@@ -1,0 +1,23 @@
+flowchart LR
+    n_patent["申请案<br/>patent"]
+    n_family["专利族<br/>patent_family<br/>PK: family_id"]
+    n_member["族成员<br/>patent_family_member"]
+    n_fcit["族级引用<br/>family_citation"]
+    n_priority["优先权<br/>priority_claim"]
+    n_related["程序关联<br/>related_application"]
+    n_intl["国际/区域申请<br/>international_application"]
+    n_country["国家/受理局<br/>country_office"]
+    n_desig["指定国<br/>designated_state"]
+    n_ISA2{"ISA"}
+    n_family -->|"1"| n_member
+    n_member -->|"N"| n_patent
+    n_family -->|"1"| n_fcit
+    n_fcit -->|"N"| n_family
+    n_patent -->|"1"| n_priority
+    n_priority -->|"N"| n_patent
+    n_patent -->|"1"| n_related
+    n_related -->|"N"| n_patent
+    n_patent -->|"1"| n_intl
+    n_patent -->|"1"| n_desig
+    n_desig -->|"N"| n_country
+    classDef weak stroke-width:3px

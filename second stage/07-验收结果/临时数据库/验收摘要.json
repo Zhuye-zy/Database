@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp_utc": "2026-09-26T12:59:53.229445+00:00",
+    "container": "patentdb-deploy-check-37117",
+    "tables": 43,
+    "columns": 345,
+    "nonempty_tables": 42,
+    "mapped_field_comparisons": 19907,
+    "issues": [],
+    "status": "PASS",
+    "scope": "固定官方样例及映射字段；不等同全量数据/所有XML路径已覆盖"
+  }
+]

@@ -1,0 +1,35 @@
+flowchart LR
+    n_person["当事人<br/>person（ISA 超类）<br/>PK: person_id"]
+    n_natural["自然人<br/>natural_person<br/>PK=person_id"]
+    n_org["机构<br/>organization<br/>PK=person_id"]
+    n_ISA{"ISA"}
+    n_patent["申请案<br/>patent"]
+    n_RA{"申请-申请人"}
+    n_RI{"申请-发明人"}
+    n_RG{"申请-权利人"}
+    n_RT{"申请-代理人"}
+    n_RE{"申请-审查员"}
+    n_applicant["patent_applicant<br/>属性: seq,type"]
+    n_inventor["patent_inventor<br/>属性: seq"]
+    n_assignee["patent_assignee<br/>属性: seq,role"]
+    n_agent["patent_agent<br/>属性: seq,type"]
+    n_examiner["patent_examiner<br/>属性: type,dept"]
+    n_person --- n_ISA
+    n_ISA --- n_natural
+    n_ISA --- n_org
+    n_patent -->|"1"| n_RA
+    n_RA -->|"N"| n_applicant
+    n_applicant -->|"M"| n_person
+    n_patent -->|"1"| n_RI
+    n_RI -->|"N"| n_inventor
+    n_inventor -->|"M"| n_person
+    n_patent -->|"1"| n_RG
+    n_RG -->|"N"| n_assignee
+    n_assignee -->|"M"| n_person
+    n_patent -->|"1"| n_RT
+    n_RT -->|"N"| n_agent
+    n_agent -->|"M"| n_person
+    n_patent -->|"1"| n_RE
+    n_RE -->|"N"| n_examiner
+    n_examiner -->|"M"| n_person
+    classDef weak stroke-width:3px

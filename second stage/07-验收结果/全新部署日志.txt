@@ -1,0 +1,358 @@
+d10c788c2dbcf55574816a95060000de85b58f003760171b7cba1a961f33b21e
+数据库已就绪：patentdb-deploy-check-37117 / patentdb
+进入SQL终端：sudo docker exec -it patentdb-deploy-check-37117 psql -U postgres -d patentdb
+BEGIN
+CREATE SCHEMA
+SET
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+CREATE FUNCTION
+CREATE TRIGGER
+CREATE TRIGGER
+CREATE TRIGGER
+COMMIT
+数据库已就绪：patentdb-deploy-check-37117 / patentdb
+进入SQL终端：sudo docker exec -it patentdb-deploy-check-37117 psql -U postgres -d patentdb
+BEGIN
+ALTER TABLE
+UPDATE 0
+ALTER TABLE
+ALTER TABLE
+DELETE 0
+CREATE FUNCTION
+DO
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+UPDATE 0
+UPDATE 0
+UPDATE 0
+COMMIT
+BEGIN
+CREATE SCHEMA
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE VIEW
+COMMENT
+COMMENT
+COMMIT
+Imported official sample files=17; logical documents=18
+country_office: 48 prepared rows
+language: 3 prepared rows
+dataset: 4 prepared rows
+kind_code: 9 prepared rows
+application_type: 4 prepared rows
+classification_scheme: 2 prepared rows
+patent: 18 prepared rows
+publication: 18 prepared rows
+title: 30 prepared rows
+abstract: 13 prepared rows
+description_section: 538 prepared rows
+drawing: 92 prepared rows
+claim: 184 prepared rows
+claim_dependency: 84 prepared rows
+person: 71 prepared rows
+natural_person: 61 prepared rows
+organization: 10 prepared rows
+patent_applicant: 18 prepared rows
+patent_inventor: 32 prepared rows
+patent_assignee: 9 prepared rows
+patent_agent: 12 prepared rows
+patent_examiner: 10 prepared rows
+classification: 56 prepared rows
+patent_classification: 71 prepared rows
+patent_citation: 805 prepared rows
+non_patent_citation: 297 prepared rows
+priority_claim: 3 prepared rows
+PostgreSQL transaction: committed
+Supplemental official-source transaction committed
+Prepared supplementary source rows: 194
+{
+  "status": "PASS",
+  "batch_id": "f3d600fe-fc4e-4230-8005-e6af3c5e0134",
+  "documents": 23,
+  "normal_documents": 18,
+  "operations": {
+    "A": 2,
+    "UPSERT": 16,
+    "CV": 5
+  },
+  "prepared_rows": 3383
+}
+{
+  "timestamp_utc": "2026-09-26T12:59:53.229445+00:00",
+  "container": "patentdb-deploy-check-37117",
+  "tables": 43,
+  "columns": 345,
+  "nonempty_tables": 42,
+  "mapped_field_comparisons": 19907,
+  "issues": [],
+  "status": "PASS",
+  "scope": "固定官方样例及映射字段；不等同全量数据/所有XML路径已覆盖"
+}
+abstract                           13
+application_type                   4
+citation_category                  2
+claim                              184
+claim_dependency                   84
+classification                     56
+classification_scheme              2
+country_office                     50
+dataset                            5
+description_section                538
+designated_state                   47
+drawing                            92
+family_abstract                    1
+family_citation                    0
+family_member_application_ref      21
+family_member_publication_ref      37
+international_application          1
+ipc_techn_field                    1
+keyword                            59
+kind_code                          9
+language                           3
+legal_event_code                   5
+legal_status_event                 10
+natural_person                     61
+non_patent_citation                297
+organization                       10
+patent                             19
+patent_agent                       12
+patent_applicant                   18
+patent_assignee                    9
+patent_citation                    805
+patent_citation_category           789
+patent_classification              71
+patent_examiner                    10
+patent_family                      3
+patent_family_member               11
+patent_inventor                    32
+patent_keyword                     71
+person                             71
+priority_claim                     3
+publication                        19
+related_application                11
+title                              30
+更新及检查完成；更新前备份：/home/zjjtju/database/Database/second stage/08-历史备份/数据库更新-20260926-205931/patentdb.dump

@@ -1,0 +1,2 @@
+﻿timestamp_utc,container,tables,columns,nonempty_tables,mapped_field_comparisons,issues,status,scope
+2026-09-26T12:59:53.229445+00:00,patentdb-deploy-check-37117,43,345,42,19907,[],PASS,固定官方样例及映射字段；不等同全量数据/所有XML路径已覆盖

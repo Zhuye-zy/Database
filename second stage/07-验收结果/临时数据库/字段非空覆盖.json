@@ -1,0 +1,2072 @@
+[
+  {
+    "table": "abstract",
+    "column": "abstract_id",
+    "rows": 13,
+    "non_null": 13
+  },
+  {
+    "table": "abstract",
+    "column": "publication_id",
+    "rows": 13,
+    "non_null": 13
+  },
+  {
+    "table": "abstract",
+    "column": "lang_code",
+    "rows": 13,
+    "non_null": 13
+  },
+  {
+    "table": "abstract",
+    "column": "abstract_text",
+    "rows": 13,
+    "non_null": 13
+  },
+  {
+    "table": "abstract",
+    "column": "data_format",
+    "rows": 13,
+    "non_null": 13
+  },
+  {
+    "table": "abstract",
+    "column": "abstract_source",
+    "rows": 13,
+    "non_null": 13
+  },
+  {
+    "table": "application_type",
+    "column": "appl_type_code",
+    "rows": 4,
+    "non_null": 4
+  },
+  {
+    "table": "application_type",
+    "column": "appl_type_name_en",
+    "rows": 4,
+    "non_null": 4
+  },
+  {
+    "table": "application_type",
+    "column": "appl_type_name_cn",
+    "rows": 4,
+    "non_null": 4
+  },
+  {
+    "table": "application_type",
+    "column": "ipr_type",
+    "rows": 4,
+    "non_null": 0
+  },
+  {
+    "table": "citation_category",
+    "column": "category_code",
+    "rows": 2,
+    "non_null": 2
+  },
+  {
+    "table": "citation_category",
+    "column": "category_desc_en",
+    "rows": 2,
+    "non_null": 2
+  },
+  {
+    "table": "citation_category",
+    "column": "category_desc_cn",
+    "rows": 2,
+    "non_null": 2
+  },
+  {
+    "table": "citation_category",
+    "column": "source_standard",
+    "rows": 2,
+    "non_null": 2
+  },
+  {
+    "table": "citation_category",
+    "column": "note",
+    "rows": 2,
+    "non_null": 2
+  },
+  {
+    "table": "claim",
+    "column": "claim_id",
+    "rows": 184,
+    "non_null": 184
+  },
+  {
+    "table": "claim",
+    "column": "publication_id",
+    "rows": 184,
+    "non_null": 184
+  },
+  {
+    "table": "claim",
+    "column": "lang_code",
+    "rows": 184,
+    "non_null": 184
+  },
+  {
+    "table": "claim",
+    "column": "claim_number",
+    "rows": 184,
+    "non_null": 184
+  },
+  {
+    "table": "claim",
+    "column": "claim_seq",
+    "rows": 184,
+    "non_null": 184
+  },
+  {
+    "table": "claim",
+    "column": "claim_type",
+    "rows": 184,
+    "non_null": 184
+  },
+  {
+    "table": "claim",
+    "column": "claim_text",
+    "rows": 184,
+    "non_null": 184
+  },
+  {
+    "table": "claim",
+    "column": "xml_claim_id",
+    "rows": 184,
+    "non_null": 184
+  },
+  {
+    "table": "claim_dependency",
+    "column": "dependent_claim_id",
+    "rows": 84,
+    "non_null": 84
+  },
+  {
+    "table": "claim_dependency",
+    "column": "parent_claim_id",
+    "rows": 84,
+    "non_null": 84
+  },
+  {
+    "table": "claim_dependency",
+    "column": "dependency_type",
+    "rows": 84,
+    "non_null": 84
+  },
+  {
+    "table": "claim_dependency",
+    "column": "ref_text",
+    "rows": 84,
+    "non_null": 84
+  },
+  {
+    "table": "classification",
+    "column": "scheme_code",
+    "rows": 56,
+    "non_null": 56
+  },
+  {
+    "table": "classification",
+    "column": "symbol",
+    "rows": 56,
+    "non_null": 56
+  },
+  {
+    "table": "classification",
+    "column": "section",
+    "rows": 56,
+    "non_null": 56
+  },
+  {
+    "table": "classification",
+    "column": "class_no",
+    "rows": 56,
+    "non_null": 56
+  },
+  {
+    "table": "classification",
+    "column": "subclass",
+    "rows": 56,
+    "non_null": 56
+  },
+  {
+    "table": "classification",
+    "column": "main_group",
+    "rows": 56,
+    "non_null": 56
+  },
+  {
+    "table": "classification",
+    "column": "subgroup",
+    "rows": 56,
+    "non_null": 56
+  },
+  {
+    "table": "classification",
+    "column": "version_date",
+    "rows": 56,
+    "non_null": 0
+  },
+  {
+    "table": "classification",
+    "column": "edition",
+    "rows": 56,
+    "non_null": 0
+  },
+  {
+    "table": "classification",
+    "column": "symbol_title",
+    "rows": 56,
+    "non_null": 0
+  },
+  {
+    "table": "classification_scheme",
+    "column": "scheme_code",
+    "rows": 2,
+    "non_null": 2
+  },
+  {
+    "table": "classification_scheme",
+    "column": "scheme_name_en",
+    "rows": 2,
+    "non_null": 2
+  },
+  {
+    "table": "classification_scheme",
+    "column": "scheme_name_cn",
+    "rows": 2,
+    "non_null": 2
+  },
+  {
+    "table": "classification_scheme",
+    "column": "authority",
+    "rows": 2,
+    "non_null": 0
+  },
+  {
+    "table": "classification_scheme",
+    "column": "symbol_format",
+    "rows": 2,
+    "non_null": 0
+  },
+  {
+    "table": "classification_scheme",
+    "column": "is_hierarchical",
+    "rows": 2,
+    "non_null": 2
+  },
+  {
+    "table": "country_office",
+    "column": "ctry_code",
+    "rows": 50,
+    "non_null": 50
+  },
+  {
+    "table": "country_office",
+    "column": "iso_alpha3",
+    "rows": 50,
+    "non_null": 0
+  },
+  {
+    "table": "country_office",
+    "column": "st3_name",
+    "rows": 50,
+    "non_null": 50
+  },
+  {
+    "table": "country_office",
+    "column": "name_cn",
+    "rows": 50,
+    "non_null": 0
+  },
+  {
+    "table": "country_office",
+    "column": "organisation_flag",
+    "rows": 50,
+    "non_null": 0
+  },
+  {
+    "table": "country_office",
+    "column": "continent",
+    "rows": 50,
+    "non_null": 0
+  },
+  {
+    "table": "country_office",
+    "column": "is_epo_member",
+    "rows": 50,
+    "non_null": 0
+  },
+  {
+    "table": "country_office",
+    "column": "is_eu_member",
+    "rows": 50,
+    "non_null": 0
+  },
+  {
+    "table": "country_office",
+    "column": "discontinued",
+    "rows": 50,
+    "non_null": 0
+  },
+  {
+    "table": "dataset",
+    "column": "dataset_id",
+    "rows": 5,
+    "non_null": 5
+  },
+  {
+    "table": "dataset",
+    "column": "dataset_code",
+    "rows": 5,
+    "non_null": 5
+  },
+  {
+    "table": "dataset",
+    "column": "dataset_name_cn",
+    "rows": 5,
+    "non_null": 5
+  },
+  {
+    "table": "dataset",
+    "column": "dataset_name_en",
+    "rows": 5,
+    "non_null": 5
+  },
+  {
+    "table": "dataset",
+    "column": "office_code",
+    "rows": 5,
+    "non_null": 5
+  },
+  {
+    "table": "dataset",
+    "column": "data_category",
+    "rows": 5,
+    "non_null": 5
+  },
+  {
+    "table": "dataset",
+    "column": "file_format",
+    "rows": 5,
+    "non_null": 5
+  },
+  {
+    "table": "dataset",
+    "column": "manual_ref",
+    "rows": 5,
+    "non_null": 1
+  },
+  {
+    "table": "dataset",
+    "column": "description",
+    "rows": 5,
+    "non_null": 5
+  },
+  {
+    "table": "description_section",
+    "column": "section_id",
+    "rows": 538,
+    "non_null": 538
+  },
+  {
+    "table": "description_section",
+    "column": "publication_id",
+    "rows": 538,
+    "non_null": 538
+  },
+  {
+    "table": "description_section",
+    "column": "parent_section_id",
+    "rows": 538,
+    "non_null": 0
+  },
+  {
+    "table": "description_section",
+    "column": "section_seq",
+    "rows": 538,
+    "non_null": 538
+  },
+  {
+    "table": "description_section",
+    "column": "section_level",
+    "rows": 538,
+    "non_null": 538
+  },
+  {
+    "table": "description_section",
+    "column": "heading",
+    "rows": 538,
+    "non_null": 485
+  },
+  {
+    "table": "description_section",
+    "column": "section_text",
+    "rows": 538,
+    "non_null": 538
+  },
+  {
+    "table": "designated_state",
+    "column": "patent_id",
+    "rows": 47,
+    "non_null": 47
+  },
+  {
+    "table": "designated_state",
+    "column": "state_code",
+    "rows": 47,
+    "non_null": 47
+  },
+  {
+    "table": "designated_state",
+    "column": "designation_type",
+    "rows": 47,
+    "non_null": 47
+  },
+  {
+    "table": "drawing",
+    "column": "drawing_id",
+    "rows": 92,
+    "non_null": 92
+  },
+  {
+    "table": "drawing",
+    "column": "publication_id",
+    "rows": 92,
+    "non_null": 92
+  },
+  {
+    "table": "drawing",
+    "column": "figure_seq",
+    "rows": 92,
+    "non_null": 92
+  },
+  {
+    "table": "drawing",
+    "column": "figure_id",
+    "rows": 92,
+    "non_null": 92
+  },
+  {
+    "table": "drawing",
+    "column": "image_file",
+    "rows": 92,
+    "non_null": 92
+  },
+  {
+    "table": "drawing",
+    "column": "alt_text",
+    "rows": 92,
+    "non_null": 71
+  },
+  {
+    "table": "family_abstract",
+    "column": "family_abstract_id",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "family_abstract",
+    "column": "family_id",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "family_abstract",
+    "column": "abstract_seq",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "family_abstract",
+    "column": "lang_code",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "family_abstract",
+    "column": "abstract_text",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "family_abstract",
+    "column": "data_format",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "family_abstract",
+    "column": "abstract_source",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "family_abstract",
+    "column": "source_country",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "family_abstract",
+    "column": "source_doc_number",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "family_abstract",
+    "column": "source_kind",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "family_citation",
+    "column": "citing_family_id",
+    "rows": 0,
+    "non_null": 0
+  },
+  {
+    "table": "family_citation",
+    "column": "cited_family_id",
+    "rows": 0,
+    "non_null": 0
+  },
+  {
+    "table": "family_member_application_ref",
+    "column": "member_appln_ref_id",
+    "rows": 21,
+    "non_null": 21
+  },
+  {
+    "table": "family_member_application_ref",
+    "column": "member_id",
+    "rows": 21,
+    "non_null": 21
+  },
+  {
+    "table": "family_member_application_ref",
+    "column": "data_format",
+    "rows": 21,
+    "non_null": 21
+  },
+  {
+    "table": "family_member_application_ref",
+    "column": "is_representative",
+    "rows": 21,
+    "non_null": 20
+  },
+  {
+    "table": "family_member_application_ref",
+    "column": "doc_id",
+    "rows": 21,
+    "non_null": 1
+  },
+  {
+    "table": "family_member_application_ref",
+    "column": "country_code",
+    "rows": 21,
+    "non_null": 11
+  },
+  {
+    "table": "family_member_application_ref",
+    "column": "appln_nr",
+    "rows": 21,
+    "non_null": 21
+  },
+  {
+    "table": "family_member_application_ref",
+    "column": "appln_kind",
+    "rows": 21,
+    "non_null": 11
+  },
+  {
+    "table": "family_member_publication_ref",
+    "column": "member_publn_ref_id",
+    "rows": 37,
+    "non_null": 37
+  },
+  {
+    "table": "family_member_publication_ref",
+    "column": "member_id",
+    "rows": 37,
+    "non_null": 37
+  },
+  {
+    "table": "family_member_publication_ref",
+    "column": "data_format",
+    "rows": 37,
+    "non_null": 37
+  },
+  {
+    "table": "family_member_publication_ref",
+    "column": "sequence_nr",
+    "rows": 37,
+    "non_null": 37
+  },
+  {
+    "table": "family_member_publication_ref",
+    "column": "doc_id",
+    "rows": 37,
+    "non_null": 1
+  },
+  {
+    "table": "family_member_publication_ref",
+    "column": "country_code",
+    "rows": 37,
+    "non_null": 19
+  },
+  {
+    "table": "family_member_publication_ref",
+    "column": "publn_nr",
+    "rows": 37,
+    "non_null": 37
+  },
+  {
+    "table": "family_member_publication_ref",
+    "column": "publn_kind",
+    "rows": 37,
+    "non_null": 19
+  },
+  {
+    "table": "family_member_publication_ref",
+    "column": "publn_date_raw",
+    "rows": 37,
+    "non_null": 1
+  },
+  {
+    "table": "international_application",
+    "column": "int_appln_id",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "international_application",
+    "column": "patent_id",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "international_application",
+    "column": "int_patent_id",
+    "rows": 1,
+    "non_null": 0
+  },
+  {
+    "table": "international_application",
+    "column": "int_appln_nr",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "international_application",
+    "column": "int_filing_date",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "international_application",
+    "column": "receiving_office",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "international_application",
+    "column": "int_publn_nr",
+    "rows": 1,
+    "non_null": 0
+  },
+  {
+    "table": "international_application",
+    "column": "int_publn_date",
+    "rows": 1,
+    "non_null": 0
+  },
+  {
+    "table": "international_application",
+    "column": "int_lang",
+    "rows": 1,
+    "non_null": 0
+  },
+  {
+    "table": "international_application",
+    "column": "regional_office",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "international_application",
+    "column": "national_phase_date",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "ipc_techn_field",
+    "column": "ipc_maingroup_symbol",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "ipc_techn_field",
+    "column": "techn_field_nr",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "ipc_techn_field",
+    "column": "techn_sector",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "ipc_techn_field",
+    "column": "techn_field",
+    "rows": 1,
+    "non_null": 1
+  },
+  {
+    "table": "keyword",
+    "column": "keyword_id",
+    "rows": 59,
+    "non_null": 59
+  },
+  {
+    "table": "keyword",
+    "column": "keyword_text",
+    "rows": 59,
+    "non_null": 59
+  },
+  {
+    "table": "keyword",
+    "column": "lang_code",
+    "rows": 59,
+    "non_null": 59
+  },
+  {
+    "table": "keyword",
+    "column": "source",
+    "rows": 59,
+    "non_null": 59
+  },
+  {
+    "table": "kind_code",
+    "column": "office_code",
+    "rows": 9,
+    "non_null": 9
+  },
+  {
+    "table": "kind_code",
+    "column": "kind_code",
+    "rows": 9,
+    "non_null": 9
+  },
+  {
+    "table": "kind_code",
+    "column": "kind_description_en",
+    "rows": 9,
+    "non_null": 9
+  },
+  {
+    "table": "kind_code",
+    "column": "kind_description_cn",
+    "rows": 9,
+    "non_null": 9
+  },
+  {
+    "table": "kind_code",
+    "column": "publication_level",
+    "rows": 9,
+    "non_null": 0
+  },
+  {
+    "table": "kind_code",
+    "column": "is_grant",
+    "rows": 9,
+    "non_null": 9
+  },
+  {
+    "table": "kind_code",
+    "column": "note",
+    "rows": 9,
+    "non_null": 0
+  },
+  {
+    "table": "language",
+    "column": "lang_code",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "language",
+    "column": "name_en",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "language",
+    "column": "name_cn",
+    "rows": 3,
+    "non_null": 0
+  },
+  {
+    "table": "legal_event_code",
+    "column": "event_auth",
+    "rows": 5,
+    "non_null": 5
+  },
+  {
+    "table": "legal_event_code",
+    "column": "event_code",
+    "rows": 5,
+    "non_null": 5
+  },
+  {
+    "table": "legal_event_code",
+    "column": "event_impact",
+    "rows": 5,
+    "non_null": 0
+  },
+  {
+    "table": "legal_event_code",
+    "column": "event_descr",
+    "rows": 5,
+    "non_null": 5
+  },
+  {
+    "table": "legal_event_code",
+    "column": "event_descr_orig",
+    "rows": 5,
+    "non_null": 5
+  },
+  {
+    "table": "legal_event_code",
+    "column": "event_category_code",
+    "rows": 5,
+    "non_null": 0
+  },
+  {
+    "table": "legal_event_code",
+    "column": "event_category_title",
+    "rows": 5,
+    "non_null": 0
+  },
+  {
+    "table": "legal_status_event",
+    "column": "event_id",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "legal_status_event",
+    "column": "patent_id",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "legal_status_event",
+    "column": "dataset_id",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "legal_status_event",
+    "column": "event_seq_nr",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "legal_status_event",
+    "column": "event_type",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "legal_status_event",
+    "column": "event_auth",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "legal_status_event",
+    "column": "event_code",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "legal_status_event",
+    "column": "event_filing_date",
+    "rows": 10,
+    "non_null": 0
+  },
+  {
+    "table": "legal_status_event",
+    "column": "event_publn_date",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "legal_status_event",
+    "column": "event_effective_date",
+    "rows": 10,
+    "non_null": 1
+  },
+  {
+    "table": "legal_status_event",
+    "column": "event_text",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "legal_status_event",
+    "column": "ref_doc_auth",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "legal_status_event",
+    "column": "ref_doc_nr",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "legal_status_event",
+    "column": "ref_doc_kind",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "legal_status_event",
+    "column": "ref_doc_date",
+    "rows": 10,
+    "non_null": 0
+  },
+  {
+    "table": "legal_status_event",
+    "column": "lapse_country",
+    "rows": 10,
+    "non_null": 0
+  },
+  {
+    "table": "legal_status_event",
+    "column": "lapse_date",
+    "rows": 10,
+    "non_null": 0
+  },
+  {
+    "table": "legal_status_event",
+    "column": "fee_payment_date",
+    "rows": 10,
+    "non_null": 0
+  },
+  {
+    "table": "legal_status_event",
+    "column": "fee_renewal_year",
+    "rows": 10,
+    "non_null": 0
+  },
+  {
+    "table": "legal_status_event",
+    "column": "designated_states_raw",
+    "rows": 10,
+    "non_null": 0
+  },
+  {
+    "table": "legal_status_event",
+    "column": "class_scheme_code",
+    "rows": 10,
+    "non_null": 0
+  },
+  {
+    "table": "legal_status_event",
+    "column": "class_symbol",
+    "rows": 10,
+    "non_null": 0
+  },
+  {
+    "table": "natural_person",
+    "column": "person_id",
+    "rows": 61,
+    "non_null": 61
+  },
+  {
+    "table": "natural_person",
+    "column": "last_name",
+    "rows": 61,
+    "non_null": 61
+  },
+  {
+    "table": "natural_person",
+    "column": "first_name",
+    "rows": 61,
+    "non_null": 61
+  },
+  {
+    "table": "natural_person",
+    "column": "middle_name",
+    "rows": 61,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_id",
+    "rows": 297,
+    "non_null": 297
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "citation_id",
+    "rows": 297,
+    "non_null": 297
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_type",
+    "rows": 297,
+    "non_null": 297
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_biblio",
+    "rows": 297,
+    "non_null": 297
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_author",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_title",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_editor",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_publisher",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_volume",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_issue",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_page_first",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_page_last",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_publn_date",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_doi",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_isbn",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "npl_issn",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "non_patent_citation",
+    "column": "online_availability",
+    "rows": 297,
+    "non_null": 0
+  },
+  {
+    "table": "organization",
+    "column": "person_id",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "organization",
+    "column": "org_name",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "organization",
+    "column": "psn_sector",
+    "rows": 10,
+    "non_null": 0
+  },
+  {
+    "table": "patent",
+    "column": "patent_id",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "patent",
+    "column": "dataset_id",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "patent",
+    "column": "appln_auth",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "patent",
+    "column": "appln_nr",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "patent",
+    "column": "appln_kind",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "patent",
+    "column": "appln_nr_original",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "patent",
+    "column": "appln_nr_epodoc",
+    "rows": 19,
+    "non_null": 0
+  },
+  {
+    "table": "patent",
+    "column": "appl_type_code",
+    "rows": 19,
+    "non_null": 12
+  },
+  {
+    "table": "patent",
+    "column": "appln_filing_date",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "patent",
+    "column": "appln_filing_date_raw",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "patent",
+    "column": "receiving_office",
+    "rows": 19,
+    "non_null": 0
+  },
+  {
+    "table": "patent",
+    "column": "appln_lang",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "patent",
+    "column": "int_phase",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "patent",
+    "column": "reg_phase",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "patent",
+    "column": "nat_phase",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "patent",
+    "column": "rights_effective_date",
+    "rows": 19,
+    "non_null": 0
+  },
+  {
+    "table": "patent",
+    "column": "us_application_series_code",
+    "rows": 19,
+    "non_null": 18
+  },
+  {
+    "table": "patent",
+    "column": "botanic_latin_name",
+    "rows": 19,
+    "non_null": 0
+  },
+  {
+    "table": "patent",
+    "column": "botanic_variety",
+    "rows": 19,
+    "non_null": 0
+  },
+  {
+    "table": "patent_agent",
+    "column": "patent_id",
+    "rows": 12,
+    "non_null": 12
+  },
+  {
+    "table": "patent_agent",
+    "column": "person_id",
+    "rows": 12,
+    "non_null": 12
+  },
+  {
+    "table": "patent_agent",
+    "column": "sequence_nr",
+    "rows": 12,
+    "non_null": 12
+  },
+  {
+    "table": "patent_agent",
+    "column": "rep_type",
+    "rows": 12,
+    "non_null": 9
+  },
+  {
+    "table": "patent_agent",
+    "column": "internal_ref",
+    "rows": 12,
+    "non_null": 0
+  },
+  {
+    "table": "patent_applicant",
+    "column": "patent_id",
+    "rows": 18,
+    "non_null": 18
+  },
+  {
+    "table": "patent_applicant",
+    "column": "person_id",
+    "rows": 18,
+    "non_null": 18
+  },
+  {
+    "table": "patent_applicant",
+    "column": "sequence_nr",
+    "rows": 18,
+    "non_null": 18
+  },
+  {
+    "table": "patent_applicant",
+    "column": "applicant_type",
+    "rows": 18,
+    "non_null": 0
+  },
+  {
+    "table": "patent_applicant",
+    "column": "authority_category",
+    "rows": 18,
+    "non_null": 6
+  },
+  {
+    "table": "patent_applicant",
+    "column": "designation",
+    "rows": 18,
+    "non_null": 0
+  },
+  {
+    "table": "patent_applicant",
+    "column": "internal_ref",
+    "rows": 18,
+    "non_null": 0
+  },
+  {
+    "table": "patent_assignee",
+    "column": "patent_id",
+    "rows": 9,
+    "non_null": 9
+  },
+  {
+    "table": "patent_assignee",
+    "column": "person_id",
+    "rows": 9,
+    "non_null": 9
+  },
+  {
+    "table": "patent_assignee",
+    "column": "sequence_nr",
+    "rows": 9,
+    "non_null": 9
+  },
+  {
+    "table": "patent_assignee",
+    "column": "role_code",
+    "rows": 9,
+    "non_null": 9
+  },
+  {
+    "table": "patent_assignee",
+    "column": "assignee_type",
+    "rows": 9,
+    "non_null": 0
+  },
+  {
+    "table": "patent_citation",
+    "column": "citation_id",
+    "rows": 805,
+    "non_null": 805
+  },
+  {
+    "table": "patent_citation",
+    "column": "citing_patent_id",
+    "rows": 805,
+    "non_null": 805
+  },
+  {
+    "table": "patent_citation",
+    "column": "citing_publication_id",
+    "rows": 805,
+    "non_null": 805
+  },
+  {
+    "table": "patent_citation",
+    "column": "cited_patent_id",
+    "rows": 805,
+    "non_null": 0
+  },
+  {
+    "table": "patent_citation",
+    "column": "cited_publn_id",
+    "rows": 805,
+    "non_null": 0
+  },
+  {
+    "table": "patent_citation",
+    "column": "citation_type",
+    "rows": 805,
+    "non_null": 805
+  },
+  {
+    "table": "patent_citation",
+    "column": "cited_country",
+    "rows": 805,
+    "non_null": 508
+  },
+  {
+    "table": "patent_citation",
+    "column": "cited_doc_number",
+    "rows": 805,
+    "non_null": 805
+  },
+  {
+    "table": "patent_citation",
+    "column": "cited_doc_kind",
+    "rows": 805,
+    "non_null": 805
+  },
+  {
+    "table": "patent_citation",
+    "column": "cited_doc_date",
+    "rows": 805,
+    "non_null": 4
+  },
+  {
+    "table": "patent_citation",
+    "column": "cited_doc_date_raw",
+    "rows": 805,
+    "non_null": 503
+  },
+  {
+    "table": "patent_citation",
+    "column": "cited_doc_name",
+    "rows": 805,
+    "non_null": 0
+  },
+  {
+    "table": "patent_citation",
+    "column": "cited_appln_nr",
+    "rows": 805,
+    "non_null": 0
+  },
+  {
+    "table": "patent_citation",
+    "column": "cited_raw_text",
+    "rows": 805,
+    "non_null": 805
+  },
+  {
+    "table": "patent_citation",
+    "column": "citn_seq",
+    "rows": 805,
+    "non_null": 805
+  },
+  {
+    "table": "patent_citation",
+    "column": "citn_origin",
+    "rows": 805,
+    "non_null": 805
+  },
+  {
+    "table": "patent_citation",
+    "column": "citn_gener_auth",
+    "rows": 805,
+    "non_null": 0
+  },
+  {
+    "table": "patent_citation",
+    "column": "relevant_claim",
+    "rows": 805,
+    "non_null": 0
+  },
+  {
+    "table": "patent_citation_category",
+    "column": "citation_id",
+    "rows": 789,
+    "non_null": 789
+  },
+  {
+    "table": "patent_citation_category",
+    "column": "category_code",
+    "rows": 789,
+    "non_null": 789
+  },
+  {
+    "table": "patent_citation_category",
+    "column": "relevant_claim",
+    "rows": 789,
+    "non_null": 789
+  },
+  {
+    "table": "patent_classification",
+    "column": "patent_classification_id",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "patent_classification",
+    "column": "patent_id",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "patent_classification",
+    "column": "scheme_code",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "patent_classification",
+    "column": "symbol",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "patent_classification",
+    "column": "symbol_raw",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "patent_classification",
+    "column": "position",
+    "rows": 71,
+    "non_null": 43
+  },
+  {
+    "table": "patent_classification",
+    "column": "value",
+    "rows": 71,
+    "non_null": 43
+  },
+  {
+    "table": "patent_classification",
+    "column": "classification_level",
+    "rows": 71,
+    "non_null": 21
+  },
+  {
+    "table": "patent_classification",
+    "column": "generating_office",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "patent_classification",
+    "column": "source_type",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "patent_classification",
+    "column": "action_date",
+    "rows": 71,
+    "non_null": 43
+  },
+  {
+    "table": "patent_classification",
+    "column": "sequence_nr",
+    "rows": 71,
+    "non_null": 25
+  },
+  {
+    "table": "patent_examiner",
+    "column": "patent_id",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "patent_examiner",
+    "column": "person_id",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "patent_examiner",
+    "column": "examiner_type",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "patent_examiner",
+    "column": "department",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "patent_examiner",
+    "column": "sequence_nr",
+    "rows": 10,
+    "non_null": 10
+  },
+  {
+    "table": "patent_family",
+    "column": "family_id",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "patent_family",
+    "column": "family_type",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "patent_family",
+    "column": "source_family_id",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "patent_family",
+    "column": "dataset_id",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "patent_family",
+    "column": "earliest_priority_date",
+    "rows": 3,
+    "non_null": 0
+  },
+  {
+    "table": "patent_family",
+    "column": "earliest_priority_country",
+    "rows": 3,
+    "non_null": 0
+  },
+  {
+    "table": "patent_family",
+    "column": "representative_publication_id",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "patent_family",
+    "column": "note",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "patent_family_member",
+    "column": "member_id",
+    "rows": 11,
+    "non_null": 11
+  },
+  {
+    "table": "patent_family_member",
+    "column": "family_id",
+    "rows": 11,
+    "non_null": 11
+  },
+  {
+    "table": "patent_family_member",
+    "column": "member_patent_id",
+    "rows": 11,
+    "non_null": 3
+  },
+  {
+    "table": "patent_family_member",
+    "column": "member_seq",
+    "rows": 11,
+    "non_null": 11
+  },
+  {
+    "table": "patent_family_member",
+    "column": "is_representative",
+    "rows": 11,
+    "non_null": 11
+  },
+  {
+    "table": "patent_family_member",
+    "column": "member_type",
+    "rows": 11,
+    "non_null": 11
+  },
+  {
+    "table": "patent_inventor",
+    "column": "patent_id",
+    "rows": 32,
+    "non_null": 32
+  },
+  {
+    "table": "patent_inventor",
+    "column": "person_id",
+    "rows": 32,
+    "non_null": 32
+  },
+  {
+    "table": "patent_inventor",
+    "column": "sequence_nr",
+    "rows": 32,
+    "non_null": 32
+  },
+  {
+    "table": "patent_inventor",
+    "column": "designation",
+    "rows": 32,
+    "non_null": 17
+  },
+  {
+    "table": "patent_inventor",
+    "column": "internal_ref",
+    "rows": 32,
+    "non_null": 0
+  },
+  {
+    "table": "patent_keyword",
+    "column": "patent_id",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "patent_keyword",
+    "column": "keyword_id",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "patent_keyword",
+    "column": "weight",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "patent_keyword",
+    "column": "source",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "person",
+    "column": "person_id",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "person",
+    "column": "person_name",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "person",
+    "column": "person_name_orig",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "person",
+    "column": "person_type",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "person",
+    "column": "address_text",
+    "rows": 71,
+    "non_null": 0
+  },
+  {
+    "table": "person",
+    "column": "city",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "person",
+    "column": "state_province",
+    "rows": 71,
+    "non_null": 0
+  },
+  {
+    "table": "person",
+    "column": "postcode",
+    "rows": 71,
+    "non_null": 0
+  },
+  {
+    "table": "person",
+    "column": "ctry_code",
+    "rows": 71,
+    "non_null": 47
+  },
+  {
+    "table": "person",
+    "column": "residence_ctry_code",
+    "rows": 71,
+    "non_null": 0
+  },
+  {
+    "table": "person",
+    "column": "doc_std_name",
+    "rows": 71,
+    "non_null": 0
+  },
+  {
+    "table": "person",
+    "column": "psn_id",
+    "rows": 71,
+    "non_null": 0
+  },
+  {
+    "table": "person",
+    "column": "epo_person_id",
+    "rows": 71,
+    "non_null": 0
+  },
+  {
+    "table": "person",
+    "column": "source_dataset_id",
+    "rows": 71,
+    "non_null": 71
+  },
+  {
+    "table": "priority_claim",
+    "column": "priority_id",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "priority_claim",
+    "column": "patent_id",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "priority_claim",
+    "column": "prior_patent_id",
+    "rows": 3,
+    "non_null": 0
+  },
+  {
+    "table": "priority_claim",
+    "column": "sequence_nr",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "priority_claim",
+    "column": "prior_country",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "priority_claim",
+    "column": "prior_appln_nr",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "priority_claim",
+    "column": "prior_date",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "priority_claim",
+    "column": "prior_date_raw",
+    "rows": 3,
+    "non_null": 3
+  },
+  {
+    "table": "priority_claim",
+    "column": "priority_kind",
+    "rows": 3,
+    "non_null": 1
+  },
+  {
+    "table": "priority_claim",
+    "column": "priority_active_indicator",
+    "rows": 3,
+    "non_null": 0
+  },
+  {
+    "table": "priority_claim",
+    "column": "designated_region",
+    "rows": 3,
+    "non_null": 0
+  },
+  {
+    "table": "publication",
+    "column": "publication_id",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "publication",
+    "column": "patent_id",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "publication",
+    "column": "dataset_id",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "publication",
+    "column": "publn_auth",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "publication",
+    "column": "publn_nr",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "publication",
+    "column": "publn_kind",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "publication",
+    "column": "publn_date",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "publication",
+    "column": "publn_date_raw",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "publication",
+    "column": "publn_lg",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "publication",
+    "column": "publn_first_grant",
+    "rows": 19,
+    "non_null": 19
+  },
+  {
+    "table": "publication",
+    "column": "term_length_years",
+    "rows": 19,
+    "non_null": 0
+  },
+  {
+    "table": "publication",
+    "column": "term_extension_days",
+    "rows": 19,
+    "non_null": 0
+  },
+  {
+    "table": "publication",
+    "column": "number_of_claims",
+    "rows": 19,
+    "non_null": 8
+  },
+  {
+    "table": "publication",
+    "column": "number_of_figures",
+    "rows": 19,
+    "non_null": 8
+  },
+  {
+    "table": "publication",
+    "column": "number_of_drawing_sheets",
+    "rows": 19,
+    "non_null": 0
+  },
+  {
+    "table": "publication",
+    "column": "gazette_number",
+    "rows": 19,
+    "non_null": 0
+  },
+  {
+    "table": "publication",
+    "column": "docdb_doc_id",
+    "rows": 19,
+    "non_null": 1
+  },
+  {
+    "table": "publication",
+    "column": "date_added_docdb",
+    "rows": 19,
+    "non_null": 0
+  },
+  {
+    "table": "related_application",
+    "column": "relation_id",
+    "rows": 11,
+    "non_null": 11
+  },
+  {
+    "table": "related_application",
+    "column": "patent_id",
+    "rows": 11,
+    "non_null": 11
+  },
+  {
+    "table": "related_application",
+    "column": "related_patent_id",
+    "rows": 11,
+    "non_null": 0
+  },
+  {
+    "table": "related_application",
+    "column": "relation_type",
+    "rows": 11,
+    "non_null": 11
+  },
+  {
+    "table": "related_application",
+    "column": "related_country",
+    "rows": 11,
+    "non_null": 11
+  },
+  {
+    "table": "related_application",
+    "column": "related_appln_nr",
+    "rows": 11,
+    "non_null": 7
+  },
+  {
+    "table": "related_application",
+    "column": "related_filing_date",
+    "rows": 11,
+    "non_null": 11
+  },
+  {
+    "table": "related_application",
+    "column": "related_publn_nr",
+    "rows": 11,
+    "non_null": 8
+  },
+  {
+    "table": "related_application",
+    "column": "parent_status",
+    "rows": 11,
+    "non_null": 3
+  },
+  {
+    "table": "related_application",
+    "column": "sequence_nr",
+    "rows": 11,
+    "non_null": 11
+  },
+  {
+    "table": "title",
+    "column": "title_id",
+    "rows": 30,
+    "non_null": 30
+  },
+  {
+    "table": "title",
+    "column": "publication_id",
+    "rows": 30,
+    "non_null": 30
+  },
+  {
+    "table": "title",
+    "column": "lang_code",
+    "rows": 30,
+    "non_null": 30
+  },
+  {
+    "table": "title",
+    "column": "title_text",
+    "rows": 30,
+    "non_null": 30
+  },
+  {
+    "table": "title",
+    "column": "title_type",
+    "rows": 30,
+    "non_null": 30
+  },
+  {
+    "table": "title",
+    "column": "is_original",
+    "rows": 30,
+    "non_null": 30
+  },
+  {
+    "table": "title",
+    "column": "data_format",
+    "rows": 30,
+    "non_null": 30
+  }
+]

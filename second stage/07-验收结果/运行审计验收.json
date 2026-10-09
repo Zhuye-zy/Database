@@ -1,0 +1,17 @@
+{
+  "tables": [
+    "import_batch",
+    "publication_state",
+    "source_document"
+  ],
+  "latest_batch": {
+    "batch_id": "c73c7bb2-3f93-4970-856e-1322d069650a",
+    "started_at": "2026-09-26T12:56:38.802043+00:00",
+    "finished_at": null,
+    "source_root": "05-官方来源/01-四类基础样例",
+    "status": "RUNNING",
+    "summary": {}
+  },
+  "active_publications": 19,
+  "void_notices_latest": 5
+}

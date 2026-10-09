@@ -1,0 +1,174 @@
+[
+  {
+    "table": "abstract",
+    "rows": 13
+  },
+  {
+    "table": "application_type",
+    "rows": 4
+  },
+  {
+    "table": "citation_category",
+    "rows": 2
+  },
+  {
+    "table": "claim",
+    "rows": 184
+  },
+  {
+    "table": "claim_dependency",
+    "rows": 84
+  },
+  {
+    "table": "classification",
+    "rows": 56
+  },
+  {
+    "table": "classification_scheme",
+    "rows": 2
+  },
+  {
+    "table": "country_office",
+    "rows": 50
+  },
+  {
+    "table": "dataset",
+    "rows": 5
+  },
+  {
+    "table": "description_section",
+    "rows": 538
+  },
+  {
+    "table": "designated_state",
+    "rows": 47
+  },
+  {
+    "table": "drawing",
+    "rows": 92
+  },
+  {
+    "table": "family_abstract",
+    "rows": 1
+  },
+  {
+    "table": "family_citation",
+    "rows": 0
+  },
+  {
+    "table": "family_member_application_ref",
+    "rows": 21
+  },
+  {
+    "table": "family_member_publication_ref",
+    "rows": 37
+  },
+  {
+    "table": "international_application",
+    "rows": 1
+  },
+  {
+    "table": "ipc_techn_field",
+    "rows": 1
+  },
+  {
+    "table": "keyword",
+    "rows": 59
+  },
+  {
+    "table": "kind_code",
+    "rows": 9
+  },
+  {
+    "table": "language",
+    "rows": 3
+  },
+  {
+    "table": "legal_event_code",
+    "rows": 5
+  },
+  {
+    "table": "legal_status_event",
+    "rows": 10
+  },
+  {
+    "table": "natural_person",
+    "rows": 61
+  },
+  {
+    "table": "non_patent_citation",
+    "rows": 297
+  },
+  {
+    "table": "organization",
+    "rows": 10
+  },
+  {
+    "table": "patent",
+    "rows": 19
+  },
+  {
+    "table": "patent_agent",
+    "rows": 12
+  },
+  {
+    "table": "patent_applicant",
+    "rows": 18
+  },
+  {
+    "table": "patent_assignee",
+    "rows": 9
+  },
+  {
+    "table": "patent_citation",
+    "rows": 805
+  },
+  {
+    "table": "patent_citation_category",
+    "rows": 789
+  },
+  {
+    "table": "patent_classification",
+    "rows": 71
+  },
+  {
+    "table": "patent_examiner",
+    "rows": 10
+  },
+  {
+    "table": "patent_family",
+    "rows": 3
+  },
+  {
+    "table": "patent_family_member",
+    "rows": 11
+  },
+  {
+    "table": "patent_inventor",
+    "rows": 32
+  },
+  {
+    "table": "patent_keyword",
+    "rows": 71
+  },
+  {
+    "table": "person",
+    "rows": 71
+  },
+  {
+    "table": "priority_claim",
+    "rows": 3
+  },
+  {
+    "table": "publication",
+    "rows": 19
+  },
+  {
+    "table": "related_application",
+    "rows": 11
+  },
+  {
+    "table": "title",
+    "rows": 30
+  }
+]

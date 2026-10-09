@@ -1,0 +1,252 @@
+[
+  {
+    "file": "05-官方来源/01-四类基础样例/ep-docdb/DOCDB-201724-Amend-PubDate20170609AndBefore-EP-000.xml",
+    "bytes": 33719,
+    "sha256": "2be847844f5eae5053fb955f2c58e64d8858ab683eb2613a7c642e37f52236cd"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/ep-docdb/DTDS/XMLSchema.dtd",
+    "bytes": 16775,
+    "sha256": "16674663beec02b22273e6ed4826bc8c2657fa79f75fbe4abf9b27c8e146a734"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/ep-docdb/DTDS/datatypes.dtd",
+    "bytes": 6562,
+    "sha256": "52e18bdb8df3925f196fadc59bc9919e53d579f2c5cc879330196845311b280d"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/ep-docdb/DTDS/docdb-entities.dtd",
+    "bytes": 174925,
+    "sha256": "7043c68ba60de99961fb3f68ea3d4efc59f52e33a0e5f8f20594aa30ca5b6a87"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/ep-docdb/DTDS/docdb-package-v1.1.dtd",
+    "bytes": 4398,
+    "sha256": "03034e5db5ab92a20adac6e496179eed47ac57428ee7f952a94cf35e3510d267"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/ep-docdb/DTDS/exchange-documents-v2.5.7.xsd",
+    "bytes": 542112,
+    "sha256": "54ff6ecd04d805fcbb16a2703af6e753ed86b601bd2bee01274545b16f4f25ba"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/ep-docdb/DTDS/xlink.xsd",
+    "bytes": 1291,
+    "sha256": "460d62bd5e1b0a21618168f401150a3942060d97c1f6ce821dd5e0019bebd44a"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/ep-docdb/DTDS/xml.xsd",
+    "bytes": 5761,
+    "sha256": "2f5c0861be7e007849f9695c69021180a8230b62eb4dde77f0c1d9ce431e5b5e"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/ep-fulltext/712-096-DOC00001.xml",
+    "bytes": 74565,
+    "sha256": "3939fb760ec202455b366d545ab887b8baf55a0daf4d95a9e41b174635de446c"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/ep-fulltext/797-400-DOC00001.xml",
+    "bytes": 2908,
+    "sha256": "7f12ac59264e768377c0b75d2fe3fe0777e31cf10fcc6760e25a31facd457f8a"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/ep-fulltext/797-401-DOC00001.xml",
+    "bytes": 2675,
+    "sha256": "0e527c2244b7c217f0a62ab48be892997545c59a87a076231b3c2de73b1f23fe"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/ep-fulltext/890-251-DOC00001.xml",
+    "bytes": 65780,
+    "sha256": "6207bd80e281cfa4dbf26eb860aa15be23278e178bd832cafbecaeddf6776bc7"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/us-application/US20140338089A1-20141120.XML",
+    "bytes": 44666,
+    "sha256": "50fa4aa235323afa1290f05b58f3724bf6bdbe103959e8045097cc385756e8ac"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/us-application/US20140338090A1-20141120.XML",
+    "bytes": 31457,
+    "sha256": "77efc91e9f8e92a3299c115bf1030771eb563b693b870271fb8ca128ae4d73f0"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/us-application/US20140345008P1-20141120.XML",
+    "bytes": 19417,
+    "sha256": "12d2b971e16e5d57e17da29b539ac40dd686d6a737b8cd2266cd77d752c7d01f"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/us-application/US20140345009P1-20141120.XML",
+    "bytes": 18167,
+    "sha256": "d3c5a16668fdc8e85c76d7fbff3ef52529e21a310e3659c64749f75a6f7c0a3e"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/us-grant/US08887312-20141118.XML",
+    "bytes": 115119,
+    "sha256": "bdead2905e35e5aad9980428f3eac8aa85a0f838732484d8f2b51ce2c98c2ea6"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/us-grant/US08887313-20141118.XML",
+    "bytes": 43463,
+    "sha256": "a2bf9aa956ae0af8c095a24d75ff2eb60df55d1dc36e7da4c77939a5abab77f4"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/us-grant/USD0717516-20141118.XML",
+    "bytes": 15994,
+    "sha256": "d9a6e1935610433252b3a32062c6fcd09d1742e7ee9f652bd79292d8946fd8c3"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/us-grant/USD0717517-20141118.XML",
+    "bytes": 15299,
+    "sha256": "66c7d53217d1f68cbb674d3c5ab0f3eb550b2d79ce627dd883e14fe5712f8ace"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/us-grant/USPP025063-20141118.XML",
+    "bytes": 22142,
+    "sha256": "80b7fa6ac9166d652c624fb6d4184b7275c77eeaef90e0f4f57f67c0ac1b0388"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/us-grant/USPP025064-20141118.XML",
+    "bytes": 22950,
+    "sha256": "99993c8745f70fb4abf7c5466108051e91c99429303eb3e8f239a9bfc62be483"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/us-grant/USRE045253-20141118.XML",
+    "bytes": 37994,
+    "sha256": "13f7dc3541c568bf8c8a8aeb3fb7b29927ca9f75dad181f1e9d8f32fbd7eb728"
+  },
+  {
+    "file": "05-官方来源/01-四类基础样例/us-grant/USRE045254-20141118.XML",
+    "bytes": 260060,
+    "sha256": "fc65220a7bb061345a25115282427e2529ac7099d4febd7d6b3654d3630ba409"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/01-压缩原包/01-US申请公布/US-PA-TXTO-10-A.zip",
+    "bytes": 3740368,
+    "sha256": "4521519e02f01ee9ea2d8e51c4b5b33a0635a831053a6854b687a558455b9618"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/01-压缩原包/02-US授权公告/US-PA-TXTO-10-B.zip",
+    "bytes": 2259614,
+    "sha256": "ecbdd209afc163dcc98fed05ee20225074f7793ebcbf1b788524a1530eac8c9c"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/01-压缩原包/03-EP全文/EP-PA-TXTO-10-AB.zip",
+    "bytes": 1288715,
+    "sha256": "1de3e153dbb744888c0e297e816328f85c3c7d155ac567e354c398af39bf95ba"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/01-压缩原包/04-EP-DOCDB摘要/EP-PA-ABSO-10-AB.zip",
+    "bytes": 209696,
+    "sha256": "d0d0782d6d0165b4ca6c8b50fc52dfdb46a56bffbc4c6f2683a23e762eb89320"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/01-压缩原包/05-EP法律状态/EP-PA-PRSO-FILE.zip",
+    "bytes": 59870,
+    "sha256": "103426d07e3ee93d8982205e1f131172abe29ef57ab3332df1062e8ae2b53641"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/02-DOCDB原文/DOCDB-201724-CreateDelete-PubDate20170609AndBefore-EP-0001.xml",
+    "bytes": 3310,
+    "sha256": "ea719d687131269560ac375c3914b80a1131d3c559329b8bf8a836f718a931ba"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/03-法律状态原文/LEGSTAT-202122-EP-AppDateFrom20190314-0016.xml",
+    "bytes": 9158,
+    "sha256": "26eb72dbf1926fbf034096b03e4b84a102fc195a6a8e1f89a6ad1a1dc863334b"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/EP-PA-PRSO-FILE/202122/INPADOC_coverage_20210529.xlsx",
+    "bytes": 17000,
+    "sha256": "9acac7d961643620ecdd87523e0c7b423ef0d7d7f16dae6c82cab3174782b15b"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/EP-PA-PRSO-FILE/202122/legal_code_descriptions_20210529.rar",
+    "bytes": 11236,
+    "sha256": "5328716b4faf7eb46ab44a61c8841aad4bc514d40ff48540ec2ae7c86a0ed96f"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/EP-PA-PRSO-FILE/202122/legstat_xml_202122.rar",
+    "bytes": 19543,
+    "sha256": "f54c5bd1e4fff3d796ef0730047c1cdaa9711f9cc756294170260c93ff6d95c8"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/EP-PA-PRSO-FILE/202122/statistics_authority_code_20210529.rar",
+    "bytes": 15300,
+    "sha256": "9ddff361b01b329c3d2f1bed58122ab7e228603a1cdd17ed591ce5abbd16eb8d"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/CONTENTS",
+    "bytes": 1105,
+    "sha256": "055be6222033a7f87a4bcef79c499a78e864f59123f50fa2de6ad1ee7c1848fc"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/DOC/LEGSTAT-202122-EP-AppDateFrom20190314-0016.rar",
+    "bytes": 1567,
+    "sha256": "96ac3b1f7b00d4d384abec6794e93bc2e7314ecb9553ae31f3b1590e580afad7"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/DTDS/legal-status-documents-v1-2-8-transitional.xsd",
+    "bytes": 126244,
+    "sha256": "2972bec55d2024d93fae492c1342677467cee10b4409ce182803ee4e4a228337"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/DTDS/legstat-package-v1.0.dtd",
+    "bytes": 4142,
+    "sha256": "04b280907dba75662eb7a1d1f6c1adc4add8b46277c8b9ec8635d5c5b10912b9"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/STATISTICS.csv",
+    "bytes": 3200,
+    "sha256": "a22dda3919231acfc44e82f72bf8d51096b56e290a0682e46bcd169c6fd11868"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/VOLUMEID",
+    "bytes": 24,
+    "sha256": "d125f4b6d67d120d5961c220838f60fdda1383d5311b83b1670021db251663a2"
+  },
+  {
+    "file": "05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/index.xml",
+    "bytes": 13808,
+    "sha256": "45bfc264715084e751afcf452545256e62744c92f4e81fc0ab64063d2fd980fe"
+  },
+  {
+    "file": "05-官方来源/03-数据手册/EP-PA-ABSO-10-AB_数据手册.pdf",
+    "bytes": 197427,
+    "sha256": "2453a4c59219f23e3a96f6857e33f266018ca6c5cab36874631d5d8572bbe1df"
+  },
+  {
+    "file": "05-官方来源/03-数据手册/EP-PA-PRSO-FILE-数据手册.pdf",
+    "bytes": 123097,
+    "sha256": "d6956cab08d763a8b7d5d37cc3de933aa97bb7c507e37906a2bc73709c64cd4d"
+  },
+  {
+    "file": "05-官方来源/03-数据手册/EP-PA-TXTO-10-AB_数据手册.pdf",
+    "bytes": 181713,
+    "sha256": "d6068a87766f2300d497647c3e0b75c35717daa33541dd17ef4b083cef214bed"
+  },
+  {
+    "file": "05-官方来源/03-数据手册/EPO操作码在线依据.md",
+    "bytes": 562,
+    "sha256": "1c582dc0db763775e3e9847aa878e24342af3c04da3b24742855b3707e163bbc"
+  },
+  {
+    "file": "05-官方来源/03-数据手册/US-PA-TXTO-10-A_数据手册.pdf",
+    "bytes": 265934,
+    "sha256": "ac09249ff0ed611753a20cb24f5bd5f26864fb14631f05117781a5e1e96f6cd2"
+  },
+  {
+    "file": "05-官方来源/03-数据手册/US-PA-TXTO-10-B_数据手册.pdf",
+    "bytes": 270604,
+    "sha256": "89fa8fa592ce860859ebdbf6ff6d7053b328283bd9d996b11bea942c3d02fb60"
+  },
+  {
+    "file": "05-官方来源/README.md",
+    "bytes": 1569,
+    "sha256": "d42532e907bde0aaf4b72276a7e28d876629fad07626be055f84eba195696789"
+  },
+  {
+    "file": "05-官方来源/download_manifest.json",
+    "bytes": 1577,
+    "sha256": "081bdf5c2fd0e6dd302b89edccc89fb0adf5c5baf2b0e4d83807a3abcb3ff49a"
+  }
+]

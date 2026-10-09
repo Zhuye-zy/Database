@@ -1,0 +1,3454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by EPO User (Europäisches Patentamt) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="0.2">
+	<xs:annotation>
+		<xs:documentation>This version of the schema has been designed to cater for the exchange of data extracted from INPADOC, the EPO's master database for Worldwide Legal Status.
+			It has been tailored to support legacy data that dates back to the early days of the database.
+			With a view to the historic significance of legal status data and the need to be able to exchange back-file data, it will have to able to support legacy data into the future
+			This database specific version of the schema will comply with the international standard for the exchange of legal status database where possible and use product-specific tags where necessary.
+			Further information in document T03.03_User Documentation Legstat_XML, authored by Fenny Versloot-Spoelstra, available on-line under link http://www.epo.org/searching/data/data/manuals.html
+		</xs:documentation>
+	</xs:annotation>
+	<!--
+*******************************************************************************************
+AMENDMENTS
+20140916_Version [legal-status-documents-v0-5-10-3-transional
+attribute "family-id" @ element [application-reference] from "required" to "optional"
+attribute "date-added" @ element [legal-event] from "required" to "optional"
+attributes "status", "sequence" new @ elements [fee-payment], [notification-of-lapse], [notification-of-reinstatement], [patent-classification] and [parties]
+20150701_Version legal-status-documents-v1-0-transional
+Version-nummers increased to 1.0 with migration to production
+20160101_Version legal-status-documents-v1-1-transional
+Concept of "grouped event" has been abandoned:
+Impact on structure of <event-details>:
+<fee-payments> now <fee-payment>
+<notifications-of-lapse> now <notification-of-lapse>
+<notifications-of-reinstatement> now <notification-of-reinstatement>
+<patent-classifications> no <patent-classification>
+2016/March_Version legal-status-documents-v1-2-transional
+Restriction base of DateType simplified to overcome legacy issues
+Removed identity constraint on publication-reference
+Element <fee-payment> - choice between <fee-payment-year> only or <fee-payment-date> only or both <fee-payment-year> and <fee-payment-date>
+Element <parties> - attribute "party-type" - value "applicant" now "licensee"
+2016/March_Version legal-status-documents-v1-2-1-transional
+Element <publication-reference> - minOccurs="0" - will not always be supported when <legal-status-document status="D">
+2016/March_Version legal-status-documents-v1-2-2-transional
+Element <event-document> replaced by new element <event-reference> offering a choice:
+element <event-ref-document> - previously <event-document> - reference to a patent by means of a document-number
+element <event-ref-kind> - previously <reference-to-publication> - reference to a patent by means of a document kind-code
+2016/May_Version legal-status-documents-v1-2-3-transional
+Element <event-document> replaced by new element <event-reference> offering an additional choice:
+element <event-ref-document> - previously <event-document> - reference to a patent by means of a document-number
+element <event-ref-kind> - previously <reference-to-publication> - reference to a patent by means of a document kind-code
+element <text> - populated with the information available when some of the elements required are missing
+Element <fee-payment-year>
+restriction increased to 40 years
+Element <parties-details-old> not populated anymore
+previous owners and other additional information exchanged in <parties><text>
+2017/Feb_Version legal-status-documents-v-1-2-4
+Element <date-filing> now both child element in <event-details> and in <spc>
+only populated in <spc> when there are other spc elements available as well
+2017/July_Version legal-status-documents-v-1-2-5
+New attribute “event-id” at legal-event – defined “optional” – representing the unique and stable identifier to the legal event:
+In the case of a deleted event – status=”D” @ legal-event - identifier allows to pinpoint the exact event to delete
+In the case of an updated event – status=”D” on before image + status=”C” on after image - identifier allows to pair up before and after image of one and the same event
+2020/Jan_Version legal-status-documents-v-1-2-6
+New attribute “sequence-number” at element <party> – defined “optional”
+2020/Jul_Version legal-status-documents-v-1-2-7
+Element <address> - element <country> replaced by element <state-country> to allow for codes identifying states within the USA
+2020/Oct_Version legal-status-documents-v-1-2-8
+Set date-patent-lapsed not  a mandatory field
+*******************************************************************************************-->
+	<!--
+*******************************************************************************************
+ IMPORTED NAMESPACES
+*******************************************************************************************-->
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+	<!--
+*******************************************************************************************
+ ROOT ELEMENTS
+*******************************************************************************************-->
+	<xs:element name="legal-status-documents" type="LegalStatusDocumentsType">
+		<xs:annotation>
+			<xs:documentation>
+				This element is the "super-root".
+				It is the wrapper for one or more instances of "legal-status-document".
+				Each instance of "legal-status-document" represents an application in INPADOC, the master database for the EPO worldwide legal status data
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="legal-status-document" type="LegalStatusDocumentType">
+		<xs:annotation>
+			<xs:documentation>
+				This element is the "root".
+				It represents one application in INPADOC, the master database for worldwide legal status
+				It is the wrapper for one or more instances of "legal-event".
+			</xs:documentation>
+		</xs:annotation>
+		<!--
+		<xs:key name="PublicationReferenceKey">
+			<xs:selector xpath="publication-reference"/>
+			<xs:field xpath="document-id/kind"/>
+		</xs:key>
+
+		<xs:keyref name="PublicationReferenceKeyRef" refer="PublicationReferenceKey">
+			<xs:selector xpath="legal-event"/>
+			<xs:field xpath="@reference-to-publication"/>
+		</xs:keyref>
+		-->
+		<xs:unique name="SequenceNumberKey">
+			<xs:selector xpath="legal-event"/>
+			<xs:field xpath="@sequence-number"/>
+		</xs:unique>
+	</xs:element>
+	<!--
+*******************************************************************************************
+ ELEMENTS
+*******************************************************************************************-->
+	<xs:element name="address">
+		<xs:annotation>
+			<xs:documentation>ST.36 unstructured address.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="address-1" minOccurs="0"/>
+				<xs:element name="address-2" minOccurs="0"/>
+				<xs:element name="address-3" minOccurs="0"/>
+				<xs:element name="address-4" minOccurs="0"/>
+				<xs:element name="address-5" minOccurs="0"/>
+				<xs:element ref="state-country"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="application-reference" type="DocumentReferenceType">
+		<xs:annotation>
+			<xs:documentation>Application reference information: application number, country
+				.
+				In case of a filing refererence, the kind code is empty and the date refers to
+				the filing date
+				.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="country" type="ST3HistoryCountryCodeType">
+		<xs:annotation>
+			<xs:documentation>ST.3 country code, also includes EP and WO. Uppercase always.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="state-country" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Allows codes identifying states within the USA</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="date" type="DateType">
+		<xs:annotation>
+			<xs:documentation>Date: components of a date. Format ISO8601 short: YYYYMMDD.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="event-date-effective" type="DateType">
+		<xs:annotation>
+			<xs:documentation>The date that the legal event has come into force.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="date-expiry-of-patent" type="DateType">
+		<xs:annotation>
+			<xs:documentation>The date that the original underlying patent to the SPC expires or has expired.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="date-filing" type="DateType">
+		<xs:annotation>
+			<xs:documentation>Reference to legacy product: L512EP</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="date-extension-granted" type="DateType">
+		<xs:annotation>
+			<xs:documentation>The date that extension of terms has been granted.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="date-application-withdrawn" type="DateType">
+		<xs:annotation>
+			<xs:documentation>The date that the application has been withdrawn.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="doc-number" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Serial number of the referenced patent (or application) document.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="document-id">
+		<xs:annotation>
+			<xs:documentation>Document identification refers to patents
+				(and patent applications) only.
+				See WIPO ST.14.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="country"/>
+				<xs:element ref="doc-number"/>
+				<xs:element ref="kind" minOccurs="0"/>
+				<xs:element ref="name" minOccurs="0"/>
+				<xs:element ref="date" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="document-id-type" use="optional">
+				<xs:annotation>
+					<xs:documentation>not supported in this product</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:enumeration value="docdb"/>
+						<xs:enumeration value="epodoc"/>
+						<xs:enumeration value="original"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="event-class" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Event Class - when populated - represents the INPADOC classification allocated by the EPO</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="event-code" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Event code as provided by the generating office.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="event-date" type="DateType">
+		<xs:annotation>
+			<xs:documentation>Date of the event.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="event-description">
+		<xs:annotation>
+			<xs:documentation>Textual description (localized) of the event.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="event-description-type">
+						<xs:annotation>
+							<xs:documentation>
+								Value "original" identifies the description as originally supplied by the national authority.
+							</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="original"/>
+								<xs:enumeration value="translation"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="lang" type="ISO639-1LanguageCode">
+						<xs:annotation>
+							<xs:documentation>
+								Value "en" identifies the description in the English language; this may the the original description or a translation.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="event-details" type="EventDetailsType">
+		<xs:annotation>
+			<xs:documentation>Grouping element for the details of an event.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="gazette-reference">
+		<xs:annotation>
+			<xs:documentation>Information about an office's gazette or bulletin - paper, electronic, etc.
+				where, the details of the patent publication are also given.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="gazette-num" type="xs:string"/>
+				<xs:element ref="date"/>
+				<xs:element ref="text" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="kind" type="KindType">
+		<xs:annotation>
+			<xs:documentation>Document kind code; e.g., A1</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="legal-event" type="LegalEventType">
+		<xs:annotation>
+			<xs:documentation>
+				Represents one legal event in INPADOC, the master database for worldwide legal status
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="name" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Name of a person or entity.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="party" type="PartyType">
+		<xs:annotation>
+			<xs:documentation>Grouping element identifying a party in the proceedings.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="fee-payment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice maxOccurs="2">
+					<xs:element name="fee-payment-date" type="DateType">
+						<xs:annotation>
+							<xs:documentation>Reference to legacy product: L518EP</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="fee-payment-year">
+						<xs:annotation>
+							<xs:documentation>Eg. "4", "8", "10", "15", ...; reference to legacy product: L520EP</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:positiveInteger">
+								<xs:maxInclusive value="40"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+				</xs:choice>
+				<xs:element ref="text" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to legacy product: L510EP</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute ref="country"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="notification-of-lapse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="date-patent-lapsed" type="DateType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to legacy product: L525EP when code="PG25"</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="text" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute ref="country"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="notification-of-reinstatement">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="date-patent-reinstated" type="DateType">
+					<xs:annotation>
+						<xs:documentation>Reference to legacy product: L525EP when code="PGRI"</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="text" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute ref="country"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="patent-classification">
+		<xs:annotation>
+			<xs:documentation>This element will only ever contain IPC classifications, either IPC1/7 or IPC/8; fdefinition has been reduced to "classification-symbol" unstructured; reference to legacy product: L516EP</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="classification-scheme">
+					<xs:annotation>
+						<xs:documentation>This elements allows to identify the classification scheme and the corresponding edition or validity date.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:choice minOccurs="0">
+							<xs:element name="edition"/>
+							<xs:element ref="date"/>
+						</xs:choice>
+						<xs:attribute name="office" type="ST3HistoryCountryCodeType" use="optional">
+							<xs:annotation>
+								<xs:documentation>ST.3 code of the office maintainning the classification scheme, e.g., for IPC use WO.</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="scheme" use="required">
+							<xs:annotation>
+								<xs:documentation>Name of the scheme, e.g., IPC8</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="classification-symbol" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Classification symbol in an unstructured format.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="product" type="ProductType">
+		<xs:annotation>
+			<xs:documentation>Grouping tag for an SPC product.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="publication-reference" type="DocumentReferenceType">
+		<xs:annotation>
+			<xs:documentation>Publication reference information: publication number, date, etc</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="registration" type="RegistrationType">
+		<xs:annotation>
+			<xs:documentation>Registration information of a product (SPC).</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="spc" type="SPCType">
+		<xs:annotation>
+			<xs:documentation>Grouping tag for SPC information.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="event-reference" type="EventReferenceType">
+		<xs:annotation>
+			<xs:documentation>Grouping tag for reference to a patent document</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="event-ref-document" type="EventRefDocumentType">
+		<xs:annotation>
+			<xs:documentation>Refers to a patent document by means of a document-number. Note that indication whether publication or application is not supported
+				L504EP - country
+				L503EP - doc-number
+				L506EP - kind
+				L505EP - date		</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="event-ref-kind" type="EventRefKindType">
+		<xs:annotation>
+			<xs:documentation>Refers to a patent document by means of a reference to the kind-code. Note that indication whether publication or application is not supported
+				L506EP - kind
+				L505EP - date		</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="text" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Text field. In a choice to be used when no other possibility to capture the information; reference to legacy product: L510EP</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--
+*******************************************************************************************
+ COMPLEX TYPES
+*******************************************************************************************-->
+	<xs:complexType name="DocumentReferenceType">
+		<xs:annotation>
+			<xs:documentation>Type to describe a container for a set of document identifications.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="document-id" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="doc-id" use="required">
+			<xs:annotation>
+				<xs:documentation>Provides a unique and stable link to the corresponding application in DOCDB
+					Allows for mixing and matching data between EPO raw data products "INPADOC Worldwide Legal Status" and "EPO Patent Information Resource" (DOCDB/XML)		</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="lang" type="ISO639-1LanguageCode" use="optional">
+			<xs:annotation>
+				<xs:documentation>Reference to legacy product: L514EP
+					Only populated when attributed to "publication-reference"</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="EventDetailsType">
+		<xs:annotation>
+			<xs:documentation>Type for the details of a legal event.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="event-description" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Describes the detailed nature of the event defined by element "event-code". This element is further identified by either attribute "event-description-type" or attribute "lang".
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="event-reference" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Refers to a patent document by means of a document-number or a document kind-code. Note that indication whether publication or application is not supported
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="date-application-withdrawn" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Represents the date of withdrawal. Reference to legacy product: L526EP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="date-filing" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Reference to legacy product: L512EP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="parties" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>One instance of "parties" will contain: one occurrence of "party" for each current owner, representative etc. One instance of parties may contain one occurrence of "text" containing the previous owner(s), representative(s) etc, concatenated into one string of freetext. Element is further identified by attribute "party-type". Values with reference to the legacy product :
+						L509EP - owner
+						L517EP - representative
+						L515EP - inventor
+						L519EP - opponent
+						L522EP - licensee					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="parties-details">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element ref="party" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+							<xs:unique name="PartySequenceNumberKey">
+								<xs:selector xpath="party"/>
+								<xs:field xpath="@sequence-number"/>
+							</xs:unique>
+						</xs:element>
+						<xs:element name="parties-details-old" minOccurs="0">
+							<xs:complexType>
+								<xs:choice>
+									<xs:element ref="party" maxOccurs="unbounded"/>
+									<xs:element ref="text" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Reference to legacy product: L510EP</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+								</xs:choice>
+							</xs:complexType>
+							<xs:unique name="PartyOldSequenceNumberKey">
+								<xs:selector xpath="party"/>
+								<xs:field xpath="@sequence-number"/>
+							</xs:unique>
+						</xs:element>
+						<xs:element ref="text" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>for US assignments : conveyance text</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="party-type" use="required">
+						<xs:annotation>
+							<xs:documentation>This product supports : owner, representative, licensee, inventor, opponent</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="owner"/>
+								<xs:enumeration value="representative"/>
+								<xs:enumeration value="licensee"/>
+								<xs:enumeration value="inventor"/>
+								<xs:enumeration value="applicant"/>
+								<xs:enumeration value="applicant-inventor"/>
+								<xs:enumeration value="opponent"/>
+								<xs:enumeration value="third-party"/>
+								<xs:enumeration value="other"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute ref="status"/>
+					<xs:attribute ref="sequence-number"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="spc" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Supplementary Protection Certificate</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="designated-states" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Reference to legacy product: L507EP; parsed into one occurence of "country" for each designated country</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="country" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="extension-states" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Reference to legacy product: L508EP; parsed into one occurence of "country" for each extension state</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="country" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="fee-payment" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Fee payment event for a country.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="notification-of-lapse" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Notification of lapse for a country.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="notification-of-reinstatement" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Notification of reinstatement for a country.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="patent-classification" minOccurs="0"/>
+			<xs:element ref="text" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Catering for events that are not supported by any of the above elements; reference to legacy product: L510EP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LegalEventType">
+		<xs:annotation>
+			<xs:documentation>Type for the descripton of a legal event.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="event-date">
+				<xs:annotation>
+					<xs:documentation>Represents the date this event was made available to the public, in gazette or on-line Reference to legacy product: L007EP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="event-date-effective" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Represents the date this event has come into force
+						Reference to legacy product: L525EP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="gazette-reference" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Reference to the gazette in which this event was published.
+						Currently not supported by the database, included for potential future use</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="event-class" minOccurs="0"/>
+			<xs:element ref="event-code">
+				<xs:annotation>
+					<xs:documentation>Defines the detailed country-specific nature of the event; reference to legacy product: if   L008EP not = REG then L008EP; if   L008EP = REG then L502EP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="event-details"/>
+		</xs:sequence>
+		<xs:attribute name="event-type" use="optional">
+			<xs:annotation>
+				<xs:documentation>Attribute event-type="REG" identifies that the event has bearing on a national application based on a regional filing; reference to legacy product: if L008EP="REG" then value "REG"</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="REG"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="providing-office" type="ST3HistoryCountryCodeType" use="required">
+			<xs:annotation>
+				<xs:documentation>Attribute "providing-office" identifies the national office that has provided the event; reference to legacy product: if L008EP="REG" then L501EP else L001EP; if PCT filing (kind-code="W") then "WO" instead of L001EP	</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="event-id" type="ElementIdentifier">
+			<xs:annotation>
+				<xs:documentation>Unique and stable identifier to the legal event </xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute ref="status"/>
+		<xs:attribute ref="date-added"/>
+		<xs:attribute ref="date-previous-exchange"/>
+		<xs:attribute ref="sequence-number" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="LegalStatusDocumentsType">
+		<xs:annotation>
+			<xs:documentation>Type for the bulk exchange of Legal Status Documents.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="legal-status-document" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="date-produced" type="DateType" use="required">
+			<xs:annotation>
+				<xs:documentation>Represents date of database extraction.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="date-of-exchange" type="DateType" use="required">
+			<xs:annotation>
+				<xs:documentation>Represents date of making data available to 3rd parties.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="schema-version" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Refers to version of the schema used to produce this instance. </xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="file" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Refers to the packaging-file containing this instance</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="number-of-documents" use="required">
+			<xs:annotation>
+				<xs:documentation>Represents number of legal status documents contained in this instance.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="generating-office" type="ST3HistoryCountryCodeType" use="required">
+			<xs:annotation>
+				<xs:documentation>ST.3 code representing the office generating this instance</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="complete-history" type="xs:boolean" use="required">
+			<xs:annotation>
+				<xs:documentation>Value 'true' represents "complete history" and identifies "back-file", i.e. each application is provided with all of its legal events. Value 'false' represents "updates only" and identifies "front-file"
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="LegalStatusDocumentType">
+		<xs:annotation>
+			<xs:documentation>Type describing a legal status document, i.e., the legal status information about a single patent document.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="application-reference">
+				<xs:annotation>
+					<xs:documentation>The application-reference is the key-identifier to the set of legal events; reference to legacy product: L001EP - country, L003EP - doc-number, L014EP - date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="publication-reference" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>This element contains all publications available in the DOCDB, the master database for patent bibliographic data; reference to legacy product: L017EP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ipr-type">
+				<xs:annotation>
+					<xs:documentation>This product supports "patent for invention" and "utility model" only; reference to legacy product: L005EP [ WIPO ST.17 Part B(ii) ]	</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="patent for invention"/>
+						<xs:enumeration value="patent of addition"/>
+						<xs:enumeration value="patent of improvement"/>
+						<xs:enumeration value="patent of importation"/>
+						<xs:enumeration value="plant patent"/>
+						<xs:enumeration value="inventor's certificate"/>
+						<xs:enumeration value="inventor's certificate of addition"/>
+						<xs:enumeration value="utility certificate"/>
+						<xs:enumeration value="utility certificate of additon"/>
+						<xs:enumeration value="utility model"/>
+						<xs:enumeration value="design"/>
+						<xs:enumeration value="industrial model"/>
+						<xs:enumeration value="other"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ipr-status" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Currently not supported in this product [ WIPO ST.17 Part B(ii) ]
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[12349]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element ref="legal-event" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Represents one legal event in INPADOC, the EPO master database for worldwide legal status.	</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute ref="family-id"/>
+		<xs:attribute ref="status"/>
+		<xs:attribute ref="date-added"/>
+		<xs:attribute ref="date-previous-exchange"/>
+		<xs:attribute ref="country" use="required">
+			<xs:annotation>
+				<xs:documentation>Populated with application country-code, for PCT applications with "WO"
+					Reference to legacy product: L001EP; if PCT filing (kind="W") then "WO" instead of L001EP.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="number-of-events" use="required">
+			<xs:annotation>
+				<xs:documentation>Represents number of legal status events contained in this instance.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="PartyType">
+		<xs:annotation>
+			<xs:documentation>Type for the description of a party to the proceedings.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="name">
+				<xs:annotation>
+					<xs:documentation>Element "name" may contain address data, concatenated and separated by , or ;	</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="execution-date" type="DateType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>for US assignments : execution-date transfer of ownership</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="address" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Currently not supported. When data available, then country of residence only	</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute ref="sequence-number"/>
+	</xs:complexType>
+	<xs:complexType name="ProductType">
+		<xs:annotation>
+			<xs:documentation>Type for the description of a product.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="name"/>
+			<xs:element ref="registration" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RegistrationType">
+		<xs:annotation>
+			<xs:documentation>Type for the description the registration of a product.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="country"/>
+			<xs:element name="registration-number" type="xs:string"/>
+			<xs:element name="registration-date" type="DateType"/>
+		</xs:sequence>
+		<xs:attribute name="registration-level" use="required">
+			<xs:annotation>
+				<xs:documentation>Value "national" identifies "registration in the country of the national office"; value "regional" identifies "first registration in a country within the economic area"</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="national"/>
+					<xs:enumeration value="regional"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="region-name" type="xs:string">
+			<xs:annotation>
+				<xs:documentation>"EEA" - European Economic Area</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="SPCType">
+		<xs:annotation>
+			<xs:documentation>Type to describe a SPC. The content of this element is highly variable.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="spc-number" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Reference to legacy product: L511EP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="date-filing" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Reference to legacy product: L512EP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="date-expiry-of-patent" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Represents the date the original underlying patent has expired; reference to legacy product: L513EP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="date-extension-granted" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Represents the date extension of terms have been granted; reference to legacy product: L523EP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Currently information on product and product registration is stored in the master database in a blob of freetext.
+						The contents of this blob of freetext is too volatile and complex to parse at exchange time.
+						It is the intention to capture and record this information in dedicated tags in the future.
+						Until such time information on product and product registration will be included and exchanged as freetext in "text"
+					</xs:documentation>
+				</xs:annotation>
+				<xs:element ref="product"/>
+				<xs:element ref="text">
+					<xs:annotation>
+						<xs:documentation>Reference to legacy product: L510EP</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EventReferenceType">
+		<xs:choice>
+			<xs:element ref="event-ref-document"/>
+			<xs:element ref="event-ref-kind"/>
+			<xs:element ref="text">
+				<xs:annotation>
+					<xs:documentation>Populated when some of the elements required are not available</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="EventRefDocumentType">
+		<xs:sequence>
+			<xs:element ref="country"/>
+			<xs:element ref="doc-number"/>
+			<xs:element ref="kind" minOccurs="0"/>
+			<xs:element ref="name" minOccurs="0"/>
+			<xs:element ref="date" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="document-id-type" use="optional">
+			<xs:annotation>
+				<xs:documentation>not supported in this product</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:NMTOKEN">
+					<xs:enumeration value="docdb"/>
+					<xs:enumeration value="epodoc"/>
+					<xs:enumeration value="original"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="EventRefKindType">
+		<xs:sequence>
+			<xs:element ref="kind"/>
+			<xs:element ref="date" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--
+*******************************************************************************************
+ SIMPLE TYPES
+*******************************************************************************************-->
+	<xs:simpleType name="DateType">
+		<xs:annotation>
+			<xs:documentation>ISO8601 Short Format Date: YYYYMMDD.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(\d{8})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ElementIdentifier">
+		<xs:annotation>
+			<xs:documentation>Unique Identifier of up to 9 digits</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:int">
+			<xs:maxInclusive value="999999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ISO639-1LanguageCode">
+		<xs:annotation>
+			<xs:documentation>ISO 639 is a standardized nomenclature used to classify all known languages. Each language is assigned a 2-letter (639-1) and 3-letter (639-2 and 639-3), lowercase abbreviation, amended in later versions of the nomenclature. The system is highly useful for linguists and ethnographers to categorize the languages spoken on a regional basis, and to compute analysis in the field of lexicostatistics. ISO 639 has five code lists.
+				This list has been updated on 22.01.2013</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ab">
+				<xs:annotation>
+					<xs:documentation>Language Name: Abkhaz; Language Family: Northwest Caucasian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="aa">
+				<xs:annotation>
+					<xs:documentation>Language Name: Afar; Language Family: Afro-Asiatic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="af">
+				<xs:annotation>
+					<xs:documentation>Language Name: Afrikaans; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ak">
+				<xs:annotation>
+					<xs:documentation>Language Name: Akan; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sq">
+				<xs:annotation>
+					<xs:documentation>Language Name: Albanian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="am">
+				<xs:annotation>
+					<xs:documentation>Language Name: Amharic; Language Family: Afro-Asiatic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ar">
+				<xs:annotation>
+					<xs:documentation>Language Name: Arabic; Language Family: Afro-Asiatic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="an">
+				<xs:annotation>
+					<xs:documentation>Language Name: Aragonese; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="hy">
+				<xs:annotation>
+					<xs:documentation>Language Name: Armenian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="as">
+				<xs:annotation>
+					<xs:documentation>Language Name: Assamese; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="av">
+				<xs:annotation>
+					<xs:documentation>Language Name: Avaric; Language Family: Northeast Caucasian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ae">
+				<xs:annotation>
+					<xs:documentation>Language Name: Avestan; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ay">
+				<xs:annotation>
+					<xs:documentation>Language Name: Aymara; Language Family: Aymaran</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="az">
+				<xs:annotation>
+					<xs:documentation>Language Name: Azerbaijani; Language Family: Turkic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="bm">
+				<xs:annotation>
+					<xs:documentation>Language Name: Bambara; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ba">
+				<xs:annotation>
+					<xs:documentation>Language Name: Bashkir; Language Family: Turkic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="eu">
+				<xs:annotation>
+					<xs:documentation>Language Name: Basque; Language Family: Language isolate</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="be">
+				<xs:annotation>
+					<xs:documentation>Language Name: Belarusian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="bn">
+				<xs:annotation>
+					<xs:documentation>Language Name: Bengali; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="bh">
+				<xs:annotation>
+					<xs:documentation>Language Name: Bihari; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="bi">
+				<xs:annotation>
+					<xs:documentation>Language Name: Bislama; Language Family: Creole</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="bs">
+				<xs:annotation>
+					<xs:documentation>Language Name: Bosnian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="br">
+				<xs:annotation>
+					<xs:documentation>Language Name: Breton; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="bg">
+				<xs:annotation>
+					<xs:documentation>Language Name: Bulgarian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="my">
+				<xs:annotation>
+					<xs:documentation>Language Name: Burmese; Language Family: Sino-Tibetan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ca">
+				<xs:annotation>
+					<xs:documentation>Language Name: Catalan; Valencian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ch">
+				<xs:annotation>
+					<xs:documentation>Language Name: Chamorro; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ce">
+				<xs:annotation>
+					<xs:documentation>Language Name: Chechen; Language Family: Northeast Caucasian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ny">
+				<xs:annotation>
+					<xs:documentation>Language Name: Chichewa; Chewa; Nyanja; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="zh">
+				<xs:annotation>
+					<xs:documentation>Language Name: Chinese; Language Family: Sino-Tibetan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="cv">
+				<xs:annotation>
+					<xs:documentation>Language Name: Chuvash; Language Family: Turkic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="kw">
+				<xs:annotation>
+					<xs:documentation>Language Name: Cornish; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="co">
+				<xs:annotation>
+					<xs:documentation>Language Name: Corsican; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="cr">
+				<xs:annotation>
+					<xs:documentation>Language Name: Cree; Language Family: Algonquian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="hr">
+				<xs:annotation>
+					<xs:documentation>Language Name: Croatian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="cs">
+				<xs:annotation>
+					<xs:documentation>Language Name: Czech; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="da">
+				<xs:annotation>
+					<xs:documentation>Language Name: Danish; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="dv">
+				<xs:annotation>
+					<xs:documentation>Language Name: Divehi; Dhivehi; Maldivian;; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nl">
+				<xs:annotation>
+					<xs:documentation>Language Name: Dutch; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="dz">
+				<xs:annotation>
+					<xs:documentation>Language Name: Dzongkha; Language Family: Sino-Tibetan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="en">
+				<xs:annotation>
+					<xs:documentation>Language Name: English; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="eo">
+				<xs:annotation>
+					<xs:documentation>Language Name: Esperanto; Language Family: Constructed</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="et">
+				<xs:annotation>
+					<xs:documentation>Language Name: Estonian; Language Family: Uralic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ee">
+				<xs:annotation>
+					<xs:documentation>Language Name: Ewe; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fo">
+				<xs:annotation>
+					<xs:documentation>Language Name: Faroese; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fj">
+				<xs:annotation>
+					<xs:documentation>Language Name: Fijian; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fi">
+				<xs:annotation>
+					<xs:documentation>Language Name: Finnish; Language Family: Uralic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fr">
+				<xs:annotation>
+					<xs:documentation>Language Name: French; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ff">
+				<xs:annotation>
+					<xs:documentation>Language Name: Fula; Fulah; Pulaar; Pular; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="gl">
+				<xs:annotation>
+					<xs:documentation>Language Name: Galician; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ka">
+				<xs:annotation>
+					<xs:documentation>Language Name: Georgian; Language Family: South Caucasian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="de">
+				<xs:annotation>
+					<xs:documentation>Language Name: German; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="el">
+				<xs:annotation>
+					<xs:documentation>Language Name: Greek, Modern; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="gn">
+				<xs:annotation>
+					<xs:documentation>Language Name: Guaraní; Language Family: Tupian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="gu">
+				<xs:annotation>
+					<xs:documentation>Language Name: Gujarati; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ht">
+				<xs:annotation>
+					<xs:documentation>Language Name: Haitian; Haitian Creole; Language Family: Creole</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ha">
+				<xs:annotation>
+					<xs:documentation>Language Name: Hausa; Language Family: Afro-Asiatic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="he">
+				<xs:annotation>
+					<xs:documentation>Language Name: Hebrew (modern); Language Family: Afro-Asiatic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="hz">
+				<xs:annotation>
+					<xs:documentation>Language Name: Herero; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="hi">
+				<xs:annotation>
+					<xs:documentation>Language Name: Hindi; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ho">
+				<xs:annotation>
+					<xs:documentation>Language Name: Hiri Motu; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="hu">
+				<xs:annotation>
+					<xs:documentation>Language Name: Hungarian; Language Family: Uralic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ia">
+				<xs:annotation>
+					<xs:documentation>Language Name: Interlingua; Language Family: Constructed</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="id">
+				<xs:annotation>
+					<xs:documentation>Language Name: Indonesian; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ie">
+				<xs:annotation>
+					<xs:documentation>Language Name: Interlingue; Language Family: Constructed</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ga">
+				<xs:annotation>
+					<xs:documentation>Language Name: Irish; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ig">
+				<xs:annotation>
+					<xs:documentation>Language Name: Igbo; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ik">
+				<xs:annotation>
+					<xs:documentation>Language Name: Inupiaq; Language Family: Eskimo–Aleut</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="io">
+				<xs:annotation>
+					<xs:documentation>Language Name: Ido; Language Family: Constructed</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="is">
+				<xs:annotation>
+					<xs:documentation>Language Name: Icelandic; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="it">
+				<xs:annotation>
+					<xs:documentation>Language Name: Italian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="iu">
+				<xs:annotation>
+					<xs:documentation>Language Name: Inuktitut; Language Family: Eskimo–Aleut</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ja">
+				<xs:annotation>
+					<xs:documentation>Language Name: Japanese; Language Family: Japonic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="jv">
+				<xs:annotation>
+					<xs:documentation>Language Name: Javanese; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="kl">
+				<xs:annotation>
+					<xs:documentation>Language Name: Kalaallisut, Greenlandic; Language Family: Eskimo–Aleut</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="kn">
+				<xs:annotation>
+					<xs:documentation>Language Name: Kannada; Language Family: Dravidian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="kr">
+				<xs:annotation>
+					<xs:documentation>Language Name: Kanuri; Language Family: Nilo-Saharan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ks">
+				<xs:annotation>
+					<xs:documentation>Language Name: Kashmiri; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="kk">
+				<xs:annotation>
+					<xs:documentation>Language Name: Kazakh; Language Family: Turkic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="km">
+				<xs:annotation>
+					<xs:documentation>Language Name: Khmer; Language Family: Austro-Asiatic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ki">
+				<xs:annotation>
+					<xs:documentation>Language Name: Kikuyu, Gikuyu; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rw">
+				<xs:annotation>
+					<xs:documentation>Language Name: Kinyarwanda; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ky">
+				<xs:annotation>
+					<xs:documentation>Language Name: Kyrgyz; Language Family: Turkic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="kv">
+				<xs:annotation>
+					<xs:documentation>Language Name: Komi; Language Family: Uralic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="kg">
+				<xs:annotation>
+					<xs:documentation>Language Name: Kongo; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ko">
+				<xs:annotation>
+					<xs:documentation>Language Name: Korean; Language Family: Language isolate</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ku">
+				<xs:annotation>
+					<xs:documentation>Language Name: Kurdish; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="kj">
+				<xs:annotation>
+					<xs:documentation>Language Name: Kwanyama, Kuanyama; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="la">
+				<xs:annotation>
+					<xs:documentation>Language Name: Latin; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="lb">
+				<xs:annotation>
+					<xs:documentation>Language Name: Luxembourgish, Letzeburgesch; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="lg">
+				<xs:annotation>
+					<xs:documentation>Language Name: Ganda; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="li">
+				<xs:annotation>
+					<xs:documentation>Language Name: Limburgish, Limburgan, Limburger; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ln">
+				<xs:annotation>
+					<xs:documentation>Language Name: Lingala; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="lo">
+				<xs:annotation>
+					<xs:documentation>Language Name: Lao; Language Family: Tai–Kadai</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="lt">
+				<xs:annotation>
+					<xs:documentation>Language Name: Lithuanian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="lu">
+				<xs:annotation>
+					<xs:documentation>Language Name: Luba-Katanga; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="lv">
+				<xs:annotation>
+					<xs:documentation>Language Name: Latvian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="gv">
+				<xs:annotation>
+					<xs:documentation>Language Name: Manx; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="mk">
+				<xs:annotation>
+					<xs:documentation>Language Name: Macedonian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="mg">
+				<xs:annotation>
+					<xs:documentation>Language Name: Malagasy; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ms">
+				<xs:annotation>
+					<xs:documentation>Language Name: Malay; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ml">
+				<xs:annotation>
+					<xs:documentation>Language Name: Malayalam; Language Family: Dravidian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="mt">
+				<xs:annotation>
+					<xs:documentation>Language Name: Maltese; Language Family: Afro-Asiatic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="mi">
+				<xs:annotation>
+					<xs:documentation>Language Name: Māori; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="mr">
+				<xs:annotation>
+					<xs:documentation>Language Name: Marathi (Marāṭhī); Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="mh">
+				<xs:annotation>
+					<xs:documentation>Language Name: Marshallese; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="mn">
+				<xs:annotation>
+					<xs:documentation>Language Name: Mongolian; Language Family: Mongolic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="na">
+				<xs:annotation>
+					<xs:documentation>Language Name: Nauru; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nv">
+				<xs:annotation>
+					<xs:documentation>Language Name: Navajo, Navaho; Language Family: Dené–Yeniseian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nb">
+				<xs:annotation>
+					<xs:documentation>Language Name: Norwegian Bokmål; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nd">
+				<xs:annotation>
+					<xs:documentation>Language Name: North Ndebele; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ne">
+				<xs:annotation>
+					<xs:documentation>Language Name: Nepali; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ng">
+				<xs:annotation>
+					<xs:documentation>Language Name: Ndonga; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nn">
+				<xs:annotation>
+					<xs:documentation>Language Name: Norwegian Nynorsk; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="no">
+				<xs:annotation>
+					<xs:documentation>Language Name: Norwegian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ii">
+				<xs:annotation>
+					<xs:documentation>Language Name: Nuosu; Language Family: Sino-Tibetan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nr">
+				<xs:annotation>
+					<xs:documentation>Language Name: South Ndebele; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="oc">
+				<xs:annotation>
+					<xs:documentation>Language Name: Occitan; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="oj">
+				<xs:annotation>
+					<xs:documentation>Language Name: Ojibwe, Ojibwa; Language Family: Algonquian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="cu">
+				<xs:annotation>
+					<xs:documentation>Language Name: Old Church Slavonic, Church Slavic, Church Slavonic, Old Bulgarian, Old Slavonic; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="om">
+				<xs:annotation>
+					<xs:documentation>Language Name: Oromo; Language Family: Afro-Asiatic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="or">
+				<xs:annotation>
+					<xs:documentation>Language Name: Oriya; Language Family: Inida-Asia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="os">
+				<xs:annotation>
+					<xs:documentation>Language Name: Ossetian, Ossetic; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="pa">
+				<xs:annotation>
+					<xs:documentation>Language Name: Panjabi, Punjabi; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="pi">
+				<xs:annotation>
+					<xs:documentation>Language Name: Pāli; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fa">
+				<xs:annotation>
+					<xs:documentation>Language Name: Persian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="pl">
+				<xs:annotation>
+					<xs:documentation>Language Name: Polish; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ps">
+				<xs:annotation>
+					<xs:documentation>Language Name: Pashto, Pushto; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="pt">
+				<xs:annotation>
+					<xs:documentation>Language Name: Portuguese; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="qu">
+				<xs:annotation>
+					<xs:documentation>Language Name: Quechua; Language Family: Quechuan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rm">
+				<xs:annotation>
+					<xs:documentation>Language Name: Romansh; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rn">
+				<xs:annotation>
+					<xs:documentation>Language Name: Kirundi; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ro">
+				<xs:annotation>
+					<xs:documentation>Language Name: Romanian, Moldavian(Romanian from Republic of Moldova); Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ru">
+				<xs:annotation>
+					<xs:documentation>Language Name: Russian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sa">
+				<xs:annotation>
+					<xs:documentation>Language Name: Sanskrit (Saṁskṛta); Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sc">
+				<xs:annotation>
+					<xs:documentation>Language Name: Sardinian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sd">
+				<xs:annotation>
+					<xs:documentation>Language Name: Sindhi; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="se">
+				<xs:annotation>
+					<xs:documentation>Language Name: Northern Sami; Language Family: Uralic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sm">
+				<xs:annotation>
+					<xs:documentation>Language Name: Samoan; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sg">
+				<xs:annotation>
+					<xs:documentation>Language Name: Sango; Language Family: Creole</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sr">
+				<xs:annotation>
+					<xs:documentation>Language Name: Serbian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="gd">
+				<xs:annotation>
+					<xs:documentation>Language Name: Scottish Gaelic; Gaelic; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sn">
+				<xs:annotation>
+					<xs:documentation>Language Name: Shona; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="si">
+				<xs:annotation>
+					<xs:documentation>Language Name: Sinhala, Sinhalese; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sk">
+				<xs:annotation>
+					<xs:documentation>Language Name: Slovak; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sl">
+				<xs:annotation>
+					<xs:documentation>Language Name: Slovene; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="so">
+				<xs:annotation>
+					<xs:documentation>Language Name: Somali; Language Family: Afro-Asiatic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="st">
+				<xs:annotation>
+					<xs:documentation>Language Name: Southern Sotho; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="es">
+				<xs:annotation>
+					<xs:documentation>Language Name: Spanish; Castilian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="su">
+				<xs:annotation>
+					<xs:documentation>Language Name: Sundanese; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sw">
+				<xs:annotation>
+					<xs:documentation>Language Name: Swahili; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ss">
+				<xs:annotation>
+					<xs:documentation>Language Name: Swati; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sv">
+				<xs:annotation>
+					<xs:documentation>Language Name: Swedish; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ta">
+				<xs:annotation>
+					<xs:documentation>Language Name: Tamil; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="te">
+				<xs:annotation>
+					<xs:documentation>Language Name: Telugu; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tg">
+				<xs:annotation>
+					<xs:documentation>Language Name: Tajik; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="th">
+				<xs:annotation>
+					<xs:documentation>Language Name: Thai; Language Family: Tai–Kadai</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ti">
+				<xs:annotation>
+					<xs:documentation>Language Name: Tigrinya; Language Family: Afro-Asiatic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="bo">
+				<xs:annotation>
+					<xs:documentation>Language Name: Tibetan Standard, Tibetan, Central; Language Family: Sino-Tibetan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tk">
+				<xs:annotation>
+					<xs:documentation>Language Name: Turkmen; Language Family: Turkic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tl">
+				<xs:annotation>
+					<xs:documentation>Language Name: Tagalog; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tn">
+				<xs:annotation>
+					<xs:documentation>Language Name: Tswana; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="to">
+				<xs:annotation>
+					<xs:documentation>Language Name: Tonga (Tonga Islands); Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tr">
+				<xs:annotation>
+					<xs:documentation>Language Name: Turkish; Language Family: Turkic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ts">
+				<xs:annotation>
+					<xs:documentation>Language Name: Tsonga; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tt">
+				<xs:annotation>
+					<xs:documentation>Language Name: Tatar; Language Family: Turkic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tw">
+				<xs:annotation>
+					<xs:documentation>Language Name: Twi; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ty">
+				<xs:annotation>
+					<xs:documentation>Language Name: Tahitian; Language Family: Austronesian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ug">
+				<xs:annotation>
+					<xs:documentation>Language Name: Uighur, Uyghur; Language Family: Turkic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="uk">
+				<xs:annotation>
+					<xs:documentation>Language Name: Ukrainian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ur">
+				<xs:annotation>
+					<xs:documentation>Language Name: Urdu; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="uz">
+				<xs:annotation>
+					<xs:documentation>Language Name: Uzbek; Language Family: Turkic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ve">
+				<xs:annotation>
+					<xs:documentation>Language Name: Venda; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="vi">
+				<xs:annotation>
+					<xs:documentation>Language Name: Vietnamese; Language Family: Austro-Asiatic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="vo">
+				<xs:annotation>
+					<xs:documentation>Language Name: Volapük; Language Family: Constructed</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="wa">
+				<xs:annotation>
+					<xs:documentation>Language Name: Walloon; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="cy">
+				<xs:annotation>
+					<xs:documentation>Language Name: Welsh; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="wo">
+				<xs:annotation>
+					<xs:documentation>Language Name: Wolof; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fy">
+				<xs:annotation>
+					<xs:documentation>Language Name: Western Frisian; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="xh">
+				<xs:annotation>
+					<xs:documentation>Language Name: Xhosa; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="yi">
+				<xs:annotation>
+					<xs:documentation>Language Name: Yiddish; Language Family: Indo-European</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="yo">
+				<xs:annotation>
+					<xs:documentation>Language Name: Yoruba; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="za">
+				<xs:annotation>
+					<xs:documentation>Language Name: Zhuang, Chuang; Language Family: Tai–Kadai</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="zu">
+				<xs:annotation>
+					<xs:documentation>Language Name: Zulu; Language Family: Niger–Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="KindType">
+		<xs:annotation>
+			<xs:documentation>Type describing the kind code of a patent document.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([A-Z]\d?)|(([A-Z]\d)*)"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ST3ChangedCountryCodeType">
+		<xs:annotation>
+			<xs:documentation>WIPO ST.3 changed country codes, version 2.2, October 30, 2011 (ST.3 Annex B Section 1)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="AN">
+				<xs:annotation>
+					<xs:documentation>Albania, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AG">
+				<xs:annotation>
+					<xs:documentation>Algeria, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OE">
+				<xs:annotation>
+					<xs:documentation>Austria, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BB">
+				<xs:annotation>
+					<xs:documentation>Bahrain, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BA">
+				<xs:annotation>
+					<xs:documentation>Bangladesh, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BD">
+				<xs:annotation>
+					<xs:documentation>Barbados, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DA">
+				<xs:annotation>
+					<xs:documentation>Benin, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BH">
+				<xs:annotation>
+					<xs:documentation>Bhutan, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BT">
+				<xs:annotation>
+					<xs:documentation>Botswana, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UV">
+				<xs:annotation>
+					<xs:documentation>Burkina Faso, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HV">
+				<xs:annotation>
+					<xs:documentation>Burkina Faso, till 1984</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CD">
+				<xs:annotation>
+					<xs:documentation>Cambodia, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KA">
+				<xs:annotation>
+					<xs:documentation>Cameroon, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ZR">
+				<xs:annotation>
+					<xs:documentation>Central African Republic, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TS">
+				<xs:annotation>
+					<xs:documentation>Chad, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CE">
+				<xs:annotation>
+					<xs:documentation>Chile, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RC">
+				<xs:annotation>
+					<xs:documentation>China, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CF">
+				<xs:annotation>
+					<xs:documentation>Congo, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KN">
+				<xs:annotation>
+					<xs:documentation>Democratic People’s Republic of Korea, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CB">
+				<xs:annotation>
+					<xs:documentation>Democratic Republic of the Congo, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ZR">
+				<xs:annotation>
+					<xs:documentation>Democratic Republic of the Congo, till 1997</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DR">
+				<xs:annotation>
+					<xs:documentation>Dominican Republic, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ET">
+				<xs:annotation>
+					<xs:documentation>Egypt, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SL">
+				<xs:annotation>
+					<xs:documentation>El Salvador, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EA">
+				<xs:annotation>
+					<xs:documentation>Ethiopia, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SF">
+				<xs:annotation>
+					<xs:documentation>Finland, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GE">
+				<xs:annotation>
+					<xs:documentation>Gambia, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DT">
+				<xs:annotation>
+					<xs:documentation>Germany, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GU">
+				<xs:annotation>
+					<xs:documentation>Guatemala, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GI">
+				<xs:annotation>
+					<xs:documentation>Guinea, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HI">
+				<xs:annotation>
+					<xs:documentation>Haiti, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CV">
+				<xs:annotation>
+					<xs:documentation>Holy See, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HO">
+				<xs:annotation>
+					<xs:documentation>Honduras, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EI">
+				<xs:annotation>
+					<xs:documentation>Ireland, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JA">
+				<xs:annotation>
+					<xs:documentation>Japan, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KU">
+				<xs:annotation>
+					<xs:documentation>Kuwait, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FL">
+				<xs:annotation>
+					<xs:documentation>Liechtenstein, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MD">
+				<xs:annotation>
+					<xs:documentation>Madagascar, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MJ">
+				<xs:annotation>
+					<xs:documentation>Mali, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ML">
+				<xs:annotation>
+					<xs:documentation>Malta, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MT">
+				<xs:annotation>
+					<xs:documentation>Mauritania, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MS">
+				<xs:annotation>
+					<xs:documentation>Mauritius, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MO">
+				<xs:annotation>
+					<xs:documentation>Mongolia, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BU">
+				<xs:annotation>
+					<xs:documentation>Myanmar, till 1989</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NA">
+				<xs:annotation>
+					<xs:documentation>Nicaragua, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NI">
+				<xs:annotation>
+					<xs:documentation>Niger, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WN">
+				<xs:annotation>
+					<xs:documentation>Nigeria, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MU">
+				<xs:annotation>
+					<xs:documentation>Oman, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PM">
+				<xs:annotation>
+					<xs:documentation>Panama, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PP">
+				<xs:annotation>
+					<xs:documentation>Papua New Guinea, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PG">
+				<xs:annotation>
+					<xs:documentation>Paraguay, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PO">
+				<xs:annotation>
+					<xs:documentation>Poland, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KS">
+				<xs:annotation>
+					<xs:documentation>Republic of Korea, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RU">
+				<xs:annotation>
+					<xs:documentation>Romania, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WL">
+				<xs:annotation>
+					<xs:documentation>Sierra Leone, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CL">
+				<xs:annotation>
+					<xs:documentation>Sri Lanka, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SW">
+				<xs:annotation>
+					<xs:documentation>Sweden, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SR">
+				<xs:annotation>
+					<xs:documentation>Syrian Arab Republic, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TP">
+				<xs:annotation>
+					<xs:documentation>Timor–Leste, till 20.05.2002</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TO">
+				<xs:annotation>
+					<xs:documentation>Togo, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TI">
+				<xs:annotation>
+					<xs:documentation>Tonga, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TD">
+				<xs:annotation>
+					<xs:documentation>Trinidad and Tobago, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TA">
+				<xs:annotation>
+					<xs:documentation>United Republic of Tanzania, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ZB">
+				<xs:annotation>
+					<xs:documentation>Zambia, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ST3CountryCodeType">
+		<xs:annotation>
+			<xs:documentation>WIPO ST.3 country codes, version 2.2, October 30, 2011 (ST.3 Annex A)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="AD">
+				<xs:annotation>
+					<xs:documentation>Andorra</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AE">
+				<xs:annotation>
+					<xs:documentation>United Arab Emirates</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AF">
+				<xs:annotation>
+					<xs:documentation>Afghanistan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AG">
+				<xs:annotation>
+					<xs:documentation>Antigua and Barbuda</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AI">
+				<xs:annotation>
+					<xs:documentation>Anguilla</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AL">
+				<xs:annotation>
+					<xs:documentation>Albania</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AM">
+				<xs:annotation>
+					<xs:documentation>Armenia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AO">
+				<xs:annotation>
+					<xs:documentation>Angola</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AP">
+				<xs:annotation>
+					<xs:documentation>African Regional Intellectual Property Organization (ARIPO)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AR">
+				<xs:annotation>
+					<xs:documentation>Argentina</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AT">
+				<xs:annotation>
+					<xs:documentation>Austria</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AU">
+				<xs:annotation>
+					<xs:documentation>Australia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AW">
+				<xs:annotation>
+					<xs:documentation>Aruba</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AZ">
+				<xs:annotation>
+					<xs:documentation>Azerbaijan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BA">
+				<xs:annotation>
+					<xs:documentation>Bosnia and Herzegovina</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BB">
+				<xs:annotation>
+					<xs:documentation>Barbados</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BD">
+				<xs:annotation>
+					<xs:documentation>Bangladesh</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BE">
+				<xs:annotation>
+					<xs:documentation>Belgium</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BF">
+				<xs:annotation>
+					<xs:documentation>Burkina Faso</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BG">
+				<xs:annotation>
+					<xs:documentation>Bulgaria</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BH">
+				<xs:annotation>
+					<xs:documentation>Bahrain</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BI">
+				<xs:annotation>
+					<xs:documentation>Burundi</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BJ">
+				<xs:annotation>
+					<xs:documentation>Benin</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BM">
+				<xs:annotation>
+					<xs:documentation>Bermuda</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BN">
+				<xs:annotation>
+					<xs:documentation>Brunei Darussalam</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BO">
+				<xs:annotation>
+					<xs:documentation>Bolivia, Plurinational State of</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BQ">
+				<xs:annotation>
+					<xs:documentation>Bonaire, Sint Eustatius and Saba</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BR">
+				<xs:annotation>
+					<xs:documentation>Brazil</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BS">
+				<xs:annotation>
+					<xs:documentation>Bahamas</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BT">
+				<xs:annotation>
+					<xs:documentation>Bhutan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BV">
+				<xs:annotation>
+					<xs:documentation>Bouvet Island</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BW">
+				<xs:annotation>
+					<xs:documentation>Botswana</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BX">
+				<xs:annotation>
+					<xs:documentation>Benelux Office for Intellectual Property (BOIP)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BY">
+				<xs:annotation>
+					<xs:documentation>Belarus</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BZ">
+				<xs:annotation>
+					<xs:documentation>Belize</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CA">
+				<xs:annotation>
+					<xs:documentation>Canada</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CD">
+				<xs:annotation>
+					<xs:documentation>Democratic Republic of the Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CF">
+				<xs:annotation>
+					<xs:documentation>Central African Republic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CG">
+				<xs:annotation>
+					<xs:documentation>Congo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CH">
+				<xs:annotation>
+					<xs:documentation>Switzerland</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CI">
+				<xs:annotation>
+					<xs:documentation>Côte d’Ivoire</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CK">
+				<xs:annotation>
+					<xs:documentation>Cook Islands</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CL">
+				<xs:annotation>
+					<xs:documentation>Chile</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CM">
+				<xs:annotation>
+					<xs:documentation>Cameroon</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CN">
+				<xs:annotation>
+					<xs:documentation>China</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CO">
+				<xs:annotation>
+					<xs:documentation>Colombia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CR">
+				<xs:annotation>
+					<xs:documentation>Costa Rica</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CU">
+				<xs:annotation>
+					<xs:documentation>Cuba</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CV">
+				<xs:annotation>
+					<xs:documentation>Cape Verde</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CW">
+				<xs:annotation>
+					<xs:documentation>Curaçao</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CY">
+				<xs:annotation>
+					<xs:documentation>Cyprus</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CZ">
+				<xs:annotation>
+					<xs:documentation>Czech Republic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DE">
+				<xs:annotation>
+					<xs:documentation>Germany</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DJ">
+				<xs:annotation>
+					<xs:documentation>Djibouti</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DK">
+				<xs:annotation>
+					<xs:documentation>Denmark</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DM">
+				<xs:annotation>
+					<xs:documentation>Dominica</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DO">
+				<xs:annotation>
+					<xs:documentation>Dominican Republic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DZ">
+				<xs:annotation>
+					<xs:documentation>Algeria</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EA">
+				<xs:annotation>
+					<xs:documentation>Eurasian Patent Organization (EAPO)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EC">
+				<xs:annotation>
+					<xs:documentation>Ecuador</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EE">
+				<xs:annotation>
+					<xs:documentation>Estonia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EG">
+				<xs:annotation>
+					<xs:documentation>Egypt</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EH">
+				<xs:annotation>
+					<xs:documentation>Western Sahara</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EM">
+				<xs:annotation>
+					<xs:documentation>Office for Harmonization in the Internal Market (Trademarks and Designs) (OHIM)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EP">
+				<xs:annotation>
+					<xs:documentation>European Patent Office (EPO)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ER">
+				<xs:annotation>
+					<xs:documentation>Eritrea</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ES">
+				<xs:annotation>
+					<xs:documentation>Spain</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ET">
+				<xs:annotation>
+					<xs:documentation>Ethiopia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FI">
+				<xs:annotation>
+					<xs:documentation>Finland</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FJ">
+				<xs:annotation>
+					<xs:documentation>Fiji</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FK">
+				<xs:annotation>
+					<xs:documentation>Falkland Islands (Malvinas)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FO">
+				<xs:annotation>
+					<xs:documentation>Faroe Islands</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FR">
+				<xs:annotation>
+					<xs:documentation>France</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GA">
+				<xs:annotation>
+					<xs:documentation>Gabon</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GB">
+				<xs:annotation>
+					<xs:documentation>United Kingdom</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GC">
+				<xs:annotation>
+					<xs:documentation>Patent Office of the Cooperation Council for the Arab States of the Gulf (GCC)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GD">
+				<xs:annotation>
+					<xs:documentation>Grenada</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GE">
+				<xs:annotation>
+					<xs:documentation>Georgia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GG">
+				<xs:annotation>
+					<xs:documentation>Guernsey</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GH">
+				<xs:annotation>
+					<xs:documentation>Ghana</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GI">
+				<xs:annotation>
+					<xs:documentation>Gibraltar</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GL">
+				<xs:annotation>
+					<xs:documentation>Greenland</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GM">
+				<xs:annotation>
+					<xs:documentation>Gambia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GN">
+				<xs:annotation>
+					<xs:documentation>Guinea</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GQ">
+				<xs:annotation>
+					<xs:documentation>Equatorial Guinea</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GR">
+				<xs:annotation>
+					<xs:documentation>Greece</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GS">
+				<xs:annotation>
+					<xs:documentation>South Georgia and the South Sandwich Islands</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GT">
+				<xs:annotation>
+					<xs:documentation>Guatemala</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GW">
+				<xs:annotation>
+					<xs:documentation>Guinea‑Bissau</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GY">
+				<xs:annotation>
+					<xs:documentation>Guyana</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HK">
+				<xs:annotation>
+					<xs:documentation>The Hong Kong Special Administrative Region of the People’s Republic of China</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HN">
+				<xs:annotation>
+					<xs:documentation>Honduras</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HR">
+				<xs:annotation>
+					<xs:documentation>Croatia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HT">
+				<xs:annotation>
+					<xs:documentation>Haiti</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HU">
+				<xs:annotation>
+					<xs:documentation>Hungary</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IB">
+				<xs:annotation>
+					<xs:documentation>International Bureau of the World Intellectual Property Organization (WIPO)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ID">
+				<xs:annotation>
+					<xs:documentation>Indonesia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IE">
+				<xs:annotation>
+					<xs:documentation>Ireland</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IL">
+				<xs:annotation>
+					<xs:documentation>Israel</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IM">
+				<xs:annotation>
+					<xs:documentation>Isle of Man</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IN">
+				<xs:annotation>
+					<xs:documentation>India</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IQ">
+				<xs:annotation>
+					<xs:documentation>Iraq</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IR">
+				<xs:annotation>
+					<xs:documentation>Iran (Islamic Republic of)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IS">
+				<xs:annotation>
+					<xs:documentation>Iceland</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IT">
+				<xs:annotation>
+					<xs:documentation>Italy</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JE">
+				<xs:annotation>
+					<xs:documentation>Jersey</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JM">
+				<xs:annotation>
+					<xs:documentation>Jamaica</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JO">
+				<xs:annotation>
+					<xs:documentation>Jordan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JP">
+				<xs:annotation>
+					<xs:documentation>Japan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KE">
+				<xs:annotation>
+					<xs:documentation>Kenya</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KG">
+				<xs:annotation>
+					<xs:documentation>Kyrgyzstan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KH">
+				<xs:annotation>
+					<xs:documentation>Cambodia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KI">
+				<xs:annotation>
+					<xs:documentation>Kiribati</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KM">
+				<xs:annotation>
+					<xs:documentation>Comoros</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KN">
+				<xs:annotation>
+					<xs:documentation>Saint Kitts and Nevis</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KP">
+				<xs:annotation>
+					<xs:documentation>Democratic People’s Republic of Korea</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KR">
+				<xs:annotation>
+					<xs:documentation>Republic of Korea</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KW">
+				<xs:annotation>
+					<xs:documentation>Kuwait</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KY">
+				<xs:annotation>
+					<xs:documentation>Cayman Islands</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KZ">
+				<xs:annotation>
+					<xs:documentation>Kazakhstan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LA">
+				<xs:annotation>
+					<xs:documentation>Lao People’s Democratic Republic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LB">
+				<xs:annotation>
+					<xs:documentation>Lebanon</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LC">
+				<xs:annotation>
+					<xs:documentation>Saint Lucia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LI">
+				<xs:annotation>
+					<xs:documentation>Liechtenstein</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LK">
+				<xs:annotation>
+					<xs:documentation>Sri Lanka</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LR">
+				<xs:annotation>
+					<xs:documentation>Liberia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LS">
+				<xs:annotation>
+					<xs:documentation>Lesotho</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LT">
+				<xs:annotation>
+					<xs:documentation>Lithuania</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LU">
+				<xs:annotation>
+					<xs:documentation>Luxembourg</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LV">
+				<xs:annotation>
+					<xs:documentation>Latvia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LY">
+				<xs:annotation>
+					<xs:documentation>Libyan Arab Jamahiriya</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MA">
+				<xs:annotation>
+					<xs:documentation>Morocco</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MC">
+				<xs:annotation>
+					<xs:documentation>Monaco</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MD">
+				<xs:annotation>
+					<xs:documentation>Republic of Moldova</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ME">
+				<xs:annotation>
+					<xs:documentation>Montenegro</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MG">
+				<xs:annotation>
+					<xs:documentation>Madagascar</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MK">
+				<xs:annotation>
+					<xs:documentation>The former Yugoslav Republic of Macedonia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ML">
+				<xs:annotation>
+					<xs:documentation>Mali</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MM">
+				<xs:annotation>
+					<xs:documentation>Myanmar</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MN">
+				<xs:annotation>
+					<xs:documentation>Mongolia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MO">
+				<xs:annotation>
+					<xs:documentation>Macao</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MP">
+				<xs:annotation>
+					<xs:documentation>Northern Mariana Islands</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MR">
+				<xs:annotation>
+					<xs:documentation>Mauritania</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MS">
+				<xs:annotation>
+					<xs:documentation>Montserrat</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MT">
+				<xs:annotation>
+					<xs:documentation>Malta</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MU">
+				<xs:annotation>
+					<xs:documentation>Mauritius</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MV">
+				<xs:annotation>
+					<xs:documentation>Maldives</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MW">
+				<xs:annotation>
+					<xs:documentation>Malawi</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MX">
+				<xs:annotation>
+					<xs:documentation>Mexico</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MY">
+				<xs:annotation>
+					<xs:documentation>Malaysia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MZ">
+				<xs:annotation>
+					<xs:documentation>Mozambique</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NA">
+				<xs:annotation>
+					<xs:documentation>Namibia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NE">
+				<xs:annotation>
+					<xs:documentation>Niger</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NG">
+				<xs:annotation>
+					<xs:documentation>Nigeria</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NI">
+				<xs:annotation>
+					<xs:documentation>Nicaragua</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NL">
+				<xs:annotation>
+					<xs:documentation>Netherlands</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NO">
+				<xs:annotation>
+					<xs:documentation>Norway</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NP">
+				<xs:annotation>
+					<xs:documentation>Nepal</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NR">
+				<xs:annotation>
+					<xs:documentation>Nauru</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NZ">
+				<xs:annotation>
+					<xs:documentation>New Zealand</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OA">
+				<xs:annotation>
+					<xs:documentation>African Intellectual Property Organization (OAPI)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OM">
+				<xs:annotation>
+					<xs:documentation>Oman</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PA">
+				<xs:annotation>
+					<xs:documentation>Panama</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PE">
+				<xs:annotation>
+					<xs:documentation>Peru</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PF">
+				<xs:annotation>
+					<xs:documentation>French Polynesia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PG">
+				<xs:annotation>
+					<xs:documentation>Papua New Guinea</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PH">
+				<xs:annotation>
+					<xs:documentation>Philippines</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PK">
+				<xs:annotation>
+					<xs:documentation>Pakistan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PL">
+				<xs:annotation>
+					<xs:documentation>Poland</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PT">
+				<xs:annotation>
+					<xs:documentation>Portugal</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PW">
+				<xs:annotation>
+					<xs:documentation>Palau</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PY">
+				<xs:annotation>
+					<xs:documentation>Paraguay</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="QA">
+				<xs:annotation>
+					<xs:documentation>Qatar</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="QZ">
+				<xs:annotation>
+					<xs:documentation>Community Plant Variety Office (European Union) (CPVO)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RO">
+				<xs:annotation>
+					<xs:documentation>Romania</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RS">
+				<xs:annotation>
+					<xs:documentation>Serbia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RU">
+				<xs:annotation>
+					<xs:documentation>Russian Federation</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RW">
+				<xs:annotation>
+					<xs:documentation>Rwanda</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SA">
+				<xs:annotation>
+					<xs:documentation>Saudi Arabia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SB">
+				<xs:annotation>
+					<xs:documentation>Solomon Islands</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SC">
+				<xs:annotation>
+					<xs:documentation>Seychelles</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SD">
+				<xs:annotation>
+					<xs:documentation>Sudan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SE">
+				<xs:annotation>
+					<xs:documentation>Sweden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SG">
+				<xs:annotation>
+					<xs:documentation>Singapore</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SH">
+				<xs:annotation>
+					<xs:documentation>Saint Helena, Ascension and Tristan da Cunha</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SI">
+				<xs:annotation>
+					<xs:documentation>Slovenia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SK">
+				<xs:annotation>
+					<xs:documentation>Slovakia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SL">
+				<xs:annotation>
+					<xs:documentation>Sierra Leone</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SM">
+				<xs:annotation>
+					<xs:documentation>San Marino</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SN">
+				<xs:annotation>
+					<xs:documentation>Senegal</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SO">
+				<xs:annotation>
+					<xs:documentation>Somalia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SR">
+				<xs:annotation>
+					<xs:documentation>Suriname</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SS">
+				<xs:annotation>
+					<xs:documentation>South Sudan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ST">
+				<xs:annotation>
+					<xs:documentation>Sao Tome and Principe</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SV">
+				<xs:annotation>
+					<xs:documentation>El Salvador</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SX">
+				<xs:annotation>
+					<xs:documentation>Sint Maarten (Dutch part)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SY">
+				<xs:annotation>
+					<xs:documentation>Syrian Arab Republic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SZ">
+				<xs:annotation>
+					<xs:documentation>Swaziland</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TC">
+				<xs:annotation>
+					<xs:documentation>Turks and Caicos Islands</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TD">
+				<xs:annotation>
+					<xs:documentation>Chad</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TG">
+				<xs:annotation>
+					<xs:documentation>Togo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TH">
+				<xs:annotation>
+					<xs:documentation>Thailand</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TJ">
+				<xs:annotation>
+					<xs:documentation>Tajikistan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TL">
+				<xs:annotation>
+					<xs:documentation>Timor–Leste</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TM">
+				<xs:annotation>
+					<xs:documentation>Turkmenistan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TN">
+				<xs:annotation>
+					<xs:documentation>Tunisia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TO">
+				<xs:annotation>
+					<xs:documentation>Tonga</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TR">
+				<xs:annotation>
+					<xs:documentation>Turkey</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TT">
+				<xs:annotation>
+					<xs:documentation>Trinidad and Tobago</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TV">
+				<xs:annotation>
+					<xs:documentation>Tuvalu</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TW">
+				<xs:annotation>
+					<xs:documentation>Taiwan, Province of China</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TZ">
+				<xs:annotation>
+					<xs:documentation>United Republic of Tanzania</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UA">
+				<xs:annotation>
+					<xs:documentation>Ukraine</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UG">
+				<xs:annotation>
+					<xs:documentation>Uganda</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="US">
+				<xs:annotation>
+					<xs:documentation>United States of America</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UY">
+				<xs:annotation>
+					<xs:documentation>Uruguay</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UZ">
+				<xs:annotation>
+					<xs:documentation>Uzbekistan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VA">
+				<xs:annotation>
+					<xs:documentation>Holy See</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VC">
+				<xs:annotation>
+					<xs:documentation>Saint Vincent and the Grenadines</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VE">
+				<xs:annotation>
+					<xs:documentation>Venezuela, Bolivarian Republic of</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VG">
+				<xs:annotation>
+					<xs:documentation>Virgin Islands (British)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VN">
+				<xs:annotation>
+					<xs:documentation>Viet Nam</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VU">
+				<xs:annotation>
+					<xs:documentation>Vanuatu</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WO">
+				<xs:annotation>
+					<xs:documentation>World Intellectual Property Organization (WIPO) (International Bureau of)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WS">
+				<xs:annotation>
+					<xs:documentation>Samoa</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="XA">
+				<xs:annotation>
+					<xs:documentation>Stateless</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="XN">
+				<xs:annotation>
+					<xs:documentation>Nordic Patent Institute (NPI)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="YE">
+				<xs:annotation>
+					<xs:documentation>Yemen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ZA">
+				<xs:annotation>
+					<xs:documentation>South Africa</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ZM">
+				<xs:annotation>
+					<xs:documentation>Zambia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ZW">
+				<xs:annotation>
+					<xs:documentation>Zimbabwe</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ST3DeletedCountryCodeType">
+		<xs:annotation>
+			<xs:documentation>WIPO ST.3 deleted country codes, version 2.2, October 30, 2011 (ST.3 Annex B Section 2)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="CS">
+				<xs:annotation>
+					<xs:documentation>Czechoslovakia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SY">
+				<xs:annotation>
+					<xs:documentation>Democratic Yemen, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SD">
+				<xs:annotation>
+					<xs:documentation>Democratic Yemen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DL">
+				<xs:annotation>
+					<xs:documentation>German Democratic Republic, till 01.01.1978</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DD">
+				<xs:annotation>
+					<xs:documentation>German Democratic Republic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IB">
+				<xs:annotation>
+					<xs:documentation>International Patent Institute</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SU">
+				<xs:annotation>
+					<xs:documentation>Soviet Union</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="YU">
+				<xs:annotation>
+					<xs:documentation>Yugoslavia/Serbia and Montenegro, Subsequent to the country name change of “Yugoslavia” to “Serbia and Montenegro”, that took effect on February 4, 2003, and to the decision by the ISO 3166/MA to use the new country name and new two-letter code “CS” (to replace “YU”), which was announced on July 23, 2003, the SCIT Standards and Documentation Working Group agreed, at its fifth session, in November 11, 2004, to recommend that the two-letter code “YU” continue to be used for “Serbia and Montenegro” in the industrial property field because code “CS” raised certain problems due to its former use to represent “Czechoslovakia” until 1993.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ST3HistoryCountryCodeType">
+		<xs:annotation>
+			<xs:documentation>WIPO ST.3 country codes, version 2.2, October 30, 2011 (ST.3 Annex A and B), provide the list of active, changed and deleted country codes.</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="ST3CountryCodeType ST3ChangedCountryCodeType ST3DeletedCountryCodeType"/>
+	</xs:simpleType>
+	<xs:simpleType name="StatusType">
+		<xs:annotation>
+			<xs:documentation>Represents the status "C" - for create, "A" - for amend, "D" - for delete</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="C"/>
+			<xs:enumeration value="D"/>
+			<xs:enumeration value="A"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:attribute name="doc-id" type="ElementIdentifier">
+		<xs:annotation>
+			<xs:documentation>Unique identifier for an application/publication.</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="family-id" type="ElementIdentifier">
+		<xs:annotation>
+			<xs:documentation>Unique identifier for a family of applications/publications.</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="status" type="StatusType">
+		<xs:annotation>
+			<xs:documentation>Represents the status: "C" for create or "A" for amend; "D" for delete</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="date-added" type="DateType">
+		<xs:annotation>
+			<xs:documentation>Represents the data this record was added to the master database</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="date-previous-exchange" type="DateType">
+		<xs:annotation>
+			<xs:documentation>Represents the date this record was last exchanged</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="sequence-number" type="xs:positiveInteger">
+		<xs:annotation>
+			<xs:documentation>Sequence number</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="country" type="ST3HistoryCountryCodeType">
+		<xs:annotation>
+			<xs:documentation>Populated with application country-code, for PCT applications with "WO"</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+</xs:schema>
+

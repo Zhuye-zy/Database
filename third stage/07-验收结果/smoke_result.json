@@ -1,0 +1,428 @@
+{
+  "timestamp_utc": "2026-10-08T14:45:50.472482+00:00",
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "abstract",
+      "status": "PASS",
+      "detail": {
+        "rows": 13,
+        "sample_rows": 10,
+        "expected": 13
+      }
+    },
+    {
+      "case": "application_type",
+      "status": "PASS",
+      "detail": {
+        "rows": 4,
+        "sample_rows": 4,
+        "expected": 4
+      }
+    },
+    {
+      "case": "citation_category",
+      "status": "PASS",
+      "detail": {
+        "rows": 2,
+        "sample_rows": 2,
+        "expected": 2
+      }
+    },
+    {
+      "case": "claim",
+      "status": "PASS",
+      "detail": {
+        "rows": 184,
+        "sample_rows": 10,
+        "expected": 184
+      }
+    },
+    {
+      "case": "claim_dependency",
+      "status": "PASS",
+      "detail": {
+        "rows": 84,
+        "sample_rows": 10,
+        "expected": 84
+      }
+    },
+    {
+      "case": "classification",
+      "status": "PASS",
+      "detail": {
+        "rows": 56,
+        "sample_rows": 10,
+        "expected": 56
+      }
+    },
+    {
+      "case": "classification_scheme",
+      "status": "PASS",
+      "detail": {
+        "rows": 2,
+        "sample_rows": 2,
+        "expected": 2
+      }
+    },
+    {
+      "case": "country_office",
+      "status": "PASS",
+      "detail": {
+        "rows": 50,
+        "sample_rows": 10,
+        "expected": 50
+      }
+    },
+    {
+      "case": "dataset",
+      "status": "PASS",
+      "detail": {
+        "rows": 5,
+        "sample_rows": 5,
+        "expected": 5
+      }
+    },
+    {
+      "case": "description_section",
+      "status": "PASS",
+      "detail": {
+        "rows": 538,
+        "sample_rows": 10,
+        "expected": 538
+      }
+    },
+    {
+      "case": "designated_state",
+      "status": "PASS",
+      "detail": {
+        "rows": 47,
+        "sample_rows": 10,
+        "expected": 47
+      }
+    },
+    {
+      "case": "drawing",
+      "status": "PASS",
+      "detail": {
+        "rows": 92,
+        "sample_rows": 10,
+        "expected": 92
+      }
+    },
+    {
+      "case": "family_abstract",
+      "status": "PASS",
+      "detail": {
+        "rows": 1,
+        "sample_rows": 1,
+        "expected": 1
+      }
+    },
+    {
+      "case": "family_citation",
+      "status": "PASS",
+      "detail": {
+        "rows": 0,
+        "sample_rows": 0,
+        "expected": 0
+      }
+    },
+    {
+      "case": "family_member_application_ref",
+      "status": "PASS",
+      "detail": {
+        "rows": 21,
+        "sample_rows": 10,
+        "expected": 21
+      }
+    },
+    {
+      "case": "family_member_publication_ref",
+      "status": "PASS",
+      "detail": {
+        "rows": 37,
+        "sample_rows": 10,
+        "expected": 37
+      }
+    },
+    {
+      "case": "international_application",
+      "status": "PASS",
+      "detail": {
+        "rows": 1,
+        "sample_rows": 1,
+        "expected": 1
+      }
+    },
+    {
+      "case": "ipc_techn_field",
+      "status": "PASS",
+      "detail": {
+        "rows": 1,
+        "sample_rows": 1,
+        "expected": 1
+      }
+    },
+    {
+      "case": "keyword",
+      "status": "PASS",
+      "detail": {
+        "rows": 59,
+        "sample_rows": 10,
+        "expected": 59
+      }
+    },
+    {
+      "case": "kind_code",
+      "status": "PASS",
+      "detail": {
+        "rows": 9,
+        "sample_rows": 9,
+        "expected": 9
+      }
+    },
+    {
+      "case": "language",
+      "status": "PASS",
+      "detail": {
+        "rows": 3,
+        "sample_rows": 3,
+        "expected": 3
+      }
+    },
+    {
+      "case": "legal_event_code",
+      "status": "PASS",
+      "detail": {
+        "rows": 5,
+        "sample_rows": 5,
+        "expected": 5
+      }
+    },
+    {
+      "case": "legal_status_event",
+      "status": "PASS",
+      "detail": {
+        "rows": 10,
+        "sample_rows": 10,
+        "expected": 10
+      }
+    },
+    {
+      "case": "natural_person",
+      "status": "PASS",
+      "detail": {
+        "rows": 61,
+        "sample_rows": 10,
+        "expected": 61
+      }
+    },
+    {
+      "case": "non_patent_citation",
+      "status": "PASS",
+      "detail": {
+        "rows": 297,
+        "sample_rows": 10,
+        "expected": 297
+      }
+    },
+    {
+      "case": "organization",
+      "status": "PASS",
+      "detail": {
+        "rows": 10,
+        "sample_rows": 10,
+        "expected": 10
+      }
+    },
+    {
+      "case": "patent",
+      "status": "PASS",
+      "detail": {
+        "rows": 19,
+        "sample_rows": 10,
+        "expected": 19
+      }
+    },
+    {
+      "case": "patent_agent",
+      "status": "PASS",
+      "detail": {
+        "rows": 12,
+        "sample_rows": 10,
+        "expected": 12
+      }
+    },
+    {
+      "case": "patent_applicant",
+      "status": "PASS",
+      "detail": {
+        "rows": 18,
+        "sample_rows": 10,
+        "expected": 18
+      }
+    },
+    {
+      "case": "patent_assignee",
+      "status": "PASS",
+      "detail": {
+        "rows": 9,
+        "sample_rows": 9,
+        "expected": 9
+      }
+    },
+    {
+      "case": "patent_citation",
+      "status": "PASS",
+      "detail": {
+        "rows": 805,
+        "sample_rows": 10,
+        "expected": 805
+      }
+    },
+    {
+      "case": "patent_citation_category",
+      "status": "PASS",
+      "detail": {
+        "rows": 789,
+        "sample_rows": 10,
+        "expected": 789
+      }
+    },
+    {
+      "case": "patent_classification",
+      "status": "PASS",
+      "detail": {
+        "rows": 71,
+        "sample_rows": 10,
+        "expected": 71
+      }
+    },
+    {
+      "case": "patent_examiner",
+      "status": "PASS",
+      "detail": {
+        "rows": 10,
+        "sample_rows": 10,
+        "expected": 10
+      }
+    },
+    {
+      "case": "patent_family",
+      "status": "PASS",
+      "detail": {
+        "rows": 3,
+        "sample_rows": 3,
+        "expected": 3
+      }
+    },
+    {
+      "case": "patent_family_member",
+      "status": "PASS",
+      "detail": {
+        "rows": 11,
+        "sample_rows": 10,
+        "expected": 11
+      }
+    },
+    {
+      "case": "patent_inventor",
+      "status": "PASS",
+      "detail": {
+        "rows": 32,
+        "sample_rows": 10,
+        "expected": 32
+      }
+    },
+    {
+      "case": "patent_keyword",
+      "status": "PASS",
+      "detail": {
+        "rows": 71,
+        "sample_rows": 10,
+        "expected": 71
+      }
+    },
+    {
+      "case": "person",
+      "status": "PASS",
+      "detail": {
+        "rows": 71,
+        "sample_rows": 10,
+        "expected": 71
+      }
+    },
+    {
+      "case": "priority_claim",
+      "status": "PASS",
+      "detail": {
+        "rows": 3,
+        "sample_rows": 3,
+        "expected": 3
+      }
+    },
+    {
+      "case": "publication",
+      "status": "PASS",
+      "detail": {
+        "rows": 19,
+        "sample_rows": 10,
+        "expected": 19
+      }
+    },
+    {
+      "case": "related_application",
+      "status": "PASS",
+      "detail": {
+        "rows": 11,
+        "sample_rows": 10,
+        "expected": 11
+      }
+    },
+    {
+      "case": "title",
+      "status": "PASS",
+      "detail": {
+        "rows": 30,
+        "sample_rows": 10,
+        "expected": 30
+      }
+    },
+    {
+      "case": "applicants",
+      "status": "PASS",
+      "detail": {
+        "rows": 18
+      }
+    },
+    {
+      "case": "inventors",
+      "status": "PASS",
+      "detail": {
+        "rows": 32
+      }
+    },
+    {
+      "case": "classifications",
+      "status": "PASS",
+      "detail": {
+        "rows": 71
+      }
+    },
+    {
+      "case": "claims",
+      "status": "PASS",
+      "detail": {
+        "rows": 184
+      }
+    },
+    {
+      "case": "legal_status",
+      "status": "PASS",
+      "detail": {
+        "rows": 10
+      }
+    }
+  ]
+}

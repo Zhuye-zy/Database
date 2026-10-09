@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<legal-status-documents date-produced="20210529" date-of-exchange="20210531" schema-version="legal-status-documents-v1-2-8-transitional.xsd" file="LEGSTAT-202122-EP-AppDateFrom20190314-0016" number-of-documents="10143" generating-office="EP" complete-history="true" xsi:noNamespaceSchemaLocation="..\DTDS\legal-status-documents-v1-2-8-transitional.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<legal-status-document family-id="67903597" status="A" country="EP" number-of-events="10">
+	    <application-reference doc-id="520114848">
+	        <document-id>
+	            <country>EP</country>
+	            <doc-number>19778361</doc-number>
+	            <kind>A</kind>
+	            <date>20190314</date>
+	        </document-id>
+	    </application-reference>
+	    <publication-reference doc-id="541944232" lang="en">
+	        <document-id>
+	            <country>EP</country>
+	            <doc-number>3752695</doc-number>
+	            <kind>A1</kind>
+	            <date>20201223</date>
+	        </document-id>
+	    </publication-reference>
+	    <ipr-type>patent for invention</ipr-type>
+	    <legal-event providing-office="EP" event-id="804714987" date-added="20210428" date-previous-exchange="20210501" sequence-number="1">
+	        <event-date>20191005</event-date>
+	        <event-class>W</event-class>
+	        <event-code>STAA</event-code>
+	        <event-details>
+	            <event-description event-description-type="original">[NO DESCRIPTION IN ORIGINAL LANGUAGE]</event-description>
+	            <event-description lang="en">INFORMATION ON THE STATUS OF AN EP PATENT APPLICATION OR GRANTED EP PATENT</event-description>
+	            <text>STATUS: THE INTERNATIONAL PUBLICATION HAS BEEN MADE</text>
+	        </event-details>
+	    </legal-event>
+	    <legal-event providing-office="EP" event-id="804714986" date-added="20210428" date-previous-exchange="20210501" sequence-number="2">
+	        <event-date>20201120</event-date>
+	        <event-class>W</event-class>
+	        <event-code>STAA</event-code>
+	        <event-details>
+	            <event-description event-description-type="original">[NO DESCRIPTION IN ORIGINAL LANGUAGE]</event-description>
+	            <event-description lang="en">INFORMATION ON THE STATUS OF AN EP PATENT APPLICATION OR GRANTED EP PATENT</event-description>
+	            <text>STATUS: REQUEST FOR EXAMINATION WAS MADE</text>
+	        </event-details>
+	    </legal-event>
+	    <legal-event providing-office="EP" event-id="762114011" date-added="20201224" date-previous-exchange="20201226" sequence-number="3">
+	        <event-date>20201223</event-date>
+	        <event-date-effective>20200916</event-date-effective>
+	        <event-class>D</event-class>
+	        <event-code>17P</event-code>
+	        <event-details>
+	            <event-description lang="en">REQUEST FOR EXAMINATION FILED</event-description>
+	        </event-details>
+	    </legal-event>
+	    <legal-event providing-office="EP" event-id="762114037" date-added="20201224" date-previous-exchange="20201226" sequence-number="4">
+	        <event-date>20201223</event-date>
+	        <event-class>W</event-class>
+	        <event-code>AK</event-code>
+	        <event-details>
+	            <event-description lang="en">DESIGNATED CONTRACTING STATES</event-description>
+	            <event-reference>
+	                <event-ref-kind>
+	                    <kind>A1</kind>
+	                </event-ref-kind>
+	            </event-reference>
+	            <designated-states>
+	                <country>AL</country>
+	                <country>AT</country>
+	                <country>BE</country>
+	                <country>BG</country>
+	                <country>CH</country>
+	                <country>CY</country>
+	                <country>CZ</country>
+	                <country>DE</country>
+	                <country>DK</country>
+	                <country>EE</country>
+	                <country>ES</country>
+	                <country>FI</country>
+	                <country>FR</country>
+	                <country>GB</country>
+	                <country>GR</country>
+	                <country>HR</country>
+	                <country>HU</country>
+	                <country>IE</country>
+	                <country>IS</country>
+	                <country>IT</country>
+	                <country>LI</country>
+	                <country>LT</country>
+	                <country>LU</country>
+	                <country>LV</country>
+	                <country>MC</country>
+	                <country>MK</country>
+	                <country>MT</country>
+	                <country>NL</country>
+	                <country>NO</country>
+	                <country>PL</country>
+	                <country>PT</country>
+	                <country>RO</country>
+	                <country>RS</country>
+	                <country>SE</country>
+	                <country>SI</country>
+	                <country>SK</country>
+	                <country>SM</country>
+	                <country>TR</country>
+	            </designated-states>
+	        </event-details>
+	    </legal-event>
+	    <legal-event providing-office="EP" event-id="762114234" date-added="20201224" date-previous-exchange="20201226" sequence-number="5">
+	        <event-date>20201223</event-date>
+	        <event-class>W</event-class>
+	        <event-code>AX</event-code>
+	        <event-details>
+	            <event-description lang="en">REQUEST FOR EXTENSION OF THE EUROPEAN PATENT</event-description>
+	            <extension-states>
+	                <country>BA</country>
+	                <country>ME</country>
+	            </extension-states>
+	        </event-details>
+	    </legal-event>
+	    <legal-event providing-office="EP" event-id="819146747" status="C" date-added="20210527" sequence-number="6">
+	        <event-date>20210526</event-date>
+	        <event-class>Y</event-class>
+	        <event-code>RIC1</event-code>
+	        <event-details>
+	            <event-description lang="en">INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT</event-description>
+	            <patent-classification>
+	                <classification-scheme scheme="IPC"/>
+	                <classification-symbol>E04H  15/50        20060101AFI20210419BHEP</classification-symbol>
+	            </patent-classification>
+	        </event-details>
+	    </legal-event>
+	    <legal-event providing-office="EP" event-id="819146748" status="C" date-added="20210527" sequence-number="7">
+	        <event-date>20210526</event-date>
+	        <event-class>Y</event-class>
+	        <event-code>RIC1</event-code>
+	        <event-details>
+	            <event-description lang="en">INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT</event-description>
+	            <patent-classification>
+	                <classification-scheme scheme="IPC"/>
+	                <classification-symbol>E04H  15/16        20060101ALI20210419BHEP</classification-symbol>
+	            </patent-classification>
+	        </event-details>
+	    </legal-event>
+	    <legal-event providing-office="EP" event-id="819146749" status="C" date-added="20210527" sequence-number="8">
+	        <event-date>20210526</event-date>
+	        <event-class>Y</event-class>
+	        <event-code>RIC1</event-code>
+	        <event-details>
+	            <event-description lang="en">INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT</event-description>
+	            <patent-classification>
+	                <classification-scheme scheme="IPC"/>
+	                <classification-symbol>E04H  15/18        20060101ALI20210419BHEP</classification-symbol>
+	            </patent-classification>
+	        </event-details>
+	    </legal-event>
+	    <legal-event providing-office="EP" event-id="819146750" status="C" date-added="20210527" sequence-number="9">
+	        <event-date>20210526</event-date>
+	        <event-class>Y</event-class>
+	        <event-code>RIC1</event-code>
+	        <event-details>
+	            <event-description lang="en">INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT</event-description>
+	            <patent-classification>
+	                <classification-scheme scheme="IPC"/>
+	                <classification-symbol>E04H  15/54        20060101ALI20210419BHEP</classification-symbol>
+	            </patent-classification>
+	        </event-details>
+	    </legal-event>
+	    <legal-event providing-office="EP" event-id="819146751" status="C" date-added="20210527" sequence-number="10">
+	        <event-date>20210526</event-date>
+	        <event-class>Y</event-class>
+	        <event-code>RIC1</event-code>
+	        <event-details>
+	            <event-description lang="en">INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT</event-description>
+	            <patent-classification>
+	                <classification-scheme scheme="IPC"/>
+	                <classification-symbol>E04H  15/58        20060101ALI20210419BHEP</classification-symbol>
+	            </patent-classification>
+	        </event-details>
+	    </legal-event>
+	</legal-status-document>

@@ -1,0 +1,98 @@
+Timing is on.
+===== P1: 申请人 -> 专利 三表 JOIN =====
+                                                             QUERY PLAN                                                             
+------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=21.57..33.73 rows=140 width=524) (actual time=0.066..0.073 rows=18 loops=1)
+   Buffers: shared hit=4
+   ->  Hash Join  (cost=21.57..33.73 rows=140 width=524) (actual time=0.064..0.071 rows=18 loops=1)
+         Hash Cond: (pa.person_id = pe.person_id)
+         Buffers: shared hit=4
+         ->  Hash Join  (cost=11.12..22.90 rows=140 width=16) (actual time=0.023..0.026 rows=18 loops=1)
+               Hash Cond: (pa.patent_id = p.patent_id)
+               Buffers: shared hit=2
+               ->  Seq Scan on patent_applicant pa  (cost=0.00..11.40 rows=140 width=16) (actual time=0.003..0.004 rows=18 loops=1)
+                     Buffers: shared hit=1
+               ->  Hash  (cost=10.50..10.50 rows=50 width=8) (actual time=0.009..0.009 rows=19 loops=1)
+                     Buckets: 1024  Batches: 1  Memory Usage: 9kB
+                     Buffers: shared hit=1
+                     ->  Seq Scan on patent p  (cost=0.00..10.50 rows=50 width=8) (actual time=0.005..0.006 rows=19 loops=1)
+                           Buffers: shared hit=1
+         ->  Hash  (cost=10.20..10.20 rows=20 width=524) (actual time=0.029..0.030 rows=71 loops=1)
+               Buckets: 1024  Batches: 1  Memory Usage: 13kB
+               Buffers: shared hit=2
+               ->  Seq Scan on person pe  (cost=0.00..10.20 rows=20 width=524) (actual time=0.005..0.015 rows=71 loops=1)
+                     Buffers: shared hit=2
+ Planning:
+   Buffers: shared hit=489
+ Planning Time: 0.703 ms
+ Execution Time: 0.115 ms
+(24 rows)
+
+Time: 1.745 ms
+===== P2: 专利 -> 发出专利引用数量 =====
+                                                             QUERY PLAN                                                             
+------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=34.04..34.04 rows=1 width=16) (actual time=0.176..0.178 rows=9 loops=1)
+   Buffers: shared hit=35
+   ->  Sort  (cost=34.04..34.04 rows=1 width=16) (actual time=0.176..0.177 rows=9 loops=1)
+         Sort Key: (count(*)) DESC
+         Sort Method: quicksort  Memory: 25kB
+         Buffers: shared hit=35
+         ->  GroupAggregate  (cost=34.01..34.03 rows=1 width=16) (actual time=0.129..0.167 rows=9 loops=1)
+               Group Key: citing_patent_id
+               Buffers: shared hit=32
+               ->  Sort  (cost=34.01..34.02 rows=1 width=8) (actual time=0.125..0.140 rows=508 loops=1)
+                     Sort Key: citing_patent_id
+                     Sort Method: quicksort  Memory: 25kB
+                     Buffers: shared hit=32
+                     ->  Seq Scan on patent_citation  (cost=0.00..34.00 rows=1 width=8) (actual time=0.011..0.105 rows=508 loops=1)
+                           Filter: (citation_type = 'P'::bpchar)
+                           Rows Removed by Filter: 297
+                           Buffers: shared hit=32
+ Planning:
+   Buffers: shared hit=173
+ Planning Time: 0.258 ms
+ Execution Time: 0.193 ms
+(21 rows)
+
+Time: 0.826 ms
+===== P3: 分类体系分布（IPC/CPC，非技术领域） =====
+                                                           QUERY PLAN                                                           
+--------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=22.64..23.14 rows=200 width=46) (actual time=0.026..0.026 rows=2 loops=1)
+   Sort Key: (count(*)) DESC
+   Sort Method: quicksort  Memory: 25kB
+   Buffers: shared hit=3
+   ->  HashAggregate  (cost=13.00..15.00 rows=200 width=46) (actual time=0.022..0.022 rows=2 loops=1)
+         Group Key: scheme_code
+         Batches: 1  Memory Usage: 40kB
+         Buffers: shared hit=3
+         ->  Seq Scan on patent_classification  (cost=0.00..12.00 rows=200 width=38) (actual time=0.004..0.009 rows=71 loops=1)
+               Buffers: shared hit=3
+ Planning:
+   Buffers: shared hit=116
+ Planning Time: 0.172 ms
+ Execution Time: 0.048 ms
+(14 rows)
+
+Time: 0.529 ms
+===== P4: 申请时间趋势 =====
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=12.16..13.29 rows=50 width=16) (actual time=0.031..0.035 rows=10 loops=1)
+   Group Key: (date_trunc('year'::text, (appln_filing_date)::timestamp with time zone))
+   Buffers: shared hit=4
+   ->  Sort  (cost=12.16..12.29 rows=50 width=8) (actual time=0.027..0.028 rows=19 loops=1)
+         Sort Key: (date_trunc('year'::text, (appln_filing_date)::timestamp with time zone))
+         Sort Method: quicksort  Memory: 25kB
+         Buffers: shared hit=4
+         ->  Seq Scan on patent  (cost=0.00..10.75 rows=50 width=8) (actual time=0.011..0.018 rows=19 loops=1)
+               Filter: (appln_filing_date IS NOT NULL)
+               Buffers: shared hit=1
+ Planning:
+   Buffers: shared hit=11
+ Planning Time: 0.070 ms
+ Execution Time: 0.062 ms
+(14 rows)
+
+Time: 0.457 ms

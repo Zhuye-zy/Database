@@ -1,0 +1,35 @@
+flowchart LR
+    n_dataset["数据集<br/>dataset<br/>PK: dataset_id"]
+    n_patent["申请案<br/>patent<br/>PK: patent_id"]
+    n_publication["公布文献<br/>publication<br/>PK: publication_id"]
+    n_title[["标题<br/>title<br/>部分键: lang,type"]]
+    n_abstract[["摘要<br/>abstract<br/>部分键: lang"]]
+    n_claim[["权利要求<br/>claim<br/>部分键: lang,num"]]
+    n_drawing[["附图<br/>drawing<br/>部分键: seq"]]
+    n_section[["说明书章节<br/>description_section<br/>部分键: seq"]]
+    n_R01{"包含"}
+    n_R15{"申请-公布"}
+    n_R16{"含标题"}
+    n_R17{"含摘要"}
+    n_R18{"含权利要求"}
+    n_R19{"含附图"}
+    n_R20{"含章节"}
+    n_R21{"章节父子"}
+    n_dataset -->|"1"| n_R01
+    n_R01 -->|"N"| n_patent
+    n_patent -->|"1"| n_R15
+    n_R15 -->|"N"| n_publication
+    n_publication -->|"1"| n_R16
+    n_R16 -->|"N"| n_title
+    n_publication -->|"1"| n_R17
+    n_R17 -->|"N"| n_abstract
+    n_publication -->|"1"| n_R18
+    n_R18 -->|"N"| n_claim
+    n_publication -->|"1"| n_R19
+    n_R19 -->|"N"| n_drawing
+    n_publication -->|"1"| n_R20
+    n_R20 -->|"N"| n_section
+    n_section -->|"父"| n_R21
+    n_R21 -->|"子"| n_section
+    classDef weak stroke-width:3px
+    class n_title,n_abstract,n_claim,n_drawing,n_section weak

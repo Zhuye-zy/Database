@@ -1,0 +1,32 @@
+[
+  {
+    "publn_nr": "0712096",
+    "lang_code": "DE",
+    "claims": 10
+  },
+  {
+    "publn_nr": "0712096",
+    "lang_code": "EN",
+    "claims": 10
+  },
+  {
+    "publn_nr": "0712096",
+    "lang_code": "FR",
+    "claims": 10
+  },
+  {
+    "publn_nr": "0890251",
+    "lang_code": "DE",
+    "claims": 14
+  },
+  {
+    "publn_nr": "0890251",
+    "lang_code": "EN",
+    "claims": 14
+  },
+  {
+    "publn_nr": "0890251",
+    "lang_code": "FR",
+    "claims": 14
+  }
+]

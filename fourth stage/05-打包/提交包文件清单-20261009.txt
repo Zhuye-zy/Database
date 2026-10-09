@@ -1,0 +1,380 @@
+提交包清单　数据库实践-题目5-第四阶段提交包-20261009.zip
+生成时间：2026-10-09
+仓库提交：（工作区未提交）
+文件数：375　压缩包大小：27.58 MB
+
+路径                                                                    字节  SHA256
+--------------------------------------------------------------------------------------------------------------
+.gitignore                                                            52  f31d5a3a9d99f2ecc0fcaa3ea539901900cd0073f1260df832fbf9d0010f8691
+README.md                                                           2539  38d2b7c43e39a6fd6bcbeb54376465b9bf8487ca54f172e21550c9d170eb04e8
+fourth stage/01-设计文档/build_report.py                               24843  e22ae6832bd6db1bf1795ec2c4f754f811cda1c9b997031156a47c96622aeec6
+fourth stage/01-设计文档/make_figures.py                                5203  548add70d9ba1a7f577643ae1416e5a36eaecb56ec268e3be160c9ca00975be3
+fourth stage/01-设计文档/report_content.py                             60348  428614ff88c054a3a62f2cadf94e439df95dfa503052d349c7a8b4dca1303396
+fourth stage/01-设计文档/report_lib.py                                  9629  e206eb8e6108c0d4509c3ac277c07d37be188bdde4ecddeb0780b2dcba61953b
+fourth stage/01-设计文档/图/图1-用例图.png                                 331861  283ac138dbd95c16b85d80f14c27d957ad53adb0008374b6b10e90adca99d6bb
+fourth stage/01-设计文档/图/图10-前端专利详情.png                             241411  8f9ea777141ed787d5ed5386f67e1a2dff9064c4b53f25f51034417963ab5baf
+fourth stage/01-设计文档/图/图11-技术领域分布.png                              55143  a9670eb4fd3ef8afe938303e540c651acc64de08cbb778efae94c5532b509fbd
+fourth stage/01-设计文档/图/图12-申请人排名.png                               97829  e14c6b7cffebb069e2e4431ac47aa5bf93693a29376b0f03c8d149150642af0f
+fourth stage/01-设计文档/图/图13-引用网络结构.png                             159478  fbac12722ace8357ed3ed5a2407d0397614632c331b90c13790603b58ac01333
+fourth stage/01-设计文档/图/图14-被引国别与年代.png                            129690  02b10c58406e5248ab64cc98d8d46bb4111522f37488df9bf4f86bb8f9edc2a2
+fourth stage/01-设计文档/图/图15-权利要求与多语言.png                           135798  baae4ea9abf209676557b779233b90d39234cb585db8ec4b7ff0c73f3c0ccda7
+fourth stage/01-设计文档/图/图16-数据来源与年份.png                            132582  01737043b41e2197beff88a628a0bb4e9dad95d3fea46c765996c3d8a1a0a37e
+fourth stage/01-设计文档/图/图2a-ER域1-著录与文献.png                         249397  55c98334c68046ee84f0929340cb337fe1750e85b4c5c35027d260fd363b7808
+fourth stage/01-设计文档/图/图2b-ER域2-人员与角色.png                         186582  db26ff0544e1631218ccddf6e2dc44d7d4dfaabbeea203ad2307eb690399ad33
+fourth stage/01-设计文档/图/图2c-ER域3-分类.png                             97814  c68f4a863b0536344ba98feaac554be9bece1413621443bea38d49b196b2b2bf
+fourth stage/01-设计文档/图/图2d-ER域4-引用.png                            127386  c53d18e88b6b6e7d4fc8f1e00890f7f94949df9ec0016754e646da1137d2b563
+fourth stage/01-设计文档/图/图2e-ER域5-专利族与程序关系.png                      265157  102121e4c1e87648ab5896c846aeaa009df9cbe76ba8dd995fc398ae467fe2f7
+fourth stage/01-设计文档/图/图2f-ER域6-法律状态与关键词.png                      106584  d54df0515153b06e2404bcc57dc8158571ff8f5945d3668d0e0b2d7df5721c09
+fourth stage/01-设计文档/图/图3-关键表关系示意图.png                            386647  e2af20616c1e71bda6a00afbdcda2003c9b75475bbaa1f1065c9e04e8430f9e5
+fourth stage/01-设计文档/图/图4-总体流程图.png                               269812  87f4c7c182ff0f13265070b1797f5683a1b6860033458784eee039c5d4e9766f
+fourth stage/01-设计文档/图/图5-系统框图.png                                285062  c6c1a8405e679aebd42c944fba4d5c27a409ca0c38c2633b8b172f765021a570
+fourth stage/01-设计文档/图/图6-数据导入流程图.png                             347685  1be4482c89b1a373eeab1baad01347d2e4825a9a0f712239d2364b19d66ca783
+fourth stage/01-设计文档/图/图7-验收流程图.png                               318856  851f522fae185ffa6b89caf5e3a26984c19466cd5fa7dfa24449bb7c116b0382
+fourth stage/01-设计文档/图/图8-前端首页43表.png                             354473  50910f940b3cbbd423c6878e9b03489f9182cc85963ac7f30e27bd212d900ec7
+fourth stage/01-设计文档/图/图9-前端patent表.png                           644491  592b996e7dc86149ff1a34831ea9c170dda6558d7d708509a1081f92c5f62431
+fourth stage/01-设计文档/数据库实践课程报告.docx                              4595620  31f06c9b05ede2d04b28dd4fa486028916bd91e978d06bdfc0f65e6f0076a15a
+fourth stage/02-汇报PPT/build_ppt.py                                 53452  e49d9d6a14a07f8fe1d8acfe0da62328402314188c9da40576abab4770ea33e4
+fourth stage/02-汇报PPT/第四阶段汇报-专利数据关系数据库.pptx                      2513213  8416b2453246a7215b5a0ef95cad3502d281c66e49bcb29ac72a83608c58103d
+fourth stage/02-汇报PPT/第四阶段汇报-讲稿.md                                  5832  eb0529ad2276a90a4402f2d90c7b0310614715885628c9fee11fc035a4bdd056
+fourth stage/03-分析挖掘/make_charts.py                                12190  e5422ef9e321419cb67751524bbcb78bf32d48bec7af455e11b6ffef82819abb
+fourth stage/03-分析挖掘/run_analysis.py                                7090  8e9a8970f00a110f89b4b663f448d6713d0975e22f702932020c28e347da9fbd
+fourth stage/03-分析挖掘/sql/01-技术领域分布.sql                              2338  b47cadad3dfb3d6a7708f9f16dcc1a93a7122076b5f722415b36beec8b8abd3c
+fourth stage/03-分析挖掘/sql/02-申请人排名.sql                               2424  fcd824259c27dbae8d2edd44dd0f4b2d9d5178bc04d738fbc52441134dfbd54a
+fourth stage/03-分析挖掘/sql/03-引用网络.sql                                3847  2612c81af27cf764203e6f2d5125bd892aef8d1675e31b8024cae83e7f684ad6
+fourth stage/03-分析挖掘/sql/04-权利要求与全文结构.sql                           3267  b014fa6656280630f25a8b2b5d3509c8e9dd49101c966cc8f10e181a7f10c2b5
+fourth stage/03-分析挖掘/sql/05-数据来源与时序.sql                             3349  957716742dff8b1b43266ef2d458e1e82f38fc5eafe3aae487f2a92ba1ad7a96
+fourth stage/03-分析挖掘/图表/图1-技术领域分布.png                              55143  a9670eb4fd3ef8afe938303e540c651acc64de08cbb778efae94c5532b509fbd
+fourth stage/03-分析挖掘/图表/图2-申请人排名.png                               97829  e14c6b7cffebb069e2e4431ac47aa5bf93693a29376b0f03c8d149150642af0f
+fourth stage/03-分析挖掘/图表/图3-引用网络结构.png                             159478  fbac12722ace8357ed3ed5a2407d0397614632c331b90c13790603b58ac01333
+fourth stage/03-分析挖掘/图表/图4-被引文献国别与年代.png                          129690  02b10c58406e5248ab64cc98d8d46bb4111522f37488df9bf4f86bb8f9edc2a2
+fourth stage/03-分析挖掘/图表/图5-权利要求与多语言.png                           135798  baae4ea9abf209676557b779233b90d39234cb585db8ec4b7ff0c73f3c0ccda7
+fourth stage/03-分析挖掘/图表/图6-数据来源与年份.png                            132582  01737043b41e2197beff88a628a0bb4e9dad95d3fea46c765996c3d8a1a0a37e
+fourth stage/03-分析挖掘/结果/analysis_results.json                      22527  9783180c02f02f8a3c2db7825142a8acf7f4c725905d12483a1177d3ec892f61
+fourth stage/03-分析挖掘/结果/applicant_rank.csv                           563  6561438537cccebfdb600ad0c70e7df90d1f7c916f663ffb8eda2a4ebb1f8967
+fourth stage/03-分析挖掘/结果/applicant_type.csv                            77  17a138b0964a980b42d9d96827cbb979f6b8b104ecb02c7cd1541d01fcb4d5f6
+fourth stage/03-分析挖掘/结果/cited_country.csv                             87  fd37aabd78ed86091cbf58b52078eaffb4f62d141846858a55d164502b5b668b
+fourth stage/03-分析挖掘/结果/cited_decade.csv                              95  a69bd003de174c23c5bb0c7958543285c17050824501c69139c6c4a0e9d317fb
+fourth stage/03-分析挖掘/结果/claim_type.csv                                97  377abc405d7e5e77e4b58b99c5fb03814aaf6bf1c3d5a174657d2f7cc168ccf8
+fourth stage/03-分析挖掘/结果/coverage.csv                                  70  ff141d982c5670b1e47dbb3879447dec4991d828e563f5e33b9a1589e96243ca
+fourth stage/03-分析挖掘/结果/dataset_split.csv                            303  eee40027d823821b8e7d13fd967171707cfef828e996cd1d8bb0a35c50d1d66c
+fourth stage/03-分析挖掘/结果/dependency.csv                                63  ebdabd4ba7203cdc86a26ca3b5a45fd6b8dfec103cf8bf83e19acf1531fb72a2
+fourth stage/03-分析挖掘/结果/doc_structure.csv                            364  46c9b4836a6939a49af85002ddfd5b7a2120e854f197cd341dfdbf0d29de8bdc
+fourth stage/03-分析挖掘/结果/family_size.csv                              128  3b48b7fdeac4cc907c014dc735f8a2e4e2ee57149ea370114876227c334afdd0
+fourth stage/03-分析挖掘/结果/filing_year.csv                              107  ce2f210b67f106fd75de8f990b23edfe8a0aa623b01c92e085c4575b7ae4905f
+fourth stage/03-分析挖掘/结果/ipc_class.csv                                207  6c2356e172db0595f9b1e8d14a4dc7774a175848f2cb3d73e806e714ca74486c
+fourth stage/03-分析挖掘/结果/ipc_section.csv                              170  98dcf1c94db2d345394605015193e95022e4a298f399377918e34af9bf3024e5
+fourth stage/03-分析挖掘/结果/keyword_source.csv                            97  1715b41bbca2863b7ee3b6ab265ca5bed891e83d19e40c5bf9efa1ed2564c3ba
+fourth stage/03-分析挖掘/结果/lang_split.csv                                60  64c1755eae813b229838fbecd8119b058b173c9d99c1b9841c6aff6406324156
+fourth stage/03-分析挖掘/结果/legal_event.csv                              310  1e01b6142925ba2e88ed330fe9e2c27f393f83d16c413178011e87c132e5746f
+fourth stage/03-分析挖掘/结果/out_degree.csv                               301  90507c9af4f06fe903d42acd84ae19ffc700761f1527dc630a9ecbce57d6a8a7
+fourth stage/03-分析挖掘/结果/publn_year.csv                                52  f1c8848cab279c9f9b8744c03af98efb107fa37b0ba3a6a8c1b677b52e4eb994
+fourth stage/03-分析挖掘/结果/resolution.csv                               115  cd97e9bf2720cbbdfda3059ef8bd849065b890ed52139dfed0965686d614e19e
+fourth stage/03-分析挖掘/结果/role_summary.csv                             131  f2e01deaf5c865dd2deba22f4295ada8b9d6b3e51cb872235c9b207f350ab00a
+fourth stage/03-分析挖掘/结果/type_split.csv                               112  a3c3979657643648c82499bc6a68e8b7b49b156f808ece135c89c2faddcf73ae
+fourth stage/04-流程图与框图/gen_diagrams.py                             20965  8b0044331dcbbfae69ade2a12bf9e2d80eb489e0106dc876c6068255de6359a6
+fourth stage/04-流程图与框图/图A-用例图.png                                 331861  283ac138dbd95c16b85d80f14c27d957ad53adb0008374b6b10e90adca99d6bb
+fourth stage/04-流程图与框图/图B-总体流程图.png                               269812  87f4c7c182ff0f13265070b1797f5683a1b6860033458784eee039c5d4e9766f
+fourth stage/04-流程图与框图/图C-系统框图.png                                285062  c6c1a8405e679aebd42c944fba4d5c27a409ca0c38c2633b8b172f765021a570
+fourth stage/04-流程图与框图/图D-导入流程图.png                               347685  1be4482c89b1a373eeab1baad01347d2e4825a9a0f712239d2364b19d66ca783
+fourth stage/04-流程图与框图/图E-验收流程图.png                               318856  851f522fae185ffa6b89caf5e3a26984c19466cd5fa7dfa24449bb7c116b0382
+fourth stage/04-流程图与框图/图F-关键表关系示意图.png                            386647  e2af20616c1e71bda6a00afbdcda2003c9b75475bbaa1f1065c9e04e8430f9e5
+fourth stage/05-打包/package_submission.py                            4333  1935130813376ef7fbedd56857aee90494e30c93007fa3d0a314843327487ca4
+fourth stage/05-打包/提交说明.md                                          4886  b26abfc5b9c21c99520fb0ed994e1d39f31ccd1e275d3f2a05c4e9db10096731
+fourth stage/90-问题记录-D.md                                           4554  9ec2a033016198a731f0507f2005f22e14928a1ffe8650865624fb1085ecfc1d
+fourth stage/92-AI使用记录-D.md                                         3742  bc00772b4f88e90c72508f1c6f005c2469a2483a7f3e4b8127293a89c1338f22
+fourth stage/README.md                                              2770  1ed4e613a432e0366d82e4527d7e5a7b0a2edfbff5c7aeff8a6285c2a5c90893
+run.sh                                                              2459  a3ead3ed754dccb557796044b3da4583dbf91db731e2f875ea5f93159edd5d5e
+second stage/.gitattributes                                          287  8ff2860a448a202eeec6d233f97fb52ad5304eb2c169c4fc9177bf9d406eb59b
+second stage/.gitignore                                              236  d997c9636f611edaf6ae614086fd635a3d50595a777176a9d0b5b2ace5cb4435
+second stage/01-数据库结构/01-create-schema.sql                         43026  81bc64b42f68dc13a295ed97b3ff6301688bbeeb81a7b56e3bde6aee89850364
+second stage/01-数据库结构/02-audit-migration.sql                        3248  ff703e3df0cfcf83f00070c11bd00425c959d510f8f4dfa48930cf5545c57e28
+second stage/01-数据库结构/03-import-audit.sql                           1812  619e292e23886181dbb2a07deb7011ca5e264ca93e593f963d493f367eadaac2
+second stage/02-数据导入/batch_extensions.py                            6379  817506cfc056ed006de40537b6c219a459675d05c595955f15f1842d4731b30b
+second stage/02-数据导入/download_official.py                           2536  3ac788852de226ba0d837c16bcc29e63125781ba2111cacf2d8357060a36f82b
+second stage/02-数据导入/import_batch.py                               16890  21cc4b22faed35a1c02029d93c9f7fe59a4c6d68bafc5ce99475015a2cf00de6
+second stage/02-数据导入/import_enrichment.py                          16951  6c593ff11ea92cd3a1d371e98634c2fa9b829607ce8cde2a9af342723163ea1d
+second stage/02-数据导入/import_samples.py                              4680  4030a0ccf70b2116fbf54a13d01605fbe869056dbc4c61784c68887eac6fa901
+second stage/02-数据导入/import_support.py                              1942  90073f939e669ccc55327499fdad6ba211aedb62653670b6059c1be20562f685
+second stage/02-数据导入/sample_mapping.py                             27469  8e5f0722b753c96e1ba678166662b2f1ef69964bd499a46f5bc501f120ea3fd1
+second stage/02-数据导入/source_snapshot.json                           1879  ab68649abbb073a608db562224edf28eb8d80d64fb3faa38175e93397716542a
+second stage/03-测试验收/audit_source_status.py                         1892  211ab58d1d34b55b8a7da2529d93f6f600bfbd64b999d10f1cdd568a0c2e371c
+second stage/03-测试验收/integration_test.py                           10476  acbbd09ff536814314a9895b2df618d655a626b495602dd9feca09200fce7f62
+second stage/03-测试验收/queries.sql                                    1488  1e20b98845c66d5bca908e2b7c043571ea9f978ed81386d5524c704907e746d9
+second stage/03-测试验收/verify_data.py                                 7833  d515552ef31f7da9e34774124a80122dae89e68f09662fed952afa4d773b8ceb
+second stage/03-测试验收/verify_deploy.py                               1430  2d60140f73ad79bd3aaca423702c1ff9e14fb11c64cd698b288e99adaec9fc24
+second stage/03-测试验收/verify_restore.py                              2438  98626d4dd4abdaed3a041ca006c0d00d4eec8af2beaab21ecc891864af9787e8
+second stage/03-测试验收/verify_schema.sh                               2675  d684200de70384fa5b6e5b6ddccc5a59f41410b44a31b3cf4727f9f38321e2b4
+second stage/04-报告与基线/B角色-最终交接报告.md                                12509  6bec2fd2e41075c1321a0c1c80575b9e5a41c481882cca657049d20557d15e98
+second stage/04-报告与基线/B角色-阶段二审核报告.md                                5868  6b2a78b6c97bf5acaa9d5379cb355d63c07418c7810cafaa6f007c26a25ae60d
+second stage/04-报告与基线/实验手册-数据库与GitHub复现.md                         11808  9704a9243ea2a1418f2fa5c9e93a40f516ef607156e34981a0e8ac66b079d34d
+second stage/04-报告与基线/数据库设计变更说明.md                                  1890  92d4eee44304680d535d7829e931c5c6e480a47d2b9d100bca666ba4b0f5521f
+second stage/04-报告与基线/设计基线/02-数据字典.csv                             48115  5c151b2af56b04d97d6454f01f271b9044eb25996a08dfcfc3bd1786d384221e
+second stage/04-报告与基线/设计基线/03-实体关系分析.md                            40780  d9fc64f35b4fa9a0581b166fc65962911edc25433b8da3d6d098969c63da1bed
+second stage/04-报告与基线/设计基线/91-待全组讨论确认清单.md                          2929  0fca292bb41cec3ba13f1403fb6b59751df1f385ba9e684216b9f50c06e05485
+second stage/04-报告与基线/设计基线/93-B角色交接说明.md                            4895  b35a4585a6d7fd422423df2aee174a4606dc70f380fec7b8c2019eb4e6682542
+second stage/05-官方来源/01-四类基础样例/ep-docdb/DOCDB-201724-Amend-PubDate20170609AndBefore-EP-000.xml     33719  2be847844f5eae5053fb955f2c58e64d8858ab683eb2613a7c642e37f52236cd
+second stage/05-官方来源/01-四类基础样例/ep-docdb/DTDS/XMLSchema.dtd         16368  339bcc951ea6b0cc164b8fb6cf4fad34da6f49312ca536e613f6c7041b2a65ca
+second stage/05-官方来源/01-四类基础样例/ep-docdb/DTDS/datatypes.dtd          6358  55e186730ef42a71fce3045d06c6a3ec838c38fc9b9d8f1e924ca93b2202a39e
+second stage/05-官方来源/01-四类基础样例/ep-docdb/DTDS/docdb-entities.dtd    172255  b8fc5677ef9def446336692dbc242f83a4414f01caa3ef575637ae622b7c248b
+second stage/05-官方来源/01-四类基础样例/ep-docdb/DTDS/docdb-package-v1.1.dtd      4270  612cb5ec769be59a9a6fa172d7aa17573423c6b7240c1d267f6085a63b2482fa
+second stage/05-官方来源/01-四类基础样例/ep-docdb/DTDS/exchange-documents-v2.5.7.xsd    529702  bff9abdb8d9834d06645d31930861c49ef3db4ac364057430438d0653a35df4b
+second stage/05-官方来源/01-四类基础样例/ep-docdb/DTDS/xlink.xsd              1255  3949889f5edabd1ed365b92c70bfde5a0e15c264805fb389b297e6edb69e8721
+second stage/05-官方来源/01-四类基础样例/ep-docdb/DTDS/xml.xsd                5635  d854c75ef3262f9a258952662ccfa2efc7529972af380bfbe8f709a862d8135b
+second stage/05-官方来源/01-四类基础样例/ep-fulltext/712-096-DOC00001.xml     74565  3939fb760ec202455b366d545ab887b8baf55a0daf4d95a9e41b174635de446c
+second stage/05-官方来源/01-四类基础样例/ep-fulltext/797-400-DOC00001.xml      2908  7f12ac59264e768377c0b75d2fe3fe0777e31cf10fcc6760e25a31facd457f8a
+second stage/05-官方来源/01-四类基础样例/ep-fulltext/797-401-DOC00001.xml      2675  0e527c2244b7c217f0a62ab48be892997545c59a87a076231b3c2de73b1f23fe
+second stage/05-官方来源/01-四类基础样例/ep-fulltext/890-251-DOC00001.xml     65780  6207bd80e281cfa4dbf26eb860aa15be23278e178bd832cafbecaeddf6776bc7
+second stage/05-官方来源/01-四类基础样例/us-application/US20140338089A1-20141120.XML     44666  50fa4aa235323afa1290f05b58f3724bf6bdbe103959e8045097cc385756e8ac
+second stage/05-官方来源/01-四类基础样例/us-application/US20140338090A1-20141120.XML     31457  77efc91e9f8e92a3299c115bf1030771eb563b693b870271fb8ca128ae4d73f0
+second stage/05-官方来源/01-四类基础样例/us-application/US20140345008P1-20141120.XML     19417  12d2b971e16e5d57e17da29b539ac40dd686d6a737b8cd2266cd77d752c7d01f
+second stage/05-官方来源/01-四类基础样例/us-application/US20140345009P1-20141120.XML     18167  d3c5a16668fdc8e85c76d7fbff3ef52529e21a310e3659c64749f75a6f7c0a3e
+second stage/05-官方来源/01-四类基础样例/us-grant/US08887312-20141118.XML    115119  bdead2905e35e5aad9980428f3eac8aa85a0f838732484d8f2b51ce2c98c2ea6
+second stage/05-官方来源/01-四类基础样例/us-grant/US08887313-20141118.XML     43463  a2bf9aa956ae0af8c095a24d75ff2eb60df55d1dc36e7da4c77939a5abab77f4
+second stage/05-官方来源/01-四类基础样例/us-grant/USD0717516-20141118.XML     15994  d9a6e1935610433252b3a32062c6fcd09d1742e7ee9f652bd79292d8946fd8c3
+second stage/05-官方来源/01-四类基础样例/us-grant/USD0717517-20141118.XML     15299  66c7d53217d1f68cbb674d3c5ab0f3eb550b2d79ce627dd883e14fe5712f8ace
+second stage/05-官方来源/01-四类基础样例/us-grant/USPP025063-20141118.XML     22142  80b7fa6ac9166d652c624fb6d4184b7275c77eeaef90e0f4f57f67c0ac1b0388
+second stage/05-官方来源/01-四类基础样例/us-grant/USPP025064-20141118.XML     22950  99993c8745f70fb4abf7c5466108051e91c99429303eb3e8f239a9bfc62be483
+second stage/05-官方来源/01-四类基础样例/us-grant/USRE045253-20141118.XML     37994  13f7dc3541c568bf8c8a8aeb3fb7b29927ca9f75dad181f1e9d8f32fbd7eb728
+second stage/05-官方来源/01-四类基础样例/us-grant/USRE045254-20141118.XML    260060  fc65220a7bb061345a25115282427e2529ac7099d4febd7d6b3654d3630ba409
+second stage/05-官方来源/02-IPDPS补充样例/01-压缩原包/01-US申请公布/US-PA-TXTO-10-A.zip   3740368  4521519e02f01ee9ea2d8e51c4b5b33a0635a831053a6854b687a558455b9618
+second stage/05-官方来源/02-IPDPS补充样例/01-压缩原包/02-US授权公告/US-PA-TXTO-10-B.zip   2259614  ecbdd209afc163dcc98fed05ee20225074f7793ebcbf1b788524a1530eac8c9c
+second stage/05-官方来源/02-IPDPS补充样例/01-压缩原包/03-EP全文/EP-PA-TXTO-10-AB.zip   1288715  1de3e153dbb744888c0e297e816328f85c3c7d155ac567e354c398af39bf95ba
+second stage/05-官方来源/02-IPDPS补充样例/01-压缩原包/04-EP-DOCDB摘要/EP-PA-ABSO-10-AB.zip    209696  d0d0782d6d0165b4ca6c8b50fc52dfdb46a56bffbc4c6f2683a23e762eb89320
+second stage/05-官方来源/02-IPDPS补充样例/01-压缩原包/05-EP法律状态/EP-PA-PRSO-FILE.zip     59870  103426d07e3ee93d8982205e1f131172abe29ef57ab3332df1062e8ae2b53641
+second stage/05-官方来源/02-IPDPS补充样例/02-DOCDB原文/DOCDB-201724-CreateDelete-PubDate20170609AndBefore-EP-0001.xml      3310  ea719d687131269560ac375c3914b80a1131d3c559329b8bf8a836f718a931ba
+second stage/05-官方来源/02-IPDPS补充样例/03-法律状态原文/LEGSTAT-202122-EP-AppDateFrom20190314-0016.xml      8984  27f29900375dfd53c54ca612782e813776ecb456a8f481340da69d76f0191e30
+second stage/05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/EP-PA-PRSO-FILE/202122/INPADOC_coverage_20210529.xlsx     17000  9acac7d961643620ecdd87523e0c7b423ef0d7d7f16dae6c82cab3174782b15b
+second stage/05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/EP-PA-PRSO-FILE/202122/legal_code_descriptions_20210529.rar     11236  5328716b4faf7eb46ab44a61c8841aad4bc514d40ff48540ec2ae7c86a0ed96f
+second stage/05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/EP-PA-PRSO-FILE/202122/legstat_xml_202122.rar     19543  f54c5bd1e4fff3d796ef0730047c1cdaa9711f9cc756294170260c93ff6d95c8
+second stage/05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/EP-PA-PRSO-FILE/202122/statistics_authority_code_20210529.rar     15300  9ddff361b01b329c3d2f1bed58122ab7e228603a1cdd17ed591ce5abbd16eb8d
+second stage/05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/CONTENTS      1084  0894a7e2dc0408b536738d2cd5ffbc36e8d72d6f8faf7bee242edba9665bbcb6
+second stage/05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/DOC/LEGSTAT-202122-EP-AppDateFrom20190314-0016.rar      1567  96ac3b1f7b00d4d384abec6794e93bc2e7314ecb9553ae31f3b1590e580afad7
+second stage/05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/DTDS/legal-status-documents-v1-2-8-transitional.xsd    126244  2972bec55d2024d93fae492c1342677467cee10b4409ce182803ee4e4a228337
+second stage/05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/DTDS/legstat-package-v1.0.dtd      4024  7ff45fc91b5a5148ae47aacc095ac62f29c12fbb81d7bf902c9128d1e8279591
+second stage/05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/STATISTICS.csv      3200  a22dda3919231acfc44e82f72bf8d51096b56e290a0682e46bcd169c6fd11868
+second stage/05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/VOLUMEID        24  d125f4b6d67d120d5961c220838f60fdda1383d5311b83b1670021db251663a2
+second stage/05-官方来源/02-IPDPS补充样例/04-法律状态原始附件/legstat_xml_202122/Root/index.xml     13808  45bfc264715084e751afcf452545256e62744c92f4e81fc0ab64063d2fd980fe
+second stage/05-官方来源/03-数据手册/EP-PA-ABSO-10-AB_数据手册.pdf            197427  2453a4c59219f23e3a96f6857e33f266018ca6c5cab36874631d5d8572bbe1df
+second stage/05-官方来源/03-数据手册/EP-PA-PRSO-FILE-数据手册.pdf             123097  d6956cab08d763a8b7d5d37cc3de933aa97bb7c507e37906a2bc73709c64cd4d
+second stage/05-官方来源/03-数据手册/EP-PA-TXTO-10-AB_数据手册.pdf            181713  d6068a87766f2300d497647c3e0b75c35717daa33541dd17ef4b083cef214bed
+second stage/05-官方来源/03-数据手册/EPO操作码在线依据.md                           562  1c582dc0db763775e3e9847aa878e24342af3c04da3b24742855b3707e163bbc
+second stage/05-官方来源/03-数据手册/US-PA-TXTO-10-A_数据手册.pdf             265934  ac09249ff0ed611753a20cb24f5bd5f26864fb14631f05117781a5e1e96f6cd2
+second stage/05-官方来源/03-数据手册/US-PA-TXTO-10-B_数据手册.pdf             270604  89fa8fa592ce860859ebdbf6ff6d7053b328283bd9d996b11bea942c3d02fb60
+second stage/05-官方来源/README.md                                      1569  d42532e907bde0aaf4b72276a7e28d876629fad07626be055f84eba195696789
+second stage/05-官方来源/download_manifest.json                         1577  081bdf5c2fd0e6dd302b89edccc89fb0adf5c5baf2b0e4d83807a3abcb3ff49a
+second stage/06-运行管理/backup_db.sh                                    533  98da0765a23437c68b586ec0aa03a23a0984c7e013bc026dae934c46f25a74f5
+second stage/06-运行管理/init_db.sh                                     1340  fde8ada3a3926687599b68ba0383aabd177c5798b2114b13cffe261d65cd7b36
+second stage/06-运行管理/package_release.py                             2767  673d935abbd467a8adcadacb69673db044772f10c902b2f2909983c6f652f485
+second stage/06-运行管理/start.sh                                        731  369e5a8da931d849b327046ddd7b20e0f6e2c48d3466e331dd79cac140cf9ceb
+second stage/06-运行管理/update_reviewed.sh                             1120  b1a39cbd6ab6f6e5be8fae171d094515e53a428c79723cd8e5a43f48cc085b3f
+second stage/07-验收结果/B角色最终验收.json                                    322  278546cfaabf0309a1aa22773909f98b5e56f23d548d1b469318c0e5d1be31ff
+second stage/07-验收结果/临时数据库/EP多语言权利要求.csv                             113  42d09625042aa791d7738440477b9a79bbfed4330f7cb9512def7444d29854ac
+second stage/07-验收结果/临时数据库/EP多语言权利要求.json                            458  60564807fbd9eb807df9f64372661fb450fa88c4c3472ae38c07efdc313cf8a3
+second stage/07-验收结果/临时数据库/基础样例逐字段对照.csv                             533  eb49a06a98156566baf7e7e77a5499627c08ccb5e2db04db0d65cece6f2c032d
+second stage/07-验收结果/临时数据库/基础样例逐字段对照.json                           2256  e3b580065c48aa84de49c467d53608125c876344ab8056162ddefa624e9cadbc
+second stage/07-验收结果/临时数据库/字段清单.csv                                16270  af085835519c28ce2b6624e4a378e803b3f22e6af7263b6505b9963f4308c6f8
+second stage/07-验收结果/临时数据库/字段清单.json                               60181  80ac08014225863d557834606f762bd53331ecfbe3155b740ccd36d5dc5627a4
+second stage/07-验收结果/临时数据库/字段非空覆盖.csv                              11882  fc95e24f0f28026b24cf285e27e133c70abe21dce8254ab74d6b646c91493348
+second stage/07-验收结果/临时数据库/字段非空覆盖.json                             36349  fd247c27bdfd1fcbadb2716ca8056742b7f165c95dc1854d5b6a6a0891342f7c
+second stage/07-验收结果/临时数据库/完整性检查.csv                                 152  79b70f053ada64c7078cbaf208ce8db8662fef17d001d0b1b93f3b1626685e2c
+second stage/07-验收结果/临时数据库/完整性检查.json                                435  499340bd3253fec157b337a01b7087c79e6ef2f6fa1136715c3b815c09161c18
+second stage/07-验收结果/临时数据库/来源文件SHA256.csv                           8244  6f75742579462d76adc01fe073e2722ccd6e7bfea932bd2c3f3a642309acd1cc
+second stage/07-验收结果/临时数据库/来源文件SHA256.json                         11087  389c87a55abe52410acd5d390b44e9edbe914f78dd98129c389478d35f4125a9
+second stage/07-验收结果/临时数据库/查询与执行计划.txt                              4669  16d49114b78fdf9da36eab1910caa7eeaf6044ab1c1347b711d9afe47b014a78
+second stage/07-验收结果/临时数据库/索引清单.csv                                20898  f02ed1cfab2770cb9c320413c31e0da2a40957caec7cc1b74d448a1f4ad47bba
+second stage/07-验收结果/临时数据库/索引清单.json                               30387  ee84f95ecad17dbcd66bf775fefc6c95f193c1c68b90777d90bed3e5c28478a5
+second stage/07-验收结果/临时数据库/约束清单.csv                                20550  5aca9e7bad0d2ba2cf81a610a30d4b6db0049ed7487821d19d892998daa3f224
+second stage/07-验收结果/临时数据库/约束清单.json                               38709  5e7d2815c3643889159a398f77fa502ea20728b291e8928b0221d73057de9160
+second stage/07-验收结果/临时数据库/补充样例逐字段对照.csv                             394  599b9086b79a28cc368b47380df96a2333479443ad8ab90f6b44faff10f1e6b7
+second stage/07-验收结果/临时数据库/补充样例逐字段对照.json                           1447  9f5796ab6c6b33da6dca4efef5b88814bbc0a8eba7c61f843aec5a997f496c4a
+second stage/07-验收结果/临时数据库/逐表行数.csv                                  809  0632833fda1f0cc779672236c4222c78bccc09879750df68c58b628f6b2d1abd
+second stage/07-验收结果/临时数据库/逐表行数.json                                2388  1c96222357be2fe5e51c6047e8848543a3d2225743c979e5fe7b17cb37856d56
+second stage/07-验收结果/临时数据库/集成测试摘要.json                               816  65eb7e1c4116ac21039beb749ab03c22c196999b091146feb68804c117a68969
+second stage/07-验收结果/临时数据库/集成测试日志.txt                              45154  8203fb7c7e770a2d743fb13d273d6391e2e7ac314a4c7fc75c993a27e1dd824b
+second stage/07-验收结果/临时数据库/验收摘要.csv                                  271  8c504d9305b91590f2da939265fc7f0e5a95f1976ac0d9d6a2c6475f53f2fd38
+second stage/07-验收结果/临时数据库/验收摘要.json                                 358  61f17b8e90c725259608c72a16bc349f8979dc3dc594b8abed494ba4ae4d4af4
+second stage/07-验收结果/临时文件清理清单.json                                 14484  b170b907409dcd367156f291208c5dd8ecd349699cb8f2a10f72b7dceed94eb3
+second stage/07-验收结果/交付代码与报告SHA256.json                             4488  b759e6e87151fc78b33afdcb3fc0aae1c4861f35bde3a992a690e948af88e63a
+second stage/07-验收结果/交接报告与实验手册SQL实测.txt                            24521  1fb76cc9d71242e075a86e5411e0675e671527d3efd57e40abd83c7bd682fef7
+second stage/07-验收结果/全新部署日志.txt                                     6843  29f349a4229ec7f130905f26df9de20979d43c6021bc483f1a72ee5a5f159214
+second stage/07-验收结果/全新部署验收.json                                     187  9c9c96ba94ed10d9aa6ae89a170aead4d6dc6b33619f10040f8f0858ece0d8fa
+second stage/07-验收结果/备份恢复验收.json                                     283  42e73e1b11660be900493fb21ca8817c19ea83ca77f641f519e621138d495084
+second stage/07-验收结果/官方下载校验.json                                    1546  3b4011fd12523ee5c6ab51539302d52ed03b8a22dde680ba4af6e6bef052ce95
+second stage/07-验收结果/导入日志/20261008T144350.964348Z-base-parse.json      4160  75452e9d5908d15f6f652bd21eeeb2562df3b0a4c26e52f4231fa6d5cb159e96
+second stage/07-验收结果/导入日志/20261008T144352.149630Z-base-parse.json      4160  8f925de497161ff3821cd3699b1fda043cbfc6f55b16a907f43ed43eb812fedf
+second stage/07-验收结果/导入日志/20261008T144352.357722Z-base-import.json       865  7dcb69e6e944414dfc405770622e02210c9c2b3cd2c5733f3cae3eb68bd66eb8
+second stage/07-验收结果/导入日志/20261008T144352.630875Z-enrichment-import.json       257  9f36712b8d71da0228bba4e3353443ed5b783ed5a96e970f906f4f9ad3dcb4f1
+second stage/07-验收结果/导入日志/20261008T144355.766410Z-batch-import.json       298  f6a0d4df87384a882fbdc8d67e89a6a177367ab290bdf5dfffe74c4af5114b31
+second stage/07-验收结果/文件目录清单.txt                                    11465  3e90e95a51f126af1944201d708b1175ba446ba3dba5f0d574af4813798bf9d6
+second stage/07-验收结果/文档命令核验.json                                     121  e39c446d8d85259c09cd5ee9d1a94e45b343e9ba3140c37aee8e9b1baddfe204
+second stage/07-验收结果/源文献处理清单.json                                  11565  9411aedb842ac086c47dd33165eaf5179e4fb47503d3ce6e90dc8de6014ced9b
+second stage/07-验收结果/现有数据库/EP多语言权利要求.csv                             113  42d09625042aa791d7738440477b9a79bbfed4330f7cb9512def7444d29854ac
+second stage/07-验收结果/现有数据库/EP多语言权利要求.json                            458  60564807fbd9eb807df9f64372661fb450fa88c4c3472ae38c07efdc313cf8a3
+second stage/07-验收结果/现有数据库/修正效果.json                                 156  c33a036a89aeb8ba7062026f9ea2f4028050200732df7fdefc1d504c5486e846
+second stage/07-验收结果/现有数据库/基础样例逐字段对照.csv                             533  eb49a06a98156566baf7e7e77a5499627c08ccb5e2db04db0d65cece6f2c032d
+second stage/07-验收结果/现有数据库/基础样例逐字段对照.json                           2256  e3b580065c48aa84de49c467d53608125c876344ab8056162ddefa624e9cadbc
+second stage/07-验收结果/现有数据库/字段清单.csv                                16270  af085835519c28ce2b6624e4a378e803b3f22e6af7263b6505b9963f4308c6f8
+second stage/07-验收结果/现有数据库/字段清单.json                               60181  80ac08014225863d557834606f762bd53331ecfbe3155b740ccd36d5dc5627a4
+second stage/07-验收结果/现有数据库/字段非空覆盖.csv                              11882  fc95e24f0f28026b24cf285e27e133c70abe21dce8254ab74d6b646c91493348
+second stage/07-验收结果/现有数据库/字段非空覆盖.json                             36349  fd247c27bdfd1fcbadb2716ca8056742b7f165c95dc1854d5b6a6a0891342f7c
+second stage/07-验收结果/现有数据库/完整性检查.csv                                 152  79b70f053ada64c7078cbaf208ce8db8662fef17d001d0b1b93f3b1626685e2c
+second stage/07-验收结果/现有数据库/完整性检查.json                                435  499340bd3253fec157b337a01b7087c79e6ef2f6fa1136715c3b815c09161c18
+second stage/07-验收结果/现有数据库/来源文件SHA256.csv                           7738  4a27d119d64a115069736032b02c730741ef394ecc62a309e900bccca46c3896
+second stage/07-验收结果/现有数据库/来源文件SHA256.json                         10419  d9ab6cc1aa7a11bf3ebb97fdeea65e905f01bcdf3c597751e563bdc0193f5c15
+second stage/07-验收结果/现有数据库/查询与执行计划.txt                              8315  1a0ce14e783f386ecf9ede993c03edcc221afc7c2df48cac99a99a43aad46a42
+second stage/07-验收结果/现有数据库/索引清单.csv                                20898  f02ed1cfab2770cb9c320413c31e0da2a40957caec7cc1b74d448a1f4ad47bba
+second stage/07-验收结果/现有数据库/索引清单.json                               30387  ee84f95ecad17dbcd66bf775fefc6c95f193c1c68b90777d90bed3e5c28478a5
+second stage/07-验收结果/现有数据库/约束清单.csv                                20550  5aca9e7bad0d2ba2cf81a610a30d4b6db0049ed7487821d19d892998daa3f224
+second stage/07-验收结果/现有数据库/约束清单.json                               38709  5e7d2815c3643889159a398f77fa502ea20728b291e8928b0221d73057de9160
+second stage/07-验收结果/现有数据库/补充样例逐字段对照.csv                             394  599b9086b79a28cc368b47380df96a2333479443ad8ab90f6b44faff10f1e6b7
+second stage/07-验收结果/现有数据库/补充样例逐字段对照.json                           1447  9f5796ab6c6b33da6dca4efef5b88814bbc0a8eba7c61f843aec5a997f496c4a
+second stage/07-验收结果/现有数据库/逐表行数.csv                                  809  0632833fda1f0cc779672236c4222c78bccc09879750df68c58b628f6b2d1abd
+second stage/07-验收结果/现有数据库/逐表行数.json                                2388  1c96222357be2fe5e51c6047e8848543a3d2225743c979e5fe7b17cb37856d56
+second stage/07-验收结果/现有数据库/验收摘要.csv                                  252  e0bc9bf7196bb7c34a9a2c58b729cc74987b8a2ceb1cad3d8a525a302a9fb8e1
+second stage/07-验收结果/现有数据库/验收摘要.json                                 339  3012af700f44e7fb3f2afc4663c8f50cc5d5162df1a477b226aeb5e093b3da77
+second stage/07-验收结果/运行审计验收.json                                     408  487786788258afcb91bee004c7983b3f4aa944c37d9ec7e716f9ffbbf1200f4b
+second stage/README.md                                              4386  398ae57bd48a06bcf8e52e98c81d55d41872508c3fe93050ed4c822502b621a2
+third stage/01-前端应用/app.py                                          8435  3791c631eff7b80d516f6fb8ccd1f22a0f771872f60808ee54b6f50e5c975199
+third stage/01-前端应用/requirements.txt                                  37  3734ea427cfdec2318a28d71ed2dd2c1f458f00e8656aa2e33d2e934fd3e4c47
+third stage/01-前端应用/templates/base.html                             1236  c65bc2ff56ab8046ecdfbf100094fac443f0cc97c12eac6b3b10600b49a8e949
+third stage/01-前端应用/templates/error.html                             184  6a246076895bfe25f443546f5b554f75ae2c8625b44e9963ebad5c60d6e47962
+third stage/01-前端应用/templates/index.html                             504  3471f730b07b4eca317ce08b4ac634e3e9b7fce4d92399c8f5c366a5353bd44f
+third stage/01-前端应用/templates/patent_detail.html                    2067  337e27f9135545aedf6e11dadb74d8abc81d94eb49fe54827175a7b4d16d765b
+third stage/01-前端应用/templates/table.html                            1323  c8904ff872b6d34276d70d0663fccffe1817df83269731f5a40e85c91e51a821
+third stage/03-测试验收/acceptance_failure_test.py                      2137  8283e52776707a6fad54865c51c419450a889563cb5907ef87c6d65dab0597e4
+third stage/03-测试验收/complex_boundary_test.py                        8291  6ca15325b56acdf0b9e2219f02849300aae6a9e07af699dabbf82c2dba1a4e50
+third stage/03-测试验收/fk_violation_test.py                            4460  688f219afab53b11d50b7048ae594f036c041130b6f7b2be352f3ecdc4318806
+third stage/03-测试验收/frontend_test.py                                5301  5d3b08195822325da1684a27e8368e0419b7fa939e56747588574a930e42d46a
+third stage/03-测试验收/performance_test.sql                            1699  ec0f46fe6f57bfa40e850cd7a585e40882245f4511afacb3e0c1847898d5d4e6
+third stage/03-测试验收/run_all.py                                       500  f5788975afe78e9f8587d382b027a1de1012b3005a9487ed97442f9772ae38b1
+third stage/03-测试验收/smoke_test.py                                   2475  22677c29d0a8594704b558fbba6ac7bacade7528e478a6b6221b2cc597454706
+third stage/03-测试验收/test_support.py                                 2760  b1d2f5ee5871d0319e0505ea870087552c6b05e454171f5c3755be433ec805db
+third stage/04-报告与基线/C角色-最终交接报告.md                                  1529  aeef3abc21d228265292e857eb84319455c9a795b7be848d580b751d7c9b898b
+third stage/04-报告与基线/C角色-测试报告.md                                    4475  9e84646a6a251f0d4672e2e53c3e6a9d79a77fbac61113a146621a27a550722b
+third stage/06-运行管理/verify_fresh.py                                 5180  b04fb96c11731c797009db1860e3aa8cde4cc33484716c9dc89270d88c6da061
+third stage/07-验收结果/acceptance_failure_result.json                   873  a4af4e7c842971db82f2192f4d63ab2138fda05825f3985fbe08ab76920021e7
+third stage/07-验收结果/acceptance_failure_test.py.txt                   874  b6689db967644ac206abb97f60195c061b868f114e40c17dde98711b2add764f
+third stage/07-验收结果/complex_boundary_result.json                    3519  afc924635a965f5498699448a9fa520463c288361fa468d102f21ee4a32a59ea
+third stage/07-验收结果/complex_boundary_test.py.txt                    3520  83d8009db9ce6b64a81e137c6bec8f37ef7d9dc074575c9d555a0c2a3d7a0b25
+third stage/07-验收结果/fk_result.json                                  2784  f53e4720defdda0bb518edf7abb1fc542b6a4a774db0ad3a3bb9fdd402e86464
+third stage/07-验收结果/fk_violation_test.py.txt                        2785  3a94d94033c718e6fff02e8d344b50ccc39b05c70d5829b7735834968c97b7b8
+third stage/07-验收结果/fresh_acceptance.json                            968  f9d350e5f1ef453ecbbedb6ba4f375591e0f32427e7677f350e62ae3bb8d2620
+third stage/07-验收结果/frontend_result.json                            6974  fe087bc2f5e4e36dcb4b5cda5e132904ae2b15b78396344b0a2e89e1e611d828
+third stage/07-验收结果/frontend_test.py.txt                            6975  8b800c38d59945d9d00c904e403e6e1c4a534ae791cbc711249d0446d1462ce2
+third stage/07-验收结果/performance_before.txt                          5222  bbc4b8384b8395c0f4a3a29c0febf17c053f113488153c0a05ca1cef20b4189a
+third stage/07-验收结果/performance_current.txt                         5391  23082acffc2a9c02143e14c2efb901e4dbc15c2ae724ec0a71e922f9d79b833c
+third stage/07-验收结果/smoke_result.json                               7740  959bc72af21d10438f6aba8cd6907af628af8c5ee2d4165544ba5aed0ca43eff
+third stage/07-验收结果/smoke_result.md                                 1707  48655de4705df476aa948c5bff995b1e64b41b1457c1beb2ccf663babc61f64c
+third stage/07-验收结果/smoke_test.py.txt                               7741  e4217a075e1bb43d55f22dbcb5b4483904c6e4f92bf7c0b93ebd43a4c311599b
+third stage/07-验收结果/截图/01-首页-43表.png                              354473  50910f940b3cbbd423c6878e9b03489f9182cc85963ac7f30e27bd212d900ec7
+third stage/07-验收结果/截图/02-patent表-19行.png                         644491  592b996e7dc86149ff1a34831ea9c170dda6558d7d708509a1081f92c5f62431
+third stage/07-验收结果/截图/03-专利详情-patent1.png                        241411  8f9ea777141ed787d5ed5386f67e1a2dff9064c4b53f25f51034417963ab5baf
+third stage/08-数据库交付/README.md                                       886  d60253d8c8abea1cad5f7901f90cb25defcdd314a2a447819403f7804fdfcbd0
+third stage/08-数据库交付/patentdb-phase3.dump                         463970  285dbaa2b0df884eb3af7b61333bfd000be6290f641f048f3e4fb0c55b9c2f8e
+third stage/90-问题记录-C.md                                            1606  5ae0fccd30459d99be14ceb0e8d31bfeb59782780ddb5f56411dbf946178a904
+third stage/92-AI使用记录-C.md                                           761  f23eaa80673e09f36f540821ba7d687035c60dfa9213f42c8820c771b593543b
+third stage/93-D角色交接说明.md                                           1416  ab0cf5a1804274a4dadb229db241c5f72fac8e37a9709037396d9b8bf54edf35
+third stage/README.md                                               3025  f8c126eb8dbb9919ee5bd3b659c2d181e169d423282bf58630c30baef76d0fef
+第一阶段/00-README.md                                                   4111  44ec1e0743bb0940741b7517d071517cd79bef99cfd7cd12423d3c5967e58997
+第一阶段/01-需求分析.md                                                    11843  7ce349aa4e96e3aadebddfe1b673f08602b448fab3f1edc0712949c0524dd77b
+第一阶段/02-实体与属性清单.md                                                114782  8ea0946562358b7650234089653fb10070399ded566cd43e63676f57af1b64bf
+第一阶段/02-数据字典.csv                                                   48461  a24aa20860a2ff9a335e5cf7e04f90dcd860cb046bd37de717097d8f1a37db50
+第一阶段/03-实体关系分析.md                                                  41123  25ed05b36aa056c319627d3f2f5bef04d42ef596d79fac9866b5221681edcf1d
+第一阶段/04-ER图-域1-著录与文献.svg                                           12647  f0dee940d03e7841567e59f6617c04a96e6b14b7721789fe4797489c91673b8b
+第一阶段/04-ER图-域2-人员与角色.svg                                            8118  da9e6e6315a5202c80558484f89334dc685026a5c3fa116247e29559aa5f46b7
+第一阶段/04-ER图-域3-分类.svg                                               4883  0d86698b00735c38c5767bc4861490e91defe2c479bdc9eed84840f157c38bf7
+第一阶段/04-ER图-域4-引用.svg                                               7100  1e555a0b29c1f52418b782bfeb6074be05f4a31fc742fca70f292d95557019ed
+第一阶段/04-ER图-域5-专利族与程序关系.svg                                        12046  1a652c599cde6d974ed308ac9109a9aa9b614efa3aeb17f6844d60379c91fdf7
+第一阶段/04-ER图-域6-法律状态与关键词.svg                                         4936  bde5e796c78cabb9d228745ad3a4ebb8985bfef8ce1b2508b13bcff70a69414c
+第一阶段/04-ER图-教材符号-总览.png                                           755953  6350bbdc61cf493c09e397ad5ce219ca1d45bc8374211b13166ac24038116f03
+第一阶段/04-ER图-教材符号-总览.svg                                            49522  a0ef9dcd38a622bbd143a718c08acd23c69bbbf905a499a139785feb8c60107b
+第一阶段/04-ER图.drawio                                                 33761  98f70f20503e666f34e94f49ed1fc9f035ba646a49e35411b2de84a8a3bdc8df
+第一阶段/04-ER图.md                                                      6838  9ccfa42adfc81ad09b53d4480de418fdabba134a63f3d5c77aa33b3de28c7938
+第一阶段/04-ER图.png                                                   755953  6350bbdc61cf493c09e397ad5ce219ca1d45bc8374211b13166ac24038116f03
+第一阶段/04-ER图.svg                                                    49522  a0ef9dcd38a622bbd143a718c08acd23c69bbbf905a499a139785feb8c60107b
+第一阶段/04-关系模式图-关键关系子图.svg                                          317190  dc37dd6375f87cd018a43ff742fec4518bac469e2caf98469c38855498e0a3e7
+第一阶段/04-关系模式图-关键子图.svg                                            317190  dc37dd6375f87cd018a43ff742fec4518bac469e2caf98469c38855498e0a3e7
+第一阶段/04-关系模式图-完整属性.png                                             78159  edf614a1feb23bdf9699096988bd553b9ed6b1026bd0b0c5c13a0b36678a9b4c
+第一阶段/04-关系模式图-完整属性.svg                                           1227104  5df2f565626d87e7c6b79f0171d37afa54f2e0b7b5e4896a3f36d5e06075571b
+第一阶段/04-关系模式图-总览.png                                               53873  4df580c15b346de50c271fe58cc1d30477cb01b441a9a5881b1f96fa7f85ad1a
+第一阶段/04-关系模式图-总览.svg                                              658236  4c963da576d35d7cc5d62bb3ead2fff6da1801cdf458a81defd321e9aff825db
+第一阶段/05-方案设计初稿.md                                                   8594  92f879b6c420388a2ca35f8825e7d93a87bbf8aba9c0343f52934d967b6def00
+第一阶段/90-问题记录-A.md                                                  16472  e8f6b7703ff439d87884d1c494828260f2684393eaf42d9e34b8fbf3ea84af28
+第一阶段/91-待全组讨论确认清单.md                                                2965  6685f9ac94fe1a3e7c77b6cc07b999fc97b002d1f6f81b20e42608f4075f29e6
+第一阶段/92-AI使用记录.md                                                   9476  9005489ccbabc7e06a0dafcd510e551d04701b76f2b6226eb227149bd06c4ab9
+第一阶段/93-B角色交接说明.md                                                  4985  da23a4c102743dee7466d7ad0962a00f029baada1671905e8b69827555a8f671
+第一阶段/95-审查报告.md                                                    10927  bca606fcba32216da6a90bb92ae5d33507a14b35c54ddab3877e66674e6eedd5
+第一阶段/sources/ER-关键关系子图.mmd                                          4368  b8b1975a8c8531ad4e0332ae26d5a94f7470098eb12d5aa9eca10f856cb087da
+第一阶段/sources/ER-完整属性.mmd                                           23098  de441e2a9cb2417bca48f501f44bd0c086af26df2e2032ab4108564e3886e761
+第一阶段/sources/ER-总览.mmd                                              9303  44184edcf28ae6c2b1a9f732e981ab034b6839bccb7db47f616957b277bad22b
+第一阶段/sources/ER教材-教材符号.drawio                                      33761  98f70f20503e666f34e94f49ed1fc9f035ba646a49e35411b2de84a8a3bdc8df
+第一阶段/sources/INID码对照表.csv                                          17408  18e7573c9bc66523f415560b58d4dc57001fee96a7d64bff2e9699fed108f434
+第一阶段/sources/PATSTAT-table-description-thirdparty-mirror.csv        1388  599df1bd10cdbabeb743a2b56314b92b0510036b54b4d52b7d3f285605ff61c2
+第一阶段/sources/WIPO-ST16-kind-codes-03-16-01.pdf                     47136  e4991d254ebf2a53b3c484927f47405f727a284921eece59e44bd11ab7587aea
+第一阶段/sources/WIPO-ST3-country-codes-03-03-01.pdf                  213676  3b0db8e66019a319940847fc6e40010d6137028058cb5d3adb2194e385651795
+第一阶段/sources/WIPO-ST36-XML-03-36-01.pdf                           151342  e0b09c2e253c9df1366d660945b1e90355efd3e32e269f39e92e32d2243186a1
+第一阶段/sources/WIPO-ST9-INID-codes-03-09-01.pdf                     245382  af48603d14ce5388e1d6416ab3adaba09f04cec2e594e7712c32c20e88713ab7
+第一阶段/sources/WIPO-ST96-XML4IP-overview-03-96-01.pdf               270132  8a22c49c334f74194e6ab6750a0b1fdb5a5ff6737f0ee0d086f7cfaf0f91bdea
+第一阶段/sources/XML结构解析-官网EP-DOCDB摘要.csv                              11793  325be6f7be6ea68445601cd84fb51a4e9a403ea831d3cb4d52c865e6b3ca82aa
+第一阶段/sources/XML结构解析-官网EP-DOCDB摘要.md                               13218  a7143939d2d85f964946d0177e09b715aab8020f72256eb917e968a0c30ce154
+第一阶段/sources/XML结构解析-官网欧洲专利全文.csv                                  18521  2b750ce52b9c2a13c9a2990f48dcd73d89241c88ea600dcb480cd7651a165459
+第一阶段/sources/XML结构解析-官网欧洲专利全文.md                                   20896  23029223a9850d6a629acf5fc56b9e6d258137824ef62276f8396b9a87c0ef05
+第一阶段/sources/XML结构解析-官网美国专利授权公告.csv                                34157  dfd5dc3b1c77dadb5a3129e5add09ee68491fc404cacf1e22c67af1ce925d5a4
+第一阶段/sources/XML结构解析-官网美国专利授权公告.md                                 38173  53683aac41676fcf9d9e45295f9676c1533fcacef7657c4c95c16674da7c851f
+第一阶段/sources/XML结构解析-官网美国专利申请公布.csv                                18871  7ba631b291691bf072cb04c19a90aa0c8d9bf0b05f275f1bc024c28354d6ef13
+第一阶段/sources/XML结构解析-官网美国专利申请公布.md                                 20966  89c45f20269d3183208a70607231232b0d4de206f5cec59d2cad79ec44627f03
+第一阶段/sources/XML结构解析-美国专利授权公告.csv                                  20748  2a7cfaf7332be50f139d69ad72f92183917b0f151d4165ea60c0d5af10567a3e
+第一阶段/sources/XML结构解析-美国专利授权公告.md                                   23336  647a64244bd9659e08f17e4ad499d2e9575c9987417a8b0bfc928c4b80106dee
+第一阶段/sources/XML结构解析-美国专利申请公布.csv                                  17445  dc8675d24469eb8f548730d7428b3ed41ebacb63bf399e3e047eb67ed739cd27
+第一阶段/sources/XML结构解析-美国专利申请公布.md                                   19544  be9f9376ccf4d2575164f399e5cff520b93dda3c1540281c6476364e877f7915
+第一阶段/sources/XML结构解析-美国外观设计授权.csv                                  12571  babaecefdf00f277b5e37ba211a69d03ed16b13daf85ae87f2cad720e2ae4a9b
+第一阶段/sources/XML结构解析-美国外观设计授权.md                                   14693  67bfd2bf4ba6bceb7158cada9622adbe21897b086079e0813f7038ee6a81bef7
+第一阶段/sources/XML结构解析报告.md                                          17614  52f3237985d8faeeea02eaf1c593014f2cebf7f2a73f219afc5a8c84d6ee73af
+第一阶段/sources/legacy-er-mermaid/ER教材-专利族与程序关系.mmd                     890  64b9e4941030ebec3b5891b31303c9e842f5af85c32b66f3c03323e510ebc250
+第一阶段/sources/legacy-er-mermaid/ER教材-人员与角色.mmd                       1245  66d8e7922f3016a2cc55edd4b4dfce5387272ebfdd1bef75199e5ef21ef64891
+第一阶段/sources/legacy-er-mermaid/ER教材-分类.mmd                           633  497db251bb9558fdfe8d769b7e9dc25581a46e62bed91f282dffcc836b7bd770
+第一阶段/sources/legacy-er-mermaid/ER教材-引用.mmd                           673  bcd7058a8137f9f740fcc5ffaab9cbbbc6f1fb74e5af39996d0b9559514b4feb
+第一阶段/sources/legacy-er-mermaid/ER教材-总览.mmd                          4368  57e3100b30934bab3068c4ae5d9bd7e11c1580ec67dc09227d1b3315ebcd3a47
+第一阶段/sources/legacy-er-mermaid/ER教材-法律状态与关键词.mmd                     743  a0c9f04e8499b65571422ae6dcb1ee3f61c53da73019617c5778e5dcb81e3222
+第一阶段/sources/legacy-er-mermaid/ER教材-著录与文献.mmd                       1330  002f384777f50bd0dbfcc22ced0201baffeeff812977819da4608b258f95ee42
+第一阶段/sources/samples/design-grant/us-patent-grant-D0973998.xml     15567  955e8752827d8322ac46202460c35adfbbf2560ba793a200cb60668cea8427c1
+第一阶段/sources/samples/design-grant/us-patent-grant-D0973999.xml     26835  d2ac19cc088f50dff22cccbf9d9faedd58ed5b92d6af74824f82072787795ae9
+第一阶段/sources/samples/us-patent-application-20230000001.xml         41755  d8cbf6d5ff2a8ff702a85c46d01b6be1f2f06eee48ef9fa5d68ba71c85dd5b8d
+第一阶段/sources/samples/us-patent-application-20230000002.xml        102968  4287eee2c598729366d843d6145b64340f17c8373fdf531c4160f996c0f7937a
+第一阶段/sources/samples/us-patent-grant-11540449-B1.xml               30020  566db2ec8fe6e13833c11e5965bfd859a0d0a020063dfb1ce65faac4737d71eb
+第一阶段/sources/samples/us-patent-grant-11542074-B1.xml               79653  57dc30fe809f6753d078e45b3993929561a24b629e5403a8ec685df1221ba43b
+第一阶段/sources/samples/官网/ep-docdb/DOCDB-201724-Amend-PubDate20170609AndBefore-EP-000.xml     33719  2be847844f5eae5053fb955f2c58e64d8858ab683eb2613a7c642e37f52236cd
+第一阶段/sources/samples/官网/ep-docdb/DTDS/XMLSchema.dtd                16775  16674663beec02b22273e6ed4826bc8c2657fa79f75fbe4abf9b27c8e146a734
+第一阶段/sources/samples/官网/ep-docdb/DTDS/datatypes.dtd                 6562  52e18bdb8df3925f196fadc59bc9919e53d579f2c5cc879330196845311b280d
+第一阶段/sources/samples/官网/ep-docdb/DTDS/docdb-entities.dtd          174925  7043c68ba60de99961fb3f68ea3d4efc59f52e33a0e5f8f20594aa30ca5b6a87
+第一阶段/sources/samples/官网/ep-docdb/DTDS/docdb-package-v1.1.dtd        4398  03034e5db5ab92a20adac6e496179eed47ac57428ee7f952a94cf35e3510d267
+第一阶段/sources/samples/官网/ep-docdb/DTDS/exchange-documents-v2.5.7.xsd    542112  54ff6ecd04d805fcbb16a2703af6e753ed86b601bd2bee01274545b16f4f25ba
+第一阶段/sources/samples/官网/ep-docdb/DTDS/xlink.xsd                     1291  460d62bd5e1b0a21618168f401150a3942060d97c1f6ce821dd5e0019bebd44a
+第一阶段/sources/samples/官网/ep-docdb/DTDS/xml.xsd                       5761  2f5c0861be7e007849f9695c69021180a8230b62eb4dde77f0c1d9ce431e5b5e
+第一阶段/sources/samples/官网/ep-fulltext/712-096-DOC00001.xml           74565  3939fb760ec202455b366d545ab887b8baf55a0daf4d95a9e41b174635de446c
+第一阶段/sources/samples/官网/ep-fulltext/797-400-DOC00001.xml            2908  7f12ac59264e768377c0b75d2fe3fe0777e31cf10fcc6760e25a31facd457f8a
+第一阶段/sources/samples/官网/ep-fulltext/797-401-DOC00001.xml            2675  0e527c2244b7c217f0a62ab48be892997545c59a87a076231b3c2de73b1f23fe
+第一阶段/sources/samples/官网/ep-fulltext/890-251-DOC00001.xml           65780  6207bd80e281cfa4dbf26eb860aa15be23278e178bd832cafbecaeddf6776bc7
+第一阶段/sources/samples/官网/us-application/US20140338089A1-20141120.XML     44666  50fa4aa235323afa1290f05b58f3724bf6bdbe103959e8045097cc385756e8ac
+第一阶段/sources/samples/官网/us-application/US20140338090A1-20141120.XML     31457  77efc91e9f8e92a3299c115bf1030771eb563b693b870271fb8ca128ae4d73f0
+第一阶段/sources/samples/官网/us-application/US20140345008P1-20141120.XML     19417  12d2b971e16e5d57e17da29b539ac40dd686d6a737b8cd2266cd77d752c7d01f
+第一阶段/sources/samples/官网/us-application/US20140345009P1-20141120.XML     18167  d3c5a16668fdc8e85c76d7fbff3ef52529e21a310e3659c64749f75a6f7c0a3e
+第一阶段/sources/samples/官网/us-grant/US08887312-20141118.XML          115119  bdead2905e35e5aad9980428f3eac8aa85a0f838732484d8f2b51ce2c98c2ea6
+第一阶段/sources/samples/官网/us-grant/US08887313-20141118.XML           43463  a2bf9aa956ae0af8c095a24d75ff2eb60df55d1dc36e7da4c77939a5abab77f4
+第一阶段/sources/samples/官网/us-grant/USD0717516-20141118.XML           15994  d9a6e1935610433252b3a32062c6fcd09d1742e7ee9f652bd79292d8946fd8c3
+第一阶段/sources/samples/官网/us-grant/USD0717517-20141118.XML           15299  66c7d53217d1f68cbb674d3c5ab0f3eb550b2d79ce627dd883e14fe5712f8ace
+第一阶段/sources/samples/官网/us-grant/USPP025063-20141118.XML           22142  80b7fa6ac9166d652c624fb6d4184b7275c77eeaef90e0f4f57f67c0ac1b0388
+第一阶段/sources/samples/官网/us-grant/USPP025064-20141118.XML           22950  99993c8745f70fb4abf7c5466108051e91c99429303eb3e8f239a9bfc62be483
+第一阶段/sources/samples/官网/us-grant/USRE045253-20141118.XML           37994  13f7dc3541c568bf8c8a8aeb3fb7b29927ca9f75dad181f1e9d8f32fbd7eb728
+第一阶段/sources/samples/官网/us-grant/USRE045254-20141118.XML          260060  fc65220a7bb061345a25115282427e2529ac7099d4febd7d6b3654d3630ba409
+第一阶段/sources/scripts/analyze_patent_xml.py                          6766  02d5b7851b39dc2c128484d1247cd07da2fec1ea25b27e32a6315c8d5c86439f
+第一阶段/sources/scripts/gen_data_dictionary.py                        78228  e29abfa54cf604de320263f715fe7f7772c6ac2420e1fe77c242e2fe8286ffe7
+第一阶段/sources/scripts/gen_er_mermaid.py                              7777  5c9a458a8be6454a717e5718fbebd0ccf22efa92f757fcc20da1f9de0988038a
+第一阶段/sources/scripts/gen_er_textbook.py                            15464  0ff0ae66c394a9bfecdaa6a1114c17aeaa7f77934a3d09a7e0570fc67cc78432
+第一阶段/sources/scripts/gen_inid_table.py                             23033  78097dfd66bfd0b3eed322a49fb76628d8c5efaae9e6e90eacf99eb67f076fe0
+第一阶段/sources/scripts/split_uspto_bulk_xml.py                        2374  9be2e41e50f9d7736b7619f78414fbc005f807081a45fbb82baf64b936cc5659
+第一阶段/sources/官网资料/EP-PA-ABSO-10-AB_数据手册.pdf                       197427  2453a4c59219f23e3a96f6857e33f266018ca6c5cab36874631d5d8572bbe1df
+第一阶段/sources/官网资料/EP-PA-TXTO-10-AB_数据手册.pdf                       181713  d6068a87766f2300d497647c3e0b75c35717daa33541dd17ef4b083cef214bed
+第一阶段/sources/官网资料/US-PA-TXTO-10-A_数据手册.pdf                        265934  ac09249ff0ed611753a20cb24f5bd5f26864fb14631f05117781a5e1e96f6cd2
+第一阶段/sources/官网资料/US-PA-TXTO-10-B_数据手册.pdf                        270604  89fa8fa592ce860859ebdbf6ff6d7053b328283bd9d996b11bea942c3d02fb60
+第一阶段/sources/来源清单.md                                                8477  676b9e25244dc4161dc3ce896492b74a5bf75a942752dc01dfa1ffc7df6c3c98

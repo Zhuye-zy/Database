@@ -1,0 +1,1044 @@
+{
+  "generated_at_utc": "2026-10-08T15:27:18+00:00",
+  "schema": "patentdb",
+  "driver": "docker exec psql (COPY TO STDOUT)",
+  "container": "patentdb",
+  "analyses": [
+    {
+      "file": "01-技术领域分布.sql",
+      "title": "01-技术领域分布",
+      "queries": [
+        {
+          "name": "ipc_section",
+          "description": "分类体系的部级分布（专利去重 + 分类号条数）",
+          "status": "PASS",
+          "columns": [
+            "分类体系",
+            "部",
+            "专利数",
+            "分类号条数"
+          ],
+          "row_count": 11,
+          "csv": "结果/ipc_section.csv",
+          "rows": [
+            [
+              "CPC",
+              "A",
+              "3",
+              "5"
+            ],
+            [
+              "CPC",
+              "B",
+              "2",
+              "6"
+            ],
+            [
+              "CPC",
+              "C",
+              "1",
+              "9"
+            ],
+            [
+              "CPC",
+              "F",
+              "1",
+              "1"
+            ],
+            [
+              "CPC",
+              "Y",
+              "1",
+              "1"
+            ],
+            [
+              "IPC",
+              "A",
+              "9",
+              "13"
+            ],
+            [
+              "IPC",
+              "H",
+              "4",
+              "19"
+            ],
+            [
+              "IPC",
+              "G",
+              "3",
+              "4"
+            ],
+            [
+              "IPC",
+              "B",
+              "2",
+              "3"
+            ],
+            [
+              "IPC",
+              "F",
+              "2",
+              "9"
+            ],
+            [
+              "IPC",
+              "C",
+              "1",
+              "1"
+            ]
+          ]
+        },
+        {
+          "name": "ipc_class",
+          "description": "大类 TOP12（如 H01、A01）",
+          "status": "PASS",
+          "columns": [
+            "分类体系",
+            "大类",
+            "专利数",
+            "分类号条数"
+          ],
+          "row_count": 12,
+          "csv": "结果/ipc_class.csv",
+          "rows": [
+            [
+              "IPC",
+              "A01",
+              "6",
+              "8"
+            ],
+            [
+              "IPC",
+              "H04",
+              "3",
+              "17"
+            ],
+            [
+              "IPC",
+              "G06",
+              "2",
+              "3"
+            ],
+            [
+              "CPC",
+              "A41",
+              "1",
+              "3"
+            ],
+            [
+              "IPC",
+              "A41",
+              "1",
+              "3"
+            ],
+            [
+              "CPC",
+              "A42",
+              "1",
+              "1"
+            ],
+            [
+              "IPC",
+              "A42",
+              "1",
+              "1"
+            ],
+            [
+              "IPC",
+              "A43",
+              "1",
+              "1"
+            ],
+            [
+              "CPC",
+              "A43",
+              "1",
+              "1"
+            ],
+            [
+              "IPC",
+              "B32",
+              "1",
+              "2"
+            ],
+            [
+              "CPC",
+              "B32",
+              "1",
+              "5"
+            ],
+            [
+              "CPC",
+              "B63",
+              "1",
+              "1"
+            ]
+          ]
+        },
+        {
+          "name": "coverage",
+          "description": "分类覆盖度（有分类号的专利占比）",
+          "status": "PASS",
+          "columns": [
+            "有分类号的专利",
+            "专利总数",
+            "覆盖率百分比"
+          ],
+          "row_count": 1,
+          "csv": "结果/coverage.csv",
+          "rows": [
+            [
+              "16",
+              "19",
+              "84.2"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "file": "02-申请人排名.sql",
+      "title": "02-申请人排名",
+      "queries": [
+        {
+          "name": "applicant_rank",
+          "description": "申请人 TOP15（机构/自然人标注）",
+          "status": "PASS",
+          "columns": [
+            "申请人",
+            "类型",
+            "专利数",
+            "关联条数",
+            "最小顺序号"
+          ],
+          "row_count": 15,
+          "csv": "结果/applicant_rank.csv",
+          "rows": [
+            [
+              "David Austin Roses Ltd.",
+              "机构",
+              "2",
+              "2",
+              "1"
+            ],
+            [
+              "Donald Alfred Skelton",
+              "自然人",
+              "2",
+              "2",
+              "1"
+            ],
+            [
+              "Aaron McGuin",
+              "自然人",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "Ashok Bhatnagar",
+              "自然人",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "Bradley Grunden",
+              "自然人",
+              "1",
+              "1",
+              "3"
+            ],
+            [
+              "Etre Vous, LLC",
+              "机构",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "Facebook, Inc.",
+              "机构",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "Husqvarna AB",
+              "自然人",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "LICENTIA GMBH",
+              "自然人",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "Lori Wagner",
+              "自然人",
+              "1",
+              "1",
+              "2"
+            ],
+            [
+              "Quiksilver, Inc.",
+              "机构",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "Richard T. Lahn",
+              "自然人",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "SIEMENS AG",
+              "自然人",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "Urschel Laboratories, Inc.",
+              "机构",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "Weyerhaeuser Nr Company",
+              "自然人",
+              "1",
+              "1",
+              "1"
+            ]
+          ]
+        },
+        {
+          "name": "applicant_type",
+          "description": "申请主体类型分布",
+          "status": "PASS",
+          "columns": [
+            "类型",
+            "人数",
+            "涉及专利",
+            "关联条数"
+          ],
+          "row_count": 2,
+          "csv": "结果/applicant_type.csv",
+          "rows": [
+            [
+              "自然人",
+              "10",
+              "9",
+              "11"
+            ],
+            [
+              "机构",
+              "6",
+              "7",
+              "7"
+            ]
+          ]
+        },
+        {
+          "name": "role_summary",
+          "description": "五类人员角色（申请人/发明人/权利人/代理人/审查员）对比",
+          "status": "PASS",
+          "columns": [
+            "角色",
+            "关联条数",
+            "专利数"
+          ],
+          "row_count": 5,
+          "csv": "结果/role_summary.csv",
+          "rows": [
+            [
+              "发明人",
+              "32",
+              "18"
+            ],
+            [
+              "申请人",
+              "18",
+              "16"
+            ],
+            [
+              "代理人",
+              "12",
+              "10"
+            ],
+            [
+              "审查员",
+              "10",
+              "8"
+            ],
+            [
+              "权利人（受让人）",
+              "9",
+              "9"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "file": "03-引用网络.sql",
+      "title": "03-引用网络",
+      "queries": [
+        {
+          "name": "type_split",
+          "description": "引用类型分布（P 专利 / N 非专利）",
+          "status": "PASS",
+          "columns": [
+            "类型码",
+            "类型",
+            "引用条数",
+            "引用方专利数"
+          ],
+          "row_count": 2,
+          "csv": "结果/type_split.csv",
+          "rows": [
+            [
+              "N",
+              "非专利文献引用",
+              "297",
+              "6"
+            ],
+            [
+              "P",
+              "专利文献引用",
+              "508",
+              "9"
+            ]
+          ]
+        },
+        {
+          "name": "out_degree",
+          "description": "出度 TOP10：每个引用方专利引用了他人的多少件文献",
+          "status": "PASS",
+          "columns": [
+            "引用方专利ID",
+            "申请号",
+            "专利引用",
+            "非专利引用",
+            "合计",
+            "库内可解析"
+          ],
+          "row_count": 9,
+          "csv": "结果/out_degree.csv",
+          "rows": [
+            [
+              "9",
+              "US13907761",
+              "404",
+              "286",
+              "690",
+              "0"
+            ],
+            [
+              "8",
+              "US12604381",
+              "54",
+              "2",
+              "56",
+              "0"
+            ],
+            [
+              "17",
+              "US29467812",
+              "17",
+              "0",
+              "17",
+              "0"
+            ],
+            [
+              "18",
+              "US29486190",
+              "13",
+              "2",
+              "15",
+              "0"
+            ],
+            [
+              "3",
+              "EP79100245",
+              "4",
+              "3",
+              "7",
+              "0"
+            ],
+            [
+              "14",
+              "US14090531",
+              "6",
+              "0",
+              "6",
+              "0"
+            ],
+            [
+              "6",
+              "EP97906939.0",
+              "3",
+              "2",
+              "5",
+              "0"
+            ],
+            [
+              "7",
+              "US11888302",
+              "5",
+              "0",
+              "5",
+              "0"
+            ],
+            [
+              "5",
+              "EP95308109.8",
+              "2",
+              "2",
+              "4",
+              "0"
+            ]
+          ]
+        },
+        {
+          "name": "cited_country",
+          "description": "被引专利文献的来源国别 TOP10",
+          "status": "PASS",
+          "columns": [
+            "被引国别",
+            "被引次数"
+          ],
+          "row_count": 9,
+          "csv": "结果/cited_country.csv",
+          "rows": [
+            [
+              "US",
+              "453"
+            ],
+            [
+              "WO",
+              "34"
+            ],
+            [
+              "JP",
+              "7"
+            ],
+            [
+              "EP",
+              "5"
+            ],
+            [
+              "GB",
+              "4"
+            ],
+            [
+              "FR",
+              "2"
+            ],
+            [
+              "CN",
+              "1"
+            ],
+            [
+              "DE",
+              "1"
+            ],
+            [
+              "RU",
+              "1"
+            ]
+          ]
+        },
+        {
+          "name": "cited_decade",
+          "description": "被引专利文献的年代分布（原文日期前 4 位 → 年代段）",
+          "status": "PASS",
+          "columns": [
+            "年代段",
+            "被引次数"
+          ],
+          "row_count": 8,
+          "csv": "结果/cited_decade.csv",
+          "rows": [
+            [
+              "1930",
+              "1"
+            ],
+            [
+              "1950",
+              "3"
+            ],
+            [
+              "1960",
+              "4"
+            ],
+            [
+              "1970",
+              "3"
+            ],
+            [
+              "1980",
+              "6"
+            ],
+            [
+              "1990",
+              "80"
+            ],
+            [
+              "2000",
+              "372"
+            ],
+            [
+              "2010",
+              "34"
+            ]
+          ]
+        },
+        {
+          "name": "resolution",
+          "description": "库内解析率：被引目标有多少能连回本地 patent",
+          "status": "PASS",
+          "columns": [
+            "引用总条数",
+            "专利文献引用",
+            "库内已解析",
+            "库外专利引用",
+            "非专利引用明细"
+          ],
+          "row_count": 1,
+          "csv": "结果/resolution.csv",
+          "rows": [
+            [
+              "805",
+              "508",
+              "0",
+              "508",
+              "297"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "file": "04-权利要求与全文结构.sql",
+      "title": "04-权利要求与全文结构",
+      "queries": [
+        {
+          "name": "claim_type",
+          "description": "权利要求类型分布（全部语言合计）",
+          "status": "PASS",
+          "columns": [
+            "类型码",
+            "类型",
+            "条数",
+            "涉及文献"
+          ],
+          "row_count": 2,
+          "csv": "结果/claim_type.csv",
+          "rows": [
+            [
+              "D",
+              "从属权利要求",
+              "84",
+              "6"
+            ],
+            [
+              "I",
+              "独立权利要求",
+              "100",
+              "14"
+            ]
+          ]
+        },
+        {
+          "name": "lang_split",
+          "description": "权利要求与标题的语言分布（EP 多语言口径）",
+          "status": "PASS",
+          "columns": [
+            "语言",
+            "权利要求",
+            "标题"
+          ],
+          "row_count": 3,
+          "csv": "结果/lang_split.csv",
+          "rows": [
+            [
+              "EN",
+              "136",
+              "18"
+            ],
+            [
+              "DE",
+              "24",
+              "6"
+            ],
+            [
+              "FR",
+              "24",
+              "6"
+            ]
+          ]
+        },
+        {
+          "name": "doc_structure",
+          "description": "文献结构 TOP8（权利要求/说明书章节/附图）",
+          "status": "PASS",
+          "columns": [
+            "文献ID",
+            "文献号",
+            "种类码",
+            "独立权项",
+            "从属权项",
+            "说明书章节",
+            "附图",
+            "源文件声明权项数"
+          ],
+          "row_count": 8,
+          "csv": "结果/doc_structure.csv",
+          "rows": [
+            [
+              "4",
+              "EP0890251B1",
+              "B1",
+              "42",
+              "0",
+              "39",
+              "9",
+              ""
+            ],
+            [
+              "18",
+              "USRE045254E1",
+              "E1",
+              "12",
+              "21",
+              "64",
+              "7",
+              "33"
+            ],
+            [
+              "3",
+              "EP0712096B1",
+              "B1",
+              "30",
+              "0",
+              "72",
+              "12",
+              ""
+            ],
+            [
+              "7",
+              "US08887312B2",
+              "B2",
+              "3",
+              "17",
+              "79",
+              "2",
+              "20"
+            ],
+            [
+              "10",
+              "US20140338090A1",
+              "A1",
+              "2",
+              "18",
+              "37",
+              "13",
+              ""
+            ],
+            [
+              "9",
+              "US20140338089A1",
+              "A1",
+              "2",
+              "13",
+              "86",
+              "9",
+              ""
+            ],
+            [
+              "17",
+              "USRE045253E1",
+              "E1",
+              "2",
+              "13",
+              "42",
+              "5",
+              "15"
+            ],
+            [
+              "8",
+              "US08887313B2",
+              "B2",
+              "1",
+              "2",
+              "50",
+              "20",
+              "3"
+            ]
+          ]
+        },
+        {
+          "name": "dependency",
+          "description": "权利要求依赖（claim_dependency）依赖类型统计",
+          "status": "PASS",
+          "columns": [
+            "依赖类型",
+            "依赖条数",
+            "从属权项数"
+          ],
+          "row_count": 1,
+          "csv": "结果/dependency.csv",
+          "rows": [
+            [
+              "claim-ref",
+              "84",
+              "84"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "file": "05-数据来源与时序.sql",
+      "title": "05-数据来源与时序",
+      "queries": [
+        {
+          "name": "dataset_split",
+          "description": "数据来源分布",
+          "status": "PASS",
+          "columns": [
+            "数据集",
+            "中文名",
+            "文献数",
+            "申请数"
+          ],
+          "row_count": 5,
+          "csv": "结果/dataset_split.csv",
+          "rows": [
+            [
+              "US_GRANT",
+              "美国专利授权公告全文文本数据",
+              "8",
+              "8"
+            ],
+            [
+              "EP_FULLTEXT",
+              "欧洲专利全文文本数据",
+              "4",
+              "4"
+            ],
+            [
+              "US_APP_PUB",
+              "美国专利申请公布全文文本数据",
+              "4",
+              "4"
+            ],
+            [
+              "EP_DOCDB_ABS",
+              "EP专利摘要DOCDB数据",
+              "2",
+              "2"
+            ],
+            [
+              "EP_LEGAL_STATUS",
+              "EP patent legal status sample",
+              "1",
+              "1"
+            ]
+          ]
+        },
+        {
+          "name": "publn_year",
+          "description": "公布年份分布",
+          "status": "PASS",
+          "columns": [
+            "公布年份",
+            "文献数"
+          ],
+          "row_count": 3,
+          "csv": "结果/publn_year.csv",
+          "rows": [
+            [
+              "1979",
+              "2"
+            ],
+            [
+              "2014",
+              "16"
+            ],
+            [
+              "2020",
+              "1"
+            ]
+          ]
+        },
+        {
+          "name": "filing_year",
+          "description": "申请年份分布",
+          "status": "PASS",
+          "columns": [
+            "申请年份",
+            "申请数"
+          ],
+          "row_count": 10,
+          "csv": "结果/filing_year.csv",
+          "rows": [
+            [
+              "1979",
+              "2"
+            ],
+            [
+              "1995",
+              "1"
+            ],
+            [
+              "1997",
+              "1"
+            ],
+            [
+              "2007",
+              "1"
+            ],
+            [
+              "2009",
+              "1"
+            ],
+            [
+              "2011",
+              "1"
+            ],
+            [
+              "2012",
+              "2"
+            ],
+            [
+              "2013",
+              "7"
+            ],
+            [
+              "2014",
+              "2"
+            ],
+            [
+              "2019",
+              "1"
+            ]
+          ]
+        },
+        {
+          "name": "family_size",
+          "description": "专利族规模",
+          "status": "PASS",
+          "columns": [
+            "族ID",
+            "族类型",
+            "成员总数",
+            "库内成员",
+            "代表文献数"
+          ],
+          "row_count": 3,
+          "csv": "结果/family_size.csv",
+          "rows": [
+            [
+              "6034510",
+              "DOCDB",
+              "7",
+              "1",
+              "1"
+            ],
+            [
+              "6030991",
+              "DOCDB",
+              "3",
+              "1",
+              "1"
+            ],
+            [
+              "67903597",
+              "INPADOC",
+              "1",
+              "1",
+              "1"
+            ]
+          ]
+        },
+        {
+          "name": "legal_event",
+          "description": "法律状态事件码分布",
+          "status": "PASS",
+          "columns": [
+            "事件码",
+            "事件说明",
+            "事件条数"
+          ],
+          "row_count": 5,
+          "csv": "结果/legal_event.csv",
+          "rows": [
+            [
+              "RIC1",
+              "INFORMATION PROVIDED ON IPC CODE ASSIGNED BEFORE GRANT",
+              "5"
+            ],
+            [
+              "STAA",
+              "INFORMATION ON THE STATUS OF AN EP PATENT APPLICATION OR GRANTED EP PATENT",
+              "2"
+            ],
+            [
+              "17P",
+              "REQUEST FOR EXAMINATION FILED",
+              "1"
+            ],
+            [
+              "AK",
+              "DESIGNATED CONTRACTING STATES",
+              "1"
+            ],
+            [
+              "AX",
+              "REQUEST FOR EXTENSION OF THE EUROPEAN PATENT",
+              "1"
+            ]
+          ]
+        },
+        {
+          "name": "keyword_source",
+          "description": "关键词来源（必须标注为本地派生）",
+          "status": "PASS",
+          "columns": [
+            "指标",
+            "数值"
+          ],
+          "row_count": 3,
+          "csv": "结果/keyword_source.csv",
+          "rows": [
+            [
+              "keyword 词条数",
+              "59"
+            ],
+            [
+              "patent_keyword 关联条数",
+              "71"
+            ],
+            [
+              "source=TITLE_DERIVED",
+              "59"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ep-patent-document PUBLIC "-//EPO//EP PATENT DOCUMENT 1.4//EN" "ep-patent-document-v1-4.dtd">
+<ep-patent-document id="EP97906939B1" file="EP97906939NWB1.xml" lang="en" country="EP" doc-number="0890251" kind="B1" date-publ="20141105" status="n" dtd-version="ep-patent-document-v1-4">
+<SDOBI lang="en"><B000><eptags><B001EP>ATBECHDEDKESFRGBGRITLILUNLSEMCPTIESILTLVFIRO....AL..................................................</B001EP><B003EP>*</B003EP><B005EP>J</B005EP><B007EP>DIM360 Ver 2.41 (21 Oct 2013) -  2100000/0</B007EP></eptags></B000><B100><B110>0890251</B110><B120><B121>EUROPEAN PATENT SPECIFICATION</B121></B120><B130>B1</B130><B140><date>20141105</date></B140><B190>EP</B190></B100><B200><B210>97906939.0</B210><B220><date>19970313</date></B220><B240><B241><date>19980930</date></B241><B242><date>20050415</date></B242></B240><B250>en</B250><B251EP>en</B251EP><B260>en</B260></B200><B300><B310>PN869396</B310><B320><date>19960315</date></B320><B330><ctry>AU</ctry></B330><B310>PO138096</B310><B320><date>19960801</date></B320><B330><ctry>AU</ctry></B330></B300><B400><B405><date>20141105</date><bnum>201445</bnum></B405><B430><date>19990113</date><bnum>199902</bnum></B430><B450><date>20141105</date><bnum>201445</bnum></B450><B452EP><date>20140521</date></B452EP></B400><B500><B510EP><classification-ipcr sequence="1"><text>H04L  29/12        20060101AFI20140411BHEP        </text></classification-ipcr><classification-ipcr sequence="2"><text>H04L  29/06        20060101ALI20140411BHEP        </text></classification-ipcr><classification-ipcr sequence="3"><text>H04M   3/38        20060101ALI20140411BHEP        </text></classification-ipcr><classification-ipcr sequence="4"><text>H04M   3/493       20060101ALI20140411BHEP        </text></classification-ipcr><classification-ipcr sequence="5"><text>H04M   7/00        20060101ALI20140411BHEP        </text></classification-ipcr><classification-ipcr sequence="6"><text>H04Q   3/00        20060101ALI20140411BHEP        </text></classification-ipcr></B510EP><B540><B541>de</B541><B542>VERFAHREN ZUM KOMMUNIKATIONSRUFAUFBAU</B542><B541>en</B541><B542>A METHOD OF ESTABLISHING A COMMUNICATIONS CALL</B542><B541>fr</B541><B542>PROCEDE D'ETABLISSEMENT D'APPEL</B542></B540><B560><B561><text>WO-A-94/24803</text></B561><B561><text>WO-A-96/09710</text></B561><B561><text>US-A- 5 524 141</text></B561><B562><text>ED KROL, "The Whole Internet User's Guide &amp; Catalog", Published 1992, by O'REILLY &amp; ASSOCIATES, INC., pages 255-259.</text></B562><B562><text>DAVE TAYLOR, "Creating Cool Web Pages with HTML", Published 1995, by IDG BOOKS WORLDWIDE, INC., pages 29-31; 177-180.</text></B562><B565EP><date>19990429</date></B565EP></B560></B500><B700><B720><B721><snm>WIENER, Victor</snm><adr><str>725 Hawthorn Road</str><city>East Brighton, VIC 3187</city><ctry>AU</ctry></adr></B721><B721><snm>STEIN, Calvin, Jonathan</snm><adr><str>17 Boronia Avenue</str><city>Turramurra, NSW 2074</city><ctry>AU</ctry></adr></B721><B721><snm>ESCOBAR, Carlos</snm><adr><str>44 Madelaine Street</str><city>Glen Waverly, VIC 3150</city><ctry>AU</ctry></adr></B721></B720><B730><B731><snm>TELSTRA CORPORATION LIMITED</snm><iid>100234324</iid><irf>PJF01778EP</irf><adr><str>242 Exhibition Street</str><city>Melbourne, VIC 3000</city><ctry>AU</ctry></adr></B731></B730><B740><B741><snm>Finnie, Peter John</snm><iid>100038361</iid><adr><str>Gill Jennings &amp; Every LLP 
+The Broadgate Tower 
+20 Primrose Street</str><city>London EC2A 2ES</city><ctry>GB</ctry></adr></B741></B740></B700><B800><B840><ctry>AT</ctry><ctry>BE</ctry><ctry>CH</ctry><ctry>DE</ctry><ctry>DK</ctry><ctry>ES</ctry><ctry>FI</ctry><ctry>FR</ctry><ctry>GB</ctry><ctry>GR</ctry><ctry>IE</ctry><ctry>IT</ctry><ctry>LI</ctry><ctry>LU</ctry><ctry>MC</ctry><ctry>NL</ctry><ctry>PT</ctry><ctry>SE</ctry></B840><B844EP><B845EP><ctry>AL</ctry><date>19980930</date></B845EP><B845EP><ctry>LT</ctry><date>19980930</date></B845EP><B845EP><ctry>LV</ctry><date>19980930</date></B845EP><B845EP><ctry>RO</ctry><date>19980930</date></B845EP><B845EP><ctry>SI</ctry><date>19980930</date></B845EP></B844EP><B860><B861><dnum><anum>AU1997000163</anum></dnum><date>19970313</date></B861><B862>en</B862></B860><B870><B871><dnum><pnum>WO1997035416</pnum></dnum><date>19970925</date><bnum>199741</bnum></B871></B870><B880><date>19990113</date><bnum>199902</bnum></B880></B800></SDOBI>
+<description id="desc" lang="en"><!-- EPO <DP n="1"> -->
+<heading id="h0001">FIELD OF THE INVENTION</heading>
+<p id="p0001" num="0001">The present invention relates to a method of establishing a communications call and a system for use in establishing a call.</p>
+<heading id="h0002">BACKGROUND OF THE INVENTION</heading>
+<p id="p0002" num="0002">Currently to establish a public telecommunications call requires an originating party to know the telephone number of the destination and to take steps to either manually dial the number or to cause the number to be accessed from a database maintained by the originating party and dialled. If the originating party does not know the number of the destination then service personnel of a carrier can be contacted to obtain the number and if desired connect the originating party and destination party, hereinafter referred to as the A and B party, respectively.</p>
+<p id="p0003" num="0003">The B party's number can also be determined by consulting a public directory which may be in print or electronic form. A call with the B party can then be established by dialling the number obtained.</p>
+<p id="p0004" num="0004">As information concerning the B party's number is known by a telecommunications carrier a method and system is desired to enable that information to be used automatically, on request, to establish a call between the A party and the B party without the caller having to dial the number.<!-- EPO <DP n="2"> --></p>
+<p id="p0005" num="0005"><patcit id="pcit0001" dnum="DE3629468A"><text>DE-A-3629468</text></patcit> describes a system for use in establishing a communication call via a computer-controlled exchange. The system is based on a local private automatic brand exchange (PABX) to which in connected a data processing facility containing an electronic telephone book type information system. Subscriber devices are also connected to the PABX, which permit manual entry of a name that can be searched in the data processing facility to ascertain a telephone number for automatically establishing a connection to that number.</p>
+<heading id="h0003"><b>SUMMARY OF THE INVENTION</b></heading>
+<p id="p0006" num="0006">In accordance with the present invention there is provided a method of originating a communications call, the method comprising the steps of:
+<ul id="ul0001" list-style="none" compact="compact">
+<li>selecting a B party; and,</li>
+<li>sending, in response to selection of the B party, selected party data corresponding to the B party to a directory service,</li>
+<li>whereby the directory service accesses called address data for the B party on the basis of the selected party data and provides the called address data for the B party to equipment for automatically establishing a call between an A party and the B party,</li>
+</ul>
+characterised in that:
+<ul id="ul0002" list-style="none" compact="compact">
+<li>the B party is selected using an interactive device connected to a public network which includes at least one public telecommunications network and an Internet Protocol (IP) network for connecting a plurality of said interactive devices, said interactive device providing an IP link to complete said selection;</li>
+<li>a connection message is sent with said selected party data to a directory application of the directory service via the IP network, wherein the directory service provides access to a public directory database of address data accessible over the IP network; and,</li>
+<li>the directory application sends a connect message including the called address data to a control platform of the public telecommunications network and communicates with said control platform to automatically establish the call.</li>
+</ul><!-- EPO <DP n="3"> --></p>
+<p id="p0007" num="0007">The present invention also provides a system for use in establishing a communications call, the system comprising:
+<ul id="ul0003" list-style="none" compact="compact">
+<li>a directory database including called address data for parties;</li>
+<li>an access module for receiving selected party data corresponding to a B party and accessing called address data on the basis of the selected party data from the directory database; and,</li>
+<li>network means for receiving from the access module the called address data and generating, in response thereto, network control signals to establish a call between an A party and the B party,</li>
+<li>wherein the call is established automatically in response to the selected party data being received by the access module,</li>
+</ul>
+characterised in that:
+<ul id="ul0004" list-style="none" compact="compact">
+<li>the directory database is connected to an Internet Protocol (IP) network of a public network which includes at least one public telecommunications network, wherein the directory database is a public directory database of address data of parties and is accessible over the IP network; and,</li>
+<li>the access module receives the selected party data corresponding to the B party via the IP network in a connection message in response to selection of an IP link to select said B party, and in response sends a connect message, including calling address data corresponding to the A party and the called address data, to a control platform of the public telecommunications network and communicates with said control platform to automatically establish the call, wherein said network means comprises said control platform.</li>
+</ul></p>
+<heading id="h0004"><b>BRIEF DESCRIPTION OF THE DRAWINGS</b></heading>
+<p id="p0008" num="0008">Preferred embodiments of the present invention are hereinafter described, by way of example only, with reference to the accompanying drawings, wherein:
+<ul id="ul0005" list-style="none" compact="compact">
+<li><figref idref="f0001">Figure 1</figref> is a schematic diagram of a first preferred embodiment of a system for use in establishing a telecommunications call;</li>
+<li><figref idref="f0002">Figure 2</figref> is a block diagram of the system of <figref idref="f0001">Figure 1</figref>;</li>
+<li><figref idref="f0003">Figure 3</figref> is a diagram of a distributed directory database of the system of <figref idref="f0001">Figure 1</figref>;<!-- EPO <DP n="4"> --></li>
+<li><figref idref="f0004">Figure 4</figref> is a more detailed block diagram of a directory service of the system of <figref idref="f0001">Figure 1</figref>;</li>
+<li><figref idref="f0005">Figure 5</figref> is a diagram of a first user interface;<!-- EPO <DP n="5"> --></li>
+<li><figref idref="f0006">Figure 6</figref> is a diagram of a second user interface;</li>
+<li><figref idref="f0007">Figure 7</figref> is a schematic diagram of a second preferred embodiment of a system for use in establishing a telecommunications call;</li>
+<li><figref idref="f0008">Figure 8</figref> is a block diagram of the system of <figref idref="f0007">Figure 7</figref>; and</li>
+<li><figref idref="f0009">Figure 9</figref> is a block diagram of an intelligent peripheral of the system of <figref idref="f0007">Figure 7</figref>.</li>
+</ul></p>
+<heading id="h0005">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS</heading>
+<p id="p0009" num="0009">A system 2 for establishing a telecommunications call between two parties 4 and 6, as shown in <figref idref="f0001">Figure 1</figref>, uses a network 8 which includes a telecommunications network 10 and a messaging network 12. The telecommunications network 10 may be any Public Switched Telephone Network (PSTN) such as that maintained by the applicant. The messaging network 12 may be a TCP/IP network, such as the Internet, which is supported by the PSTN 10 and used to connect interactive devices, such as personal computers. The system 2 includes a directory service 14 which is accessible via the messaging network 12 and provides directory information, such as the telecommunications address or number for a party 4 or 6 which can be connected by the telecommunications network 10. A customer or user of the directory service 14 can use their interactive device 16 to access the directory information. The directory service 14 may include a search module, or alternatively provides a search applet to the interactive device 16, which allows a device 16 connected to the service 14 to search through the directory information using keywords or search strings for selected parts of the information. For example, the device 16 may be used to search for the name of a B party the user may wish to establish a connection with. Once details concerning the desired B party have been displayed on the screen of the interactive device 16, the user can select that party to indicate it wishes a connection to be established so as to establish a call with that party. The selection can be made using the device 16 by clicking on a icon or hypertext relating to the B party on the display, using a voice recognition command, or using a keyboard of the device 16.<!-- EPO <DP n="6"> --></p>
+<p id="p0010" num="0010">Once the B party has been selected by the interactive device 16, a connection message is sent via the messaging network 12 to the directory service 14. The connection message, which includes identifying information concerning the B party, is used to access a telecommunications address for the B party and a telecommunications address also for the A party for a telecommunications call. The telecommunications terminal for the A party may be a terminal of the customer or user or a terminal of another party which the user has designated as being the A party. Alternatively a connection server can be used to receive the connection message and obtain, if necessary, address data from the directory service 14.</p>
+<p id="p0011" num="0011">The directory service 14 then forwards a connect message, which includes telecommunications addresses, via the messaging network 12 to an Intelligent Network (IN) control platform 18 of the system 2. The IN platform 18 uses the data in the connect message to provide control signals to a switch of the telecommunications network 10 which causes the network 10 to dial the A party 4 and the B party 6 and establish a call between the two parties 4 and 6. The IN platform 18 also uses the data to forward charging and billing information to a charging and billing module, which may be unique to the system 2 or simply form part of the charging and billing modules used for the telecommunications network 10.</p>
+<p id="p0012" num="0012">The directory service 14 can be provided by an Internet World Wide Web (WWW) server which maintains a directory web site and includes or allows access to machines maintaining a directory database 20. The server would include a number of web pages 22 written in HTML and a directory application 24 which in response to selections made on the pages 22 is able to access and provide for pages 22 directory information from the directory database 20.</p>
+<p id="p0013" num="0013">The directory database 20 accessed by the directory application 24 may comprise a number of directory databases 26 to 30 in a number of different locations and for different regions or countries which are accessed by the directory application 24 using a communications network 32, such as an X.25 network. The directory application 24 may go directly via the communications network 32 or via an Internet gateway 34 to the<!-- EPO <DP n="7"> --> communications network 32. The directory information provided for the pages 22 of the WWW site are accessible by the interactive device 16 of the customer using a web browser, such as Microsoft Internet Explorer or Netscape Navigator. The directory application 24 of the service 14 also includes a search module which allows the user to search the directory information on the basis of keywords or search strings to locate information for a desired party. The directory information would normally include the name of the party, a telephone address or number, and residential or business addresses.</p>
+<p id="p0014" num="0014">The directory information access and search modules of the service 14 described above are currently provided on a WWW server maintained by the applicant and accessible at http://www.whitepages.com.au/ for White Pages and at http://www.yellowpages.com.au/ for Yellow Pages. The directory service 14 enhances the existing server by including call completion hypertext links with a call completion page 38 for the web pages 22 and adding call completion script 40 to the directory application 24, as shown in <figref idref="f0004">Figure 4</figref>.</p>
+<p id="p0015" num="0015">The directory interface 14, as shown in <figref idref="f0004">Figure 4</figref>, includes the WWW server 42 which maintains and executes the web pages 22 and the directory application 24 which includes the directory search script and the call completion script 40. The server provides interfaces to the customer 16 as a WWW client, and implements the HTTP protocol to serve requests from the client 16. The directory search page 36 includes directory search hypertext links and the server 42 sends this page to the client 16 requesting the user to enter search details, for example, name or any part of it, address details, city or suburb. The directory search scripts 24 are attached to the links of the directory search page 36 and are activated when a link is selected so as to send a search request to the directory database 20 to select entries that match the parameters of the search query. The directory database 20 includes an interface which is able to accept search queries from the directory application and may use any standard database query language or interface to obtain directory information from the database 20. The call completion page 38 receives and displays search results obtained by the directory application 24 and includes the call completion hypertext links.<!-- EPO <DP n="8"> --></p>
+<p id="p0016" num="0016">A screen display 39, as shown in <figref idref="f0005">Figure 5</figref>, can be produced from the directory search and call completion pages 36 and 38 using a frames facility provided by the web browser. The display 39 provides boxes 41 for the entry of search information and a button link 43 to commence a search based on the entered search information. The results of the search are displayed in a frame 45 which allows a selected party 47 to be highlighted. A connection with the highlighted party 47 can then be requested by clicking on the hypertext "Auto Connect" 49 which invokes the call completion script 40.</p>
+<p id="p0017" num="0017">If desired, the database searching functions can be omitted or not activated by providing a call completion page 38 which does not have to include search results and simply includes call completion hypertext links which allow party select data to be generated or call address data to be entered. The call completion scripts or codes 40 are attached to the call completion hypertext links of the call completion page 38 and are executed when the WWW client 16 selects one of the links. Further web pages may then be forwarded to the client 16 for user interaction. These are form based pages that the user needs to complete to provide identification and charging information, such as a Telecard number (i.e. calling card number) and PIN, and the A party's telephone number. Alternatively prior arrangements may be made to authorise the A and/or B parties and the cost of the call directed to one or both of the parties. The B party number used will be that selected from the search results displayed on the call completion page 38 or another number which the user may enter or select. All of the information, including the A and B party numbers are collected by the call completion scripts and provided to an interface to the IN platform 18 of the directory application 24. The interface of the directory application 24 places the information in an appropriate message format as a connect message for transmission via the Internet 12 to an Internet gateway 50 of the IN platform 18.</p>
+<p id="p0018" num="0018">The IN platform 18, as shown in <figref idref="f0002">Figure 2</figref>, receives the connect message via the Internet gateway 50 and passes it to a management agent 52 which extracts the required connection information for an IN application 54 of the platform 18. The IN application 54 generates and sends control signals to an IN switch 60 of the PSTN 10 to establish the call<!-- EPO <DP n="9"> --> between the A party and the B party 4 and 6. The control signals include data representative of the telephone addresses or numbers for the parties 4 and 6.</p>
+<p id="p0019" num="0019">The IN platform 18 and the IN switch 60 include standard network components which are defined by the International Telecommunications Union (ITU) Recommendation Q. 1214, entitled "Distributed Functional Plane for Intelligent Network CS-1", which is incorporated herein by reference. A standard protocol is used for information exchange between the components, as described in ITU Recommendation Q.1218, entitled "Interface Recommendation for Intelligent Network CS-1", which is also incorporated herein by reference.</p>
+<p id="p0020" num="0020">The IN platform 18 may comprise the Scants intelligent network platform owned by the applicant which is currently used to establish connections between computers over the PSTN 10. The Scants IN platform is described in the specification of <patcit id="pcit0002" dnum="US5519770A"><text>U.S. Patent No. 5,519,770</text></patcit>. The Scants IN platform 18 on receiving a connection request instructs an IN switch 60 to call the A party 4 first, inform that party of the call establishment, and then call the B party 6 to connect it to the A party. The Scants platform 18 is run on a server which needs to receive the domain name and the IP address of the server running the web pages 22 and directory application 24 of the directory service 14, as it is this directory server which is requesting the connection be made. The Scants server is able to attend to call charging and billing once it receives the account details, such as the Telecard and PIN number, of the WWW client 16 from the directory service 14.</p>
+<p id="p0021" num="0021">The directory application 24 can be implemented by a server, hereinafter referred to as the InterCall Server, written in the Java language, which would also be able to provide the pages 22 and all other features of the directory service 14 around the directory database 20. The InterCall Server is set up to execute on a UNIX host machine 42 connected to a TCP/IP network 12. The InterCall Server controls the directory server system 14 and creates a pair of server sockets, one for serving http requests and the other for serving applet requests. Users with a Java capable browser, such as Netscape Navigator 2.0 for Windows 95, receive<!-- EPO <DP n="10"> --> a Java applet at their interactive device 16 after logging onto the directory service 14. The applet includes two parameters which specify a user name and key. The user name is the same as that entered by the user to log into the service 14, while the key is a random string generated by the InterCall Server, and matched to the user name so that only one applet may log in for the user. The applet, running on the interactive device 16, can provide an interface 51, as shown in <figref idref="f0006">Figure 6</figref>, to the InterCall Server for the user. The interface 51 includes a party number selector 53, a field 55 to add a party number, and a list 57 of recently dialled calls, from which a user may redial a number. The applet communicates with the InterCall Server through an applet_stub and an applet_reader object, which implement a protocol to send human readable messages in a client/server manner between the user's interactive device 16 and the directory service 14. The messages consist of a single line of ASCII characters, and a terminating new line character, and are set out in Table 1 below:
+<tables id="tabl0001" num="0001">
+<table frame="all">
+<title><b>Table 1</b></title>
+<tgroup cols="3">
+<colspec colnum="1" colname="col1" colwidth="27mm"/>
+<colspec colnum="2" colname="col2" colwidth="22mm"/>
+<colspec colnum="3" colname="col3" colwidth="118mm"/>
+<thead>
+<row>
+<entry align="center" valign="top"><b>Direction</b></entry>
+<entry align="center" valign="top"><b>Message</b></entry>
+<entry align="center" valign="top"><b>Meaning</b></entry></row></thead>
+<tbody>
+<row>
+<entry>Applet to Server</entry>
+<entry>USER <i>username</i></entry>
+<entry>This message is the first sent by the applet when it logs into the server. The username parameter is a base64 encoded string that is the username associated with the applet.</entry></row>
+<row>
+<entry>Applet to Server</entry>
+<entry>KEY <i>key</i></entry>
+<entry>This is the second message sent by the applet when it logs into the server. The key parameter is the same as the key that was passed as a parameter with the applet. The key is a unique random string that ensures an applet can login only once. After sending the KEY message, the applet waits for a response that will be either of the following two messages.</entry></row>
+<row>
+<entry>Server to Applet</entry>
+<entry>BYE</entry>
+<entry>The BYE message is sent in response to a failed login attempt. this may be sent because the authorisation of the applet failed, or because of some system error.</entry></row>
+<row>
+<entry>Server to Applet</entry>
+<entry>OK <i>user anum1 anum2 ...</i></entry>
+<entry>The OK message is sent in response to a successful applet login attempt. The user parameter is a base64 encoding of the full name of the user that has logged in. The anumN parameters are base 64 encoding of the valid A party numbers for the user, the first being the default number.</entry></row>
+<row>
+<entry>Server to Applet</entry>
+<entry>PING</entry>
+<entry>A PING message is used by the server to determine if the socket to an applet is writable. It is ignored by the applet.</entry></row><!-- EPO <DP n="11"> -->
+<row>
+<entry>Server to Applet</entry>
+<entry>CALL <i>bnum</i></entry>
+<entry>The CALL message is sent to the applet when the server has determined that the user of the applet has requested a call. The bnum parameter is a base64 encoding of the B party number of the call request. The applet should response with an OK or CANCEL message.</entry></row>
+<row>
+<entry>Server to Applet</entry>
+<entry>STATUS <i>code</i></entry>
+<entry>The STATUS message is sent to an applet to inform it of the current status of the call request. The code parameter is a 3 digit response code that currently uses the same syntax as the response codes generated by the Scants platform.</entry></row>
+<row>
+<entry>Server to Applet</entry>
+<entry>INCOMING <i>user</i></entry>
+<entry>The INCOMING message is sent to an applet to inform it that another user logged in to the InterCall system has requested a call to the default A party number of this applet. This is a form of calling party identification. The user parameter is the name of the user that requested the call.</entry></row>
+<row>
+<entry>Server to Applet</entry>
+<entry>BYE</entry>
+<entry>The BYE message is sent to inform the applet that it should shut down.</entry></row>
+<row>
+<entry>Applet to Server</entry>
+<entry>OK <i>anum</i></entry>
+<entry>The OK message is sent in response to a CALL message sent by the server. It indicates to the server that the call should be attempted. The anum parameter is a base64 encoding of the A party number for the call - typically the currently selected A party number of the applet.</entry></row>
+<row>
+<entry>Applet to Server</entry>
+<entry>CANCEL</entry>
+<entry>The CANCEL message is sent in response to a CALL message sent by the server. It indicates to the server that the call should not be attempted.</entry></row>
+<row>
+<entry>Applet to Server</entry>
+<entry>CALL <i>bnum</i></entry>
+<entry>The CALL message is sent by the applet to the server to request initiation of a call. The server responds with a CALL message. The bnum parameter is a base64 encoding of the B party number for the call.</entry></row></tbody></tgroup>
+</table>
+</tables></p>
+<p id="p0022" num="0022">Instead of using a Telecard number and PIN number, the InterCall Server obtains a usemame, together with a password if necessary, to identify a user for billing purposes. The username is provided to the IN platform 18 instead of the Telecard number.</p>
+<p id="p0023" num="0023">The Scants IN platform 18, as discussed above, provides a TCP/IP interface for a call back system. The InterCall Server can connect to the Scants platform 18 to send call requests. The InterCall Server achieves this by simply passing or translating the messages received from the applet into a series of ASCII characters, separated by a TELNET newline character for the Scants platform 18. The format of the ASCII characters need to comply with the format set out below for Scants messages. The call completion script 40 would, in response<!-- EPO <DP n="12"> --> to a call request, forward the same messages as the InterCall Server to the Scants IN platform 18. The Scants platform 18 only requires registration of the IP address of the machine 42 from which the InterCall Server will attempt to connect to the platform 18, and then the messages can be sent and received.</p>
+<p id="p0024" num="0024">The format of communication messages between the directory service 14, i.e. the InterCall Server, and the Scants platform 18 are set out below:
+<tables id="tabl0002" num="0002">
+<table frame="none">
+<title><b>Format of request</b> (from Directory server to Scants server):</title>
+<tgroup cols="2" colsep="0" rowsep="0">
+<colspec colnum="1" colname="col1" colwidth="43mm"/>
+<colspec colnum="2" colname="col2" colwidth="78mm"/>
+<tbody>
+<row>
+<entry>char mti;</entry>
+<entry>// message type identifier, 'R' for request</entry></row>
+<row>
+<entry>char version;</entry>
+<entry>// '0' initially</entry></row>
+<row>
+<entry>char id[8];</entry>
+<entry>// message ID, numeric base 10 id, all digits filled</entry></row>
+<row>
+<entry/>
+<entry>// should uniquely identify request</entry></row>
+<row>
+<entry/>
+<entry>// (used to match response)</entry></row>
+<row>
+<entry>char card[15];</entry>
+<entry> // full telecard number, left justified, space filled</entry></row>
+<row>
+<entry>char pin[4];</entry>
+<entry>// telecard pin, left justified, space filled</entry></row>
+<row>
+<entry>char anum[24];</entry>
+<entry>// a-party number, left justified, space filled</entry></row>
+<row>
+<entry/>
+<entry>// E.164 format</entry></row>
+<row>
+<entry>char bnum[12];</entry>
+<entry>// b-party number (Australian number) - area code plus</entry></row>
+<row>
+<entry/>
+<entry>// subscriber number, left justified, space filled</entry></row>
+<row>
+<entry>char newline[2];</entry>
+<entry>// request separator - using default telnet newline</entry></row>
+<row>
+<entry/>
+<entry>// which is 0×0d followed by 0×0a.</entry></row></tbody></tgroup>
+</table>
+</tables>
+<tables id="tabl0003" num="0003">
+<table frame="none">
+<title><b>Format of response</b> (from Scants server to Directory server):</title>
+<tgroup cols="2" colsep="0" rowsep="0">
+<colspec colnum="1" colname="col1" colwidth="44mm"/>
+<colspec colnum="2" colname="col2" colwidth="78mm"/>
+<tbody>
+<row>
+<entry>char mti;</entry>
+<entry>// message type identifier, 'S' for status</entry></row>
+<row>
+<entry>char version;</entry>
+<entry>// '0' initially</entry></row>
+<row>
+<entry>char id[8];</entry>
+<entry>// message id, numeric base 10 id, all digits filled</entry></row>
+<row>
+<entry/>
+<entry>// matches id given in request</entry></row>
+<row>
+<entry>char rcode[3];</entry>
+<entry> // 3 digit response/status code</entry></row>
+<row>
+<entry>char eventTime[10];</entry>
+<entry>// MMDDhhmmss (month, day, hour, minute, second)</entry></row><!-- EPO <DP n="13"> -->
+<row>
+<entry/>
+<entry>// either answer time or clear time</entry></row>
+<row>
+<entry>char newline[2];</entry>
+<entry>// response separator - using default telnet newline</entry></row>
+<row>
+<entry/>
+<entry>// which is 0×0d followed by 0×0a.</entry></row></tbody></tgroup>
+</table>
+</tables></p>
+<p id="p0025" num="0025">Responses from the Scants server to the Directory server occur when either:
+<ul id="ul0006" list-style="dash" compact="compact">
+<li>the card/pin validation is incorrect</li>
+<li>the A or B parties cannot be reached</li>
+<li>the A and B parties are connected</li>
+<li>the call is complete after the parties have been connected</li>
+</ul></p>
+<heading id="h0006">Example:</heading>
+<p id="p0026" num="0026">After the A and B parties are connected response (rcode 600) is returned. After the call ends an additional response (rcode 601) is returned.</p>
+<heading id="h0007"><b>Response Codes and Categories</b></heading>
+<heading id="h0008"><b>Response codes specific to call back requests</b></heading>
+<p id="p0027" num="0027">
+<dl id="dl0001" compact="compact">
+<dt>600</dt><dd>call answered and in progress (A and B party connected)</dd>
+<dt>601</dt><dd>call finished</dd>
+<dt>602</dt><dd>ssh can't cope with request</dd>
+<dt>603</dt><dd>card got lost or corrupted</dd>
+<dt>604</dt><dd>pin got lost or corrupted</dd>
+<dt>605</dt><dd>lost, or not a valid number</dd>
+<dt>606</dt><dd>lost, or not a valid number</dd>
+<dt>607</dt><dd>can't ring A - busy</dd>
+<dt>608</dt><dd>can't ring B - busy</dd>
+<dt>609</dt><dd>can't ring A - network failed</dd>
+<dt>610</dt><dd>can't ring B - network failed</dd>
+<dt>611</dt><dd>can't ring A - no answer</dd>
+<dt>612</dt><dd>can't ring B - no answer</dd>
+<dt>613</dt><dd>a system/software failure</dd>
+</dl><!-- EPO <DP n="14"> --></p>
+<p id="p0028" num="0028"><b>Response codes to do with card validation and authorisation</b>
+<dl id="dl0002" compact="compact">
+<dt>100</dt><dd>full approval</dd>
+<dt>101</dt><dd>time limited approval</dd>
+<dt>102</dt><dd>cost limited approval</dd>
+<dt>108</dt><dd>no such card</dd>
+<dt>110</dt><dd>retry request</dd>
+<dt>118</dt><dd>card expired</dd>
+<dt>119</dt><dd>wrong pin</dd>
+<dt>121</dt><dd>too many tries</dd>
+<dt>125</dt><dd>card restricted</dd>
+<dt>131</dt><dd>wrong issuer (unrecognised card number)</dd>
+</dl></p>
+<p id="p0029" num="0029"><b>Response codes indicating general failure within Scants</b>
+<dl id="dl0003" compact="compact">
+<dt>900</dt><dd>local comms failure</dd>
+<dt>901</dt><dd>remote comms failure</dd>
+<dt>902</dt><dd>remote comms failure (no alternative)</dd>
+<dt>903</dt><dd>incomplete request (missing mandatory data)</dd>
+<dt>904</dt><dd>tman error</dd>
+<dt>905</dt><dd>bad request</dd>
+<dt>906</dt><dd>route not found</dd>
+</dl></p>
+<p id="p0030" num="0030">The IN switch 60 supports the International Telecommunications Union (ITU) Intelligent Network (IN) standard capabilities and protocols defined for a Service Switch Function (SSF). The switch 60 includes a SSF call module 62 to receive and act on the connection control signals sent from the IN control platform 18, which acts as the Service Control Function (SCF). The module 62 then invokes Basic Call State Model (BCSM) call leg procedures 64 to contact and connect the A and B parties 4 and 6 over the PSTN 10.</p>
+<p id="p0031" num="0031">The IN switch 60 can be substituted by a Private Branch Exchange (PBX) or a virtual PBX (also known as CENTREX). The connection control protocol would follow a standard Computer-Telephony Interface as defined by ITU in "Telecommunications Applications for<!-- EPO <DP n="15"> --> Switches and Computers" (TASC), ITU-T Recommendations Q.1301, Q.1302 and Q.1303, or the equivalent ANSI Standard entitled "Switch-Computer Applications Interface" (SCAI).</p>
+<p id="p0032" num="0032">An alternative system 10, as shown in <figref idref="f0007">Figures 7</figref> and <figref idref="f0008">8</figref>, is the same as the system 2 described previously except that the interactive device 16 is the terminal for the A party and an intelligent peripheral 102 is provided as part of the PSTN to provide a voice channel to the interactive device 16 on the same telecommunications line which is used to connect the device 16 to the directory service 14. The interactive device 16 executes an Internet phone application which allows the user to use an existing Internet access session on a telecommunications line from the device 16 to establish a phone connection on the same line. A suitable Internet phone application package is distributed by Netspeak Corporation of the U.S., or VocalTec Ltd. of Israel, for use in standard personal computers. The Internet phone application uses when necessary low-bit rate voice coding, for example of the order of 16 Kb/s, to establish the phone connection using the same Internet access line as that which would be used to access the directory service 14. The intelligent peripheral 102 receives and converts the low-bit rate voice signal to a standard 64 Kb/s for the PSTN 10.</p>
+<p id="p0033" num="0033">The intelligent peripheral 102 is connected to the IN switch 60 and has an Internet protocol manager module 104 which receives the same call connect data as the SSF call procedure 62 from the IN application 54. The IP manager module 104 uses an LBR Internet port 106 for connection via the Internet 12 to an audio port and microphone 110 of the interactive device 16 and a PSTN port 108 for connection to a BCSM call leg module 64 of the IN switch 60. The IP manager 104 establishes a telecommunications path, which may be a voice/audio path, between the LBR Internet port 106 and the PSTN port 108. Call data passed between the ports 106 and 108 is converted between the low-bit rate Internet signal and the PSTN standard bit rate. The call between the A and B parties 4 and 6 is therefor connected from the audio port and microphone 110 of the A party through the ports 106 and 108, and the call leg module 64 to the terminal 6 of the B party.</p>
+<p id="p0034" num="0034">The intelligent peripheral 102 may comprise a personal computer which includes an<!-- EPO <DP n="16"> --> Internet phone package, such as I-Phone, and a digital to analogue converter. I-Phone is available from Netspeak Corporation of the U.S. or VocalTec Ltd. of Israel. I-Phone is designed to convert signals received from the microphone input of a personal computer to signals for an LBR Internet port. I-Phone also converts signals received on an LBR Internet port into signals for speaker outputs of a personal computer. Call establishment can be made by I-Phone over the Internet using standard TCP/IP protocols, and is made as a result of a call request passed to I-Phone from user input on the keyboard of the computer.</p>
+<p id="p0035" num="0035">In the intelligent peripheral 102, the I-Phone package 107 provides the LBR port 106 and the digital to analog converter 109 provides the PSTN port 108, as shown in <figref idref="f0009">Figure 9</figref>. The digital to analog converter 109 accepts signals from I-Phone 107 which are usually fed to personal computer speakers, and converts them to digital signals as required by the BCSM call leg module 64 of the IN switch 60. The converter 109 also receives signals from the BCSM call leg module 64 and converts them to signals which I-Phone 107 would normally receive from a personal computer microphone.</p>
+<p id="p0036" num="0036">The IP manger module 104 stored on the peripheral 102 issues call instructions to I-Phone 107, instead of a personal computer keyboard. The IP manager module 104 interfaces I-Phone 107 to the IN application 54 of the IN platform 6. Connection between the IP manager module 104 and the IN application 54 is made using standard TCP/IP sockets.</p>
+<p id="p0037" num="0037">In response to a call setup request from the IN application 54, the IP manager 104 instructs I-Phone 107 to establish a call over the Internet to the audio port and microphone 110 of the customer's terminal 16. The IN application 54 connects the PSTN port 108 to the B party 6, and the connection is established between the B party 6 on a PSTN phone and the A party 4 on an Internet phone. The intelligent peripheral 102 is used when the request for call establishment from the directory service 14 to the IN platform 18 includes the Internet address of the A party instead of the A party's PSTN number. On recognising the different format in the address data, the IN platform 18 will invoke the intelligent peripheral 102.<!-- EPO <DP n="17"> --></p>
+<p id="p0038" num="0038">The systems 2 and 100 and the call establishment procedures executed by them are particularly advantageous as they allow a client with an interactive device 16 to simply select a B party, without having to know that party's telecommunications number or address details, and establish a call between that party and a desired A party. The B party can be searched for using various search procedures provided by a directory service 14 using the interactive device 16, which can be remotely connected to the service 14. The system 100 also allows a call to be connected directly to the interactive device 16 using the same telecommunications line which may be used to remotely access directory information.</p>
+<p id="p0039" num="0039">Many modifications will be apparent to those skilled in the art without departing from the scope of the present invention as hereinbefore described with reference to the accompanying drawings.</p>
+</description>
+<claims id="claims01" lang="en"><!-- EPO <DP n="18"> -->
+<claim id="c-en-01-0001" num="0001">
+<claim-text>A method of originating a communications call, the method comprising the steps of:
+<claim-text>selecting a B party; and,</claim-text>
+<claim-text>sending, in response to selection of the B party, selected party data corresponding to the B party to a directory service (14),</claim-text>
+<claim-text>whereby the directory service (14) accesses called address data for the B party on the basis of the selected party data and provides the called address data for the B party to equipment for automatically establishing a call between an A party and the B party,</claim-text>
+<b>characterised in that</b>:
+<claim-text>the B party is selected using an interactive device (16) connected to a public network (8) which includes at least one public telecommunications network (10) and an Internet Protocol (IP) network (12) for connecting a plurality of said interactive devices (16), said interactive device (16) providing an IP link to complete said selection;</claim-text>
+<claim-text>a connection message is sent with said selected party data to a directory application (24) of the directory service (14) via the IP network (12), wherein the directory service (14) provides access to a public directory database (20) of address data accessible over the IP network (12); and,</claim-text>
+<claim-text>the directory application (24) sends a connect message including the called address data to a control platform (18) of the public telecommunications network (10) and communicates with said control platform (18) to automatically establish the call.</claim-text></claim-text></claim>
+<claim id="c-en-01-0002" num="0002">
+<claim-text>A method as claimed in claim 1, wherein the B party is identified by performing a search using the directory service (14).</claim-text></claim>
+<claim id="c-en-01-0003" num="0003">
+<claim-text>A method as claimed in claim 1 or claim 2, wherein the interactive device (16) is provided with a plurality of B party data by the directory service (14) via the IP network (12).<!-- EPO <DP n="19"> --></claim-text></claim>
+<claim id="c-en-01-0004" num="0004">
+<claim-text>A method as claimed in any one of the preceding claims, wherein the interactive device (16) is a computer device including a visual display.</claim-text></claim>
+<claim id="c-en-01-0005" num="0005">
+<claim-text>A method as claimed in claim 4, wherein said interactive device (16) is associated with said A party.</claim-text></claim>
+<claim id="c-en-01-0006" num="0006">
+<claim-text>A method as claimed in claim 5, wherein the interactive device (16) is a communications terminal for the call.</claim-text></claim>
+<claim id="c-en-01-0007" num="0007">
+<claim-text>A method as claimed in any preceding claim, wherein the interactive device (16) receives at least one of a hypertext page and an applet for sending said selected party data.</claim-text></claim>
+<claim id="c-en-01-0008" num="0008">
+<claim-text>A system (2) for use in establishing a communications call, the system comprising:
+<claim-text>a directory database (20) including called address data for parties;</claim-text>
+<claim-text>an access module (24) for receiving selected party data corresponding to a B party and accessing called address data on the basis of the selected party data from the directory database (20); and,</claim-text>
+<claim-text>network means (18) for receiving from the access module (24) the called address data and generating, in response thereto, network control signals to establish a call between an A party and the B party,</claim-text>
+<claim-text>wherein the call is established automatically in response to the selected party data being received by the access module (24),</claim-text>
+<b>characterised in that</b>:
+<claim-text>the directory database (20) is connected to an Internet Protocol (IP) network (12) of a public network (8) which includes at least one public telecommunications network (10), wherein the directory database (20) is a public directory database (20) of address data of parties and is accessible over the IP network (16); and</claim-text>
+<claim-text>the access module (24) receives the selected party data corresponding to the B party via the IP network (12) in a connection message in response to selection of an IP link to select said B party, and in response sends a connect<!-- EPO <DP n="20"> --> message, including calling address data corresponding to the A party and the called address data, to a control platform (18) of the public telecommunications network (10) and communicates with said control platform (18) to automatically establish the call,</claim-text>
+<claim-text>wherein said network means (18) comprises said control platform (18).</claim-text></claim-text></claim>
+<claim id="c-en-01-0009" num="0009">
+<claim-text>A system as claimed in claim 8, wherein the access module (24) includes directory data from the directory database (20) for display for the A party.</claim-text></claim>
+<claim id="c-en-01-0010" num="0010">
+<claim-text>A system as claimed in claim 8 or 9, including a search module accessible by the A party over the IP network for searching the directory database.</claim-text></claim>
+<claim id="c-en-01-0011" num="0011">
+<claim-text>A system as claimed in any one of claims 8 to 10, wherein the call is established with a terminal of the A party which selects the B party.</claim-text></claim>
+<claim id="c-en-01-0012" num="0012">
+<claim-text>A system as claimed in any one of claims 8 to 10, wherein the call is established with a terminal of the A party which is separate from the terminal selecting said selected B party.</claim-text></claim>
+<claim id="c-en-01-0013" num="0013">
+<claim-text>A system as claimed in any one of claims 8 to 12, wherein the calling address data includes an A party terminal number.</claim-text></claim>
+<claim id="c-en-01-0014" num="0014">
+<claim-text>A system as claimed in any one of claims 8 to 13, further comprising an IP server connected to the IP network, wherein the server includes the access module, and wherein the public telecommunications network includes a PSTN.</claim-text></claim>
+</claims>
+<claims id="claims02" lang="de"><!-- EPO <DP n="21"> -->
+<claim id="c-de-01-0001" num="0001">
+<claim-text>Verfahren zum Kommunikationsrufaufbau, wobei das Verfahren folgende Schritte umfasst:
+<claim-text>Selektieren eines B-Teilnehmers; und,</claim-text>
+<claim-text>Senden, als Antwort auf die Selektion des B-Teilnehmers, selektierter Teilnehmerdaten, die dem B-Teilnehmer entsprechen, an einen Verzeichnisdienst (14),</claim-text>
+<claim-text>wodurch der Verzeichnisdienst (14) auf gerufene Adressendaten für den B-Teilnehmer auf der Basis der selektierten Teilnehmerdaten zugreift und die gerufenen Adressendaten für den B-Teilnehmer an Ausrüstung zum automatischen Aufbau eines Rufs zwischen einem A-Teilnehmer und dem B-Teilnehmer bereitstellt,</claim-text>
+<b>dadurch gekennzeichnet, dass</b>:
+<claim-text>der B-Teilnehmer unter Verwendung eines interaktiven Geräts (16) selektiert wird, das an ein öffentliches Netz (8) angeschlossen ist, welches zumindest ein öffentliches Telekommunikationsnetz (10) und ein (IP) Internet-Protokoll-Netz (12) zum Verbinden einer Vielzahl der genannten interaktiven Geräte (16) einschließt, wobei das genannte interaktive Gerät (16) einen IP-Link bereitstellt, um die genannte Selektion zu abzuschließen;</claim-text>
+<claim-text>eine Verbindungsnachricht wird mit den selektierten Teilnehmerdaten an eine Verzeichnis-Applikation (24) des Verzeichnisdienstes (14) über das IP-Netz (12) gesendet, wobei der Verzeichnisdienst (14) Zugriff auf eine öffentliche Verzeichnisdatenbank (20) von Adressendaten bereitstellt, die über das IP-Netz (12) zugreifbar sind; und,</claim-text>
+<claim-text>die Verzeichnis-Applikation (24) sendet eine Verbindungsnachricht, welche die Daten der gerufenen Adresse einschließt, an eine Steuerplattform (18) des öffentlichen Telekommunikationsnetzes (10) und kommuniziert mit der genannten Steuerplattform (18), um den Ruf automatisch aufzubauen.</claim-text></claim-text></claim>
+<claim id="c-de-01-0002" num="0002">
+<claim-text>Verfahren, wie in Anspruch 1 beansprucht, wobei der B-Teilnehmer durch Ausführen einer Suche unter Verwendung des Verzeichnisdienstes (14) identifiziert wird.</claim-text></claim>
+<claim id="c-de-01-0003" num="0003">
+<claim-text>Verfahren, wie in Anspruch 1 oder Anspruch 2 beansprucht, wobei das interaktive Gerät (16), durch den Verzeichnisdienst (14) über das IP-Netz (12), mit einer Vielzahl von Daten des B-Teilnehmers versehen wird.<!-- EPO <DP n="22"> --></claim-text></claim>
+<claim id="c-de-01-0004" num="0004">
+<claim-text>Verfahren nach einem beliebigen der vorangehenden Ansprüche, wobei das interaktive Gerät (16) ein Computergerät ist, das ein visuelles Display einschließt.</claim-text></claim>
+<claim id="c-de-01-0005" num="0005">
+<claim-text>Verfahren, wie in Anspruch 4 beansprucht, wobei das genannte interaktive Gerät (16) mit dem genannten A-Teilnehmer assoziiert ist.</claim-text></claim>
+<claim id="c-de-01-0006" num="0006">
+<claim-text>Verfahren, wie in Anspruch 5 beansprucht, wobei das interaktive Gerät (16) ein Kommunikationsterminal für den Ruf ist.</claim-text></claim>
+<claim id="c-de-01-0007" num="0007">
+<claim-text>Verfahren, wie in einem beliebigen vorangehenden Anspruch beansprucht, wobei das interaktive Gerät (16) zumindest eine Hypertextseite und/oder ein Applet zum Senden der selektierten Teilnehmerdaten empfängt.</claim-text></claim>
+<claim id="c-de-01-0008" num="0008">
+<claim-text>System (2) zur Verwendung bei einem Kommunikationsrufaufbau, wobei das System umfasst:
+<claim-text>eine Verzeichnisdatenbank (20), die Daten der gerufenen Adresse für Teilnehmer umfasst;</claim-text>
+<claim-text>ein Zugriffsmodul (24) zum Empfangen selektierter Teilnehmerdaten, die einem B-Teilnehmer entsprechen und Zugreifen auf Daten der gerufenen Adresse auf der Basis der selektierten Teilnehmerdaten aus der Verzeichnisdatenbank (20); und,</claim-text>
+<claim-text>Netzmittel (18) zum Empfangen der Daten der gerufenen Adresse ab dem Zugriffsmodul (24) und Generieren, als Antwort darauf, von Netzsteuersignalen, um einen Ruf zwischen einem A-Teilnehmer und einem B-Teilnehmer aufzubauen,</claim-text>
+<claim-text>wobei der Ruf automatisch als Antwort auf die selektierten Teilnehmerdaten aufgebaut wird, die vom Zugriffsmodul (24) empfangen wurden,</claim-text>
+<b>dadurch gekennzeichnet, dass</b>:
+<claim-text>die Verzeichnisdatenbank (20) an ein (IP) Internet-Protokoll-Netz (12) eines öffentlichen Netzes (8) angeschlossen ist, das zumindest ein öffentliches Telekommunikationsnetz (10) einschließt, wobei die Verzeichnisdatenbank (20) eine öffentliche Verzeichnisdatenbank (20) von Adressendaten von Teilnehmern ist und über das IP-Netz (16) zugreifbar ist; und</claim-text>
+<claim-text>das Zugriffsmodul (24) empfängt die selektierten Teilnehmerdaten, die dem B-Teilnehmer entsprechen, über das IP-Netz (12) in einer Verbindungsnachricht als Antwort auf das Selektieren eines IP-Links, um den genannten B-Teilnehmer zu selektieren, und sendet als Antwort eine Verbindungsnachricht, einschließlich Rufadressendaten, die dem A-Teilnehmer<!-- EPO <DP n="23"> --> entsprechen und Daten der gerufenen Adresse, an eine Steuerplattform (18) des öffentlichen Telekommunikationsnetzes (10) und kommuniziert mit der genannten Steuerplattform (18), um den Ruf automatisch aufzubauen,</claim-text>
+<claim-text>wobei das genannte Netzmittel (18) die genannte Steuerplattform (18) umfasst.</claim-text></claim-text></claim>
+<claim id="c-de-01-0009" num="0009">
+<claim-text>System, wie in Anspruch 8 beansprucht, wobei das Zugriffsmodul (24) Verzeichnisdaten aus einer Verzeichnisdatenbank (20) zur Anzeige für den A-Teilnehmer einschließt.</claim-text></claim>
+<claim id="c-de-01-0010" num="0010">
+<claim-text>System, wie in Anspruch 8 oder 9 beansprucht, das ein Suchmodul einschließt, auf das der A-Teilnehmer über das IP-Netz zum Durchsuchen der Verzeichnisdatenbank zugreifen kann.</claim-text></claim>
+<claim id="c-de-01-0011" num="0011">
+<claim-text>System, wie in einem beliebigen der Ansprüche 8 bis 10 beansprucht, wobei der Ruf mit einem Terminal des A-Teilnehmers aufgebaut wird, das den B-Teilnehmer selektiert.</claim-text></claim>
+<claim id="c-de-01-0012" num="0012">
+<claim-text>System, wie in einem beliebigen der Ansprüche 8 bis 10 beansprucht, wobei der Ruf mit einem Terminal des A-Teilnehmers aufgebaut wird, das vom Terminal getrennt ist, das den genannten selektierten B-Teilnehmer selektiert.</claim-text></claim>
+<claim id="c-de-01-0013" num="0013">
+<claim-text>System, wie in einem beliebigen der Ansprüche 8 bis 12 beansprucht, wobei die Daten der rufenden Adresse eine Terminal-Nummer des A-Teilnehmers einschließen.</claim-text></claim>
+<claim id="c-de-01-0014" num="0014">
+<claim-text>System, wie in einem beliebigen der Ansprüche 8 bis 13 beansprucht, das ferner einen an das IP-Netz angeschlossenen IP-Server umfasst, wobei der Server das Zugriffsmodul einschließt und, wobei das öffentliche Telekommunikationsnetz ein öffentliches Telefonwählnetz (PSTN) einschließt.</claim-text></claim>
+</claims>
+<claims id="claims03" lang="fr"><!-- EPO <DP n="24"> -->
+<claim id="c-fr-01-0001" num="0001">
+<claim-text>Procédé d'établissement d'une communication comportant les étapes qui consistent:
+<claim-text>à sélectionner un abonné B; et</claim-text>
+<claim-text>à transmettre à un service d'annuaire (14), suite à la sélection de l'abonné B, des détails sur l'abonné sélectionné qui correspondent à l'abonné B,</claim-text>
+<claim-text><b>caractérisé en ce que</b> le service d'annuaire (14) accède aux détails pour l'adresse appelée de l'abonné B sur la base des détails sur l'abonné sélectionné, et fournit les détails pour l'adresse appelée de l'abonné B à un équipement qui établit automatiquement la communication entre l'abonné A et l'abonné B,</claim-text>
+<b>caractérisé en ce que</b>:
+<claim-text>l'abonné B est sélectionné au moyen d'un dispositif interactif (16) connecté à un réseau public (8) qui comprend au moins un réseau public de télécommunications (10) et un réseau à protocole Internet IP (12) servant à connecter une pluralité de ces dispositifs interactifs (16), ce dispositif interactif (16) étant employé pour servir de liaison IP afin de compléter cette sélection;</claim-text>
+<claim-text>un message de connexion est transmis avec ces détails sur l'abonné sélectionné à une application annuaire (24) du service d'annuaire (14) par l'intermédiaire du réseau IP (12), <b>caractérisé en ce que</b> le service d'annuaire (14) livre accès à une base de données publique (20) contenant l'annuaire dans lequel on retrouve les détails pour les adresses accessibles sur le réseau IP (12); et</claim-text>
+<claim-text>l'application annuaire (24) transmet un message de connexion, qui comprend les détails pour l'adresse appelée, à une plate-forme de commande (18) du réseau public de télécommunications (10) et communique avec cette plate-forme de commande (18) afin d'établir automatiquement la communication.</claim-text></claim-text></claim>
+<claim id="c-fr-01-0002" num="0002">
+<claim-text>Procédé selon la revendication 1, <b>caractérisé en ce que</b> l'abonné B est identifié en effectuant une recherche à l'aide du service d'annuaire (14).</claim-text></claim>
+<claim id="c-fr-01-0003" num="0003">
+<claim-text>Procédé selon la revendication 1 ou la revendication 2, <b>caractérisé en ce que</b> le dispositif interactif (16) se voit livrer une pluralité de données pour l'abonné B par le service d'annuaire (14), et cela par l'intermédiaire du réseau IP (12).<!-- EPO <DP n="25"> --></claim-text></claim>
+<claim id="c-fr-01-0004" num="0004">
+<claim-text>Procédé selon l'une quelconque des revendications précédentes, <b>caractérisé en ce que</b> le dispositif interactif (16) est un ordinateur comportant une unité de visualisation.</claim-text></claim>
+<claim id="c-fr-01-0005" num="0005">
+<claim-text>Procédé selon la revendication 4, <b>caractérisé en ce que</b> le dispositif interactif (16) est associé à l'abonné A.</claim-text></claim>
+<claim id="c-fr-01-0006" num="0006">
+<claim-text>Procédé selon la revendication 5, <b>caractérisé en ce que</b> le dispositif interactif (16) est un terminal de communication pour l'appel.</claim-text></claim>
+<claim id="c-fr-01-0007" num="0007">
+<claim-text>Procédé selon l'une quelconque des revendications précédentes, <b>caractérisé en ce que</b> le dispositif interactif (16) reçoit au moins une page hypertexte ou une applet pour transmettre les détails sur l'abonné sélectionné.</claim-text></claim>
+<claim id="c-fr-01-0008" num="0008">
+<claim-text>Système (2) d'établissement d'une communication comportant:
+<claim-text>une base de données (20) contenant l'annuaire dans laquelle on retrouve les détails sur les adresses appelées des abonnés;</claim-text>
+<claim-text>un module d'accès (24) servant à recevoir des détails sur l'abonné sélectionné qui correspondent à l'abonné B, et aussi à accéder aux détails pour l'adresse appelée sur la base des détails sur l'abonné sélectionné qui se trouvent dans la base de données (20) contenant l'annuaire; et</claim-text>
+<claim-text>un réseau (18) servant à recevoir du module d'accès (24) les détails pour l'adresse appelée et à produire, suite à ces détails, des signaux de commande réseau afin d'établir la communication entre l'abonné A et l'abonné B,</claim-text>
+<claim-text><b>caractérisé en ce que</b> la communication est établie automatiquement suite à la réception, par le module d'accès (24), des détails sur l'abonné sélectionné,</claim-text>
+<b>caractérisé en ce que</b>
+<claim-text>la base de données (20) contenant l'annuaire est connectée à un réseau IP (12) dans un réseau public (8) qui comprend au moins un réseau public de télécommunications (10), <b>caractérisé en ce que</b> la base de données (20) contenant l'annuaire est une base de données publique (20) qui contient les détails sur les adresses des abonnés et qui est accessible sur le réseau IP (16); et</claim-text>
+<claim-text>le module d'accès (24) reçoit les détails sur l'abonné sélectionné qui correspondent à l'abonné B par l'intermédiaire du réseau IP (12) dans un message de connexion suite à la sélection d'une liaison IP servant à sélectionner l'abonné B, et il répond en transmettant, à une<!-- EPO <DP n="26"> --> plate-forme de commande (18) du réseau public de télécommunications (10), un message de connexion qui comprend des détails pour l'adresse appelante correspondant à l'abonné A ainsi que des détails pour l'adresse appelée, puis il communique avec la plate-forme de commande (18) afin d'établir automatiquement la communication,</claim-text>
+<claim-text><b>caractérisé en ce que</b> le réseau (18) comprend la plate-forme de commande (18).</claim-text></claim-text></claim>
+<claim id="c-fr-01-0009" num="0009">
+<claim-text>Système selon la revendication 8, <b>caractérisé en ce que</b> le module d'accès (24) comprend des données d'annuaire, provenant de la base de données (20) contenant l'annuaire, qui seront affichées pour l'abonné A.</claim-text></claim>
+<claim id="c-fr-01-0010" num="0010">
+<claim-text>Système selon la revendication 8 ou 9, comprenant un module de recherche auquel peut accéder l'abonné A sur le réseau IP en vue de faire une recherche dans la base de données contenant l'annuaire.</claim-text></claim>
+<claim id="c-fr-01-0011" num="0011">
+<claim-text>Système selon l'une quelconque des revendications 8 à 10, <b>caractérisé en ce que</b> la communication est établie avec un terminal de l'abonné A qui sélectionne l'abonné B.</claim-text></claim>
+<claim id="c-fr-01-0012" num="0012">
+<claim-text>Système selon l'une quelconque des revendications 8 à 10, <b>caractérisé en ce que</b> la communication est établie avec un terminal de l'abonné A qui est distinct du terminal servant à sélectionner l'abonné B.</claim-text></claim>
+<claim id="c-fr-01-0013" num="0013">
+<claim-text>Système selon l'une quelconque des revendications 8 à 12, <b>caractérisé en ce que</b> les détails pour l'adresse appelante comprennent un numéro pour le terminal de l'abonné A.</claim-text></claim>
+<claim id="c-fr-01-0014" num="0014">
+<claim-text>Système selon l'une quelconque des revendications 8 à 13, comportant par ailleurs un serveur IP connecté au réseau IP, <b>caractérisé en ce que</b> le serveur comprend le module d'accès, et <b>caractérisé en ce que</b> le réseau public de télécommunications comprend un réseau téléphonique public avec commutation (PSTN).</claim-text></claim>
+</claims>
+<drawings id="draw" lang="en"><!-- EPO <DP n="27"> -->
+<figure id="f0001" num="1"><img id="if0001" file="imgf0001.tif" wi="141" he="194" img-content="drawing" img-format="tif"/></figure><!-- EPO <DP n="28"> -->
+<figure id="f0002" num="2"><img id="if0002" file="imgf0002.tif" wi="165" he="233" img-content="drawing" img-format="tif"/></figure><!-- EPO <DP n="29"> -->
+<figure id="f0003" num="3"><img id="if0003" file="imgf0003.tif" wi="165" he="181" img-content="drawing" img-format="tif"/></figure><!-- EPO <DP n="30"> -->
+<figure id="f0004" num="4"><img id="if0004" file="imgf0004.tif" wi="150" he="233" img-content="drawing" img-format="tif"/></figure><!-- EPO <DP n="31"> -->
+<figure id="f0005" num="5"><img id="if0005" file="imgf0005.tif" wi="165" he="212" img-content="drawing" img-format="tif"/></figure><!-- EPO <DP n="32"> -->
+<figure id="f0006" num="6"><img id="if0006" file="imgf0006.tif" wi="147" he="196" img-content="drawing" img-format="tif"/></figure><!-- EPO <DP n="33"> -->
+<figure id="f0007" num="7"><img id="if0007" file="imgf0007.tif" wi="145" he="205" img-content="drawing" img-format="tif"/></figure><!-- EPO <DP n="34"> -->
+<figure id="f0008" num="8"><img id="if0008" file="imgf0008.tif" wi="153" he="233" img-content="drawing" img-format="tif"/></figure><!-- EPO <DP n="35"> -->
+<figure id="f0009" num="9"><img id="if0009" file="imgf0009.tif" wi="132" he="233" img-content="drawing" img-format="tif"/></figure>
+</drawings>
+<ep-reference-list id="ref-list">
+<heading id="ref-h0001"><b>REFERENCES CITED IN THE DESCRIPTION</b></heading>
+<p id="ref-p0001" num=""><i>This list of references cited by the applicant is for the reader's convenience only. It does not form part of the European patent document. Even though great care has been taken in compiling the references, errors or omissions cannot be excluded and the EPO disclaims all liability in this regard.</i></p>
+<heading id="ref-h0002"><b>Patent documents cited in the description</b></heading>
+<p id="ref-p0002" num="">
+<ul id="ref-ul0001" list-style="bullet">
+<li><patcit id="ref-pcit0001" dnum="DE3629468A"><document-id><country>DE</country><doc-number>3629468</doc-number><kind>A</kind></document-id></patcit><crossref idref="pcit0001">[0005]</crossref></li>
+<li><patcit id="ref-pcit0002" dnum="US5519770A"><document-id><country>US</country><doc-number>5519770</doc-number><kind>A</kind></document-id></patcit><crossref idref="pcit0002">[0020]</crossref></li>
+</ul></p>
+</ep-reference-list>
+</ep-patent-document>

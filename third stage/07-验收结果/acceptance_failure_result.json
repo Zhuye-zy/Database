@@ -1,0 +1,46 @@
+{
+  "timestamp_utc": "2026-10-08T14:44:02.062819+00:00",
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "smoke_test.py_missing_schema",
+      "status": "PASS",
+      "detail": {
+        "exit_code": 1
+      }
+    },
+    {
+      "case": "smoke_test.py_empty_schema",
+      "status": "PASS",
+      "detail": {
+        "exit_code": 1
+      }
+    },
+    {
+      "case": "fk_violation_test.py_missing_schema",
+      "status": "PASS",
+      "detail": {
+        "exit_code": 1
+      }
+    },
+    {
+      "case": "fk_violation_test.py_empty_schema",
+      "status": "PASS",
+      "detail": {
+        "exit_code": 1
+      }
+    },
+    {
+      "case": "missing_cited_patent_fk_nonzero",
+      "status": "PASS",
+      "detail": {
+        "exit_code": 1
+      }
+    },
+    {
+      "case": "all_business_content_unchanged",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}
