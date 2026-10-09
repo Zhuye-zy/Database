@@ -30,10 +30,4 @@ bash run.sh
 
 第三阶段数据基线为 patent/publication 各 19，42/43 业务表非空；family_citation 为空是可靠来源缺口，不虚构。测试只使用临时容器或回滚事务。最新验收及数据库恢复说明见第三阶段目录。
 
-第四阶段（D 角色）的课程报告、汇报 PPT 与讲稿、分析挖掘结果、流程图与最终提交包见 [fourth stage/README.md](<fourth stage/README.md>)；报告与 PPT 的全部数字由脚本从第三阶段结果文件注入，可一键重生成：
-
-```bash
-.venv/bin/python "fourth stage/01-设计文档/build_report.py"    # 报告 docx + 自检
-.venv/bin/python "fourth stage/02-汇报PPT/build_ppt.py"        # 汇报 PPTX + 讲稿 + 自检
-.venv/bin/python "fourth stage/05-打包/package_submission.py"  # 提交包 ZIP + SHA256 清单
-```
+第四阶段（D 角色）的课程报告、汇报 PPT 与讲稿、分析挖掘结果、流程图与最终提交包见 [fourth stage/README.md](<fourth stage/README.md>)；报告与 PPT 的数字均取自前三阶段的结果文件，口径同源。

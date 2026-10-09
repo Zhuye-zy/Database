@@ -2,7 +2,12 @@
 # -*- coding: utf-8 -*-
 """打包课程提交包：把仓库归档为 ZIP，并输出文件清单与 SHA256 指纹。
 
-排除项：.git / .venv / __pycache__ 等缓存目录，以及 *.pyc、*.log、*.tmp 等临时文件。
+排除项：
+  * 目录：.git / .venv / __pycache__ 等缓存目录；
+  * 文件：*.pyc、*.log、*.tmp 等临时文件；
+  * 「设计文档 / 汇报 PPT 的生成脚本」（EXCLUDE_FILES）——交付包只保留最终成果
+    （docx / pptx / 讲稿 / 插图），这些脚本文件本身仍保留在仓库中，不入包。
+
 打包后重新打开压缩包自检（testzip 必须为 None，条目数与清单一致）。
 
 运行：
@@ -26,6 +31,16 @@ EXCLUDE_DIRS = {".git", ".venv", "__pycache__", ".pytest_cache", ".mypy_cache", 
 EXCLUDE_SUFFIX = {".pyc", ".pyo", ".tmp", ".log", ".swp"}
 EXCLUDE_NAMES = {".DS_Store", "Thumbs.db"}
 
+# 第四阶段「设计文档 / 汇报 PPT 的生成脚本」：仅为内部生成工具，交付包只保留最终成果
+# （课程报告 docx、汇报 PPTX 与讲稿、报告插图），这些脚本本身仍保留在仓库中但不入包。
+EXCLUDE_FILES = {
+    "fourth stage/01-设计文档/build_report.py",
+    "fourth stage/01-设计文档/report_content.py",
+    "fourth stage/01-设计文档/report_lib.py",
+    "fourth stage/01-设计文档/make_figures.py",
+    "fourth stage/02-汇报PPT/build_ppt.py",
+}
+
 
 def iter_files() -> list[Path]:
     """按稳定顺序列出待打包文件（跳过排除项）。"""
@@ -35,6 +50,8 @@ def iter_files() -> list[Path]:
             continue
         rel = path.relative_to(REPO)
         if any(part in EXCLUDE_DIRS for part in rel.parts):
+            continue
+        if rel.as_posix() in EXCLUDE_FILES:
             continue
         if path.suffix in EXCLUDE_SUFFIX or path.name in EXCLUDE_NAMES:
             continue

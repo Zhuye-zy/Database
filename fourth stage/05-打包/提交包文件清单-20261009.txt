@@ -1,16 +1,12 @@
 提交包清单　数据库实践-题目5-第四阶段提交包-20261009.zip
 生成时间：2026-10-09
-仓库提交：（工作区未提交）
-文件数：375　压缩包大小：27.58 MB
+仓库提交：59028a2
+文件数：370　压缩包大小：27.53 MB
 
 路径                                                                    字节  SHA256
 --------------------------------------------------------------------------------------------------------------
 .gitignore                                                            52  f31d5a3a9d99f2ecc0fcaa3ea539901900cd0073f1260df832fbf9d0010f8691
-README.md                                                           2539  38d2b7c43e39a6fd6bcbeb54376465b9bf8487ca54f172e21550c9d170eb04e8
-fourth stage/01-设计文档/build_report.py                               24843  e22ae6832bd6db1bf1795ec2c4f754f811cda1c9b997031156a47c96622aeec6
-fourth stage/01-设计文档/make_figures.py                                5203  548add70d9ba1a7f577643ae1416e5a36eaecb56ec268e3be160c9ca00975be3
-fourth stage/01-设计文档/report_content.py                             60348  428614ff88c054a3a62f2cadf94e439df95dfa503052d349c7a8b4dca1303396
-fourth stage/01-设计文档/report_lib.py                                  9629  e206eb8e6108c0d4509c3ac277c07d37be188bdde4ecddeb0780b2dcba61953b
+README.md                                                           2224  6fb356b617be90042a7559d34c0cf1e082b049b68a1a0b511321d0249b0f8613
 fourth stage/01-设计文档/图/图1-用例图.png                                 331861  283ac138dbd95c16b85d80f14c27d957ad53adb0008374b6b10e90adca99d6bb
 fourth stage/01-设计文档/图/图10-前端专利详情.png                             241411  8f9ea777141ed787d5ed5386f67e1a2dff9064c4b53f25f51034417963ab5baf
 fourth stage/01-设计文档/图/图11-技术领域分布.png                              55143  a9670eb4fd3ef8afe938303e540c651acc64de08cbb778efae94c5532b509fbd
@@ -32,10 +28,9 @@ fourth stage/01-设计文档/图/图6-数据导入流程图.png                 
 fourth stage/01-设计文档/图/图7-验收流程图.png                               318856  851f522fae185ffa6b89caf5e3a26984c19466cd5fa7dfa24449bb7c116b0382
 fourth stage/01-设计文档/图/图8-前端首页43表.png                             354473  50910f940b3cbbd423c6878e9b03489f9182cc85963ac7f30e27bd212d900ec7
 fourth stage/01-设计文档/图/图9-前端patent表.png                           644491  592b996e7dc86149ff1a34831ea9c170dda6558d7d708509a1081f92c5f62431
-fourth stage/01-设计文档/数据库实践课程报告.docx                              4595620  31f06c9b05ede2d04b28dd4fa486028916bd91e978d06bdfc0f65e6f0076a15a
-fourth stage/02-汇报PPT/build_ppt.py                                 53452  e49d9d6a14a07f8fe1d8acfe0da62328402314188c9da40576abab4770ea33e4
-fourth stage/02-汇报PPT/第四阶段汇报-专利数据关系数据库.pptx                      2513213  8416b2453246a7215b5a0ef95cad3502d281c66e49bcb29ac72a83608c58103d
-fourth stage/02-汇报PPT/第四阶段汇报-讲稿.md                                  5832  eb0529ad2276a90a4402f2d90c7b0310614715885628c9fee11fc035a4bdd056
+fourth stage/01-设计文档/数据库实践课程报告.docx                              5018705  24f3a5be3342053d5a00fadee08279edb19173e402c789a8583eeb0f2d4e168c
+fourth stage/02-汇报PPT/第四阶段汇报-专利数据关系数据库.pptx                      2513037  f999ea1ec57b5b982808a8624e59606a6520e3e8345f702e25831f751297d858
+fourth stage/02-汇报PPT/第四阶段汇报-讲稿.md                                  5818  65ec205843a97f964edd4d70ec2def2b304d3233f01552b81a5127ec0924ec11
 fourth stage/03-分析挖掘/make_charts.py                                12190  e5422ef9e321419cb67751524bbcb78bf32d48bec7af455e11b6ffef82819abb
 fourth stage/03-分析挖掘/run_analysis.py                                7090  8e9a8970f00a110f89b4b663f448d6713d0975e22f702932020c28e347da9fbd
 fourth stage/03-分析挖掘/sql/01-技术领域分布.sql                              2338  b47cadad3dfb3d6a7708f9f16dcc1a93a7122076b5f722415b36beec8b8abd3c
@@ -78,11 +73,12 @@ fourth stage/04-流程图与框图/图C-系统框图.png                        
 fourth stage/04-流程图与框图/图D-导入流程图.png                               347685  1be4482c89b1a373eeab1baad01347d2e4825a9a0f712239d2364b19d66ca783
 fourth stage/04-流程图与框图/图E-验收流程图.png                               318856  851f522fae185ffa6b89caf5e3a26984c19466cd5fa7dfa24449bb7c116b0382
 fourth stage/04-流程图与框图/图F-关键表关系示意图.png                            386647  e2af20616c1e71bda6a00afbdcda2003c9b75475bbaa1f1065c9e04e8430f9e5
-fourth stage/05-打包/package_submission.py                            4333  1935130813376ef7fbedd56857aee90494e30c93007fa3d0a314843327487ca4
-fourth stage/05-打包/提交说明.md                                          4886  b26abfc5b9c21c99520fb0ed994e1d39f31ccd1e275d3f2a05c4e9db10096731
-fourth stage/90-问题记录-D.md                                           4554  9ec2a033016198a731f0507f2005f22e14928a1ffe8650865624fb1085ecfc1d
-fourth stage/92-AI使用记录-D.md                                         3742  bc00772b4f88e90c72508f1c6f005c2469a2483a7f3e4b8127293a89c1338f22
-fourth stage/README.md                                              2770  1ed4e613a432e0366d82e4527d7e5a7b0a2edfbff5c7aeff8a6285c2a5c90893
+fourth stage/05-打包/package_submission.py                            5149  cd3137afd9e1668ddb3e5063d12aa12f4378d762498ed4e5e773e30a115652a9
+fourth stage/05-打包/提交说明.md                                          5740  5d6c19923c8e68a1feef16bcc99ee8ec3402dc5617b27030e5ca6b964bc194a8
+fourth stage/90-问题记录-D.md                                           4543  419733bf88657ab44d1347e19c7e5194976cb011f61a434f126b65f4db3f40c6
+fourth stage/92-AI使用记录-D.md                                         3237  24dabb90bedc866b4da49e57059eea70803c9e38c4b1da3830257058d3801c0d
+fourth stage/95-审查报告-D.md                                          12514  a1dc4e7e7be32aaaaea3263713bf88405be927499f9c0a7a8b6c715e93f9f325
+fourth stage/README.md                                              2843  f770f5c3214388fe52ad65a1258e930faf95258fcb20c7c00062b2a50f34f8e3
 run.sh                                                              2459  a3ead3ed754dccb557796044b3da4583dbf91db731e2f875ea5f93159edd5d5e
 second stage/.gitattributes                                          287  8ff2860a448a202eeec6d233f97fb52ad5304eb2c169c4fc9177bf9d406eb59b
 second stage/.gitignore                                              236  d997c9636f611edaf6ae614086fd635a3d50595a777176a9d0b5b2ace5cb4435
@@ -275,6 +271,7 @@ third stage/90-问题记录-C.md                                            1606
 third stage/92-AI使用记录-C.md                                           761  f23eaa80673e09f36f540821ba7d687035c60dfa9213f42c8820c771b593543b
 third stage/93-D角色交接说明.md                                           1416  ab0cf5a1804274a4dadb229db241c5f72fac8e37a9709037396d9b8bf54edf35
 third stage/README.md                                               3025  f8c126eb8dbb9919ee5bd3b659c2d181e169d423282bf58630c30baef76d0fef
+报告模板.docx                                                          52092  1a728fbf665924b462296004679163edc7b3d2b29fcc87cb9f761a3157a1258a
 第一阶段/00-README.md                                                   4111  44ec1e0743bb0940741b7517d071517cd79bef99cfd7cd12423d3c5967e58997
 第一阶段/01-需求分析.md                                                    11843  7ce349aa4e96e3aadebddfe1b673f08602b448fab3f1edc0712949c0524dd77b
 第一阶段/02-实体与属性清单.md                                                114782  8ea0946562358b7650234089653fb10070399ded566cd43e63676f57af1b64bf

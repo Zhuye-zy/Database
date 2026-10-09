@@ -221,9 +221,6 @@ def title_slide(deck, ctx, meta):
              size=17, color=RGBColor(0xC7, 0xD8, 0xE8))
     add_text(slide, MARGIN, Inches(5.3), BODY_W, Inches(1.35), meta,
              size=14, color=RGBColor(0xAE, 0xC7, 0xDD), line_spacing=1.5)
-    add_text(slide, MARGIN, Inches(6.62), BODY_W, Inches(0.4),
-             "小组序号：第 ___ 组（提交前由组长补全） ｜ 组员姓名与学号见报告“小组分工表”",
-             size=12, color=RGBColor(0x7F, 0x9A, 0xB5))
     return slide
 
 
@@ -267,7 +264,7 @@ def build_deck(ctx) -> Presentation:
     rows_total = f"{st['rows']:,}"
 
     title_slide(deck, ctx, [
-        "汇报人：D 角色（文档整合与分析挖掘）· 小组成员：A / B / C / D 四角色协作",
+        "小组成员：A / B / C / D 四角色协作",
         f"数据规模：{st['tables']} 张业务表 / {st['fields']} 个字段 / {rows_total} 行 ｜ "
         f"验收：{test_total} 条用例全部通过 ｜ 分析：5 个主题 {query_count} 条 SQL",
         "2026 年 10 月",
@@ -715,7 +712,7 @@ def write_script(path: Path, notes) -> None:
     lines = ["# 第四阶段汇报讲稿（专利数据关系数据库 · 题目 5）", "",
              f"配套文件：`{OUT.name}`（{len(SLIDE_TITLES)} 页，每页备注页含同一份讲稿）。",
              f"建议总时长：{total // 60} 分 {total % 60} 秒。",
-             "全部数字由 `build_ppt.py` 从 `build_report.build_ctx()` 注入，与设计报告同源。", ""]
+             "全部数字与设计报告同源，均取自仓库内可复核的证据文件。", ""]
     for page, title in sorted(SLIDE_TITLES):
         duration, text = notes.get(page, ("", ""))
         lines += [f"## 第 {page} 页 · {title}", "",
